@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    
+    <!-- None -->
+    <definition name="none" template="/layout/none-layout.jsp">
+        <put-attribute name="all" value="" />
+    </definition>
+        
+    <!-- Login -->
+    <definition name="login" extends="none">
+        <put-attribute name="all" value="/login.jsp" />
+    </definition>
+        
+    <!-- One -->
+    <definition name="one" template="/layout/one-layout.jsp">
+        <put-attribute name="css" value="/include/one/css.jsp" />
+        <put-attribute name="menu" value="/include/one/left.jsp" />
+        <put-attribute name="top" value="/include/one/top.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/include/one/footer.jsp" />
+        <put-attribute name="js" value="/include/one/js.jsp" />
+    </definition>
+    
+    <!-- Home -->
+    <definition name="home" extends="one">
+        <put-attribute name="body" value="/home.jsp" />
+    </definition>
+    
+    <!-- buttons -->
+    <definition name="buttons" extends="one">
+        <put-attribute name="body" value="/pages/ui-features/buttons.jsp" />
+    </definition>
+    <!-- dropdowns -->
+    <definition name="dropdowns" extends="one">
+        <put-attribute name="body" value="/pages/ui-features/dropdowns.jsp" />
+    </definition>
+    <!-- typography -->
+    <definition name="typography" extends="one">
+        <put-attribute name="body" value="/pages/ui-features/typography.jsp" />
+    </definition>
+    <!-- mdi -->
+    <definition name="mdi" extends="one">
+        <put-attribute name="body" value="/pages/icons/mdi.jsp" />
+    </definition>
+    <!-- basic_elements -->
+    <definition name="basic_elements" extends="one">
+        <put-attribute name="body" value="/pages/forms/basic_elements.jsp" />
+    </definition>
+    <!-- chartjs -->
+    <definition name="chartjs" extends="one">
+        <put-attribute name="body" value="/pages/charts/chartjs.jsp" />
+    </definition>
+    <!-- basic-table -->
+    <definition name="basic_table" extends="one">
+        <put-attribute name="body" value="/pages/tables/basic-table.jsp" />
+    </definition>
+        
+    <!-- Two -->
+    <definition name="two" template="/layout/two-layout.jsp">
+        <put-attribute name="css" value="/include/two/css.jsp" />
+        <put-attribute name="menu" value="/include/two/menu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/include/two/footer.jsp" />
+        <put-attribute name="js" value="/include/two/js.jsp" />
+    </definition>
+    
+    <!-- Home2 -->
+    <definition name="home2" extends="two">
+        <put-attribute name="body" value="/home2.jsp" />
+    </definition>
+    
+    <!-- buttons2 -->
+    <definition name="buttons2" extends="two">
+        <put-attribute name="body" value="/pages/ui-features/buttons2.jsp" />
+    </definition>
+    <!-- dropdowns2 -->
+    <definition name="dropdowns2" extends="two">
+        <put-attribute name="body" value="/pages/ui-features/dropdowns2.jsp" />
+    </definition>
+    <!-- typography2 -->
+    <definition name="typography2" extends="two">
+        <put-attribute name="body" value="/pages/ui-features/typography2.jsp" />
+    </definition>
+    <!-- mdi2 -->
+    <definition name="mdi2" extends="two">
+        <put-attribute name="body" value="/pages/icons/mdi2.jsp" />
+    </definition>
+    <!-- basic_elements2 -->
+    <definition name="basic_elements2" extends="two">
+        <put-attribute name="body" value="/pages/forms/basic_elements2.jsp" />
+    </definition>
+    <!-- chartjs2 -->
+    <definition name="chartjs2" extends="two">
+        <put-attribute name="body" value="/pages/charts/chartjs2.jsp" />
+    </definition>
+    <!-- basic-table2 -->
+    <definition name="basic_table2" extends="two">
+        <put-attribute name="body" value="/pages/tables/basic-table2.jsp" />
+    </definition>
+    
+    <!-- Three -->
+    <definition name="three" template="/layout/three-layout.jsp">
+        <put-attribute name="head" value="/include/three/head.jsp" />
+        <put-attribute name="left" value="/include/three/left.jsp" />
+        <put-attribute name="menu" value="/include/three/menu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="" />
+        <put-attribute name="js" value="/include/three/js.jsp" />
+    </definition>
+    
+    <!-- Home3 -->
+    <definition name="home3" extends="three">
+        <put-attribute name="body" value="/home3.jsp" />
+    </definition>
+    
+    <!-- Four -->
+    <definition name="four" template="/layout/four-layout.jsp">
+        <put-attribute name="head" value="/include/four/head.jsp" />
+        <put-attribute name="menu" value="/include/four/menu.jsp" />
+        <put-attribute name="left" value="/include/four/left.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="right" value="/include/four/right.jsp" />
+        <put-attribute name="footer" value="" />
+        <put-attribute name="js" value="/include/four/js.jsp" />
+    </definition>
+    
+    <!-- Home4 -->
+    <definition name="home4" extends="four">
+        <put-attribute name="body" value="/home4.jsp" />
+    </definition>
+    
+</tiles-definitions>
