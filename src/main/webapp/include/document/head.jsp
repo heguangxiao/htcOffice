@@ -7,7 +7,7 @@
         border-top-color: transparent;
     }
     .dropbtn {
-        background-color: #DC3545;
+        background-color: white;
         color: white;
         /*padding: 16px;*/
         font-size: 16px;
