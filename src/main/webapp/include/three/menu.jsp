@@ -7,17 +7,18 @@
             <a class="nav-link dropbtn" href="#" id="addNavbardrop" data-toggle="dropdown">
                 <i class="fas fa-plus"></i>
             </a>
+            <!-- tạo mới -->
             <div class="dropdown-menu dropdown-content">
-                <a class="dropdown-item" href="#">Công việc</a>
-                <a class="dropdown-item" href="#">Dự án</a>
-                <a class="dropdown-item" href="#">Quy trình</a>
-                <a class="dropdown-item" href="#">Công việc lặp</a>
+                <a class="dropdown-item" href="<c:url value='/home3/congviec/new'/>">Công việc</a>
+                <a class="dropdown-item" href="<c:url value='/home3/duan/new'/>">Dự án</a>
+                <a class="dropdown-item" href="<c:url value='/home3/quytrinh/new'/>">Quy trình</a>
+                <a class="dropdown-item" href="<c:url value='/home3/congvieclap/new'/>">Công việc lặp</a>
                 <a class="dropdown-item" href="#">Timesheet</a>
             </div>
         </li>
         <li class="nav-item">
             <a class="nav-link nav-profile-text">
-                Danh sách công việc
+                ${titleTable}
             </a>
         </li>
         <li class="nav-item dropdown">
@@ -105,29 +106,4 @@
             </a>
         </li>
     </ul>
-</nav>
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-top: 0px;padding-bottom: 0px;margin-top: 0px;">
-    <div class="container-fluid" >     
-        <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-align-justify"></i>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="nav navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Page</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Page</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Page</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Page</a>
-                </li>
-            </ul>
-        </div>
-    </div>
 </nav>
