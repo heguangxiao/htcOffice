@@ -40,6 +40,11 @@
     .dropdown:hover .dropdown-content {display: block;}
 
     .dropdown:hover .dropbtn {background-color: #DC3545;}
+
+    .convert[aria-expanded="true"] {
+        color: #fff;
+        background: #dc3545;
+    }
 </style>
 
 <script src="<c:url value='/resources/js/solid.js'/>"></script>

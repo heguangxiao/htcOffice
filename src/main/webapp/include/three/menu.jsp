@@ -4,7 +4,7 @@
     <a class="navbar-brand" href="#"></a>
     <ul class="navbar-nav mr-auto">
         <li class="nav-item dropdown">
-            <a class="nav-link dropbtn" href="#" id="addNavbardrop" data-toggle="dropdown">
+            <a class="nav-link dropbtn convert" href="#" id="addNavbardrop" data-toggle="dropdown">
                 <i class="fas fa-plus"></i>
             </a>
             <div class="dropdown-menu dropdown-content">
@@ -21,8 +21,8 @@
             </a>
         </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropbtn" href="#" id="filterNavbardrop" data-toggle="dropdown">
-                <i class="fas fa-filter"></i>
+            <a class="nav-link dropbtn convert" href="#" id="filterNavbardrop" data-toggle="dropdown">
+                <i class="fas fa-caret-down"></i>
             </a>
             <div class="dropdown-menu dropdown-content">
                 <a class="dropdown-item" href="#">Tất cả</a>

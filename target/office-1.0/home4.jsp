@@ -8,16 +8,68 @@
         overflow:auto;
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
-        width: 100%;
+        width: 90%;
         word-wrap: break-word;
+        float: left;
     }
-    
+
     #main::-webkit-scrollbar {
         display: none;
     }
+
+    .box-shadow {
+        padding-top: 20px;
+        margin-bottom: 20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        -moz-border-radius: 5px; /*Firefox*/
+        -webkit-border-radius: 5px;  /*Chrome và Safary*/
+        border-radius: 5px;
+        background-color: white;
+    }
 </style>
-<div id="main">
-    <h1>Thịnh, Phương, Tùng click vào <a class="dropdown-item" href="<c:url value='/home3'/>">đây</a> để link sang trang mẫu</h1>
-    <br/>
-    <a class="dropdown-item" href="<c:url value='/logout'/>">Thoát đăng nhập</a>
+<div class="container-fluid" id="main">
+    <div class="container box-shadow">
+        <div class="row">  
+            <div onmouseover="showSubmitContent()" onmouseout="hideSubmitContent()" class="col-12">
+                <form action="<c:url value='/'/>" method="GET">
+                    Bài viết mới
+                    <hr/>
+                    <textarea class="form-control mb-3" rows="3" placeholder="Nội dung bài viết"></textarea>
+                    <div id="newSubmitContent" style="display: none;">
+                        <hr/>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Đăng bài</button>
+                        <br/>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showSubmitContent() {
+            document.getElementById('newSubmitContent').style.display = '';
+        }
+
+        function hideSubmitContent() {
+            document.getElementById('newSubmitContent').style.display = 'none';
+        }
+    </script>
+
+    <div class="container box-shadow">
+        <div class="row">  
+            <div class="col-12">
+                Title
+                <br/>
+                Nội dung
+                <hr/>
+                <div class="form-group">
+                    <label for="ctt">
+                        <span><i class="fas fa-thumbs-up"></i> Thích</span>
+                        <span> </span>
+                        <span><i class="fas fa-comment"></i> Bình luận</span></label>
+                    <input type="text" class="form-control" id="ctt">
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
