@@ -114,6 +114,48 @@
         <put-attribute name="body" value="/home3.jsp" />
     </definition>
     
+    
+    <definition name="document-theme" template="/layout/document-layout.jsp">
+        <put-attribute name="head" value="/include/document/head.jsp" />
+        <put-attribute name="left" value="/include/document/left.jsp" />
+        <put-attribute name="menu" value="/include/document/menu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="" />
+        <put-attribute name="js" value="/include/document/js.jsp" />
+    </definition>
+    <definition name="document" extends="document-theme">
+        <put-attribute name="body" value="/document/document.jsp" />
+    </definition>
+    <definition name="document_user" extends="document-theme">
+        <put-attribute name="body" value="/document/document_user.jsp" />
+    </definition>
+    <definition name="document_company" extends="document-theme">
+        <put-attribute name="body" value="/document/document_company.jsp" />
+    </definition>
+    <definition name="document_share" extends="document-theme">
+        <put-attribute name="body" value="/document/document_share.jsp" />
+    </definition>
+    <definition name="evaluation-theme" template="/layout/evaluation-layout.jsp">
+        <put-attribute name="head" value="/include/evaluation/head.jsp" />
+        <put-attribute name="left" value="/include/evaluation/left.jsp" />
+        <put-attribute name="menu" value="/include/evaluation/menu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="" />
+        <put-attribute name="js" value="/include/evaluation/js.jsp" />
+    </definition>
+    <definition name="evaluation-kpi-kpi" extends="evaluation-theme">
+        <put-attribute name="body" value="/evaluation/evaluation_kpi_kpi.jsp" />
+    </definition>
+    <definition name="evaluation-kpi-template" extends="evaluation-theme">
+        <put-attribute name="body" value="/evaluation/evaluation_kpi_template.jsp" />
+    </definition>
+    <definition name="report_evaluation" extends="evaluation-theme">
+        <put-attribute name="body" value="/evaluation/report_evaluation.jsp" />
+    </definition>
+    <definition name="evaluation_share" extends="evaluation-theme">
+        <put-attribute name="body" value="/evaluation/evaluation_share.jsp" />
+    </definition>
+    
     <!-- Four -->
     <definition name="four" template="/layout/four-layout.jsp">
         <put-attribute name="head" value="/include/four/head.jsp" />
@@ -128,6 +170,21 @@
     <!-- Home4 -->
     <definition name="home4" extends="four">
         <put-attribute name="body" value="/home4.jsp" />
+    </definition>
+    
+    <!-- Don Tu -->
+    <definition name="donTuTemplate" template="/layout/donTu-layout.jsp">
+        <put-attribute name="head" value="/include/donTu/head.jsp" />
+        <put-attribute name="left" value="/include/donTu/left.jsp" />
+        <put-attribute name="menu" value="/include/donTu/menu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="" />
+        <put-attribute name="js" value="/include/donTu/js.jsp" />
+    </definition>
+    
+    <!-- Home3 -->
+    <definition name="donTu" extends="donTuTemplate">
+        <put-attribute name="body" value="/donTu.jsp" />
     </definition>
     
 </tiles-definitions>

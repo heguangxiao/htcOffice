@@ -6,9 +6,8 @@
 package vn.htc.office.repository.impl;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
 import java.util.List;
+import javax.annotation.PostConstruct;
 import org.springframework.stereotype.Repository;
 import vn.htc.office.common.Md5;
 import vn.htc.office.common.Tool;
@@ -21,6 +20,16 @@ import vn.htc.office.repository.AccountRepository;
  */
 @Repository
 public class AccountRepositoryImpl implements AccountRepository {
+
+    private List<Account> listGia = new ArrayList<>();
+
+    @PostConstruct
+    public void init() {
+        for (int i = 0; i < 10; i++) {
+            Account acc = new Account(++i, "username"+i, "password"+i, "email" + i, 1);
+            listGia.add(acc);
+        }
+    }
 
     @Override
     public List<Account> findAll() {

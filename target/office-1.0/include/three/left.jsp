@@ -2,10 +2,10 @@
 <!-- Sidebar  -->
 <nav id="sidebar" class="sticky-top bg-danger">
     <div class="sidebar-header bg-danger">
-        <button type="button" id="sidebarCollapse" class="btn btn-danger">
+        <button type="button" id="sidebarCollapse" class="btn btn-danger" style="padding: 0 5px 5px 5px;">
             <i class="fas fa-align-left"></i>
         </button>
-        <span style="float: right;">HTC OFFICE</span>
+        <span style="float: right;"><a href="#">HTC OFFICE</a></span>
     </div>
 
     <ul class="list-unstyled components">

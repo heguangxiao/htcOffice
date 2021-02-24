@@ -4,6 +4,7 @@ C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\ma
 C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\common\Tool.java
 C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\controller\Home3Controller.java
 C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\config\MyConfig.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\controller\DocumentController.java
 C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\ext\ModelEnum.java
 C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\common\Md5.java
 C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\service\impl\AccountServiceImpl.java
@@ -20,9 +21,11 @@ C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\ma
 C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\controller\SessionController.java
 C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\ext\ResponResult.java
 C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\controller\TempControllerIF.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\controller\EvaluationController.java
 C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\config\WebConfig.java
 C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\ext\AngularModel.java
 C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\controller\Home2Controller.java
 C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\repository\AccountRepository.java
 C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\config\MyContext.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\controller\DonTuController.java
 C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\model\Account.java

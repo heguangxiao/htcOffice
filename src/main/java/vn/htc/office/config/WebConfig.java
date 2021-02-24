@@ -56,6 +56,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
                 .setCacheControl(CacheControl.maxAge(1, TimeUnit.SECONDS).cachePublic());
         registry.addResourceHandler("/resources/css/**").addResourceLocations("classpath:/static/css/");
         registry.addResourceHandler("/resources/js/**").addResourceLocations("classpath:/static/js/");
+        registry.addResourceHandler("/resources/img/**").addResourceLocations("classpath:/static/img/");
     }
 
 }
