@@ -244,4 +244,69 @@
         <put-attribute name="body" value="/donTu.jsp" />
     </definition>
     
+     <!-- Nhân sự -->
+    <definition name="nhansu" template="/layout/nhansu-layout.jsp">
+        <put-attribute name="head" value="/include/nhansu/head.jsp" />
+        <put-attribute name="left" value="/include/nhansu/left.jsp" />
+        <put-attribute name="menu" value="/include/nhansu/menu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="" />
+        <put-attribute name="js" value="/include/nhansu/js.jsp" />
+    </definition>
+    
+    <!-- Dashboard -->
+    
+    <definition name="dashboardAll" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/dashboardAll.jsp" />
+    </definition>
+    
+    <!-- Hồ sơ nhân sự -->
+    
+    <definition name="hosonhansuAll" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/hosonhansuAll.jsp" />
+    </definition>
+    
+    <!-- Tạo mới hồ sơ nhân sự -->
+    
+    <definition name="createHoSoNhanSu" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/create/createHoSoNhanSu.jsp" />
+    </definition>
+    
+    <!-- Loại hợp đồng -->
+  
+    <definition name="loaihopdongAll" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/loaihopdongAll.jsp" />
+    </definition>
+    
+     <!-- Tạo mới hợp đồng -->
+    
+    <definition name="createHopDong" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/create/createHopDong.jsp" />
+    </definition>
+    
+    <!-- baohiem -->
+    
+     <definition name="baohiemAll" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/baohiemAll.jsp" />
+    </definition>
+    
+    <!-- kỳ đánh giá -->
+      
+     <definition name="kydanhgiaAll" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/kydanhgiaAll.jsp" />
+    </definition>
+    
+  
+    <!-- khen thưởng -->
+    
+     <definition name="khenthuongAll" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/khenthuongAll.jsp" />
+    </definition>
+    
+    <!-- báo cáo đã tạo -->
+    
+     <definition name="baocaodataoAll" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/baocaodataoAll.jsp" />
+    </definition>
+    
 </tiles-definitions>
