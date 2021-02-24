@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.GetMapping;
  * @author HTC-PC
  */
 @Controller 
-public class Home3Controller {
+public class CongviecController {
     
 	 @GetMapping({"/home3"})
 	    public String home(ModelMap modelMap) {
