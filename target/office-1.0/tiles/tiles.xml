@@ -115,24 +115,40 @@
     </definition>
     
     
-    <definition name="document-theme" template="/layout/document-layout.jsp">
+    <definition name="document-theme-user" template="/layout/document-layout.jsp">
         <put-attribute name="head" value="/include/document/head.jsp" />
         <put-attribute name="left" value="/include/document/left.jsp" />
-        <put-attribute name="menu" value="/include/document/menu.jsp" />
+        <put-attribute name="menu" value="/include/document/menu_user.jsp" />
         <put-attribute name="body" value="" />
         <put-attribute name="footer" value="" />
         <put-attribute name="js" value="/include/document/js.jsp" />
     </definition>
-    <definition name="document" extends="document-theme">
-        <put-attribute name="body" value="/document/document.jsp" />
+    <definition name="document-theme-company" template="/layout/document-layout.jsp">
+        <put-attribute name="head" value="/include/document/head.jsp" />
+        <put-attribute name="left" value="/include/document/left.jsp" />
+        <put-attribute name="menu" value="/include/document/menu_company.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="" />
+        <put-attribute name="js" value="/include/document/js.jsp" />
     </definition>
-    <definition name="document_user" extends="document-theme">
+    <definition name="document-theme-share" template="/layout/document-layout.jsp">
+        <put-attribute name="head" value="/include/document/head.jsp" />
+        <put-attribute name="left" value="/include/document/left.jsp" />
+        <put-attribute name="menu" value="/include/document/menu_share.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="" />
+        <put-attribute name="js" value="/include/document/js.jsp" />
+    </definition>
+    <definition name="document" extends="document-theme-user">
         <put-attribute name="body" value="/document/document_user.jsp" />
     </definition>
-    <definition name="document_company" extends="document-theme">
+    <definition name="document_user" extends="document-theme-user">
+        <put-attribute name="body" value="/document/document_user.jsp" />
+    </definition>
+    <definition name="document_company" extends="document-theme-company">
         <put-attribute name="body" value="/document/document_company.jsp" />
     </definition>
-    <definition name="document_share" extends="document-theme">
+    <definition name="document_share" extends="document-theme-share">
         <put-attribute name="body" value="/document/document_share.jsp" />
     </definition>
     <definition name="evaluation-theme" template="/layout/evaluation-layout.jsp">
@@ -182,9 +198,114 @@
         <put-attribute name="js" value="/include/donTu/js.jsp" />
     </definition>
     
-    <!-- Home3 -->
+    <!-- Don Tu -->
     <definition name="donTu" extends="donTuTemplate">
-        <put-attribute name="body" value="/donTu.jsp" />
+        <put-attribute name="body" value="/dontu/donTu.jsp" />
+    </definition>
+    
+     <!-- Nhân sự -->
+    <definition name="nhansu" template="/layout/nhansu-layout.jsp">
+        <put-attribute name="head" value="/include/nhansu/head.jsp" />
+        <put-attribute name="left" value="/include/nhansu/left.jsp" />
+        <put-attribute name="menu" value="/include/nhansu/menu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="" />
+        <put-attribute name="js" value="/include/nhansu/js.jsp" />
+    </definition>
+    
+    <!-- Dashboard -->
+    
+    <definition name="dashboardAll" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/dashboardAll.jsp" />
+    </definition>
+    
+    <!-- Hồ sơ nhân sự -->
+    
+    <!-- Form đang làm việc -->
+    <definition name="DangLamViec" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/hosonhansu/DangLamViec.jsp" />
+    </definition>
+    
+    <!-- Form nghỉ thai sản -->
+    <definition name="NghiThaiSan" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/hosonhansu/NghiThaiSan.jsp" />
+    </definition>
+    
+     <!-- Form nghỉ việc -->
+    <definition name="NghiViec" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/hosonhansu/NghiViec.jsp" />
+    </definition>
+    
+     <!-- Form tất cả -->
+    <definition name="TatCa" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/hosonhansu/TatCa.jsp" />
+    </definition>
+    
+    <!-- Loại hợp đồng -->
+  
+    <definition name="loaihopdongAll" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/loaihopdongAll.jsp" />
+    </definition>
+    
+    <!-- baohiem -->
+    
+     <definition name="baohiemAll" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/baohiemAll.jsp" />
+    </definition>
+    
+    <!-- kỳ đánh giá -->
+      
+     <definition name="kydanhgiaAll" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/kydanhgiaAll.jsp" />
+    </definition>
+    
+  
+    <!-- khen thưởng -->
+    
+     <definition name="khenthuongAll" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/khenthuongAll.jsp" />
+    </definition>
+    
+    <!-- báo cáo đã tạo -->
+    
+     <definition name="baocaodataoAll" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/baocaodataoAll.jsp" />
+    </definition>
+    
+    <!-- Create hồ sơ nhân sự -->
+    
+    <definition name="createHoSoNhanSu" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/create/createHoSoNhanSu.jsp" />
+    </definition>
+    
+    <!-- Create hợp đồng -->
+    
+    <definition name="createHopDong" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/create/createHopDong.jsp" />
+    </definition>
+    
+    <!-- Create bảo hiểm -->
+    
+    <definition name="createBaoHiem" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/create/createBaoHiem.jsp" />
+    </definition>
+    
+    <!-- Create tiếp nhận -->
+    
+    <definition name="createTiepNhan" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/create/createTiepNhan.jsp" />
+    </definition>
+    
+    <!-- Create thôi việc -->
+    
+    <definition name="createThoiViec" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/create/createThoiViec.jsp" />
+    </definition>
+    
+    <!-- Create đính kèm -->
+    
+    <definition name="createDinhKem" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/create/createDinhKem.jsp" />
     </definition>
     
 </tiles-definitions>
