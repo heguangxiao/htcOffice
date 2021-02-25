@@ -57,9 +57,10 @@ public class WebConfig extends WebMvcConfigurerAdapter {
         registry.addResourceHandler("/resources/angularjs/**")
                 .addResourceLocations("classpath:/META-INF/resources/webjars/angularjs/1.8.0/")
                 .setCacheControl(CacheControl.maxAge(1, TimeUnit.SECONDS).cachePublic());
-        registry.addResourceHandler("/resources/css/**").addResourceLocations("classpath:/static/css/");
-        registry.addResourceHandler("/resources/js/**").addResourceLocations("classpath:/static/js/");
-        registry.addResourceHandler("/resources/img/**").addResourceLocations("classpath:/static/img/");
+        registry.addResourceHandler("/resources/css/**").addResourceLocations("classpath:/static/css/").setCacheControl(CacheControl.maxAge(1, TimeUnit.SECONDS).cachePublic());
+        registry.addResourceHandler("/resources/js/**").addResourceLocations("classpath:/static/js/").setCacheControl(CacheControl.maxAge(1, TimeUnit.SECONDS).cachePublic());
+        registry.addResourceHandler("/resources/img/**").addResourceLocations("classpath:/static/img/").setCacheControl(CacheControl.maxAge(1, TimeUnit.SECONDS).cachePublic());
+        registry.addResourceHandler("/resources/controller/**").addResourceLocations("classpath:/static/controller/").setCacheControl(CacheControl.maxAge(1, TimeUnit.SECONDS).cachePublic());
     }
 
 }

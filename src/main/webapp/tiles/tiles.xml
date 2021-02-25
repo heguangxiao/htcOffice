@@ -198,9 +198,9 @@
         <put-attribute name="js" value="/include/donTu/js.jsp" />
     </definition>
     
-    <!-- Home3 -->
+    <!-- Don Tu -->
     <definition name="donTu" extends="donTuTemplate">
-        <put-attribute name="body" value="/donTu.jsp" />
+        <put-attribute name="body" value="/dontu/donTu.jsp" />
     </definition>
     
 </tiles-definitions>

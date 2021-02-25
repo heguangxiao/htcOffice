@@ -6,7 +6,6 @@
 package vn.htc.office.controller;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +17,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import vn.htc.office.common.HttpUtil;
-import vn.htc.office.config.MyConfig;
 import vn.htc.office.ext.AngularModel;
 import vn.htc.office.ext.ResponResult;
 import vn.htc.office.model.DonTu;
@@ -29,12 +27,13 @@ import vn.htc.office.service.DonTuService;
  * @author HTC-PC
  */
 @Controller
+@RequestMapping("/donTu")
 public class DonTuController extends AbstractBackEnConst {
 
     @Autowired
     DonTuService donTuService;
 
-    @GetMapping({"/donTu"})
+    @GetMapping({"/", ""})
     public String home(ModelMap modelMap) {
         modelMap.put("title", "Đơn từ");
         return "donTu";

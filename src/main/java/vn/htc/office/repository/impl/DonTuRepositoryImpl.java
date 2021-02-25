@@ -29,7 +29,7 @@ public class DonTuRepositoryImpl implements DonTuRepository {
     public void init() {
         for (int i = 1; i < 10; i++) {
             DonTu donTu = new DonTu(i, i, 1, i, DateProc.createTimestamp(), DateProc.createTimestamp(), 1, 1, DateProc.createTimestamp());
-            CACHE.put(1, donTu);
+            CACHE.put(i, donTu);
         }
     }
 

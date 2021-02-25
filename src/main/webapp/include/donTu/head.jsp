@@ -67,3 +67,7 @@
 <script src="<c:url value='/resources/js/jquery.dataTables.min.js'/>"></script>
 <script src="<c:url value='/resources/js/dataTables.bootstrap4.min.js'/>"></script>
 <script src="<c:url value='/resources/angularjs/angular.min.js'/>"></script>
+<script>
+    var urlBase = window.location.protocol + "//" + window.location.host + "${pageContext.request.contextPath}";
+    console.log("urlBase: " + urlBase);
+</script>
