@@ -203,4 +203,109 @@
         <put-attribute name="body" value="/dontu/donTu.jsp" />
     </definition>
     
+     <!-- Nhân sự -->
+    <definition name="nhansu" template="/layout/nhansu-layout.jsp">
+        <put-attribute name="head" value="/include/nhansu/head.jsp" />
+        <put-attribute name="left" value="/include/nhansu/left.jsp" />
+        <put-attribute name="menu" value="/include/nhansu/menu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="" />
+        <put-attribute name="js" value="/include/nhansu/js.jsp" />
+    </definition>
+    
+    <!-- Dashboard -->
+    
+    <definition name="dashboardAll" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/dashboardAll.jsp" />
+    </definition>
+    
+    <!-- Hồ sơ nhân sự -->
+    
+    <!-- Form đang làm việc -->
+    <definition name="DangLamViec" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/hosonhansu/DangLamViec.jsp" />
+    </definition>
+    
+    <!-- Form nghỉ thai sản -->
+    <definition name="NghiThaiSan" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/hosonhansu/NghiThaiSan.jsp" />
+    </definition>
+    
+     <!-- Form nghỉ việc -->
+    <definition name="NghiViec" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/hosonhansu/NghiViec.jsp" />
+    </definition>
+    
+     <!-- Form tất cả -->
+    <definition name="TatCa" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/hosonhansu/TatCa.jsp" />
+    </definition>
+    
+    <!-- Loại hợp đồng -->
+  
+    <definition name="loaihopdongAll" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/loaihopdongAll.jsp" />
+    </definition>
+    
+    <!-- baohiem -->
+    
+     <definition name="baohiemAll" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/baohiemAll.jsp" />
+    </definition>
+    
+    <!-- kỳ đánh giá -->
+      
+     <definition name="kydanhgiaAll" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/kydanhgiaAll.jsp" />
+    </definition>
+    
+  
+    <!-- khen thưởng -->
+    
+     <definition name="khenthuongAll" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/khenthuongAll.jsp" />
+    </definition>
+    
+    <!-- báo cáo đã tạo -->
+    
+     <definition name="baocaodataoAll" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/baocaodataoAll.jsp" />
+    </definition>
+    
+    <!-- Create hồ sơ nhân sự -->
+    
+    <definition name="createHoSoNhanSu" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/create/createHoSoNhanSu.jsp" />
+    </definition>
+    
+    <!-- Create hợp đồng -->
+    
+    <definition name="createHopDong" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/create/createHopDong.jsp" />
+    </definition>
+    
+    <!-- Create bảo hiểm -->
+    
+    <definition name="createBaoHiem" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/create/createBaoHiem.jsp" />
+    </definition>
+    
+    <!-- Create tiếp nhận -->
+    
+    <definition name="createTiepNhan" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/create/createTiepNhan.jsp" />
+    </definition>
+    
+    <!-- Create thôi việc -->
+    
+    <definition name="createThoiViec" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/create/createThoiViec.jsp" />
+    </definition>
+    
+    <!-- Create đính kèm -->
+    
+    <definition name="createDinhKem" extends="nhansu">
+        <put-attribute name="body" value="/nhansu/create/createDinhKem.jsp" />
+    </definition>
+    
 </tiles-definitions>
