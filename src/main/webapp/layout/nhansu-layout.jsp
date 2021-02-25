@@ -6,7 +6,6 @@
 <html lang="en">
     <head>
         <title>${title}</title>
-        <link rel="stylesheet" type="text/css" href="vendors/mdi/css/materialdesignicons.min.css">
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <tiles:insertAttribute name="head" />      

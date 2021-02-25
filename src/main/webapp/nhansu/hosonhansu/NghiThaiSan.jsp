@@ -1,4 +1,5 @@
 <%@page contentType="text/html; charset=utf-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <style>
     tbody {
         display:block;
@@ -29,33 +30,66 @@
         <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-align-justify"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: left">
             <ul class="nav navbar-nav mr-auto">
+            	<li class="nav-item" style="margin-top: 7.5px">
+                    <i class="mdi mdi-tune-vertical"></i>
+                </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Tất cả</a>
+                	
+                    <a class="nav-link" href="<c:url value='/DangLamViec'/>" >Đang làm việc</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Bạn đánh giá</a>
+                    <a class="nav-link" href="<c:url value='/NghiThaiSan'/>" style="border-bottom: 4px solid #6495ED;color:#6495ED">Nghỉ thai sản</a>	
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Đánh giá bạn</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="<c:url value='/NghiViec'/>">Nghỉ việc</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<c:url value='/TatCa'/>">Tất cả</a>
                 </li>
                 
             </ul>
         </div>
-
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: right">
+            <ul class="nav navbar-nav mr-auto" style="text-align: center;">
+                <li class="nav-item active" >
+                    <i class="mdi mdi-tag-outline"></i>
+                    <p style="font-size: 12px;margin-bottom: 0px">Nhãn</p>
+                </li>
+                <li class="nav-item" style="margin-left: 10px">
+                	<i class="mdi mdi-lan"></i>
+                    <p style="font-size: 12px;margin-bottom: 0px">Phòng ban</p>
+                </li>
+                <li class="nav-item" style="margin-left: 10px">
+                    <i class="mdi mdi-email"></i>
+                    <p style="font-size: 12px;margin-bottom: 0px">Email/Sms+</p>
+                </li>
+                <li class="nav-item" style="margin-left: 10px">
+                	<i class="mdi mdi-export"></i>                
+                    <p style="font-size: 12px;margin-bottom: 0px">Export</p>
+                </li>
+                <li class="nav-item" style="margin-left: 10px">
+                    <i class="mdi mdi-exit-to-app"></i>
+                    <p style="font-size: 12px;margin-bottom: 0px">Import</p>
+                </li>
+                <li class="nav-item" style="margin-left: 10px">
+                    <i class="mdi mdi-settings"></i>
+                    <p style="font-size: 12px;margin-bottom: 0px">Cài đặt</p>
+                </li>
+                
+            </ul>
+        </div>
         
     </div>
 </nav>
-<div class="scrollDiv">
-    Không tìm thấy kết quả nào
-    <!--<button id="select-all" class="btn button-default">SelectAll/Cancel</button>-->
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="menu">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <a class="dropdown-item" href="#">Something else here</a>
-    </div>
-</div>
+<hr style="margin-top: 45px">
+
+              
+<p style="clear: left;"> Không tìm thấy kết quả nào</p>
+
+
 <div class="container-fluid bd-content">
     <div class="bd-example" data-example-id="">
         <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" role="dialog" tabindex="-1">
@@ -86,6 +120,7 @@
 <div class="bd-example" data-example-id="" style="display: ;" id="createPopup">
 
 </div>
+
 <script>
     $(function () {
         //button select all or cancel
@@ -138,33 +173,30 @@
             if (i === 1) {
                 values = values + 'manhanvien=';
             } else if (i === 2) {
-                values = values + 'hoten=';
+                values = values + 'machamcong=';
             } else if (i === 3) {
-                values = values + 'phongban=';
+                values = values + 'hoten=';
             }
             else if (i === 4) {
-                values = values + 'vitricongviec=';
+                values = values + 'phongban=';
             }
             else if (i === 5) {
-                values = values + 'chucvu=';
+                values = values + 'vitri=';
             }
             else if (i === 6) {
-                values = values + 'soso=';
+                values = values + 'chucvu=';
             }
             else if (i === 7) {
-                values = values + 'sothe=';
+                values = values + 'ngayvao=';
             }
             else if (i === 8) {
-                values = values + 'batdaudong=';
+                values = values + 'ngaysinh=';
             }
             else if (i === 9) {
-                values = values + 'mucdongbaohiem=';
+                values = values + 'gioitinh=';
             }
             else if (i === 10) {
-                values = values + 'ctdong=';
-            }
-            else if (i === 11) {
-                values = values + 'nldnop=';
+                values = values + 'ngaytaotaikhoan1office=';
             }
            
             values = values + str;

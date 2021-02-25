@@ -74,7 +74,7 @@
                     </div>
                     <div style="width: 50%;float: left">
                         <span><b>HRM</b></span>
-                        <a href="<c:url value='/hosonhansuAll'/>">Nhân sự</a>
+                        <a href="<c:url value='/DangLamViec'/>">Nhân sự</a>
                         <a href="#">KPI</a>
                     </div>
                 </div>

@@ -15,29 +15,44 @@ import org.springframework.web.bind.annotation.GetMapping;
  */
 @Controller 
 public class NhanSuController {
-	
-	
-	
+
 	@GetMapping({"/dashboardAll"})
     public String dashboard(ModelMap modelMap) {
         modelMap.put("title", "HTC OFFICE 3");
         modelMap.put("titleTable", "Nhân sự");
         return "dashboardAll";
     }
+	//  Hồ sơ nhân sự
 	
-    @GetMapping({"/hosonhansuAll"})
-    public String hosonhansu(ModelMap modelMap) {
+    @GetMapping({"/DangLamViec"})
+    public String danglamviec(ModelMap modelMap) {
         modelMap.put("title", "HTC OFFICE 3");
         modelMap.put("titleTable", "Danh sách nhân sự");
-        return "hosonhansuAll";
+        return "DangLamViec";
     }
     
-    @GetMapping({"/createHoSoNhanSu"})
-    public String CreateHoSoNhanSu(ModelMap modelMap) {
+    @GetMapping({"/NghiThaiSan"})
+    public String nghithaisan(ModelMap modelMap) {
         modelMap.put("title", "HTC OFFICE 3");
-        modelMap.put("titleTable", "Tạo mới hồ sơ nhân sự");
-        return "createHoSoNhanSu";
+        modelMap.put("titleTable", "Danh sách nhân sự");
+        return "NghiThaiSan";
     }
+    
+    @GetMapping({"/NghiViec"})
+    public String nghiviec(ModelMap modelMap) {
+        modelMap.put("title", "HTC OFFICE 3");
+        modelMap.put("titleTable", "Danh sách nhân sự");
+        return "NghiViec";
+    }
+    
+    @GetMapping({"/TatCa"})
+    public String tatca(ModelMap modelMap) {
+        modelMap.put("title", "HTC OFFICE 3");
+        modelMap.put("titleTable", "Danh sách nhân sự");
+        return "TatCa";
+    }
+    
+    
     
     @GetMapping({"/loaihopdongAll"})
     public String loaihopdong(ModelMap modelMap) {
@@ -46,12 +61,7 @@ public class NhanSuController {
         return "loaihopdongAll";
     }
     
-    @GetMapping({"/createHopDong"})
-    public String Createhopdong(ModelMap modelMap) {
-        modelMap.put("title", "HTC OFFICE 3");
-        modelMap.put("titleTable", "Tạo mới hợp đồng");
-        return "createHopDong";
-    }
+    
     
     @GetMapping({"/baocaodataoAll"})
     public String baocaodatao(ModelMap modelMap) {
@@ -81,6 +91,48 @@ public class NhanSuController {
         return "kydanhgiaAll";
     }
     
+//    Create
     
+    @GetMapping({"/createHoSoNhanSu"})
+    public String CreateHoSoNhanSu(ModelMap modelMap) {
+        modelMap.put("title", "HTC OFFICE 3");
+        modelMap.put("titleTable", "Tạo mới hồ sơ nhân sự");
+        return "createHoSoNhanSu";
+    }
+    
+    @GetMapping({"/createHopDong"})
+    public String Createhopdong(ModelMap modelMap) {
+        modelMap.put("title", "HTC OFFICE 3");
+        modelMap.put("titleTable", "Tạo mới hồ sơ nhân sự");
+        return "createHopDong";
+    }
+    
+    @GetMapping({"/createBaoHiem"})
+    public String CreateBaoHiem(ModelMap modelMap) {
+        modelMap.put("title", "HTC OFFICE 3");
+        modelMap.put("titleTable", "Tạo mới hồ sơ nhân sự");
+        return "createBaoHiem";
+    }
+    
+    @GetMapping({"/createTiepNhan"})
+    public String Createtiepnhan(ModelMap modelMap) {
+        modelMap.put("title", "HTC OFFICE 3");
+        modelMap.put("titleTable", "Tạo mới hồ sơ nhân sự");
+        return "createTiepNhan";
+    }
+    
+    @GetMapping({"/createThoiViec"})
+    public String Createthoiviec(ModelMap modelMap) {
+        modelMap.put("title", "HTC OFFICE 3");
+        modelMap.put("titleTable", "Tạo mới hồ sơ nhân sự");
+        return "createThoiViec";
+    }
+    
+    @GetMapping({"/createDinhKem"})
+    public String Createdinhkem(ModelMap modelMap) {
+        modelMap.put("title", "HTC OFFICE 3");
+        modelMap.put("titleTable", "Tạo mới hồ sơ nhân sự");
+        return "createDinhKem";
+    }
     
 }

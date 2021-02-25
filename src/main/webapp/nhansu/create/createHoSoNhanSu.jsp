@@ -1,4 +1,5 @@
 <%@page contentType="text/html; charset=utf-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <style>
 	#tong{
 		width: 630px;
@@ -69,74 +70,69 @@
     #search{
     	position: absolute;
     	z-index: 1;
-    	 top: 59.5%;
+    	 top: 58%;
     	 margin-left: 590px
     }
     #search1{
     	position: absolute;
     	z-index: 1;
-    	 top: 70%;
+    	 top: 68.5%;
     	 margin-left: 590px
     }
     #search2{
     	position: absolute;
     	z-index: 1;
-    	 top: 90%;
+    	 top: 88.5%;
     	 margin-left: 590px
     }
      #search3{
     	position: absolute;
     	z-index: 1;
-    	 top: 100.4%;
+    	 top: 99%;
     	 margin-left: 276px
     }
 </style>
 
 <div id="tong">
-	<nav class=" navbar-expand-lg" style="padding-top: 0px;padding-bottom: 0px;margin-top: 0px;">
-	    
-	        
-	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-	            <ul class="nav navbar-nav mr-auto">
-	                <li class="nav-item active" >
-	                    <a class="nav-link" href="#" style="border-bottom: 4px solid #6495ED;" >Thông tin chung</a>
-	                </li>
-	                <li class="nav-item">
-	                    <a class="nav-link" href="#">Hợp đồng</a>
-	                </li>
-	                <li class="nav-item">
-	                    <a class="nav-link" href="#">Bảo hiểm</a>
-	                </li>
-	                <li class="nav-item">
-	                    <a class="nav-link" href="#">Tiếp nhận</a>
-	                </li>
-	                <li class="nav-item">
-	                    <a class="nav-link" href="#">Thôi việc</a>
-	                </li>
-	                <li class="nav-item">
-	                    <a class="nav-link" href="#">Đính kèm</a>
-	                </li>
-	                
-	            </ul>
-	        </div>
-	        <hr style="width: 1190px">
-	        
-	    
-	</nav>
+<nav class=" navbar-expand-lg navbar-light bg-light" style="padding-top: 0px;padding-bottom: 0px;margin-top: 0px;">
+    <div class="container-fluid" > 
+		<div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: left">
+            <ul class="nav navbar-nav mr-auto">
+                <li class="nav-item active">
+                	
+                    <a class="nav-link" href="<c:url value='/createHoSoNhanSu'/>" style="border-bottom: 4px solid #6495ED;color:#6495ED">Thông tin chung</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<c:url value='/createHopDong'/>">Hợp đồng</a>	
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<c:url value='/createBaoHiem'/>" >Bảo hiểm</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<c:url value='/createTiepNhan'/>">Tiếp nhận</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<c:url value='/createThoiViec'/>">Thôi việc</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<c:url value='/createDinhKem'/>">Đính kèm</a>
+                </li>
+                
+            </ul>
+        </div>
+	</div>
+</nav>
 
 	<!-- Thông tin cá nhân -->
-	<nav class=" navbar-expand-lg navbar-light bg-light" style=" padding-top: 0px;padding-bottom: 0px;margin-top: 0px;">
+	<nav class=" navbar-expand-lg navbar-light bg-light" style=" padding-top: 0px;padding-bottom: 0px;margin-top: 0px;clear: both;">
 	 	<div class="container-fluid" >   
-			<div  class="collapse navbar-collapse" id="navbarSupportedContent">
-
-				
-					<div  >
+	 	<hr style="width: 1180px;">
+			<div  class="collapse navbar-collapse" id="navbarSupportedContent">		
+					<div>
 						<i class="mdi mdi-chevron-down" style="display: inline;border:none;" ></i>
 						<p style="display: inline;color:#6495ED" >Thông tin cá nhân</p>
 						<hr style="width: 610px">
 					</div>
-				
-
 			</div>
 		</div>
 	</nav>
@@ -202,6 +198,11 @@
 	  <div style="margin-top: 10px">
 	  	  <label for="validationServer013">Nơi cấp</label>
 	      <input type="text" class="form-control is-valid" id="input2"  placeholder="dd/mm/yyyy"><i id="search2" class="mdi mdi-magnify"></i> </input>
+	  </div>
+	  
+	  <div style="padding-top:200px;width:1190px;display:block;bottom: 0px;position: fixed;margin-left:0px;background:#F5F5F5;color:white; border: none; padding: 15px 32px; text-decoration: none; display: inline-block; font-size: 16px;">
+				<button style="background: #4169E1;color: white;border-radius:3px">Cập nhật</button>
+				<button style="background: white;color: black;border-radius:3px;margin-left: 10px;border: 1px solid #4169E1;width: 87.55px">Hủy bỏ</button>
 	  </div>
 	  
 	 <div id="row2">
@@ -308,7 +309,7 @@
 	 
 	</nav>
 	
-	<i class="mdi mdi-plus-circle-outline"  style="margin-left: 10px;font-size :40px;color:#6495ED""></i>
+	<i class="mdi mdi-plus-circle-outline"  style="margin-left: 10px;font-size :40px;color:#6495ED"></i>
 	
 	<!-- Trình độ học vấn -->
 	
@@ -427,7 +428,7 @@
 	 
 	</nav>
 	
-	<i class="mdi mdi-plus-circle-outline"  style="margin-left: 10px;font-size :40px;color:#6495ED""></i>
+	<i class="mdi mdi-plus-circle-outline"  style="margin-left: 10px;font-size :40px;color:#6495ED"></i>
 	
 	<!-- Chọn ảnh -->
 	
@@ -444,7 +445,7 @@
 	
 	<p style="margin-top: 10px;margin-left: 10px">Ghi chú</p>
 	
-	<div >
+	<div style="margin-bottom:100px">
 	      <input type="text" class="form-control is-valid"  style="width: 600px;margin-left: 10px" placeholder="Nhập ghi chú">
 	</div>
 

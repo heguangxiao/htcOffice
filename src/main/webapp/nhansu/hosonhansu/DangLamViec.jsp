@@ -1,4 +1,5 @@
 <%@page contentType="text/html; charset=utf-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <style>
     tbody {
         display:block;
@@ -23,25 +24,89 @@
     tr .active {
         width: 5%;
     }
+    #hover-email:hover{
+    background: #DCDCDC	
+    }
 </style>
-<nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-top: 0px;padding-bottom: 0px;margin-top: 0px;">
+<nav class=" navbar-expand-lg navbar-light bg-light" style="padding-top: 0px;padding-bottom: 0px;margin-top: 0px;">
     <div class="container-fluid" >     
         <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-align-justify"></i>
         </button>
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: left">
             <ul class="nav navbar-nav mr-auto">
+            	<li class="nav-item" style="margin-top: 7.5px">
+                    <i class="mdi mdi-tune-vertical"></i>
+                </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Đang làm việc</a>
+                	
+                    <a class="nav-link" href="<c:url value='/DangLamViec'/>" style="border-bottom: 4px solid #6495ED;color:#6495ED">Đang làm việc</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Nghỉ thai sản</a>
+                    <a class="nav-link" href="<c:url value='/NghiThaiSan'/>">Nghỉ thai sản</a>	
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Nghỉ việc</a>
+                    <a class="nav-link" href="<c:url value='/NghiViec'/>" >Nghỉ việc</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Tất cả</a>
+                    <a class="nav-link" href="<c:url value='/TatCa'/>">Tất cả</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: right">
+            <ul class="nav navbar-nav mr-auto" style="text-align: center;">
+            	
+                <li class="nav-item active" >	               	     
+                	<div data-toggle="dropdown">
+						<i class="mdi mdi-tag-outline"></i>
+						<p style="font-size: 12px; margin-bottom: 0px">Nhãn</p>
+					</div>
+					<div class="dropdown-menu">
+						<button style="background: #6495ED;color: white" class="dropdown-item">Lọc theo nhãn đã chọn</button> 
+							
+					</div>
+                </li>
+                <li class="nav-item" style="margin-left: 10px">
+                	<i class="mdi mdi-lan"></i>
+                    <p style="font-size: 12px;margin-bottom: 0px">Phòng ban</p>
+                </li>
+                <li class="nav-item" style="margin-left: 10px">
+                    <div data-toggle="dropdown">
+						<i class="mdi mdi-email"></i>
+						<p style="font-size: 12px; margin-bottom: 0px">Email/Sms+</p>
+					</div>
+					<div class="dropdown-menu">
+						<button id="hover-email" class="dropdown-item">Gửi email</button> 
+							
+					</div>
+                </li>
+                <li class="nav-item" style="margin-left: 10px">
+                	<div data-toggle="dropdown">
+						<i class="mdi mdi-export"></i>
+						<p style="font-size: 12px; margin-bottom: 0px">Export</p>
+					</div>
+					<div class="dropdown-menu">
+						<button id="hover-email" class="dropdown-item">Xuất tất cả </button> 
+						<button id="hover-email" class="dropdown-item">Tùy chọn cột </button> 
+							
+					</div>
+                </li>
+                <li class="nav-item" style="margin-left: 10px">
+                    <div data-toggle="dropdown">
+						<i class="mdi mdi-exit-to-app"></i>
+						<p style="font-size: 12px; margin-bottom: 0px">Import</p>
+					</div>
+					<div class="dropdown-menu">
+						<button id="hover-email" class="dropdown-item">Import hồ sơ nhân sự </button> 
+						<button id="hover-email" class="dropdown-item">Xem lịch sử import hồ sơ nhân sự </button> 
+							
+					</div>
+                </li>
+                <li class="nav-item" style="margin-left: 10px">
+                    <i class="mdi mdi-settings"></i>
+                    <p style="font-size: 12px;margin-bottom: 0px">Cài đặt</p>
                 </li>
                 
             </ul>
@@ -52,7 +117,7 @@
 
 <div class="scrollDiv">
     <table class="table table-hover table-striped ">
-        <thead>
+        <thead style="text-align: center;">
             <tr>
                 <th class="active">
                     <input type="checkbox" class="select-all checkbox" name="select-all" />
@@ -70,7 +135,7 @@
                
             </tr>
         </thead>
-        <tbody>
+        <tbody style="text-align: center;">
             <tr>
                 <td class="active">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
@@ -1030,6 +1095,14 @@
 	                <td class="ngaysinh">2004</td>
 	                <td class="gioitinh">nữ</td>
 	                <td class="ngaytaotaikhoan1office">5 năm trước</td>
+            </tr>
+            <tr>
+            <td class="active" >
+                     <p style="text-align: right;margin-bottom: 0px;margin-right: 100px" >1 - 1 trong số 1<h9 style="margin-left:20px"><</h9><h9 style="margin-left:20px">></h9></p>
+                     
+                     
+                </td>
+               
             </tr>
         </tbody>
     </table>

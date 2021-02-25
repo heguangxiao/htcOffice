@@ -16,7 +16,7 @@
             </a>
         </li>
         <li>
-            <a href="<c:url value='/hosonhansuAll'/>"  >
+            <a href="<c:url value='/DangLamViec'/>"  >
                 Hồ sơ nhân sự
             </a>
             

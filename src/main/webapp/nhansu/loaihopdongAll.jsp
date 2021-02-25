@@ -1,4 +1,5 @@
 <%@page contentType="text/html; charset=utf-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <style>
     tbody {
         display:block;
@@ -24,7 +25,7 @@
         width: 5%;
     }
 </style>
-<nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-top: 0px;padding-bottom: 0px;margin-top: 0px;">
+<nav class=" navbar-expand-lg navbar-light bg-light" style="padding-top: 0px;padding-bottom: 0px;margin-top: 0px;">
     <div class="container-fluid" >     
         <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-align-justify"></i>
@@ -55,7 +56,7 @@
 
 <div class="scrollDiv">
     <table class="table table-hover table-striped ">
-        <thead>
+        <thead style="text-align: center;">
             <tr>
                 <th class="active">
                     <input type="checkbox" class="select-all checkbox" name="select-all" />
@@ -73,12 +74,14 @@
                
             </tr>
         </thead>
-        <tbody>
-            <tr>
+        <tbody style="text-align: center;">
+            <tr >
                 <td class="active">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                    <td class="nguoitao">phan văn tùng</td>
+    				<td class="py-1">
+                        <img src="<c:url value='/images/faces-clipart/pic-3.png'/>" alt="image" />
+                    </td>
 	                <td class="mahoatdong">1</td>
 	                <td class="tennhansu">quản lý kho</td>
 	                <td class="phongban">nhân sự</td>
@@ -93,7 +96,9 @@
                 <td class="active">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
                 </td>
-               	    <td class="nguoitao">ưng hoàng phúc</td>
+               	    <td class="py-1">
+                        <img src="<c:url value='/images/faces-clipart/pic-3.png'/>" alt="image" />
+                    </td>
 	                <td class="mahoatdong">2</td>
 	                <td class="tennhansu">kế hoạch</td>
 	                <td class="phongban">quản lý</td>
@@ -108,7 +113,9 @@
                 <td class="active">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
                 </td>
-                	<td class="nguoitao">hồ quang hiếu</td>
+                	<td class="py-1">
+                        <img src="<c:url value='/images/faces-clipart/pic-3.png'/>" alt="image" />
+                    </td>
 	                <td class="mahoatdong">3</td>
 	                <td class="tennhansu">trưởng ban</td>
 	                <td class="phongban">toán</td>
@@ -123,7 +130,9 @@
                 <td class="active">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
                 </td>
-               	    <td class="nguoitao">4</td>
+               	    <td class="py-1">
+                        <img src="<c:url value='/images/faces-clipart/pic-3.png'/>" alt="image" />
+                    </td>
 	                <td class="mahoatdong">4</td>
 	                <td class="tennhansu">lê văn thịnh</td>
 	                <td class="phongban">toán</td>
@@ -138,7 +147,9 @@
                 <td class="active">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                	<td class="nguoitao">5</td>
+                	<td class="py-1">
+                        <img src="<c:url value='/images/faces-clipart/pic-3.png'/>" alt="image" />
+                    </td>
 	                <td class="mahoatdong">5</td>
 	                <td class="tennhansu">lê văn thịnh</td>
 	                <td class="phongban">toán</td>
@@ -153,7 +164,9 @@
                 <td class="active">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
                 </td>
-					<td class="nguoitao">6</td>
+					<td class="py-1">
+                        <img src="<c:url value='/images/faces-clipart/pic-3.png'/>" alt="image" />
+                    </td>
 	                <td class="mahoatdong">6</td>
 	                <td class="tennhansu">lê văn thịnh</td>
 	                <td class="phongban">toán</td>
@@ -168,7 +181,9 @@
                 <td class="active">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
                 </td>
-                	<td class="nguoitao">7</td>
+                	<td class="py-1">
+                        <img src="<c:url value='/images/faces-clipart/pic-3.png'/>" alt="image" />
+                    </td>
 	                <td class="mahoatdong">7</td>
 	                <td class="tennhansu">lê văn thịnh</td>
 	                <td class="phongban">toán</td>
@@ -183,7 +198,9 @@
                 <td class="active">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
                 </td>
-                	<td class="nguoitao">8</td>
+                	<td class="py-1">
+                        <img src="<c:url value='/images/faces-clipart/pic-3.png'/>" alt="image" />
+                    </td>
 	                <td class="mahoatdong">8</td>
 	                <td class="tennhansu">lê văn thịnh</td>
 	                <td class="phongban">toán</td>
@@ -198,7 +215,9 @@
                 <td class="active">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-               		<td class="nguoitao">9</td>
+               		<td class="py-1">
+                        <img src="<c:url value='/images/faces-clipart/pic-3.png'/>" alt="image" />
+                    </td>
 	                <td class="mahoatdong">9</td>
 	                <td class="tennhansu">lê văn thịnh</td>
 	                <td class="phongban">toán</td>
@@ -213,7 +232,9 @@
                 <td class="active">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
                 </td>
-               		<td class="nguoitao">10</td>
+               		<td class="py-1">
+                        <img src="<c:url value='/images/faces-clipart/pic-3.png'/>" alt="image" />
+                    </td>
 	                <td class="mahoatdong">10</td>
 	                <td class="tennhansu">lê văn thịnh</td>
 	                <td class="phongban">toán</td>
@@ -224,816 +245,7 @@
 	                <td class="trangthai">nam</td>
 	                <td class="ngaytao">2 năm trước</td>
             </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
-                </td>
-               		<td class="nguoitao">11</td>
-	                <td class="mahoatdong">11</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
-                </td>
-               		<td class="nguoitao">12</td>
-	                <td class="mahoatdong">12</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-               		<td class="nguoitao">13</td>
-	                <td class="mahoatdong">13</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-               		<td class="nguoitao">14</td>
-	                <td class="mahoatdong">14</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
-                </td>
-               		<td class="nguoitao">15</td>
-	                <td class="mahoatdong">15</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
-                </td>
-               		<td class="nguoitao">16</td>
-	                <td class="mahoatdong">16</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-               		<td class="nguoitao">17</td>
-	                <td class="mahoatdong">17</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-               		<td class="nguoitao">18</td>
-	                <td class="mahoatdong">18</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
-                </td>
-               		<td class="nguoitao">19</td>
-	                <td class="mahoatdong">19</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
-                </td>
-               		<td class="nguoitao">20</td>
-	                <td class="mahoatdong">20</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-               		<td class="nguoitao">21</td>
-	                <td class="mahoatdong">21</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-               		<td class="nguoitao">22</td>
-	                <td class="mahoatdong">22</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
-                </td>
-               		<td class="nguoitao">23</td>
-	                <td class="mahoatdong">23</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
-                </td>
-               		<td class="nguoitao">24</td>
-	                <td class="mahoatdong">24</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-               		<td class="nguoitao">25</td>
-	                <td class="mahoatdong">25</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-               		<td class="nguoitao">26</td>
-	                <td class="mahoatdong">26</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
-                </td>
-               		<td class="nguoitao">27</td>
-	                <td class="mahoatdong">27</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
-                </td>
-               		<td class="nguoitao">28</td>
-	                <td class="mahoatdong">28</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-               		<td class="nguoitao">29</td>
-	                <td class="mahoatdong">29</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-               		<td class="nguoitao">30</td>
-	                <td class="mahoatdong">30</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
-                </td>
-               		<td class="nguoitao">31</td>
-	                <td class="mahoatdong">31</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
-                </td>
-               		<td class="nguoitao">32</td>
-	                <td class="mahoatdong">32</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-               		<td class="nguoitao">33</td>
-	                <td class="mahoatdong">33</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-               		<td class="nguoitao">34</td>
-	                <td class="mahoatdong">34</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
-                </td>
-               		<td class="nguoitao">35</td>
-	                <td class="mahoatdong">35</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
-                </td>
-               		<td class="nguoitao">36</td>
-	                <td class="mahoatdong">36</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-               		<td class="nguoitao">37</td>
-	                <td class="mahoatdong">37</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-               		<td class="nguoitao">38</td>
-	                <td class="mahoatdong">38</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
-                </td>
-               		<td class="nguoitao">39</td>
-	                <td class="mahoatdong">39</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
-                </td>
-               		<td class="nguoitao">40</td>
-	                <td class="mahoatdong">40</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-               		<td class="nguoitao">41</td>
-	                <td class="mahoatdong">41</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-               		<td class="nguoitao">42</td>
-	                <td class="mahoatdong">42</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
-                </td>
-               		<td class="nguoitao">43</td>
-	                <td class="mahoatdong">43</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
-                </td>
-               		<td class="nguoitao">44</td>
-	                <td class="mahoatdong">44</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-               		<td class="nguoitao">45</td>
-	                <td class="mahoatdong">45</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-               		<td class="nguoitao">46</td>
-	                <td class="mahoatdong">46</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
-                </td>
-               		<td class="nguoitao">47</td>
-	                <td class="mahoatdong">47</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
-                </td>
-               		<td class="nguoitao">48</td>
-	                <td class="mahoatdong">48</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-               		<td class="nguoitao">49</td>
-	                <td class="mahoatdong">49</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-               		<td class="nguoitao">50</td>
-	                <td class="mahoatdong">50</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
-                </td>
-               		<td class="nguoitao">51</td>
-	                <td class="mahoatdong">51</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
-                </td>
-               		<td class="nguoitao">52</td>
-	                <td class="mahoatdong">52</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-               		<td class="nguoitao">53</td>
-	                <td class="mahoatdong">53</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-               		<td class="nguoitao">54</td>
-	                <td class="mahoatdong">54</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
-                </td>
-               		<td class="nguoitao">55</td>
-	                <td class="mahoatdong">55</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
-                </td>
-               		<td class="nguoitao">56</td>
-	                <td class="mahoatdong">56</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-               		<td class="nguoitao">57</td>
-	                <td class="mahoatdong">57</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-               		<td class="nguoitao">58</td>
-	                <td class="mahoatdong">58</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
-                </td>
-               		<td class="nguoitao">59</td>
-	                <td class="mahoatdong">59</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
-                </td>
-               		<td class="nguoitao">60</td>
-	                <td class="mahoatdong">60</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-               		<td class="nguoitao">61</td>
-	                <td class="mahoatdong">61</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-               		<td class="nguoitao">62</td>
-	                <td class="mahoatdong">62</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
-                </td>
-               		<td class="nguoitao">63</td>
-	                <td class="mahoatdong">63</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
-                </td>
-               		<td class="nguoitao">64</td>
-	                <td class="mahoatdong">64</td>
-	                <td class="tennhansu">đỗ đức dục</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">16/09/1999</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">hoạt động</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
+           
         </tbody>
     </table>
     <!--<button id="select-all" class="btn button-default">SelectAll/Cancel</button>-->

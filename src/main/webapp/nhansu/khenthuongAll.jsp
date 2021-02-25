@@ -24,7 +24,7 @@
         width: 5%;
     }
 </style>
-<nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-top: 0px;padding-bottom: 0px;margin-top: 0px;">
+<nav class=" navbar-expand-lg navbar-light bg-light" style="padding-top: 0px;padding-bottom: 0px;margin-top: 0px;">
     <div class="container-fluid" >     
         <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-align-justify"></i>
@@ -51,7 +51,7 @@
     </div>
 </nav>
 <div class="scrollDiv">
-    Không tìm thấy kết quả nào
+   <p> Không tìm thấy kết quả nào</p>
     <!--<button id="select-all" class="btn button-default">SelectAll/Cancel</button>-->
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="menu">
         <a class="dropdown-item" href="#">Action</a>
