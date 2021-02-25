@@ -5,12 +5,12 @@
  */
 package vn.htc.office.repository;
 
-import vn.htc.office.model.Account;
+import vn.htc.office.model.Department;
 
 /**
  *
  * @author HTC-PC
  */
-public interface AccountRepository extends BaseRepository<Account> {
-    Account findByUsernameAndPassword(String username, String password);
+public interface DepartmentRepository extends BaseRepository<Department>{
+    
 }

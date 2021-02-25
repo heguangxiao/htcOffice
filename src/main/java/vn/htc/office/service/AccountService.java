@@ -14,4 +14,5 @@ import vn.htc.office.model.Account;
  */
 public interface AccountService extends BaseService<Account> {    
     public Account getAccountLogin(HttpServletRequest request);
+    Account findByUsernameAndPassword(String username, String password);
 }

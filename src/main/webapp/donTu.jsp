@@ -1,8 +1,9 @@
 <%@page contentType="text/html; charset=utf-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <style>
     tbody {
         display:block;
-        height:78vh;
+        height:78.8vh;
         overflow:auto;
     }
     /* Hide scrollbar for Chrome, Safari and Opera */
@@ -23,531 +24,80 @@
     tr .active {
         width: 5%;
     }
+    .fontSize {
+        font-size: 11px;
+    }
 </style>
-<div class="scrollDiv">
-    <table class="table table-hover table-striped ">
+<div class="scrollDiv" style="">
+    <table id="example" class="table table-hover table-striped " style="margin: auto;">
         <thead>
             <tr>
-                <th class="active">
-                    <input type="checkbox" class="select-all checkbox" name="select-all" />
+                <th class="">
+                    <a class="btn" style="font-weight: bold;"><input type="checkbox" class="select-all checkbox" name="select-all" /></a>
                 </th>
-                <th class="success">Name</th>
-                <th class="warning">Gender</th>
-                <th class="danger">Age</th>
+                <th class=""><a class="btn">Người tạo</a></th>
+                <th class=""><a class="btn">Mã NV</a></th>
+                <th class=""><a class="btn">Họ và tên</a></th>
+                <th class=""><a class="btn">Trạng thái</a></th>
+                <th class=""><a class="btn">Lý do</a></th>
+                <th class=""><a class="btn">Ngày bắt đầu</a></th>
+                <th class=""><a class="btn">Ngày kết thúc</a></th>
+                <th class=""><a class="btn">Phòng ban</a></th>
+                <th class=""><a class="btn">Vị trí</a></th>
+                <th class=""><a class="btn">Ngày tạo</a></th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                <td class="">
+                    <a class="btn fontSize"><input type="checkbox" class="select-item checkbox" name="select-item" value="1000" /></a>
                 </td>
-                <td class="success">sudhi</td>
-                <td class="warning">boy</td>
-                <td class="danger">20</td>
+                <td class=""><a class="btn fontSize"><img src="<c:url value='/resources/img/icon.png'/>" style="width: 20px;margin: 0 0 0 30px;padding: 0 0 0 0;border-radius: 50%;"/></a></td>
+                <td class=""><a class="btn fontSize">NV21</a></td>
+                <td class=""><a class="btn fontSize">Hà Quang Hiếu</a></td>
+                <td class="">
+                    <a class="btn btn-success fontSize" style="width: 100%;">Đã duyệt</a>
+                </td>
+                <td class=""><a class="btn fontSize">Làm việc tại nhà</a></td>
+                <td class=""><a class="btn fontSize">08:30, 06/02/2021</a></td>
+                <td class=""><a class="btn fontSize">12:00, 06/02/2021</a></td>
+                <td class=""><a class="btn fontSize">Phòng Kỹ thuật</a></td>
+                <td class=""><a class="btn fontSize">Lập trình viên</a></td>
+                <td class=""><a class="btn fontSize">06/02/2021</a></td>
             </tr>
             <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
+                <td class="">
+                    <a class="btn fontSize"><input type="checkbox" class="select-item checkbox" name="select-item" value="1000" /></a>
                 </td>
-                <td class="success">kiran</td>
-                <td class="warning">boy</td>
-                <td class="danger">21</td>
+                <td class=""><a class="btn fontSize"><img src="<c:url value='/resources/img/icon.png'/>" style="width: 20px;margin: 0 0 0 30px;padding: 0 0 0 0;border-radius: 50%;"/></a></td>
+                <td class=""><a class="btn fontSize">NV21</a></td>
+                <td class=""><a class="btn fontSize">Hà Quang Hiếu</a></td>
+                <td class="">
+                    <a class="btn btn-success fontSize" style="width: 100%;">Đã duyệt</a>
+                </td>
+                <td class=""><a class="btn fontSize">Làm việc tại nhà</a></td>
+                <td class=""><a class="btn fontSize">08:30, 06/02/2021</a></td>
+                <td class=""><a class="btn fontSize">12:00, 06/02/2021</a></td>
+                <td class=""><a class="btn fontSize">Phòng Kỹ thuật</a></td>
+                <td class=""><a class="btn fontSize">Lập trình viên</a></td>
+                <td class=""><a class="btn fontSize">06/02/2021</a></td>
             </tr>
             <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
+                <td class="">
+                    <a class="btn fontSize"><input type="checkbox" class="select-item checkbox" name="select-item" value="1000" /></a>
                 </td>
-                <td class="success">Prasanna</td>
-                <td class="warning">boy</td>
-                <td class="danger">22</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
+                <td class=""><a class="btn fontSize"><img src="<c:url value='/resources/img/icon.png'/>" style="width: 20px;margin: 0 0 0 30px;padding: 0 0 0 0;border-radius: 50%;"/></a></td>
+                <td class=""><a class="btn fontSize">NV21</a></td>
+                <td class=""><a class="btn fontSize">Hà Quang Hiếu</a></td>
+                <td class="">
+                    <a class="btn btn-success fontSize" style="width: 100%;">Đã duyệt</a>
                 </td>
-                <td class="success">shruthi </td>
-                <td class="warning">girl</td>
-                <td class="danger">23</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-                <td class="success">sudhi</td>
-                <td class="warning">boy</td>
-                <td class="danger">20</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-                <td class="success">kiran</td>
-                <td class="warning">boy</td>
-                <td class="danger">21</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
-                </td>
-                <td class="success">Prasanna</td>
-                <td class="warning">boy</td>
-                <td class="danger">22</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
-                </td>
-                <td class="success">shruthi </td>
-                <td class="warning">girl</td>
-                <td class="danger">23</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-                <td class="success">sudhi</td>
-                <td class="warning">boy</td>
-                <td class="danger">20</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-                <td class="success">kiran</td>
-                <td class="warning">boy</td>
-                <td class="danger">21</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
-                </td>
-                <td class="success">Prasanna</td>
-                <td class="warning">boy</td>
-                <td class="danger">22</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
-                </td>
-                <td class="success">shruthi </td>
-                <td class="warning">girl</td>
-                <td class="danger">23</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-                <td class="success">sudhi</td>
-                <td class="warning">boy</td>
-                <td class="danger">20</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-                <td class="success">kiran</td>
-                <td class="warning">boy</td>
-                <td class="danger">21</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
-                </td>
-                <td class="success">Prasanna</td>
-                <td class="warning">boy</td>
-                <td class="danger">22</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
-                </td>
-                <td class="success">shruthi </td>
-                <td class="warning">girl</td>
-                <td class="danger">23</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-                <td class="success">sudhi</td>
-                <td class="warning">boy</td>
-                <td class="danger">20</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-                <td class="success">kiran</td>
-                <td class="warning">boy</td>
-                <td class="danger">21</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
-                </td>
-                <td class="success">Prasanna</td>
-                <td class="warning">boy</td>
-                <td class="danger">22</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
-                </td>
-                <td class="success">shruthi </td>
-                <td class="warning">girl</td>
-                <td class="danger">23</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-                <td class="success">sudhi</td>
-                <td class="warning">boy</td>
-                <td class="danger">20</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-                <td class="success">kiran</td>
-                <td class="warning">boy</td>
-                <td class="danger">21</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
-                </td>
-                <td class="success">Prasanna</td>
-                <td class="warning">boy</td>
-                <td class="danger">22</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
-                </td>
-                <td class="success">shruthi </td>
-                <td class="warning">girl</td>
-                <td class="danger">23</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-                <td class="success">sudhi</td>
-                <td class="warning">boy</td>
-                <td class="danger">20</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-                <td class="success">kiran</td>
-                <td class="warning">boy</td>
-                <td class="danger">21</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
-                </td>
-                <td class="success">Prasanna</td>
-                <td class="warning">boy</td>
-                <td class="danger">22</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
-                </td>
-                <td class="success">shruthi </td>
-                <td class="warning">girl</td>
-                <td class="danger">23</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-                <td class="success">sudhi</td>
-                <td class="warning">boy</td>
-                <td class="danger">20</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-                <td class="success">kiran</td>
-                <td class="warning">boy</td>
-                <td class="danger">21</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
-                </td>
-                <td class="success">Prasanna</td>
-                <td class="warning">boy</td>
-                <td class="danger">22</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
-                </td>
-                <td class="success">shruthi </td>
-                <td class="warning">girl</td>
-                <td class="danger">23</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-                <td class="success">sudhi</td>
-                <td class="warning">boy</td>
-                <td class="danger">20</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-                <td class="success">kiran</td>
-                <td class="warning">boy</td>
-                <td class="danger">21</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
-                </td>
-                <td class="success">Prasanna</td>
-                <td class="warning">boy</td>
-                <td class="danger">22</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
-                </td>
-                <td class="success">shruthi </td>
-                <td class="warning">girl</td>
-                <td class="danger">23</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-                <td class="success">sudhi</td>
-                <td class="warning">boy</td>
-                <td class="danger">20</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-                <td class="success">kiran</td>
-                <td class="warning">boy</td>
-                <td class="danger">21</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
-                </td>
-                <td class="success">Prasanna</td>
-                <td class="warning">boy</td>
-                <td class="danger">22</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
-                </td>
-                <td class="success">shruthi </td>
-                <td class="warning">girl</td>
-                <td class="danger">23</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-                <td class="success">sudhi</td>
-                <td class="warning">boy</td>
-                <td class="danger">20</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-                <td class="success">kiran</td>
-                <td class="warning">boy</td>
-                <td class="danger">21</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
-                </td>
-                <td class="success">Prasanna</td>
-                <td class="warning">boy</td>
-                <td class="danger">22</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
-                </td>
-                <td class="success">shruthi </td>
-                <td class="warning">girl</td>
-                <td class="danger">23</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-                <td class="success">sudhi</td>
-                <td class="warning">boy</td>
-                <td class="danger">20</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-                <td class="success">kiran</td>
-                <td class="warning">boy</td>
-                <td class="danger">21</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
-                </td>
-                <td class="success">Prasanna</td>
-                <td class="warning">boy</td>
-                <td class="danger">22</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
-                </td>
-                <td class="success">shruthi </td>
-                <td class="warning">girl</td>
-                <td class="danger">23</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-                <td class="success">sudhi</td>
-                <td class="warning">boy</td>
-                <td class="danger">20</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-                <td class="success">kiran</td>
-                <td class="warning">boy</td>
-                <td class="danger">21</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
-                </td>
-                <td class="success">Prasanna</td>
-                <td class="warning">boy</td>
-                <td class="danger">22</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
-                </td>
-                <td class="success">shruthi </td>
-                <td class="warning">girl</td>
-                <td class="danger">23</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-                <td class="success">sudhi</td>
-                <td class="warning">boy</td>
-                <td class="danger">20</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-                <td class="success">kiran</td>
-                <td class="warning">boy</td>
-                <td class="danger">21</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
-                </td>
-                <td class="success">Prasanna</td>
-                <td class="warning">boy</td>
-                <td class="danger">22</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
-                </td>
-                <td class="success">shruthi </td>
-                <td class="warning">girl</td>
-                <td class="danger">23</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-                <td class="success">sudhi</td>
-                <td class="warning">boy</td>
-                <td class="danger">20</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-                <td class="success">kiran</td>
-                <td class="warning">boy</td>
-                <td class="danger">21</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
-                </td>
-                <td class="success">Prasanna</td>
-                <td class="warning">boy</td>
-                <td class="danger">22</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
-                </td>
-                <td class="success">shruthi </td>
-                <td class="warning">girl</td>
-                <td class="danger">23</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-                <td class="success">sudhi</td>
-                <td class="warning">boy</td>
-                <td class="danger">20</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-                <td class="success">kiran</td>
-                <td class="warning">boy</td>
-                <td class="danger">21</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
-                </td>
-                <td class="success">Prasanna</td>
-                <td class="warning">boy</td>
-                <td class="danger">22</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
-                </td>
-                <td class="success">shruthi </td>
-                <td class="warning">girl</td>
-                <td class="danger">23</td>
+                <td class=""><a class="btn fontSize">Làm việc tại nhà</a></td>
+                <td class=""><a class="btn fontSize">08:30, 06/02/2021</a></td>
+                <td class=""><a class="btn fontSize">12:00, 06/02/2021</a></td>
+                <td class=""><a class="btn fontSize">Phòng Kỹ thuật</a></td>
+                <td class=""><a class="btn fontSize">Lập trình viên</a></td>
+                <td class=""><a class="btn fontSize">06/02/2021</a></td>
             </tr>
         </tbody>
     </table>
@@ -589,6 +139,9 @@
 
 </div>
 <script>
+//    $(document).ready(function () {
+//        $('#example').DataTable();
+//    });
     $(function () {
         //button select all or cancel
         $("#select-all").click(function () {

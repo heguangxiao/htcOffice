@@ -3,6 +3,7 @@
 <link href="<c:url value='/resources/bootstrap/css/bootstrap.min.css'/>" rel="stylesheet"/>
 <link href="<c:url value='/resources/css/common.css'/>" rel="stylesheet"/>
 <link href="<c:url value='/resources/css/style.css'/>" rel="stylesheet"/>
+<link href="<c:url value='/resources/css/dataTables.bootstrap4.min.css'/>" rel="stylesheet"/>
 <style>
     .navbar-default:hover .navbar-nav>.active:not(:hover) > a {
         border-top-color: transparent;
@@ -63,3 +64,6 @@
 <script src="<c:url value='/resources/popper/dist/umd/popper.min.js'/>"></script>
 <script src="<c:url value='/resources/bootstrap/js/bootstrap.min.js'/>"></script>
 <script src="<c:url value='/resources/js/select2.min.js'/>"></script>
+<script src="<c:url value='/resources/js/jquery.dataTables.min.js'/>"></script>
+<script src="<c:url value='/resources/js/dataTables.bootstrap4.min.js'/>"></script>
+<script src="<c:url value='/resources/angularjs/angular.min.js'/>"></script>

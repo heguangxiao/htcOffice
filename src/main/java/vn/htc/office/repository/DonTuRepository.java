@@ -5,12 +5,12 @@
  */
 package vn.htc.office.repository;
 
-import vn.htc.office.model.Account;
+import vn.htc.office.model.DonTu;
 
 /**
  *
  * @author HTC-PC
  */
-public interface AccountRepository extends BaseRepository<Account> {
-    Account findByUsernameAndPassword(String username, String password);
+public interface DonTuRepository extends BaseRepository<DonTu>{
+    
 }

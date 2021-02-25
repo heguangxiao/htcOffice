@@ -13,6 +13,24 @@ import java.util.List;
  */
 public class Tool {
 
+    public static void out(String input) {
+        String fullClassName = Thread.currentThread().getStackTrace()[2].getClassName();
+        String className = fullClassName.substring(fullClassName.lastIndexOf(".") + 1);
+        int lineNumber = Thread.currentThread().getStackTrace()[2].getLineNumber();
+        if (true) {
+            System.out.println("Tool.debug: " + className + ".class:[d" + lineNumber + "] " + input);
+        }
+    }
+
+    public static void out(int input) {
+        String fullClassName = Thread.currentThread().getStackTrace()[2].getClassName();
+        String className = fullClassName.substring(fullClassName.lastIndexOf(".") + 1);
+        int lineNumber = Thread.currentThread().getStackTrace()[2].getLineNumber();
+        if (true) {
+            System.out.println("Tool.debug: " + className + ".class:[d" + lineNumber + "] " + input);
+        }
+    }
+
     public static String showError(String functionName, String className, String messageError) {
         String result = "";
         if (Tool.checkNull(functionName)) {

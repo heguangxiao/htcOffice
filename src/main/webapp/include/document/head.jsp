@@ -40,6 +40,12 @@
     .dropdown:hover .dropdown-content {display: block;}
 
     .dropdown:hover .dropbtn {background-color: #DC3545;}
+
+    .modal-dialog {
+        position: relative;
+        margin: 0 auto;
+        top: 25%;
+    }
 </style>
 
 <script src="<c:url value='/resources/js/solid.js'/>"></script>

@@ -11,7 +11,7 @@
 
     <ul class="list-unstyled components">
         <li>            
-            <a href="#">
+            <a href="<c:url value='/donTu'/>">
                 <i class="fas fa-file-alt" style="margin: 0 15px 0 15px; width: 20px;"></i>Tất cả đơn từ
             </a>
         </li>

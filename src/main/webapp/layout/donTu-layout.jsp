@@ -11,7 +11,7 @@
         <tiles:insertAttribute name="head" />
     </head>
     <body>
-        <div class="container-fluid" style="padding: 0 0 0 0;">
+        <div class="container-fluid" style="padding: 0 0 0 0; width: 100%">
             <div class="wrapper">
                 <tiles:insertAttribute name="left" />
 

@@ -54,6 +54,9 @@ public class WebConfig extends WebMvcConfigurerAdapter {
         registry.addResourceHandler("/resources/popper/**")
                 .addResourceLocations("classpath:/META-INF/resources/webjars/popper.js/1.11.1/")
                 .setCacheControl(CacheControl.maxAge(1, TimeUnit.SECONDS).cachePublic());
+        registry.addResourceHandler("/resources/angularjs/**")
+                .addResourceLocations("classpath:/META-INF/resources/webjars/angularjs/1.8.0/")
+                .setCacheControl(CacheControl.maxAge(1, TimeUnit.SECONDS).cachePublic());
         registry.addResourceHandler("/resources/css/**").addResourceLocations("classpath:/static/css/");
         registry.addResourceHandler("/resources/js/**").addResourceLocations("classpath:/static/js/");
         registry.addResourceHandler("/resources/img/**").addResourceLocations("classpath:/static/img/");

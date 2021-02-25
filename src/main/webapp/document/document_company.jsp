@@ -31,7 +31,7 @@
                 <th class="active">
                     <input type="checkbox" class="select-all checkbox" name="select-all" />
                 </th>
-                <th class="success">Loại(của công ty)</th>
+                <th class="success">Loại</th>
                 <th class="warning">Người tạo</th>
                 <th class="danger">Tên thư mục</th>
                 <th class="danger">Kích thước </th>
@@ -44,7 +44,7 @@
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
                 <td class="success">sudhi</td>
-                <td class="warning">boy</td>
+                <td class="warning"><img src="/images/faces-clipart/pic-1.png" alt="image"></td>
                 <td class="danger">20</td>
                 <td class="danger">awsome</td>
                 <td class="danger">cool</td>
@@ -54,7 +54,7 @@
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
                 <td class="success">sudhi</td>
-                <td class="warning">boy</td>
+                <td class="warning"><img src="/images/faces-clipart/pic-2.png" alt="image"></td>
                 <td class="danger">20</td>
                 <td class="danger">awsome</td>
                 <td class="danger">cool</td>
@@ -64,7 +64,7 @@
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
                 <td class="success">sudhi</td>
-                <td class="warning">boy</td>
+                <td class="warning"><img src="/images/faces-clipart/pic-3.png" alt="image"></td>
                 <td class="danger">20</td>
                 <td class="danger">awsome</td>
                 <td class="danger">cool</td>
@@ -74,7 +74,7 @@
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
                 <td class="success">sudhi</td>
-                <td class="warning">boy</td>
+                <td class="warning"><img src="/images/faces-clipart/pic-4.png" alt="image"></td>
                 <td class="danger">20</td>
                 <td class="danger">awsome</td>
                 <td class="danger">cool</td>
@@ -84,7 +84,7 @@
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
                 <td class="success">sudhi</td>
-                <td class="warning">boy</td>
+                <td class="warning"><img src="/images/faces-clipart/pic-4.png" alt="image"></td>
                 <td class="danger">20</td>
                 <td class="danger">awsome</td>
                 <td class="danger">cool</td>
@@ -94,7 +94,7 @@
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
                 <td class="success">sudhi</td>
-                <td class="warning">boy</td>
+                <td class="warning"><img src="/images/faces-clipart/pic-1.png" alt="image"></td>
                 <td class="danger">20</td>
                 <td class="danger">awsome</td>
                 <td class="danger">cool</td>
@@ -104,7 +104,7 @@
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
                 <td class="success">sudhi</td>
-                <td class="warning">boy</td>
+                <td class="warning"><img src="/images/faces-clipart/pic-2.png" alt="image"></td>
                 <td class="danger">20</td>
                 <td class="danger">awsome</td>
                 <td class="danger">cool</td>
@@ -114,7 +114,7 @@
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
                 <td class="success">sudhi</td>
-                <td class="warning">boy</td>
+                <td class="warning"><img src="/images/faces-clipart/pic-3.png" alt="image"></td>
                 <td class="danger">20</td>
                 <td class="danger">awsome</td>
                 <td class="danger">cool</td>

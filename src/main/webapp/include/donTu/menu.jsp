@@ -46,7 +46,7 @@
             </div>
         </li>
     </ul>
-    <form class="form-inline mr-4" action="<c:url value='/'/>">
+    <form class="form-inline mr-4" action="<c:url value='/donTu'/>">
         <div class="row no-gutters" >
             <div class="col">
                 <input class="form-control border-secondary border-right-0 rounded-0 " type="text" name="search" value="" placeholder="search" id="example-search-input4">

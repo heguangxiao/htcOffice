@@ -33,7 +33,7 @@ public class AuthenticationFillter implements Filter {
     String GUI_SessionExpire_URI = "/sessionExpire";
     String[] SPECIAL_PATH = {GUILoginURI, GUI_SessionExpire_URI,
         "/css", "/fonts", "/images", "/js", "/scss", "/vendors",
-        "/resources/bootstrap", "/resources/jquery", "/resources/popper", "/resources/css", "/resources/js"};
+        "/resources/bootstrap", "/resources/jquery", "/resources/popper", "/resources/css", "/resources/js", "/resources/angularjs"};
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {

@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package vn.htc.office.repository;
+package vn.htc.office.service;
 
-import vn.htc.office.model.Account;
+import vn.htc.office.model.Location;
 
 /**
  *
  * @author HTC-PC
  */
-public interface AccountRepository extends BaseRepository<Account> {
-    Account findByUsernameAndPassword(String username, String password);
+public interface LocationService extends BaseService<Location>{
+    
 }

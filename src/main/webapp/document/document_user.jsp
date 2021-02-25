@@ -44,7 +44,7 @@
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
                 <td class="success">sudhi</td>
-                <td class="warning">boy</td>
+                <td class="warning"><img src="/images/faces-clipart/pic-1.png" alt="image"></td>
                 <td class="danger">20</td>
                 <td class="danger">awsome</td>
                 <td class="danger">cool</td>
@@ -54,7 +54,7 @@
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
                 <td class="success">sudhi</td>
-                <td class="warning">boy</td>
+                <td class="warning"><img src="/images/faces-clipart/pic-2.png" alt="image"></td>
                 <td class="danger">20</td>
                 <td class="danger">awsome</td>
                 <td class="danger">cool</td>
@@ -64,7 +64,7 @@
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
                 <td class="success">sudhi</td>
-                <td class="warning">boy</td>
+                <td class="warning"><img src="/images/faces-clipart/pic-3.png" alt="image"></td>
                 <td class="danger">20</td>
                 <td class="danger">awsome</td>
                 <td class="danger">cool</td>
@@ -74,7 +74,7 @@
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
                 <td class="success">sudhi</td>
-                <td class="warning">boy</td>
+                <td class="warning"><img src="/images/faces-clipart/pic-4.png" alt="image"></td>
                 <td class="danger">20</td>
                 <td class="danger">awsome</td>
                 <td class="danger">cool</td>
@@ -84,7 +84,7 @@
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
                 <td class="success">sudhi</td>
-                <td class="warning">boy</td>
+                <td class="warning"><img src="/images/faces-clipart/pic-4.png" alt="image"></td>
                 <td class="danger">20</td>
                 <td class="danger">awsome</td>
                 <td class="danger">cool</td>
@@ -94,7 +94,7 @@
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
                 <td class="success">sudhi</td>
-                <td class="warning">boy</td>
+                <td class="warning"><img src="/images/faces-clipart/pic-1.png" alt="image"></td>
                 <td class="danger">20</td>
                 <td class="danger">awsome</td>
                 <td class="danger">cool</td>
@@ -104,7 +104,7 @@
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
                 <td class="success">sudhi</td>
-                <td class="warning">boy</td>
+                <td class="warning"><img src="/images/faces-clipart/pic-2.png" alt="image"></td>
                 <td class="danger">20</td>
                 <td class="danger">awsome</td>
                 <td class="danger">cool</td>
@@ -114,7 +114,7 @@
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
                 <td class="success">sudhi</td>
-                <td class="warning">boy</td>
+                <td class="warning"><img src="/images/faces-clipart/pic-3.png" alt="image"></td>
                 <td class="danger">20</td>
                 <td class="danger">awsome</td>
                 <td class="danger">cool</td>

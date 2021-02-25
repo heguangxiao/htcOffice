@@ -18,7 +18,6 @@ import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import vn.htc.office.common.HttpUtil;
-import vn.htc.office.common.Md5;
 import vn.htc.office.config.MyConfig;
 import vn.htc.office.config.MyContext;
 import vn.htc.office.ext.AngularModel;
@@ -70,9 +69,7 @@ public class SessionController extends AbstractBackEnConst {
         String password = HttpUtil.getString(request, "password");
         HttpSession session = request.getSession(false);
         
-        //----- check login ( fake fake ) start
-        Account account = new Account(1, username, Md5.encryptMD5(password), "admin@htc.vn", STATUS.ACTIVE.val);
-        //----- check login ( fake fake ) end
+        Account account = accountService.findByUsernameAndPassword(username, password);
         
         if (account != null) {
             if (account.getStatus() == STATUS.LOCK.val) {

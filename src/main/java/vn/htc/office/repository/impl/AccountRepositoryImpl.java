@@ -26,7 +26,7 @@ public class AccountRepositoryImpl implements AccountRepository {
     @PostConstruct
     public void init() {
         for (int i = 0; i < 10; i++) {
-            Account acc = new Account(++i, "username"+i, "password"+i, "email" + i, 1);
+            Account acc = new Account(++i, "username" + i, Md5.encryptMD5("password" + i), "email" + i, 1);
             listGia.add(acc);
         }
     }
@@ -34,53 +34,138 @@ public class AccountRepositoryImpl implements AccountRepository {
     @Override
     public List<Account> findAll() {
         List<Account> result = new ArrayList<>();
-        //fake
         try {
-            for (int i = 1; i <= 10; i++) {
-                Account one = new Account("admin" + i, Md5.encryptMD5("admin" + i));
-                one.setId(i);
-                one.setEmail("admin" + i);
-                result.add(one);
-            }
-
-            for (int i = 11; i <= 20; i++) {
-                Account one = new Account("user" + i, Md5.encryptMD5("user" + i));
-                one.setId(i);
-                one.setEmail("user" + i);
-                result.add(one);
+            if (!listGia.isEmpty()) {
+                for (Account one : listGia) {
+                    if (one != null) {
+                        result.add(one);
+                    }
+                }
             }
         } catch (Exception e) {
             Tool.showError("findAll()", "AccountRepositoryImpl", e.getMessage());
         }
-
         return result;
     }
 
     @Override
     public Account findById(int id) {
         Account result = null;
-
+        try {
+            if (!listGia.isEmpty()) {
+                for (Account one : listGia) {
+                    if (one != null) {
+                        if (id == one.getId()) {
+                            result = one;
+                            break;
+                        }
+                    }
+                }
+            }
+        } catch (Exception e) {
+            Tool.showError("findById(int id)", "AccountRepositoryImpl", e.getMessage());
+        }
         return result;
     }
 
     @Override
     public boolean create(Account t) {
         boolean result = false;
-
+        try {
+            t.setId(getNewId());
+            listGia.add(t);
+            result = true;
+        } catch (Exception e) {
+            Tool.showError("create(Account t)", "AccountRepositoryImpl", e.getMessage());
+        }
         return result;
     }
 
     @Override
     public boolean update(Account t) {
         boolean result = false;
-
+        try {
+            List<Account> all = findAll();
+            if (!all.isEmpty()) {
+                listGia.clear();
+                for (Account one : all) {
+                    if (one != null) {
+                        if (t.getId() == one.getId()) {
+                            listGia.add(t);
+                            result = true;
+                        } else {
+                            listGia.add(one);
+                        }
+                    }
+                }
+            }
+        } catch (Exception e) {
+            Tool.showError("update(Account t)", "AccountRepositoryImpl", e.getMessage());
+        }
         return result;
     }
 
     @Override
     public boolean delete(int id) {
         boolean result = false;
+        try {
+            List<Account> all = findAll();
+            if (!all.isEmpty()) {
+                listGia.clear();
+                for (Account one : all) {
+                    if (one != null) {
+                        if (id != one.getId()) {
+                            listGia.add(one);
+                        } else {
+                            result = true;
+                        }
+                    }
+                }
+            }
+        } catch (Exception e) {
+            Tool.showError("delete(int id)", "AccountRepositoryImpl", e.getMessage());
+        }
+        return result;
+    }
 
+    private int getNewId() {
+        int result = -1;
+        try {
+            if (!listGia.isEmpty()) {
+                for (Account one : listGia) {
+                    if (one != null) {
+                        if (result < one.getId()) {
+                            result = one.getId();
+                        }
+                    }
+                }
+            }
+        } catch (Exception e) {
+            Tool.showError("getNewId()", "AccountRepositoryImpl", e.getMessage());
+        }
+        return (result + 1);
+    }
+
+    @Override
+    public Account findByUsernameAndPassword(String username, String password) {
+        Account result = null;
+        try {
+            if (!listGia.isEmpty()) {
+                for (Account one : listGia) {
+                    if (one != null) {
+                        if (username.equals(one.getUsername())) {
+                            String pass = Md5.encryptMD5(password);
+                            if (pass.equals(one.getPassword())) {
+                                result = one;
+                            }
+                            break;
+                        }
+                    }
+                }
+            }
+        } catch (Exception e) {
+            Tool.showError("findById(int id)", "AccountRepositoryImpl", e.getMessage());
+        }
         return result;
     }
 
