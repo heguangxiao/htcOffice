@@ -99,20 +99,96 @@
         <put-attribute name="body" value="/pages/tables/basic-table2.jsp" />
     </definition>
     
-    <!-- Three -->
-    <definition name="three" template="/layout/three-layout.jsp">
-        <put-attribute name="head" value="/include/three/head.jsp" />
-        <put-attribute name="left" value="/include/three/left.jsp" />
-        <put-attribute name="menu" value="/include/three/menu.jsp" />
-        <put-attribute name="body" value="" />
-        <put-attribute name="footer" value="" />
-        <put-attribute name="js" value="/include/three/js.jsp" />
-    </definition>
     
-    <!-- Home3 -->
-    <definition name="home3" extends="three">
-        <put-attribute name="body" value="/home3.jsp" />
-    </definition>
+    <!-- phuongnv -->
+	    <!-- Three -->
+	    <definition name="three" template="/layout/three-layout.jsp">
+	        <put-attribute name="head" value="/include/three/head.jsp" />
+	        <put-attribute name="left" value="/include/three/left.jsp" />
+	        <put-attribute name="menu" value="/include/three/menu.jsp" />
+	        <put-attribute name="body" value="" />
+	        <put-attribute name="footer" value="" />
+	        <put-attribute name="js" value="/include/three/js.jsp" />
+	    </definition>
+	    
+	    <!-- Home3 -->
+	    <definition name="home3" extends="three">
+	        <put-attribute name="body" value="/congviec/home3.jsp" />
+	    </definition>
+	    
+	    <!-- Home3_duan -->
+	    <definition name="home3_duan" extends="three">
+	        <put-attribute name="body" value="/congviec/home3_duan.jsp" />
+	    </definition>
+	    
+	     <!-- Home3_home3_timesheet -->
+	    <definition name="home3_timesheet" extends="three">
+	        <put-attribute name="body" value="/congviec/home3_timesheet.jsp" />
+	    </definition>
+	    
+	     <!-- Home3_bcpt -->
+	    <definition name="home3_bcpt" extends="three">
+	        <put-attribute name="body" value="/congviec/home3_bcpt.jsp" />
+	    </definition>
+	    
+	    <!-- Home3_bc_daluu -->
+	    <definition name="home3_bc_daluu" extends="three">
+	        <put-attribute name="body" value="/congviec/home3_bc_daluu.jsp" />
+	    </definition>
+	    
+	     <!-- Home3_congvieclap -->
+	    <definition name="home3_congvieclap" extends="three">
+	        <put-attribute name="body" value="/congviec/home3_congvieclap.jsp" />
+	    </definition>
+	    
+	     <!-- Home3_quytrinh -->
+	    <definition name="home3_quytrinh" extends="three">
+	        <put-attribute name="body" value="/congviec/home3_quytrinh.jsp" />
+	    </definition>
+	    
+	    <!-- Home3_dashboard -->
+	    <definition name="home3_dashboard" extends="three">
+	        <put-attribute name="body" value="/congviec/home3_dashboard.jsp" />
+	    </definition>
+	    
+	    <!-- FORM TẠO MỚI -->
+	    
+	    <!-- Home3_duan_create -->
+	    <definition name="home3_duan_create" extends="three">
+	        <put-attribute name="body" value="/congviec/create/duan.jsp" />
+	    </definition>
+	    
+	        <!-- Home3_bcpt_create -->
+	    <definition name="home3_bcpt_create" extends="three">
+	        <put-attribute name="body" value="/congviec/create/bcpt.jsp" />
+	    </definition>
+	    
+	     <!-- Home3_congvieclap_create -->
+	    <definition name="home3_congvieclap_create" extends="three">
+	        <put-attribute name="body" value="/congviec/create/congvieclap.jsp" />
+	    </definition>
+	    
+	    <!-- home3_bc_excel_create -->
+	    <definition name="home3_bc_excel_create" extends="three">
+	        <put-attribute name="body" value="/congviec/create/bc_excel.jsp" />
+	    </definition>
+	    
+	    <!-- home3_bc_pivottable_create -->
+	    <definition name="home3_bc_pivottable_create" extends="three">
+	        <put-attribute name="body" value="/congviec/create/bc_pivottable.jsp" />
+	    </definition>
+	    
+	    <!-- home3_congviec_create -->
+	    <definition name="home3_congviec_create" extends="three">
+	        <put-attribute name="body" value="/congviec/create/congviec.jsp" />
+	    </definition>
+    
+    	<!-- home3_quytrinh_create -->
+	    <definition name="home3_quytrinh_create" extends="three">
+	        <put-attribute name="body" value="/congviec/create/quytrinh.jsp" />
+	    </definition>
+    <!-- end -->
+    
     
     
     <definition name="document-theme-user" template="/layout/document-layout.jsp">

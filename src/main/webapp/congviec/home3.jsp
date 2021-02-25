@@ -1,4 +1,5 @@
 <%@page contentType="text/html; charset=utf-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <style>
     tbody {
         display:block;
@@ -25,14 +26,13 @@
     }
 </style>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-top: 0px;padding-bottom: 0px;margin-top: 0px;">
+<nav class=" navbar-expand-lg navbar-light bg-light" style="padding-top: 0px;padding-bottom: 0px;margin-top: 0px;">
     <div class="container-fluid" >     
         <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-align-justify"></i>
         </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="nav navbar-nav mr-auto">
+		<div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: left">
+           <ul class="nav navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="<c:url value='/home3'/>">Tất cả</a>
                 </li>
@@ -62,13 +62,79 @@
                 </li>
             </ul>
         </div>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: right">
+            <ul class="nav navbar-nav mr-auto" style="text-align: center;">
+            	
+                <li class="nav-item active" >	               	     
+                	<div data-toggle="dropdown">
+						<i class="mdi mdi-tag"></i>
+						<p style="font-size: 12px; margin-bottom: 0px">Nhãn</p>
+					</div>
+					<div class="dropdown-menu">
+						<div class="form-check">
+                            <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input"/> Công việc định kì ngày </label>
+                        </div>	
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input"/> Công việc dự án </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input"/> Công việc quy trình </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input"/> Công việc tiến độ </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input"/> Công việc định kì tuần </label>
+                        </div>
+							<button id="hover-email" class="dropdown-item">Lọc theo nhãn đã chọn</button>
+					</div>
+                </li>
+                
+                <li class="nav-item" style="margin-left: 10px">
+                	<div data-toggle="dropdown">
+						<i class="mdi mdi-calendar-text"></i>
+						<p style="font-size: 12px; margin-bottom: 0px">Lịch biểu</p>
+					</div>
+                </li>
+                
+                
+                <li class="nav-item" style="margin-left: 10px">
+                	<div data-toggle="dropdown">
+						<i class="mdi mdi-export"></i>
+						<p style="font-size: 12px; margin-bottom: 0px">Export</p>
+					</div>
+					<div class="dropdown-menu">
+						<button id="hover-email" class="dropdown-item">Xuất tất cả </button> 
+						<button id="hover-email" class="dropdown-item">Tùy chọn cột </button>
+					</div>
+                </li>
+                
+                <li class="nav-item" style="margin-left: 10px">
+                	<div data-toggle="dropdown">
+						<i class="mdi mdi-import"></i>
+						<p style="font-size: 12px; margin-bottom: 0px">Import</p>
+					</div>
+					<div class="dropdown-menu">
+						<button id="hover-email" class="dropdown-item">Import công việc</button> 
+						<button id="hover-email" class="dropdown-item">Xem lịch sử import công việc</button>
+					</div>
+                </li>
+                
+                
+            </ul>
+        </div>
+        
     </div>
 </nav>
 
-
-
 <div class="scrollDiv">
-    <table class="table table-hover table-striped ">
+    <table class="table table-hover table-striped " style="text-align: center;">
         <thead>
             <tr>
                 <th class="active">
@@ -88,7 +154,9 @@
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
                 <td class="success">nguyễn văn phương</td>
-                <td class="warning">phuongnv</td>
+                <td class="py-1">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
                 <td class="danger">hoàn thành</td>
                 <td>
                     <div class="progress">
@@ -103,7 +171,9 @@
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
                 <td class="success">nguyễn văn phương</td>
-                <td class="warning">phuongnv</td>
+                <td class="py-1">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
                 <td class="danger">hoàn thành</td>
                 <td>
                     <div class="progress">
@@ -118,7 +188,9 @@
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
                 <td class="success">nguyễn văn phương</td>
-                <td class="warning">phuongnv</td>
+                <td class="py-1">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
                 <td class="danger">hoàn thành</td>
                 <td>
                     <div class="progress">
@@ -133,7 +205,9 @@
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
                 <td class="success">nguyễn văn phương</td>
-                <td class="warning">phuongnv</td>
+                <td class="py-1">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
                 <td class="danger">hoàn thành</td>
                 <td>
                     <div class="progress">
@@ -180,8 +254,9 @@
     </div>
 </div>
 <div class="bd-example" data-example-id="" style="display: ;" id="createPopup">
-
 </div>
+                            
+                            
 <script>
     $(function () {
         //button select all or cancel

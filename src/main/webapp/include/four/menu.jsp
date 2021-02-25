@@ -70,7 +70,7 @@
                             <span><b>WORKPLACE</b></span>
                             <a href="<c:url value='/'/>">Social</a>
                             <a href="<c:url value='/donTu'/>">Đơn từ</a>
-                            <a href="#">Công việc</a>
+                            <a href="<c:url value='/home3'/>">Công việc</a>
                             <a href="<c:url value='/document'/>">Tài liệu</a>
                         </div>
                         <div style="width: 50%;float: left">

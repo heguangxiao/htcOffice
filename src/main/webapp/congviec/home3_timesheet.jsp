@@ -1,4 +1,5 @@
 <%@page contentType="text/html; charset=utf-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <style>
     tbody {
         display:block;
@@ -24,8 +25,38 @@
         width: 5%;
     }
 </style>
+
+<nav class=" navbar-expand-lg navbar-light bg-light" style="padding-top: 0px;padding-bottom: 0px;margin-top: 0px;">
+    <div class="container-fluid" >     
+        <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-align-justify"></i>
+        </button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: left">
+			<ul class="nav navbar-nav mr-auto">
+				<li>
+					<p>Danh sách timesheet tháng 2/2021</p>
+                </li>
+            </ul>
+            
+        </div>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: right">
+            <ul class="nav navbar-nav mr-auto" style="text-align: center;">
+                <li class="nav-item" style="margin-left: 10px">
+                	<div data-toggle="dropdown">
+						<i class="mdi mdi-calendar-text"></i>
+						<p style="font-size: 12px; margin-bottom: 0px">Lịch</p>
+					</div>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</nav>
+
+
 <div class="scrollDiv">
-    <table class="table table-hover table-striped ">
+    <table class="table table-hover table-striped " style="text-align: center;">
         <thead>
             <tr>
                 <th class="active" rowspan="2">
@@ -149,6 +180,8 @@
         <a class="dropdown-item" href="#">Something else here</a>
     </div>
 </div>
+
+
 <div class="container-fluid bd-content">
     <div class="bd-example" data-example-id="">
         <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" role="dialog" tabindex="-1">

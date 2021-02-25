@@ -1,10 +1,11 @@
 <%@page contentType="text/html; charset=utf-8"%>
 <div class="content-wrapper">
-	<div class="row">
-		<div class="col-md-6 grid-margin stretch-card">
-			<div class="card">
-				<div class="card-body">
-					<form class="forms-sample">
+	<form class="forms-sample">
+		<div class="row">
+			<div class="col-md-6 grid-margin stretch-card">
+				<div class="card">
+					<div class="card-body">
+
 
 						<div class="row">
 							<div class="col-md-6">
@@ -284,19 +285,23 @@
 							<textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
 						</div>
 
-						<div class="form-group">
+						<div class="form-group" style="margin-bottom: 150px">
 							<label>Đính kèm</label> <input type="file" name="img[]"
 								class="file-upload-default" />
 						</div>
 
-						<button type="submit" class="btn btn-primary mr-2">
-							Submit</button>
-						<button class="btn btn-light">Cancel</button>
 
-					</form>
 
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+		<!-- enter-cancel -->
+		<div
+			style="padding-top: 200px; width: 100%; display: block; bottom: 0px; position: fixed; margin-left: 0px; background: #F5F5F5; color: white; border: none; padding: 15px 32px; text-decoration: none; display: inline-block; font-size: 16px;">
+			<button type="submit" class="btn btn-primary">Cập nhật</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		</div>
+
+	</form>
 </div>

@@ -26,6 +26,7 @@
     }
 </style>
 
+
 <nav class=" navbar-expand-lg navbar-light bg-light" style="padding-top: 0px;padding-bottom: 0px;margin-top: 0px;">
     <div class="container-fluid" >     
         <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,23 +48,6 @@
             
         </div>
         
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: right">
-            <ul class="nav navbar-nav mr-auto" style="text-align: center;">
-                
-                <li class="nav-item" style="margin-left: 10px">
-                	<div data-toggle="dropdown">
-						<i class="mdi mdi-export"></i>
-						<p style="font-size: 12px; margin-bottom: 0px">Export</p>
-					</div>
-					<div class="dropdown-menu">
-						<button id="hover-email" class="dropdown-item">Xuất tất cả </button> 
-						<button id="hover-email" class="dropdown-item">Tùy chọn cột </button>
-					</div>
-                </li>
-                
-            </ul>
-        </div>
-        
     </div>
 </nav>
 
@@ -75,15 +59,10 @@
                 <th class="active">
                     <input type="checkbox" class="select-all checkbox" name="select-all" />
                 </th>
-                <th class="success">Người tạo</th>
-                <th class="success">Tên công việc</th>
-                <th class="warning">Trạng thái</th>
-                <th class="success">Bắt đầu</th>
-                <th class="success">Kết thúc</th>
-                <th class="success">Người giao việc</th>
-                <th class="success">Người thực hiện</th>
-                <th class="success">Công việc</th>
-                <th class="success">Lịch lặp</th>
+                <th class="success">Cập nhật</th>
+                <th class="success">Tên báo cáo</th>
+                <th class="warning">Phân hệ</th>
+                <th class="success">Thời gian lưu</th>
             </tr>
         </thead>
         <tbody>
@@ -94,18 +73,9 @@
                 <td class="py-1">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td class="warning">cong viec 1</td>
-                <td class="danger">đang chạy</td>
-                <td class="danger">01/01/2021</td>
-                <td class="danger">01/01/2021</td>
-                <td class="py-1">
-                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
-                </td>
-                <td class="py-1">
-                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
-                </td>
-                <td class="danger">0</td>
-                <td class="danger">lặp hàng tuần vào thứ 2,3,4,5,6,7.lặp không kết thúc</td>
+                <td class="danger">Báo cáo tuần</td>
+                <td class="danger">công việc</td>
+                <td class="danger">1 ngày trước</td>
             </tr>
            <tr>
                 <td class="active">
@@ -114,18 +84,9 @@
                 <td class="py-1">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td class="warning">cong viec 1</td>
-                <td class="danger">đang chạy</td>
-                <td class="danger">01/01/2021</td>
-                <td class="danger">01/01/2021</td>
-                <td class="py-1">
-                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
-                </td>
-                <td class="py-1">
-                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
-                </td>
-                <td class="danger">0</td>
-                <td class="danger">lặp hàng tuần vào thứ 2,3,4,5,6,7.lặp không kết thúc</td>
+                <td class="danger">Báo cáo tuần</td>
+                <td class="danger">công việc</td>
+                <td class="danger">1 ngày trước</td>
             </tr>
             <tr>
                 <td class="active">
@@ -134,18 +95,9 @@
                 <td class="py-1">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td class="warning">cong viec 1</td>
-                <td class="danger">đang chạy</td>
-                <td class="danger">01/01/2021</td>
-                <td class="danger">01/01/2021</td>
-                <td class="py-1">
-                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
-                </td>
-                <td class="py-1">
-                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
-                </td>
-                <td class="danger">0</td>
-                <td class="danger">lặp hàng tuần vào thứ 2,3,4,5,6,7.lặp không kết thúc</td>
+                <td class="danger">Báo cáo tuần</td>
+                <td class="danger">công việc</td>
+                <td class="danger">1 ngày trước</td>
             </tr>
             <tr>
                 <td class="active">
@@ -154,18 +106,9 @@
                 <td class="py-1">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td class="warning">cong viec 1</td>
-                <td class="danger">đang chạy</td>
-                <td class="danger">01/01/2021</td>
-                <td class="danger">01/01/2021</td>
-                <td class="py-1">
-                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
-                </td>
-                <td class="py-1">
-                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
-                </td>
-                <td class="danger">0</td>
-                <td class="danger">lặp hàng tuần vào thứ 2,3,4,5,6,7.lặp không kết thúc</td>
+                <td class="danger">Báo cáo tuần</td>
+                <td class="danger">công việc</td>
+                <td class="danger">1 ngày trước</td>
             </tr>
             <tr>
                 <td class="active">
@@ -174,18 +117,9 @@
                 <td class="py-1">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td class="warning">cong viec 1</td>
-                <td class="danger">đang chạy</td>
-                <td class="danger">01/01/2021</td>
-                <td class="danger">01/01/2021</td>
-                <td class="py-1">
-                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
-                </td>
-                <td class="py-1">
-                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
-                </td>
-                <td class="danger">0</td>
-                <td class="danger">lặp hàng tuần vào thứ 2,3,4,5,6,7.lặp không kết thúc</td>
+                <td class="danger">Báo cáo tuần</td>
+                <td class="danger">công việc</td>
+                <td class="danger">1 ngày trước</td>
             </tr>
             <tr>
                 <td class="active">
@@ -194,18 +128,9 @@
                 <td class="py-1">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td class="warning">cong viec 1</td>
-                <td class="danger">đang chạy</td>
-                <td class="danger">01/01/2021</td>
-                <td class="danger">01/01/2021</td>
-                <td class="py-1">
-                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
-                </td>
-                <td class="py-1">
-                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
-                </td>
-                <td class="danger">0</td>
-                <td class="danger">lặp hàng tuần vào thứ 2,3,4,5,6,7.lặp không kết thúc</td>
+                <td class="danger">Báo cáo tuần</td>
+                <td class="danger">công việc</td>
+                <td class="danger">1 ngày trước</td>
             </tr>
         </tbody>
     </table>

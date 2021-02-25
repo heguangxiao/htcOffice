@@ -1,4 +1,5 @@
 <%@page contentType="text/html; charset=utf-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <style>
     tbody {
         display:block;
@@ -24,18 +25,45 @@
         width: 5%;
     }
 </style>
+
+
+<nav class=" navbar-expand-lg navbar-light bg-light" style="padding-top: 0px;padding-bottom: 0px;margin-top: 0px;">
+    <div class="container-fluid" >     
+        <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-align-justify"></i>
+        </button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: left">
+			<ul class="nav navbar-nav mr-auto">
+				<li>
+					<div data-toggle="dropdown">
+                    <a class="nav-link" href="#"><i class="mdi mdi-sort" style="margin-left: 10px"></i></a>
+                    </div>
+                    
+                    <div class="dropdown-menu">
+						<button id="hover-email" class="dropdown-item">Xắp sếp theo danh sách </button> 
+						<button id="hover-email" class="dropdown-item">Chọn cột hiển thị </button>
+					</div>
+                </li>
+            </ul>
+            
+        </div>
+        
+    </div>
+</nav>
+
+
 <div class="scrollDiv">
-    <table class="table table-hover table-striped ">
+    <table class="table table-hover table-striped " style="text-align: center;">
         <thead>
             <tr>
                 <th class="active">
                     <input type="checkbox" class="select-all checkbox" name="select-all" />
                 </th>
-                <th class="success">bcpt</th>
-                <th class="success">bcpt</th>
-                <th class="warning">bcpt</th>
-                <th class="success">bcpt</th>
-                <th class="success">bcpt</th>
+                <th class="success">Người tạo</th>
+                <th class="success">Tên mẫu báo cáo</th>
+                <th class="warning">Phân hệ</th>
+                <th class="success">Lưu tự động</th>
+                <th class="success">Ngày tạo</th>
             </tr>
         </thead>
         <tbody>
@@ -43,51 +71,85 @@
                 <td class="active">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="success">1</td>
-                <td class="warning">a</td>
-                <td class="danger">b</td>
-                <td class="danger">c</td>
-                <td class="danger">d</td>
+                <td class="py-1">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="warning">báo cáo 1</td>
+                <td class="danger">công việc</td>
+                <td class="danger">không lưu</td>
+                <td class="danger">hàng tuần</td>
             </tr>
            <tr>
                 <td class="active">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="success">1</td>
-                <td class="warning">a</td>
-                <td class="danger">b</td>
-                <td class="danger">c</td>
-                <td class="danger">d</td>
+                <td class="py-1">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="warning">báo cáo 1</td>
+                <td class="danger">công việc</td>
+                <td class="danger">không lưu</td>
+                <td class="danger">hàng tuần</td>
             </tr>
             <tr>
                 <td class="active">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="success">1</td>
-                <td class="warning">a</td>
-                <td class="danger">b</td>
-                <td class="danger">c</td>
-                <td class="danger">d</td>
+                <td class="py-1">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="warning">báo cáo 1</td>
+                <td class="danger">công việc</td>
+                <td class="danger">không lưu</td>
+                <td class="danger">hàng tuần</td>
             </tr>
             <tr>
                 <td class="active">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="success">1</td>
-                <td class="warning">a</td>
-                <td class="danger">b</td>
-                <td class="danger">c</td>
-                <td class="danger">d</td>
+                <td class="py-1">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="warning">báo cáo 1</td>
+                <td class="danger">công việc</td>
+                <td class="danger">không lưu</td>
+                <td class="danger">hàng tuần</td>
             </tr>
             <tr>
                 <td class="active">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="success">1</td>
-                <td class="warning">a</td>
-                <td class="danger">b</td>
-                <td class="danger">c</td>
-                <td class="danger">d</td>
+                <td class="py-1">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="warning">báo cáo 1</td>
+                <td class="danger">công việc</td>
+                <td class="danger">không lưu</td>
+                <td class="danger">hàng tuần</td>
+            </tr>
+            <tr>
+                <td class="active">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="py-1">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="warning">báo cáo 1</td>
+                <td class="danger">công việc</td>
+                <td class="danger">không lưu</td>
+                <td class="danger">hàng tuần</td>
+            </tr>
+            <tr>
+                <td class="active">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="py-1">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="warning">báo cáo 1</td>
+                <td class="danger">công việc</td>
+                <td class="danger">không lưu</td>
+                <td class="danger">hàng tuần</td>
             </tr>
         </tbody>
     </table>
