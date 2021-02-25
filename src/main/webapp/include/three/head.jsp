@@ -3,6 +3,11 @@
 <link href="<c:url value='/resources/bootstrap/css/bootstrap.min.css'/>" rel="stylesheet"/>
 <link href="<c:url value='/resources/css/style.css'/>" rel="stylesheet"/>
 <link rel="stylesheet" type="text/css" href="vendors/mdi/css/materialdesignicons.min.css">
+<script src="<c:url value='/resources/js/solid.js'/>"></script>
+<script src="<c:url value='/resources/js/fontawesome.js'/>"></script>
+<script src="<c:url value='/resources/jquery/jquery.min.js'/>"></script>
+<script src="<c:url value='/resources/bootstrap/js/bootstrap.js'/>"></script>
+<script src="<c:url value='/resources/popper/dist/umd/popper.min.js'/>"></script>
 <style>
     .navbar-default:hover .navbar-nav>.active:not(:hover) > a {
         border-top-color: transparent;

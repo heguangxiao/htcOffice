@@ -1,6 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <script src="<c:url value='/resources/bootstrap/js/bootstrap.min.js'/>"></script>
-<link rel="stylesheet" type="text/css" href="vendors/mdi/css/materialdesignicons.min.css">
 <script type="text/javascript">
     $(document).ready(function () {
         $('#sidebarCollapse').on('click', function () {
@@ -20,6 +19,8 @@
 <script src="<c:url value='/resources/jquery/jquery.min.js'/>"></script>
 <script src="<c:url value='/resources/bootstrap/js/bootstrap.js'/>"></script>
 <script src="<c:url value='/resources/popper/dist/umd/popper.min.js'/>"></script>
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <script src="<c:url value='/vendors/js/vendor.bundle.base.js'/>"></script>
 <script src="<c:url value='/vendors/select2/select2.min.js'/>"></script>
 <script src="<c:url value='/vendors/typeahead.js/typeahead.bundle.min.js'/>"></script>
