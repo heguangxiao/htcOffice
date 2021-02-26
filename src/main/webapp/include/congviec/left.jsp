@@ -21,22 +21,22 @@
             </a>
             <ul class="collapse list-unstyled" id="congviecSubmenu">
                 <li>
-                    <a href="<c:url value='/home3'/>">Tất cả</a>
+                    <a href="<c:url value='/congviec'/>">Tất cả</a>
                 </li>
                 <li>
-                    <a href="<c:url value='/home3'/>">Bạn thực hiện</a>
+                    <a href="<c:url value='/congviec'/>">Bạn thực hiện</a>
                 </li>
                 <li>
-                    <a href="<c:url value='/home3'/>">Bạn đã giao</a>
+                    <a href="<c:url value='/congviec'/>">Bạn đã giao</a>
                 </li>
                 <li>
-                    <a href="<c:url value='/home3'/>">Bạn theo dõi</a>
+                    <a href="<c:url value='/congviec'/>">Bạn theo dõi</a>
                 </li>
                 <li>
-                    <a href="<c:url value='/home3'/>">Phòng ban bạn</a>
+                    <a href="<c:url value='/congviec'/>">Phòng ban bạn</a>
                 </li>
                 <li>
-                    <a href="<c:url value='/home3'/>">Dự kiến</a>
+                    <a href="<c:url value='/congviec'/>">Dự kiến</a>
                 </li>
             </ul>
         </li>

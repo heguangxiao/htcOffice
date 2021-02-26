@@ -16,11 +16,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class CongviecController {
 
-	@GetMapping({"/home3"})
+	@GetMapping({"/congviec"})
     public String home(ModelMap modelMap) {
         modelMap.put("title", "Công việc");
         modelMap.put("titleTable", "Danh sách công việc");
-        return "home3";
+        return "congviec";
     }
     
     @GetMapping({"/home3/duan"})
