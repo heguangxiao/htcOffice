@@ -19,7 +19,7 @@
         </li>
         <li class="nav-item">
             <a class="nav-link nav-profile-text">
-                Danh sách công việc
+                ${titleTable}
             </a>
         </li>
         <li class="nav-item dropdown">
@@ -72,7 +72,7 @@
                         <span><b>WORKPLACE</b></span>
                         <a href="#">Social</a>
                         <a href="#">Đơn từ</a>
-                        <a href="<c:url value='/home3'/>">Công việc</a>
+                        <a href="<c:url value='/congviec'/>">Công việc</a>
                     </div>
                     <div style="width: 50%;float: left">
                         <span><b>HRM</b></span>
@@ -115,7 +115,7 @@
 <div class="modal fade" id="myBoloc">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <form action="<c:url value='/home3'/>">
+            <form action="<c:url value='/congviec'/>">
                 <!-- Modal Header -->
                 <div class="modal-header">
                    	<h3 class="modal-title">Khai báo timesheet</h4>
