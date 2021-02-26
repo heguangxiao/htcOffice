@@ -34,7 +34,7 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: left">
             <ul class="nav navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="<c:url value='/home3'/>">Tất cả</a>
+                    <a class="nav-link" href="<c:url value='/congviec/quytrinh'/>">Tất cả</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Đang thực hiện</a>
@@ -294,7 +294,7 @@
         var showMenu = '';
         showMenu = showMenu + '<a class="dropdown-item" data-target="#exampleModal" data-toggle="modal" data-whatever="@getbootstrap">Open modal for @getbootstrap</a>';
         showMenu = showMenu + '<a class="dropdown-item" data-target="#exampleXem" data-toggle="modal" data-whatever="">Xem nhanh</a>';
-        showMenu = showMenu + '<a class="dropdown-item" href="http://localhost:8084/home3' + values + '">Nhân bản công việc</a>';
+        showMenu = showMenu + '<a class="dropdown-item" href="http://localhost:8084/congviec' + values + '">Nhân bản công việc</a>';
         document.getElementById('menu').innerHTML = showMenu;
 
         return false; //blocks default Webbrowser right click menu

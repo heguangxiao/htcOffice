@@ -34,7 +34,7 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: left">
            <ul class="nav navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="<c:url value='/home3'/>">Tất cả</a>
+                    <a class="nav-link" href="<c:url value='/congviec'/>">Tất cả</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Đang thực hiện</a>
