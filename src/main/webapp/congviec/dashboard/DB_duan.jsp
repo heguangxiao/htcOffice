@@ -44,12 +44,12 @@ tr .active {
 			style="float: left">
 			<ul class="nav navbar-nav mr-auto">
 				<li class="nav-item"><a class="nav-link"
-					href="<c:url value='/home3/dashboard_congviec'/>">Công việc</a></li>
+					href="<c:url value='/congviec/dashboard_congviec'/>">Công việc</a></li>
 				<li class="nav-item"><a class="nav-link"
-					href="<c:url value='/home3/dashboard_quytrinh'/>">Quy trình</a></li>
+					href="<c:url value='/congviec/dashboard_quytrinh'/>">Quy trình</a></li>
 				<li class="nav-item active"><a
 					style="border-bottom: 4px solid #6495ED; color: #6495ED"
-					class="nav-link" href="<c:url value='/home3/dashboard_duan'/>">Dự
+					class="nav-link" href="<c:url value='/congviec/dashboard_duan'/>">Dự
 						án</a></li>
 			</ul>
 		</div>

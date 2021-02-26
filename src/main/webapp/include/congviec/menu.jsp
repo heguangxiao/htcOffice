@@ -9,10 +9,10 @@
                 <i class="fas fa-plus"></i>
             </a>
             <div class="dropdown-menu dropdown-content">
-                <a class="dropdown-item" href="<c:url value='/home3/congviec/new'/>">Công việc</a>
-                <a class="dropdown-item" href="<c:url value='/home3/duan/new'/>">Dự án</a>
-                <a class="dropdown-item" href="<c:url value='/home3/quytrinh/new'/>">Quy trình</a>
-                <a class="dropdown-item" href="<c:url value='/home3/congvieclap/new'/>">Công việc lặp</a>
+                <a class="dropdown-item" href="<c:url value='/congviec/congviec/new'/>">Công việc</a>
+                <a class="dropdown-item" href="<c:url value='/congviec/duan/new'/>">Dự án</a>
+                <a class="dropdown-item" href="<c:url value='/congviec/quytrinh/new'/>">Quy trình</a>
+                <a class="dropdown-item" href="<c:url value='/congviec/congvieclap/new'/>">Công việc lặp</a>
                 <a style="cursor: pointer;" class="dropdown-item"><i data-toggle="modal" data-target="#myBoloc">Timesheet</i></a>
                 <a style="cursor: pointer;" class="dropdown-item"><i data-toggle="modal" data-target="#bc">Báo cáo</i></a>
             </div>
@@ -288,7 +288,7 @@
 <div class="modal fade" id="bc">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
-        <form action="<c:url value='/home3'/>">
+        <form action="<c:url value='/congviec'/>">
                 <!-- Modal Header -->
                 <div class="modal-header">
                    	<h3 class="modal-title">CHỌN LOẠI BÁO CÁO MUỐN TẠO</h4>
@@ -299,14 +299,14 @@
                 <div class="modal-body">
                 
                     <div style="text-align: center;">
-                   		 <a href="<c:url value='/home3/bc_excel/new'/>">
+                   		 <a href="<c:url value='/congviec/bc_excel/new'/>">
 		                    <div class="form-group"  style="width: 50%;float: left;border: double;">
 		                     <b>Thống kê pivottable</b>
 		                     <i>tạo báo cáo dưới dạng pivottable, thống kê số liệu theo hàng và cột trường dữ liệu</i>
 		                    </div>
 		                 </a>
 	                    
-	                    <a href="<c:url value='/home3/bc_pivottable/new'/>">
+	                    <a href="<c:url value='/congviec/bc_pivottable/new'/>">
 		                    <div class="form-group"  style="width: 50%;float: left;border: double;">
 		                     <b>Bảng tính excel</b>
 		                     <i>tạo báo cáo dưới dạng bảng tính excel, có thể lập các công thức tính toán tùy ý</i>

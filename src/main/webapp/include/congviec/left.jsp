@@ -11,7 +11,7 @@
 
     <ul class="list-unstyled components">
         <li>            
-            <a href="<c:url value='/home3/dashboard_congviec'/>">
+            <a href="<c:url value='/congviec/dashboard_congviec'/>">
                 Dashboard
             </a>
         </li>
@@ -46,19 +46,19 @@
             </a>
             <ul class="collapse list-unstyled" id="duanSubmenu">
                 <li>
-                    <a href="<c:url value='/home3/duan'/>">Tất cả</a>
+                    <a href="<c:url value='/congviec/duan'/>">Tất cả</a>
                 </li>
                 <li>
-                    <a href="<c:url value='/home3/duan'/>">Bạn thực hiện</a>
+                    <a href="<c:url value='/congviec/duan'/>">Bạn thực hiện</a>
                 </li>
                 <li>
-                    <a href="<c:url value='/home3/duan'/>">Bạn quản trị</a>
+                    <a href="<c:url value='/congviec/duan'/>">Bạn quản trị</a>
                 </li>
                 <li>
-                    <a href="<c:url value='/home3/duan'/>">Bạn theo dõi</a>
+                    <a href="<c:url value='/congviec/duan'/>">Bạn theo dõi</a>
                 </li>
                 <li>
-                    <a href="<c:url value='/home3/duan'/>">Phòng ban bạn</a>
+                    <a href="<c:url value='/congviec/duan'/>">Phòng ban bạn</a>
                 </li>
             </ul>
         </li>
@@ -68,27 +68,27 @@
             </a>
             <ul class="collapse list-unstyled" id="quytrinhSubmenu">
                 <li>
-                    <a href="<c:url value='/home3/quytrinh'/>">Tất cả</a>
+                    <a href="<c:url value='/congviec/quytrinh'/>">Tất cả</a>
                 </li>
                 <li>
-                    <a href="<c:url value='/home3/quytrinh'/>">Bạn thực hiện</a>
+                    <a href="<c:url value='/congviec/quytrinh'/>">Bạn thực hiện</a>
                 </li>
                 <li>
-                    <a href="<c:url value='/home3/quytrinh'/>">Bạn giao</a>
+                    <a href="<c:url value='/congviec/quytrinh'/>">Bạn giao</a>
                 </li>
                 <li>
-                    <a href="<c:url value='/home3/quytrinh'/>">Bạn theo dõi</a>
+                    <a href="<c:url value='/congviec/quytrinh'/>">Bạn theo dõi</a>
                 </li>
                 <li>
-                    <a href="<c:url value='/home3/quytrinh'/>">Phòng ban bạn</a>
+                    <a href="<c:url value='/congviec/quytrinh'/>">Phòng ban bạn</a>
                 </li>
                 <li>
-                    <a href="<c:url value='/home3/quytrinh'/>">Dự kiến</a>
+                    <a href="<c:url value='/congviec/quytrinh'/>">Dự kiến</a>
                 </li>
             </ul>
         </li>
         <li>
-            <a href="<c:url value='/home3/congvieclap'/>">
+            <a href="<c:url value='/congviec/congvieclap'/>">
                 Công việc lặp
             </a>
         </li>
@@ -98,13 +98,13 @@
             </a>
             <ul class="collapse list-unstyled" id="timesheetSubmenu">
                 <li>
-                    <a href="<c:url value='/home3/timesheet'/>">Timesheet của bạn</a>
+                    <a href="<c:url value='/congviec/timesheet'/>">Timesheet của bạn</a>
                 </li>
                 <li>
-                    <a href="<c:url value='/home3/timesheet'/>">Phòng ban bạn</a>
+                    <a href="<c:url value='/congviec/timesheet'/>">Phòng ban bạn</a>
                 </li>
                 <li>
-                    <a href="<c:url value='/home3/timesheet'/>">Tất cả timesheet</a>
+                    <a href="<c:url value='/congviec/timesheet'/>">Tất cả timesheet</a>
                 </li>
             </ul>
         </li>
@@ -114,10 +114,10 @@
             </a>
             <ul class="collapse list-unstyled" id="baocaophantichSubmenu">
                 <li>
-                    <a href="<c:url value='/home3/bcpt'/>">Báo cáo đã tạo</a>
+                    <a href="<c:url value='/congviec/bcpt'/>">Báo cáo đã tạo</a>
                 </li>
                 <li>
-                    <a href="<c:url value='/home3/bc_daluu'/>">Báo cáo đã lưu</a>
+                    <a href="<c:url value='/congviec/bc_daluu'/>">Báo cáo đã lưu</a>
                 </li>
             </ul>
         </li>

@@ -113,89 +113,84 @@
 	    
 	    <!-- Home3 -->
 	    <definition name="congviec" extends="work">
-	        <put-attribute name="body" value="/congviec/home3.jsp" />
+	        <put-attribute name="body" value="/congviec/CV_congviec.jsp" />
 	    </definition>
 	    
 	    <!-- Home3_duan -->
-	    <definition name="home3_duan" extends="work">
-	        <put-attribute name="body" value="/congviec/home3_duan.jsp" />
+	    <definition name="congviec_duan" extends="work">
+	        <put-attribute name="body" value="/congviec/CV_duan.jsp" />
 	    </definition>
 	    
 	     <!-- Home3_home3_timesheet -->
-	    <definition name="home3_timesheet" extends="work">
-	        <put-attribute name="body" value="/congviec/home3_timesheet.jsp" />
+	    <definition name="congviec_timesheet" extends="work">
+	        <put-attribute name="body" value="/congviec/CV_timesheet.jsp" />
 	    </definition>
 	    
 	     <!-- Home3_bcpt -->
-	    <definition name="home3_bcpt" extends="work">
-	        <put-attribute name="body" value="/congviec/home3_bcpt.jsp" />
+	    <definition name="congviec_bcpt" extends="work">
+	        <put-attribute name="body" value="/congviec/CV_bcpt.jsp" />
 	    </definition>
 	    
 	    <!-- Home3_bc_daluu -->
-	    <definition name="home3_bc_daluu" extends="work">
-	        <put-attribute name="body" value="/congviec/home3_bc_daluu.jsp" />
+	    <definition name="congviec_bc_daluu" extends="work">
+	        <put-attribute name="body" value="/congviec/CV_bc_daluu.jsp" />
 	    </definition>
 	    
 	     <!-- Home3_congvieclap -->
-	    <definition name="home3_congvieclap" extends="work">
-	        <put-attribute name="body" value="/congviec/home3_congvieclap.jsp" />
+	    <definition name="congviec_congvieclap" extends="work">
+	        <put-attribute name="body" value="/congviec/CV_cvlap.jsp" />
 	    </definition>
 	    
 	     <!-- Home3_quytrinh -->
-	    <definition name="home3_quytrinh" extends="work">
-	        <put-attribute name="body" value="/congviec/home3_quytrinh.jsp" />
+	    <definition name="congviec_quytrinh" extends="work">
+	        <put-attribute name="body" value="/congviec/CV_quytrinh.jsp" />
 	    </definition>
 	    
 	    <!-- Home3_dashboard_congviec -->
 	    <definition name="dashboard_congviec" extends="work">
-	        <put-attribute name="body" value="/congviec/dashboard_congviec.jsp" />
+	        <put-attribute name="body" value="/congviec/dashboard/DB_congviec.jsp" />
 	    </definition>
 	    
 	    <!-- Home3_dashboard_quytrinh -->
 	    <definition name="dashboard_quytrinh" extends="work">
-	        <put-attribute name="body" value="/congviec/dashboard_quytrinh.jsp" />
+	        <put-attribute name="body" value="/congviec/dashboard/DB_quytrinh.jsp" />
 	    </definition>
 	    
 	    <!-- Home3_dashboard_duan -->
 	    <definition name="dashboard_duan" extends="work">
-	        <put-attribute name="body" value="/congviec/dashboard_duan.jsp" />
+	        <put-attribute name="body" value="/congviec/dashboard/DB_duan.jsp" />
 	    </definition>
 	    
 	    <!-- FORM TẠO MỚI -->
 	    
 	    <!-- Home3_duan_create -->
-	    <definition name="home3_duan_create" extends="work">
-	        <put-attribute name="body" value="/congviec/create/duan.jsp" />
-	    </definition>
-	    
-	        <!-- Home3_bcpt_create -->
-	    <definition name="home3_bcpt_create" extends="work">
-	        <put-attribute name="body" value="/congviec/create/bcpt.jsp" />
+	    <definition name="duan_create" extends="work">
+	        <put-attribute name="body" value="/congviec/create/form_duan.jsp" />
 	    </definition>
 	    
 	     <!-- Home3_congvieclap_create -->
-	    <definition name="home3_congvieclap_create" extends="work">
-	        <put-attribute name="body" value="/congviec/create/congvieclap.jsp" />
+	    <definition name="congvieclap_create" extends="work">
+	        <put-attribute name="body" value="/congviec/create/form_CVlap.jsp" />
 	    </definition>
 	    
 	    <!-- home3_bc_excel_create -->
-	    <definition name="home3_bc_excel_create" extends="work">
-	        <put-attribute name="body" value="/congviec/create/bc_excel.jsp" />
+	    <definition name="BCexcel_create" extends="work">
+	        <put-attribute name="body" value="/congviec/create/form_BCexcel.jsp" />
 	    </definition>
 	    
 	    <!-- home3_bc_pivottable_create -->
-	    <definition name="home3_bc_pivottable_create" extends="work">
-	        <put-attribute name="body" value="/congviec/create/bc_pivottable.jsp" />
+	    <definition name="BCpivottable_create" extends="work">
+	        <put-attribute name="body" value="/congviec/create/form_BCpivottable.jsp" />
 	    </definition>
 	    
 	    <!-- home3_congviec_create -->
-	    <definition name="home3_congviec_create" extends="work">
-	        <put-attribute name="body" value="/congviec/create/congviec.jsp" />
+	    <definition name="congviec_create" extends="work">
+	        <put-attribute name="body" value="/congviec/create/form_congviec.jsp" />
 	    </definition>
     
     	<!-- home3_quytrinh_create -->
-	    <definition name="home3_quytrinh_create" extends="work">
-	        <put-attribute name="body" value="/congviec/create/quytrinh.jsp" />
+	    <definition name="quytrinh_create" extends="work">
+	        <put-attribute name="body" value="/congviec/create/form_quytrinh.jsp" />
 	    </definition>
     <!-- end -->
     
