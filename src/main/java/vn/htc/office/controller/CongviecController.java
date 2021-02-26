@@ -65,13 +65,26 @@ public class CongviecController {
         return "home3_timesheet";
     }
     
-    @GetMapping({"/home3/dashboard"})
+    @GetMapping({"/home3/dashboard_congviec"})
     public String home_dashboard(ModelMap modelMap) {
     	modelMap.put("title", "Công việc");
         modelMap.put("titleTable", "Dashboard");
-        return "home3_dashboard";
+        return "dashboard_congviec";
     }
     
+    @GetMapping({"/home3/dashboard_quytrinh"})
+    public String home_dashboard_qtrinh(ModelMap modelMap) {
+    	modelMap.put("title", "Công việc");
+        modelMap.put("titleTable", "Dashboard");
+        return "dashboard_quytrinh";
+    }
+    
+    @GetMapping({"/home3/dashboard_duan"})
+    public String home_dashboard_duan(ModelMap modelMap) {
+    	modelMap.put("title", "Công việc");
+        modelMap.put("titleTable", "Dashboard");
+        return "dashboard_duan";
+    }
     //craete new form
     
     @GetMapping({"/home3/duan/new"})

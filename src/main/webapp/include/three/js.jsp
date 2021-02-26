@@ -41,3 +41,5 @@
 <script src="<c:url value='/js/file-upload.js'/>"></script>
 <script src="<c:url value='/js/typeahead.js'/>"></script>
 <script src="<c:url value='/js/select2.js'/>"></script>
+
+<link rel="stylesheet" href="<c:url value='/vendors/mdi/css/materialdesignicons.min.css'/>"/>

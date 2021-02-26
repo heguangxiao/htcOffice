@@ -146,9 +146,19 @@
 	        <put-attribute name="body" value="/congviec/home3_quytrinh.jsp" />
 	    </definition>
 	    
-	    <!-- Home3_dashboard -->
-	    <definition name="home3_dashboard" extends="three">
-	        <put-attribute name="body" value="/congviec/home3_dashboard.jsp" />
+	    <!-- Home3_dashboard_congviec -->
+	    <definition name="dashboard_congviec" extends="three">
+	        <put-attribute name="body" value="/congviec/dashboard_congviec.jsp" />
+	    </definition>
+	    
+	    <!-- Home3_dashboard_quytrinh -->
+	    <definition name="dashboard_quytrinh" extends="three">
+	        <put-attribute name="body" value="/congviec/dashboard_quytrinh.jsp" />
+	    </definition>
+	    
+	    <!-- Home3_dashboard_duan -->
+	    <definition name="dashboard_duan" extends="three">
+	        <put-attribute name="body" value="/congviec/dashboard_duan.jsp" />
 	    </definition>
 	    
 	    <!-- FORM TẠO MỚI -->

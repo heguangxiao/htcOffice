@@ -11,7 +11,7 @@
 
     <ul class="list-unstyled components">
         <li>            
-            <a href="<c:url value='/home3/dashboard'/>">
+            <a href="<c:url value='/home3/dashboard_congviec'/>">
                 Dashboard
             </a>
         </li>
