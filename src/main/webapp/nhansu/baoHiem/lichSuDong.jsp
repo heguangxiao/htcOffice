@@ -1,30 +1,46 @@
 <%@page contentType="text/html; charset=utf-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <style>
-    tbody {
-        display:block;
-        height:78vh;
-        overflow:auto;
-    }
-    /* Hide scrollbar for Chrome, Safari and Opera */
-    tbody::-webkit-scrollbar {
-        display: none;
-    }
+/* tbody {
+	display: block;
+	height: 78vh;
+	overflow: auto;
+} */
+/* Hide scrollbar for Chrome, Safari and Opera */
+/* tbody::-webkit-scrollbar {
+	display: none;
+}
 
-    /* Hide scrollbar for IE, Edge and Firefox */
-    tbody {
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
-    }
-    thead, tbody tr {
-        display:table;
-        width:100%;
-        table-layout:fixed;
-    }
-    tr .active {
-        width: 5%;
-    }
+/* Hide scrollbar for IE, Edge and Firefox */
+tbody {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+} */
+
+/* thead, tbody tr {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+} */
+
+/* tr .active {
+	width: 5%;
+} */
+
+td, th, thead, tr {
+	text-align: center;
+	border: 1px solid #ccc;
+	
+}
+.scrollDiv table tr th {
+	font-family: "Times New Roman", Times, serif;
+}
+.scrollDiv table tr td{
+	font-family: "Times New Roman", Times, serif;
+}
+
+
 </style>
+<script src=“Contents/jquery-1.9.1.js”></script>
 <nav class=" navbar-expand-lg navbar-light bg-light" style="padding-top: 0px;padding-bottom: 0px;margin-top: 0px;">
     <div class="container-fluid" >     
         <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,51 +48,40 @@
         </button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: left">
             <ul class="nav navbar-nav mr-auto">
-            	<li class="nav-item" style="margin-top: 7.5px">
-                    <i class="mdi mdi-tune-vertical"></i>
-                </li>
-                <li class="nav-item active">
-                	
-                    <a class="nav-link" href="<c:url value='/DangLamViec'/>"  >Đang làm việc</a>
-                </li>
+            
                 <li class="nav-item">
-                    <a class="nav-link" href="<c:url value='/NghiThaiSan'/>">Nghỉ thai sản</a>	
+                    <a class="nav-link" style="color: #6495ED">Lịch sử đóng bảo hiểm năm 2021</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="<c:url value='/NghiViec'/>" >Nghỉ việc</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="<c:url value='/TatCa'/>" style="border-bottom: 4px solid #6495ED;color:#6495ED">Tất cả</a>
-                </li>
+                
                 
             </ul>
         </div>
         
         <div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: right">
             <ul class="nav navbar-nav mr-auto" style="text-align: center;">
-                <li class="nav-item active" >
-                    <i class="mdi mdi-tag-outline"></i>
-                    <p style="font-size: 12px;margin-bottom: 0px">Nhãn</p>
-                </li>
+            	
                 <li class="nav-item" style="margin-left: 10px">
-                	<i class="mdi mdi-lan"></i>
-                    <p style="font-size: 12px;margin-bottom: 0px">Phòng ban</p>
+                    <div data-toggle="dropdown">
+						<i class="mdi mdi-timer"></i>
+						<p style="font-size: 12px; margin-bottom: 0px">Thời gian</p>
+					</div>
+					<!-- <div class="dropdown-menu">
+						<button id="hover-email" class="dropdown-item">Import hồ sơ nhân sự </button> 
+						<button id="hover-email" class="dropdown-item">Xem lịch sử import hồ sơ nhân sự </button> 
+							
+					</div> -->
                 </li>
+					
                 <li class="nav-item" style="margin-left: 10px">
-                    <i class="mdi mdi-email"></i>
-                    <p style="font-size: 12px;margin-bottom: 0px">Email/Sms+</p>
-                </li>
-                <li class="nav-item" style="margin-left: 10px">
-                	<i class="mdi mdi-export"></i>                
-                    <p style="font-size: 12px;margin-bottom: 0px">Export</p>
-                </li>
-                <li class="nav-item" style="margin-left: 10px">
-                    <i class="mdi mdi-exit-to-app"></i>
-                    <p style="font-size: 12px;margin-bottom: 0px">Import</p>
-                </li>
-                <li class="nav-item" style="margin-left: 10px">
-                    <i class="mdi mdi-settings"></i>
-                    <p style="font-size: 12px;margin-bottom: 0px">Cài đặt</p>
+                	<div data-toggle="dropdown">
+						<i class="mdi mdi-export"></i>
+						<p style="font-size: 12px; margin-bottom: 0px">Export</p>
+					</div>
+					<div class="dropdown-menu">
+						<button id="hover-email" class="dropdown-item">Xuất tất cả </button> 
+						<button id="hover-email" class="dropdown-item">Tùy chọn cột </button> 
+							
+					</div>
                 </li>
                 
             </ul>
@@ -85,107 +90,344 @@
     </div>
 </nav>
 
+
+
 <div class="scrollDiv">
-    <table class="table table-hover table-striped ">
-        <thead style="text-align: center;">
-            <tr>
-                <th class="active">
-                    <input type="checkbox" class="select-all checkbox" name="select-all" />
-                </th>
-                <th class="manv">Mã NV</th>
-                <th class="machamcong">Mã chấm công</th>
-                <th class="hoten">Họ và tên</th>
-                <th class="phongban">Phòng ban</th>
-                <th class="vitri">Vị trí</th>
-                <th class="chucvu">Chức vụ</th>
-                <th class="ngayvao">Ngày vào</th>
-                <th class="ngaysinh">Ngày sinh</th>
-                <th class="gioitinh">Giới tính</th>
-                <th class="ngaytaotaikhoan1office">Ngày tạo tài khoản 1 OFFICE</th>
-               
-            </tr>
-        </thead>
-        <tbody style="text-align: center;">
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-                    <td class="manv">1</td>
-	                <td class="machamcong">1</td>
-	                <td class="hoten">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="vitri">linh tinh</td>
-	                <td class="chucvu">còm</td>
-	                <td class="ngayvao">1999</td>
-	                <td class="ngaysinh">1999</td>
-	                <td class="gioitinh">nam</td>
-	                <td class="ngaytaotaikhoan1office">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-                <td class="manv">2</td>
-	                <td class="machamcong">2</td>
-	                <td class="hoten">nguyễn  phương</td>
-	                <td class="phongban">sinh học</td>
-	                <td class="vitri">ổn áp</td>
-	                <td class="chucvu">khá</td>
-	                <td class="ngayvao">1999</td>
-	                <td class="ngaysinh">1999</td>
-	                <td class="gioitinh">nam</td>
-	                <td class="ngaytaotaikhoan1office">3 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-                <td class="manv">3</td>
-	                <td class="machamcong">3</td>
-	                <td class="hoten">nguyễn  hiếu</td>
-	                <td class="phongban">sinh học</td>
-	                <td class="vitri">ổn áp</td>
-	                <td class="chucvu">khá</td>
-	                <td class="ngayvao">1999</td>
-	                <td class="ngaysinh">1999</td>
-	                <td class="gioitinh">nam</td>
-	                <td class="ngaytaotaikhoan1office">3 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-                <td class="manv">4</td>
-	                <td class="machamcong">4</td>
-	                <td class="hoten">nguyễn  nam</td>
-	                <td class="phongban">sinh học</td>
-	                <td class="vitri">ổn áp</td>
-	                <td class="chucvu">khá</td>
-	                <td class="ngayvao">1999</td>
-	                <td class="ngaysinh">1999</td>
-	                <td class="gioitinh">nam</td>
-	                <td class="ngaytaotaikhoan1office">3 năm trước</td>
-            </tr>
-            
-            <tr>
-            <td class="active" >
-                     <p style="text-align: right;margin-bottom: 0px;margin-right: 100px" >1 - 1 trong số 1<h9 style="margin-left:20px"><</h9><h9 style="margin-left:20px">></h9></p>
-                     
-                     
-                </td>
-               
-            </tr>
-            
-            
-        </tbody>
-    </table>
+	<table border="1" style="width:100%;text-align: center;">
+		<tr>
+			<th rowspan="2">TT </th>
+			<th rowspan="2">Mã NV</th>
+			<th rowspan="2">Họ và tên</th>
+			<th colspan="2">Tháng 1 </th>
+			<th colspan="2">Tháng 2</th>
+			<th colspan="2">Tổng</th>
+		</tr>
+		<tr >
+			<th>Phải đóng</th>
+			<th>Đã đóng</th>
+			<th>Phải đóng</th>
+			<th>Đã đóng</th>
+			<th>Phải đóng</th>
+			<th>Đã đóng</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>NV23</td>
+			<td>Đoàn thị hải ánh</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td></td>
+			<td>1,008,000</td>
+			<td>504,000</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>NV24</td>
+			<td>Lê văn thịnh</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td></td>
+			<td>1,008,000</td>
+			<td>504,000</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>NV23</td>
+			<td>Đoàn thị hải ánh</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td></td>
+			<td>1,008,000</td>
+			<td>504,000</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>NV24</td>
+			<td>Lê văn thịnh</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td></td>
+			<td>1,008,000</td>
+			<td>504,000</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>NV23</td>
+			<td>Đoàn thị hải ánh</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td></td>
+			<td>1,008,000</td>
+			<td>504,000</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>NV24</td>
+			<td>Lê văn thịnh</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td></td>
+			<td>1,008,000</td>
+			<td>504,000</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>NV23</td>
+			<td>Đoàn thị hải ánh</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td></td>
+			<td>1,008,000</td>
+			<td>504,000</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>NV24</td>
+			<td>Lê văn thịnh</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td></td>
+			<td>1,008,000</td>
+			<td>504,000</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>NV23</td>
+			<td>Đoàn thị hải ánh</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td></td>
+			<td>1,008,000</td>
+			<td>504,000</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>NV24</td>
+			<td>Lê văn thịnh</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td></td>
+			<td>1,008,000</td>
+			<td>504,000</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>NV23</td>
+			<td>Đoàn thị hải ánh</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td></td>
+			<td>1,008,000</td>
+			<td>504,000</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>NV24</td>
+			<td>Lê văn thịnh</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td></td>
+			<td>1,008,000</td>
+			<td>504,000</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>NV23</td>
+			<td>Đoàn thị hải ánh</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td></td>
+			<td>1,008,000</td>
+			<td>504,000</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>NV24</td>
+			<td>Lê văn thịnh</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td></td>
+			<td>1,008,000</td>
+			<td>504,000</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>NV23</td>
+			<td>Đoàn thị hải ánh</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td></td>
+			<td>1,008,000</td>
+			<td>504,000</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>NV24</td>
+			<td>Lê văn thịnh</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td></td>
+			<td>1,008,000</td>
+			<td>504,000</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>NV23</td>
+			<td>Đoàn thị hải ánh</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td></td>
+			<td>1,008,000</td>
+			<td>504,000</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>NV24</td>
+			<td>Lê văn thịnh</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td></td>
+			<td>1,008,000</td>
+			<td>504,000</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>NV23</td>
+			<td>Đoàn thị hải ánh</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td></td>
+			<td>1,008,000</td>
+			<td>504,000</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>NV24</td>
+			<td>Lê văn thịnh</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td></td>
+			<td>1,008,000</td>
+			<td>504,000</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>NV23</td>
+			<td>Đoàn thị hải ánh</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td></td>
+			<td>1,008,000</td>
+			<td>504,000</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>NV24</td>
+			<td>Lê văn thịnh</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td></td>
+			<td>1,008,000</td>
+			<td>504,000</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>NV23</td>
+			<td>Đoàn thị hải ánh</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td></td>
+			<td>1,008,000</td>
+			<td>504,000</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>NV24</td>
+			<td>Lê văn thịnh</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td></td>
+			<td>1,008,000</td>
+			<td>504,000</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>NV23</td>
+			<td>Đoàn thị hải ánh</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td></td>
+			<td>1,008,000</td>
+			<td>504,000</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>NV24</td>
+			<td>Lê văn thịnh</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td></td>
+			<td>1,008,000</td>
+			<td>504,000</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>NV23</td>
+			<td>Đoàn thị hải ánh</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td></td>
+			<td>1,008,000</td>
+			<td>504,000</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>NV24</td>
+			<td>Lê văn thịnh</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td>504,000</td>
+			<td></td>
+			<td>1,008,000</td>
+			<td>504,000</td>
+		</tr>
+	</TABLE>
+</div>
+
     <!--<button id="select-all" class="btn button-default">SelectAll/Cancel</button>-->
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="menu">
         <a class="dropdown-item" href="#">Action</a>
         <a class="dropdown-item" href="#">Another action</a>
         <a class="dropdown-item" href="#">Something else here</a>
     </div>
-</div>
+
 <div class="container-fluid bd-content">
     <div class="bd-example" data-example-id="">
         <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" role="dialog" tabindex="-1">
@@ -268,30 +510,33 @@
             if (i === 1) {
                 values = values + 'manhanvien=';
             } else if (i === 2) {
-                values = values + 'machamcong=';
-            } else if (i === 3) {
                 values = values + 'hoten=';
-            }
-            else if (i === 4) {
+            } else if (i === 3) {
                 values = values + 'phongban=';
             }
-            else if (i === 5) {
-                values = values + 'vitri=';
+            else if (i === 4) {
+                values = values + 'vitricongviec=';
             }
-            else if (i === 6) {
+            else if (i === 5) {
                 values = values + 'chucvu=';
             }
+            else if (i === 6) {
+                values = values + 'soso=';
+            }
             else if (i === 7) {
-                values = values + 'ngayvao=';
+                values = values + 'sothe=';
             }
             else if (i === 8) {
-                values = values + 'ngaysinh=';
+                values = values + 'batdaudong=';
             }
             else if (i === 9) {
-                values = values + 'gioitinh=';
+                values = values + 'mucdongbaohiem=';
             }
             else if (i === 10) {
-                values = values + 'ngaytaotaikhoan1office=';
+                values = values + 'ctdong=';
+            }
+            else if (i === 11) {
+                values = values + 'nldnop=';
             }
            
             values = values + str;

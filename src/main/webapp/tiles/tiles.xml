@@ -260,7 +260,7 @@
         <put-attribute name="body" value="/nhansu/dashboardAll.jsp" />
     </definition>
     
-    <!-- Hồ sơ nhân sự -->
+    <!-- Hồ sơ nhân sự ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
     
     <!-- Form đang làm việc -->
     <definition name="DangLamViec" extends="nhansu">
@@ -282,71 +282,300 @@
         <put-attribute name="body" value="/nhansu/hosonhansu/TatCa.jsp" />
     </definition>
     
-    <!-- Loại hợp đồng -->
-  
-    <definition name="loaihopdongAll" extends="nhansu">
-        <put-attribute name="body" value="/nhansu/loaihopdongAll.jsp" />
-    </definition>
+    <!-- Hợp đồng ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   -->
     
-    <!-- baohiem -->
+	  	<!-- Loại hợp đồng -->
+	  	
+		  	<!-- Form tất cả -->
+		    <definition name="all" extends="nhansu">
+		        <put-attribute name="body" value="/nhansu/hopDong/loaiHopDong/all.jsp" />
+		    </definition>
+		    
+		    <!-- Form hợp đồng 1 năm -->
+		    <definition name="hopDong1Nam" extends="nhansu">
+		        <put-attribute name="body" value="/nhansu/hopDong/loaiHopDong/hopDong1Nam.jsp" />
+		    </definition>
+		    
+		    <!-- Form hợp đồng học việc -->
+		    <definition name="hopDongHocViec" extends="nhansu">
+		        <put-attribute name="body" value="/nhansu/hopDong/loaiHopDong/hopDongHocViec.jsp" />
+		    </definition>
+		    
+		    <!-- Form hợp đồng thử việc -->
+		    <definition name="hopDongThuViec" extends="nhansu">
+		        <put-attribute name="body" value="/nhansu/hopDong/loaiHopDong/hopDongThuViec.jsp" />
+		    </definition>
+		    
+		    <!-- Form hợp đồng vô thời hạn -->
+		    <definition name="hopDongVoThoiHan" extends="nhansu">
+		        <put-attribute name="body" value="/nhansu/hopDong/loaiHopDong/hopDongVoThoiHan.jsp" />
+		    </definition>
+		    
+	    <!-- Theo năm -->
+	  	
+		  	<!-- Form năm 2021-->
+		    <definition name="2021" extends="nhansu">
+		        <put-attribute name="body" value="/nhansu/hopDong/theoNam/2021.jsp" />
+		    </definition>
+		    
+		    <!-- Form năm 2020 -->
+		    <definition name="2020" extends="nhansu">
+		        <put-attribute name="body" value="/nhansu/hopDong/theoNam/2020.jsp" />
+		    </definition>
+		    
+		    <!-- Form năm 2019 -->
+		    <definition name="2019" extends="nhansu">
+		        <put-attribute name="body" value="/nhansu/hopDong/theoNam/2019.jsp" />
+		    </definition>
+		    
+		    <!-- Form năm 2018 -->
+		    <definition name="2018" extends="nhansu">
+		        <put-attribute name="body" value="/nhansu/hopDong/theoNam/2018.jsp" />
+		    </definition>
+		    
+		    <!-- Form năm 2017 -->
+		    <definition name="2017" extends="nhansu">
+		        <put-attribute name="body" value="/nhansu/hopDong/theoNam/2017.jsp" />
+		    </definition>
+		    
+		    <!-- Form năm 2016 -->
+		    <definition name="2016" extends="nhansu">
+		        <put-attribute name="body" value="/nhansu/hopDong/theoNam/2016.jsp" />
+		    </definition>
+		    
+		    <!-- Form năm 2015 -->
+		    <definition name="2015" extends="nhansu">
+		        <put-attribute name="body" value="/nhansu/hopDong/theoNam/2015.jsp" />
+		    </definition>
+		    
+		    <!-- Form năm 2014 -->
+		    <definition name="2014" extends="nhansu">
+		        <put-attribute name="body" value="/nhansu/hopDong/theoNam/2014.jsp" />
+		    </definition>
+		    
+		    <!-- Form năm 2013 -->
+		    <definition name="2013" extends="nhansu">
+		        <put-attribute name="body" value="/nhansu/hopDong/theoNam/2013.jsp" />
+		    </definition>
+		    
+		    <!-- Form năm 2012 -->
+		    <definition name="2012" extends="nhansu">
+		        <put-attribute name="body" value="/nhansu/hopDong/theoNam/2012.jsp" />
+		    </definition>
     
-     <definition name="baohiemAll" extends="nhansu">
-        <put-attribute name="body" value="/nhansu/baohiemAll.jsp" />
-    </definition>
+    <!-- Bảo hiểm +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
     
-    <!-- kỳ đánh giá -->
+    	<!-- Form tất cả bảo hiểm -->
+    
+	    <definition name="tatCaBaoHiem" extends="nhansu">
+	        <put-attribute name="body" value="/nhansu/baoHiem/tatCaBaoHiem.jsp" />
+	    </definition>
+	    
+	    <!-- Form tăng dự kiến -->
+    
+	    <definition name="tangDuKien" extends="nhansu">
+	        <put-attribute name="body" value="/nhansu/baoHiem/tangDuKien.jsp" />
+	    </definition>
+	    
+	    <!-- Form giảm dự kiến -->
+    
+	    <definition name="giamDuKien" extends="nhansu">
+	        <put-attribute name="body" value="/nhansu/baoHiem/giamDuKien.jsp" />
+	    </definition>
+	    
+	    <!-- Form lịch sử đóng -->
+    
+	    <definition name="lichSuDong" extends="nhansu">
+	        <put-attribute name="body" value="/nhansu/baoHiem/lichSuDong.jsp" />
+	    </definition>
+	    
+	    <!-- Form báo cáo -->
+    
+	    <definition name="baoCao" extends="nhansu">
+	        <put-attribute name="body" value="/nhansu/baoHiem/baoCao.jsp" />
+	    </definition>
+	    
+	   
+    
+    <!-- Đánh giá năng lực -->
+    
+    	<!-- kỳ đánh giá -->
       
-     <definition name="kydanhgiaAll" extends="nhansu">
-        <put-attribute name="body" value="/nhansu/kydanhgiaAll.jsp" />
-    </definition>
+      		<!-- Form tất cả  -->
+			    <definition name="tatCaKyDanhGia" extends="nhansu">
+			        <put-attribute name="body" value="/nhansu/danhGiaNangLuc/kyDanhGia/tatCaKyDanhGia.jsp" />
+			    </definition>
+			    
+		    <!-- Form bạn đánh giá  -->
+			    <definition name="banDanhGia" extends="nhansu">
+			        <put-attribute name="body" value="/nhansu/danhGiaNangLuc/kyDanhGia/banDanhGia.jsp" />
+			    </definition>
+			    
+		    <!-- Form đánh giá bạn   -->
+			    <definition name="danhGiaBan" extends="nhansu">
+			        <put-attribute name="body" value="/nhansu/danhGiaNangLuc/kyDanhGia/danhGiaBan.jsp" />
+			    </definition>
+	    
+	    <!-- Form mẫu đánh giá năng lực -->
+      
+	    <definition name="mauDanhGiaNangLuc" extends="nhansu">
+	        <put-attribute name="body" value="/nhansu/danhGiaNangLuc/mauDanhGiaNangLuc.jsp" />
+	    </definition>
+	    
+	    <!-- Form thư viện năng lực -->
+      
+	    <definition name="thuVienNangLuc" extends="nhansu">
+	        <put-attribute name="body" value="/nhansu/danhGiaNangLuc/thuVienNangLuc.jsp" />
+	    </definition>
     
-  
+<!-- Khen thưởng và kỉ luật lao động -->
+ 
     <!-- khen thưởng -->
     
-     <definition name="khenthuongAll" extends="nhansu">
-        <put-attribute name="body" value="/nhansu/khenthuongAll.jsp" />
-    </definition>
+    	<!-- Tất cả -->
+    	
+	    		<definition name="tatCaKhenThuong" extends="nhansu">
+	        		<put-attribute name="body" value="/nhansu/khenThuongVaKiLuat/khenThuong/tatCaKhenThuong.jsp" />
+	   		    </definition>
+	   		    
+ 		<!-- chờ duyệt -->
+    	
+	    		<definition name="choDuyetKhenThuong" extends="nhansu">
+	        		<put-attribute name="body" value="/nhansu/khenThuongVaKiLuat/khenThuong/choDuyetKhenThuong.jsp" />
+	   		    </definition>
+	   		    
+		<!-- đã duyệt -->
+    	
+	    		<definition name="daDuyetKhenThuong" extends="nhansu">
+	        		<put-attribute name="body" value="/nhansu/khenThuongVaKiLuat/khenThuong/daDuyetKhenThuong.jsp" />
+	   		    </definition>
+	   		    
+   		<!-- không duyệt -->
+    	
+	    		<definition name="khongDuyetKhenThuong" extends="nhansu">
+	        		<put-attribute name="body" value="/nhansu/khenThuongVaKiLuat/khenThuong/khongDuyetKhenThuong.jsp" />
+	   		    </definition>
+	   		    
+	<!-- kỉ luật lao động -->
     
+    	<!-- Tất cả -->
+    	
+	    		<definition name="tatCaKLLD" extends="nhansu">
+	        		<put-attribute name="body" value="/nhansu/khenThuongVaKiLuat/kiLuatLaoDong/tatCaKLLD.jsp" />
+	   		    </definition>
+	   		    
+ 		<!-- chờ duyệt -->
+    	
+	    		<definition name="choDuyetKLLD" extends="nhansu">
+	        		<put-attribute name="body" value="/nhansu/khenThuongVaKiLuat/kiLuatLaoDong/choDuyetKLLD.jsp" />
+	   		    </definition>
+	   		    
+		<!-- đã duyệt -->
+    	
+	    		<definition name="daDuyetKLLD" extends="nhansu">
+	        		<put-attribute name="body" value="/nhansu/khenThuongVaKiLuat/kiLuatLaoDong/daDuyetKLLD.jsp" />
+	   		    </definition>
+	   		    
+   		<!-- không duyệt -->
+    	
+	    		<definition name="khongDuyetKLLD" extends="nhansu">
+	        		<put-attribute name="body" value="/nhansu/khenThuongVaKiLuat/kiLuatLaoDong/khongDuyetKLLD.jsp" />
+	   		    </definition>
+	   		    
+   <!-- kỷ luật nội bộ -->
+   
+  		 <definition name="kLNoiBo" extends="nhansu">
+        		<put-attribute name="body" value="/nhansu/khenThuongVaKiLuat/kLNoiBo.jsp" />
+	     </definition>
+	     
+   <!-- thư viện lỗi, kỷ luật -->
+   
+  		 <definition name="thuVienLoiKyLuat" extends="nhansu">
+        		<put-attribute name="body" value="/nhansu/khenThuongVaKiLuat/thuVienLoiKyLuat.jsp" />
+	     </definition>
+	   		    
+   <!-- báo cáo -->
+    
+	    	<!-- khen thưởng -->
+	    	
+		    		<definition name="khenThuong" extends="nhansu">
+		        		<put-attribute name="body" value="/nhansu/khenThuongVaKiLuat/baoCao/khenThuong.jsp" />
+		   		    </definition>
+		   		    
+	 		<!-- kỷ luật lao động -->
+	    	
+		    		<definition name="kyLuatLaoDong" extends="nhansu">
+		        		<put-attribute name="body" value="/nhansu/khenThuongVaKiLuat/baoCao/kyLuatLaoDong.jsp" />
+		   		    </definition>
+		   		    
+			<!-- kỷ luật nội bộ -->
+	    	
+		    		<definition name="kyLuatNoiBo" extends="nhansu">
+		        		<put-attribute name="body" value="/nhansu/khenThuongVaKiLuat/baoCao/kyLuatNoiBo.jsp" />
+		   		    </definition>
+		   		    
+		   		    
+	   		
+<!-- báo cáo, phân tích -->
+
     <!-- báo cáo đã tạo -->
     
-     <definition name="baocaodataoAll" extends="nhansu">
-        <put-attribute name="body" value="/nhansu/baocaodataoAll.jsp" />
-    </definition>
+    	<!-- tất cả -->
+    	
+	    <definition name="tatCaBaoCao" extends="nhansu">
+	        <put-attribute name="body" value="/nhansu/baoCaoPhanTich/baoCaoDaTao/tatCaBaoCao.jsp" />
+	    </definition>
+	    
+	    <!-- báo cáo đề xuất -->
+    	
+	    <definition name="baoCaoDeXuat" extends="nhansu">
+	        <put-attribute name="body" value="/nhansu/baoCaoPhanTich/baoCaoDaTao/baoCaoDeXuat.jsp" />
+	    </definition>
+	    
+	<!-- báo cáo đã lưu -->
+	
+	<definition name="baoCaoDaLuu" extends="nhansu">
+	        <put-attribute name="body" value="/nhansu/baoCaoPhanTich/baoCaoDaLuu.jsp" />
+   	</definition>
+	    
+	    
     
-    <!-- Create hồ sơ nhân sự -->
+    <!-- Create ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
     
-    <definition name="createHoSoNhanSu" extends="nhansu">
-        <put-attribute name="body" value="/nhansu/create/createHoSoNhanSu.jsp" />
-    </definition>
-    
-    <!-- Create hợp đồng -->
-    
-    <definition name="createHopDong" extends="nhansu">
-        <put-attribute name="body" value="/nhansu/create/createHopDong.jsp" />
-    </definition>
-    
-    <!-- Create bảo hiểm -->
-    
-    <definition name="createBaoHiem" extends="nhansu">
-        <put-attribute name="body" value="/nhansu/create/createBaoHiem.jsp" />
-    </definition>
-    
-    <!-- Create tiếp nhận -->
-    
-    <definition name="createTiepNhan" extends="nhansu">
-        <put-attribute name="body" value="/nhansu/create/createTiepNhan.jsp" />
-    </definition>
-    
-    <!-- Create thôi việc -->
-    
-    <definition name="createThoiViec" extends="nhansu">
-        <put-attribute name="body" value="/nhansu/create/createThoiViec.jsp" />
-    </definition>
-    
-    <!-- Create đính kèm -->
-    
-    <definition name="createDinhKem" extends="nhansu">
-        <put-attribute name="body" value="/nhansu/create/createDinhKem.jsp" />
-    </definition>
+	    <!-- Create hồ sơ nhân sự -->
+	    
+	    <definition name="createHoSoNhanSu" extends="nhansu">
+	        <put-attribute name="body" value="/nhansu/create/createHoSoNhanSu.jsp" />
+	    </definition>
+	    
+	    <!-- Create hợp đồng -->
+	    
+	    <definition name="createHopDong" extends="nhansu">
+	        <put-attribute name="body" value="/nhansu/create/createHopDong.jsp" />
+	    </definition>
+	    
+	    <!-- Create bảo hiểm -->
+	    
+	    <definition name="createBaoHiem" extends="nhansu">
+	        <put-attribute name="body" value="/nhansu/create/createBaoHiem.jsp" />
+	    </definition>
+	    
+	    <!-- Create tiếp nhận -->
+	    
+	    <definition name="createTiepNhan" extends="nhansu">
+	        <put-attribute name="body" value="/nhansu/create/createTiepNhan.jsp" />
+	    </definition>
+	    
+	    <!-- Create thôi việc -->
+	    
+	    <definition name="createThoiViec" extends="nhansu">
+	        <put-attribute name="body" value="/nhansu/create/createThoiViec.jsp" />
+	    </definition>
+	    
+	    <!-- Create đính kèm -->
+	    
+	    <definition name="createDinhKem" extends="nhansu">
+	        <put-attribute name="body" value="/nhansu/create/createDinhKem.jsp" />
+	    </definition>
     
 </tiles-definitions>

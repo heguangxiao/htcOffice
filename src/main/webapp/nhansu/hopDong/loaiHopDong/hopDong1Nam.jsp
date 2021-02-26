@@ -32,21 +32,20 @@
         </button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: left">
             <ul class="nav navbar-nav mr-auto">
-            	<li class="nav-item" style="margin-top: 7.5px">
-                    <i class="mdi mdi-tune-vertical"></i>
-                </li>
                 <li class="nav-item active">
-                	
-                    <a class="nav-link" href="<c:url value='/DangLamViec'/>"  >Đang làm việc</a>
+                    <a class="nav-link" href="<c:url value='/all'/>" >Tất cả</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<c:url value='/NghiThaiSan'/>">Nghỉ thai sản</a>	
+                    <a class="nav-link" href="<c:url value='/hopDong1Nam'/>" style="border-bottom: 4px solid #6495ED;color:#6495ED">Hợp đồng 1 năm</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<c:url value='/NghiViec'/>" >Nghỉ việc</a>
+                    <a class="nav-link" href="<c:url value='/hopDongHocViec'/>">Hợp đồng học việc</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<c:url value='/TatCa'/>" style="border-bottom: 4px solid #6495ED;color:#6495ED">Tất cả</a>
+                    <a class="nav-link" href="<c:url value='/hopDongThuViec'/>">Hợp đồng thử việc</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="<c:url value='/hopDongVoThoiHan'/>">Hợp đồng vô thời hạn</a>
                 </li>
                 
             </ul>
@@ -54,25 +53,29 @@
         
         <div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: right">
             <ul class="nav navbar-nav mr-auto" style="text-align: center;">
-                <li class="nav-item active" >
-                    <i class="mdi mdi-tag-outline"></i>
-                    <p style="font-size: 12px;margin-bottom: 0px">Nhãn</p>
+            	
+                
+                <li class="nav-item" style="margin-left: 10px">
+                	<div data-toggle="dropdown">
+						<i class="mdi mdi-export"></i>
+						<p style="font-size: 12px; margin-bottom: 0px">Export</p>
+					</div>
+					<div class="dropdown-menu">
+						<button id="hover-email" class="dropdown-item">Xuất tất cả </button> 
+						<button id="hover-email" class="dropdown-item">Tùy chọn cột </button> 
+							
+					</div>
                 </li>
                 <li class="nav-item" style="margin-left: 10px">
-                	<i class="mdi mdi-lan"></i>
-                    <p style="font-size: 12px;margin-bottom: 0px">Phòng ban</p>
-                </li>
-                <li class="nav-item" style="margin-left: 10px">
-                    <i class="mdi mdi-email"></i>
-                    <p style="font-size: 12px;margin-bottom: 0px">Email/Sms+</p>
-                </li>
-                <li class="nav-item" style="margin-left: 10px">
-                	<i class="mdi mdi-export"></i>                
-                    <p style="font-size: 12px;margin-bottom: 0px">Export</p>
-                </li>
-                <li class="nav-item" style="margin-left: 10px">
-                    <i class="mdi mdi-exit-to-app"></i>
-                    <p style="font-size: 12px;margin-bottom: 0px">Import</p>
+                    <div data-toggle="dropdown">
+						<i class="mdi mdi-exit-to-app"></i>
+						<p style="font-size: 12px; margin-bottom: 0px">Import</p>
+					</div>
+					<div class="dropdown-menu">
+						<button id="hover-email" class="dropdown-item">Import hồ sơ nhân sự </button> 
+						<button id="hover-email" class="dropdown-item">Xem lịch sử import hồ sơ nhân sự </button> 
+							
+					</div>
                 </li>
                 <li class="nav-item" style="margin-left: 10px">
                     <i class="mdi mdi-settings"></i>
@@ -92,91 +95,175 @@
                 <th class="active">
                     <input type="checkbox" class="select-all checkbox" name="select-all" />
                 </th>
-                <th class="manv">Mã NV</th>
-                <th class="machamcong">Mã chấm công</th>
-                <th class="hoten">Họ và tên</th>
+                <th class="nguoitao">Người tạo</th>
+                <th class="mahoatdong">Mã HĐ</th>
+                <th class="tennhansu">Tên nhân sự</th>
                 <th class="phongban">Phòng ban</th>
-                <th class="vitri">Vị trí</th>
-                <th class="chucvu">Chức vụ</th>
-                <th class="ngayvao">Ngày vào</th>
-                <th class="ngaysinh">Ngày sinh</th>
-                <th class="gioitinh">Giới tính</th>
-                <th class="ngaytaotaikhoan1office">Ngày tạo tài khoản 1 OFFICE</th>
+                <th class="tenhopdong">Tên hợp đồng</th>
+                <th class="ngayky">Ngày ký</th>
+                <th class="hieuluctungay">Hiệu lực từ ngày</th>
+                <th class="denngay">Đến ngày</th>
+                <th class="trangthai">Trạng thái</th>
+                <th class="ngaytao">Ngày tạo</th>
                
             </tr>
         </thead>
         <tbody style="text-align: center;">
+            <tr >
+                <td class="active">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+    				<td class="py-1">
+                        <img src="<c:url value='/images/faces-clipart/pic-3.png'/>" alt="image" />
+                    </td>
+	                <td class="mahoatdong">1</td>
+	                <td class="tennhansu">quản lý kho</td>
+	                <td class="phongban">nhân sự</td>
+	                <td class="tenhopdong">ổn áp</td>
+	                <td class="ngayky">19/09/2038</td>
+	                <td class="hieuluctungay">1999</td>
+	                <td class="denngay">1999</td>
+	                <td class="trangthai">hoạt động</td>
+	                <td class="ngaytao">2 năm trước</td>
+            </tr>
+            <tr>
+                <td class="active">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
+                </td>
+               	    <td class="py-1">
+                        <img src="<c:url value='/images/faces-clipart/pic-3.png'/>" alt="image" />
+                    </td>
+	                <td class="mahoatdong">2</td>
+	                <td class="tennhansu">kế hoạch</td>
+	                <td class="phongban">quản lý</td>
+	                <td class="tenhopdong">linh tinh</td>
+	                <td class="ngayky">còm</td>
+	                <td class="hieuluctungay">1999</td>
+	                <td class="denngay">2001</td>
+	                <td class="trangthai">hoạt động</td>
+	                <td class="ngaytao">4 năm trước</td>
+            </tr>
+            <tr>
+                <td class="active">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
+                </td>
+                	<td class="py-1">
+                        <img src="<c:url value='/images/faces-clipart/pic-3.png'/>" alt="image" />
+                    </td>
+	                <td class="mahoatdong">3</td>
+	                <td class="tennhansu">trưởng ban</td>
+	                <td class="phongban">toán</td>
+	                <td class="tenhopdong">sổ sách</td>
+	                <td class="ngayky">2001</td>
+	                <td class="hieuluctungay">1999</td>
+	                <td class="denngay">1999</td>
+	                <td class="trangthai">tạm dừng</td>
+	                <td class="ngaytao">2 năm trước</td>
+            </tr>
+            <tr>
+                <td class="active">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
+                </td>
+               	    <td class="py-1">
+                        <img src="<c:url value='/images/faces-clipart/pic-3.png'/>" alt="image" />
+                    </td>
+	                <td class="mahoatdong">4</td>
+	                <td class="tennhansu">lê văn thịnh</td>
+	                <td class="phongban">toán</td>
+	                <td class="tenhopdong">linh tinh</td>
+	                <td class="ngayky">còm</td>
+	                <td class="hieuluctungay">1999</td>
+	                <td class="denngay">1999</td>
+	                <td class="trangthai">nam</td>
+	                <td class="ngaytao">2 năm trước</td>
+            </tr>
             <tr>
                 <td class="active">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                    <td class="manv">1</td>
-	                <td class="machamcong">1</td>
-	                <td class="hoten">lê văn thịnh</td>
+                	<td class="py-1">
+                        <img src="<c:url value='/images/faces-clipart/pic-3.png'/>" alt="image" />
+                    </td>
+	                <td class="mahoatdong">5</td>
+	                <td class="tennhansu">lê văn thịnh</td>
 	                <td class="phongban">toán</td>
-	                <td class="vitri">linh tinh</td>
-	                <td class="chucvu">còm</td>
-	                <td class="ngayvao">1999</td>
-	                <td class="ngaysinh">1999</td>
-	                <td class="gioitinh">nam</td>
-	                <td class="ngaytaotaikhoan1office">2 năm trước</td>
+	                <td class="tenhopdong">linh tinh</td>
+	                <td class="ngayky">còm</td>
+	                <td class="hieuluctungay">1999</td>
+	                <td class="denngay">1999</td>
+	                <td class="trangthai">nam</td>
+	                <td class="ngaytao">2 năm trước</td>
             </tr>
             <tr>
                 <td class="active">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
                 </td>
-                <td class="manv">2</td>
-	                <td class="machamcong">2</td>
-	                <td class="hoten">nguyễn  phương</td>
-	                <td class="phongban">sinh học</td>
-	                <td class="vitri">ổn áp</td>
-	                <td class="chucvu">khá</td>
-	                <td class="ngayvao">1999</td>
-	                <td class="ngaysinh">1999</td>
-	                <td class="gioitinh">nam</td>
-	                <td class="ngaytaotaikhoan1office">3 năm trước</td>
+					<td class="py-1">
+                        <img src="<c:url value='/images/faces-clipart/pic-3.png'/>" alt="image" />
+                    </td>
+	                <td class="mahoatdong">6</td>
+	                <td class="tennhansu">lê văn thịnh</td>
+	                <td class="phongban">toán</td>
+	                <td class="tenhopdong">linh tinh</td>
+	                <td class="ngayky">còm</td>
+	                <td class="hieuluctungay">1999</td>
+	                <td class="denngay">1999</td>
+	                <td class="trangthai">nam</td>
+	                <td class="ngaytao">2 năm trước</td>
+			</tr>
+            <tr>
+                <td class="active">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
+                </td>
+                	<td class="py-1">
+                        <img src="<c:url value='/images/faces-clipart/pic-3.png'/>" alt="image" />
+                    </td>
+	                <td class="mahoatdong">7</td>
+	                <td class="tennhansu">lê văn thịnh</td>
+	                <td class="phongban">toán</td>
+	                <td class="tenhopdong">linh tinh</td>
+	                <td class="ngayky">còm</td>
+	                <td class="hieuluctungay">1999</td>
+	                <td class="denngay">1999</td>
+	                <td class="trangthai">nam</td>
+	                <td class="ngaytao">2 năm trước</td>
             </tr>
             <tr>
                 <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
                 </td>
-                <td class="manv">3</td>
-	                <td class="machamcong">3</td>
-	                <td class="hoten">nguyễn  hiếu</td>
-	                <td class="phongban">sinh học</td>
-	                <td class="vitri">ổn áp</td>
-	                <td class="chucvu">khá</td>
-	                <td class="ngayvao">1999</td>
-	                <td class="ngaysinh">1999</td>
-	                <td class="gioitinh">nam</td>
-	                <td class="ngaytaotaikhoan1office">3 năm trước</td>
+                	<td class="py-1">
+                        <img src="<c:url value='/images/faces-clipart/pic-3.png'/>" alt="image" />
+                    </td>
+	                <td class="mahoatdong">8</td>
+	                <td class="tennhansu">lê văn thịnh</td>
+	                <td class="phongban">toán</td>
+	                <td class="tenhopdong">linh tinh</td>
+	                <td class="ngayky">còm</td>
+	                <td class="hieuluctungay">1999</td>
+	                <td class="denngay">1999</td>
+	                <td class="trangthai">nam</td>
+	                <td class="ngaytao">2 năm trước</td>
             </tr>
             <tr>
                 <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="manv">4</td>
-	                <td class="machamcong">4</td>
-	                <td class="hoten">nguyễn  nam</td>
-	                <td class="phongban">sinh học</td>
-	                <td class="vitri">ổn áp</td>
-	                <td class="chucvu">khá</td>
-	                <td class="ngayvao">1999</td>
-	                <td class="ngaysinh">1999</td>
-	                <td class="gioitinh">nam</td>
-	                <td class="ngaytaotaikhoan1office">3 năm trước</td>
+               		<td class="py-1">
+                        <img src="<c:url value='/images/faces-clipart/pic-3.png'/>" alt="image" />
+                    </td>
+	                <td class="mahoatdong">9</td>
+	                <td class="tennhansu">lê văn thịnh</td>
+	                <td class="phongban">toán</td>
+	                <td class="tenhopdong">linh tinh</td>
+	                <td class="ngayky">còm</td>
+	                <td class="hieuluctungay">1999</td>
+	                <td class="denngay">1999</td>
+	                <td class="trangthai">nam</td>
+	                <td class="ngaytao">2 năm trước</td>
             </tr>
             
-            <tr>
-            <td class="active" >
-                     <p style="text-align: right;margin-bottom: 0px;margin-right: 100px" >1 - 1 trong số 1<h9 style="margin-left:20px"><</h9><h9 style="margin-left:20px">></h9></p>
-                     
-                     
-                </td>
-               
-            </tr>
-            
-            
+           
         </tbody>
     </table>
     <!--<button id="select-all" class="btn button-default">SelectAll/Cancel</button>-->
@@ -266,32 +353,32 @@
         jQuery.each($columns, function (i, item) {
             var str = item.innerHTML.trim().indexOf('<input type="checkbox" class="select-item checkbox"') === -1 ? item.innerHTML.trim() + '&' : '';
             if (i === 1) {
-                values = values + 'manhanvien=';
+                values = values + 'nguoitao=';
             } else if (i === 2) {
-                values = values + 'machamcong=';
+                values = values + 'mahoatdong=';
             } else if (i === 3) {
-                values = values + 'hoten=';
+                values = values + 'tennhansu=';
             }
             else if (i === 4) {
                 values = values + 'phongban=';
             }
             else if (i === 5) {
-                values = values + 'vitri=';
+                values = values + 'tenhopdong=';
             }
             else if (i === 6) {
-                values = values + 'chucvu=';
+                values = values + 'ngayky=';
             }
             else if (i === 7) {
-                values = values + 'ngayvao=';
+                values = values + 'hieuluctucngay=';
             }
             else if (i === 8) {
-                values = values + 'ngaysinh=';
+                values = values + 'denngay=';
             }
             else if (i === 9) {
-                values = values + 'gioitinh=';
+                values = values + 'trangthai=';
             }
             else if (i === 10) {
-                values = values + 'ngaytaotaikhoan1office=';
+                values = values + 'ngaytao=';
             }
            
             values = values + str;

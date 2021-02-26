@@ -1,4 +1,5 @@
 <%@page contentType="text/html; charset=utf-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <style>
     tbody {
         display:block;
@@ -29,15 +30,73 @@
         <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-align-justify"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: left">
             <ul class="nav navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Tất cả báo cáo</a>
+                    <a class="nav-link" href="<c:url value='/2021'/>" >Năm 2021</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Báo cáo đề xuất</a>
+                    <a class="nav-link" href="<c:url value='/2020'/>" style="border-bottom: 4px solid #6495ED;color:#6495ED">Năm 2020</a>
                 </li>
-               
+                <li class="nav-item active">
+                    <a class="nav-link" href="<c:url value='/2019'/>">Năm 2019</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<c:url value='/2018'/>">Năm 2018</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<c:url value='/2017'/>">Năm 2017</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="<c:url value='/2016'/>">Năm 2016</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<c:url value='/2015'/>">Năm 2015</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<c:url value='/2014'/>">Năm 2014</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="<c:url value='/2013'/>">Năm 2013</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<c:url value='/2012'/>">Năm 2012</a>
+                </li>
+          
+            </ul>
+        </div>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: right">
+            <ul class="nav navbar-nav mr-auto" style="text-align: center;">
+                
+                <li class="nav-item" style="margin-left: 10px">
+                	<div data-toggle="dropdown">
+						<i class="mdi mdi-export"></i>
+						<p style="font-size: 12px; margin-bottom: 0px">Export</p>
+					</div>
+					<div class="dropdown-menu">
+						<button id="hover-email" class="dropdown-item">Xuất tất cả </button> 
+						<button id="hover-email" class="dropdown-item">Tùy chọn cột </button> 
+							
+					</div>
+                </li>
+                
+                <li class="nav-item" style="margin-left: 10px">
+                    <div data-toggle="dropdown">
+						<i class="mdi mdi-exit-to-app"></i>
+						<p style="font-size: 12px; margin-bottom: 0px">Import</p>
+					</div>
+					<div class="dropdown-menu">
+						<button id="hover-email" class="dropdown-item">Import hồ sơ nhân sự </button> 
+						<button id="hover-email" class="dropdown-item">Xem lịch sử import hồ sơ nhân sự </button> 
+							
+					</div>
+                </li>
+                
+                <li class="nav-item" style="margin-left: 10px">
+                    <i class="mdi mdi-settings"></i>
+                    <p style="font-size: 12px;margin-bottom: 0px">Cài đặt</p>
+                </li>
                 
             </ul>
         </div>
@@ -46,15 +105,11 @@
     </div>
 </nav>
 
-<div class="scrollDiv">
-    Không tìm thấy kết quả nào
-    <!--<button id="select-all" class="btn button-default">SelectAll/Cancel</button>-->
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="menu">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <a class="dropdown-item" href="#">Something else here</a>
-    </div>
-</div>
+
+<hr style="margin-top: 45px">             
+<p style="clear: left;"> Không tìm thấy kết quả nào</p>
+
+
 <div class="container-fluid bd-content">
     <div class="bd-example" data-example-id="">
         <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" role="dialog" tabindex="-1">

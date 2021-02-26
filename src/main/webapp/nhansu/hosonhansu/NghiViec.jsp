@@ -87,7 +87,7 @@
 
 <div class="scrollDiv">
     <table class="table table-hover table-striped ">
-        <thead>
+        <thead style="text-align: center;">
             <tr>
                 <th class="active">
                     <input type="checkbox" class="select-all checkbox" name="select-all" />
@@ -105,7 +105,7 @@
                
             </tr>
         </thead>
-        <tbody>
+        <tbody style="text-align: center;">
             <tr>
                 <td class="active">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />

@@ -25,9 +25,58 @@
     }
 </style>
 
+<nav class=" navbar-expand-lg navbar-light bg-light" style="padding-top: 0px;padding-bottom: 0px;margin-top: 0px;">
+    <div class="container-fluid" >     
+        <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-align-justify"></i>
+        </button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: left">
+            <ul class="nav navbar-nav mr-auto">
+            	<li class="nav-item" style="margin-top: 7.5px">
+                    <i class="mdi mdi-tune-vertical"></i>
+                </li>
+                
+                
+            </ul>
+        </div>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: right">
+            <ul class="nav navbar-nav mr-auto" style="text-align: center;">
+            	
+                <li class="nav-item" style="margin-left: 10px">
+                    <div data-toggle="dropdown">
+						<i class="mdi mdi-timer"></i>
+						<p style="font-size: 12px; margin-bottom: 0px">Thời gian</p>
+					</div>
+					
+                </li>
+					
+                <li class="nav-item" style="margin-left: 10px">
+                	<div data-toggle="dropdown">
+						<i class="mdi mdi-export"></i>
+						<p style="font-size: 12px; margin-bottom: 0px">Export</p>
+					</div>
+					<div class="dropdown-menu">
+						<button id="hover-email" class="dropdown-item">Xuất tất cả </button> 
+						<button id="hover-email" class="dropdown-item">Tùy chọn cột </button> 
+							
+					</div>
+                </li>
+                
+                <li class="nav-item" style="margin-left: 10px">
+                    <i class="mdi mdi-settings"></i>
+                    <p style="font-size: 12px;margin-bottom: 0px">Cài đặt</p>
+                </li>
+                
+            </ul>
+        </div>
+        
+    </div>
+</nav>
+
 <div class="scrollDiv">
     <table class="table table-hover table-striped ">
-        <thead>
+        <thead style="text-align: center;">
             <tr>
                 <th class="active">
                     <input type="checkbox" class="select-all checkbox" name="select-all" />
@@ -46,7 +95,7 @@
                
             </tr>
         </thead>
-        <tbody>
+        <tbody style="text-align: center;">
             <tr>
                 <td class="active">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />

@@ -30,50 +30,72 @@
         <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-align-justify"></i>
         </button>
-		<div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: left">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: left">
             <ul class="nav navbar-nav mr-auto">
             	<li class="nav-item" style="margin-top: 7.5px">
                     <i class="mdi mdi-tune-vertical"></i>
                 </li>
                 <li class="nav-item active">
-                	
-                    <a class="nav-link" href="<c:url value='/DangLamViec'/>"  >Đang làm việc</a>
+                    <a class="nav-link" href="<c:url value='/2021'/>" style="border-bottom: 4px solid #6495ED;color:#6495ED">Năm 2021</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<c:url value='/NghiThaiSan'/>">Nghỉ thai sản</a>	
+                    <a class="nav-link" href="<c:url value='/2020'/>">Năm 2020</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="<c:url value='/2019'/>">Năm 2019</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<c:url value='/NghiViec'/>" >Nghỉ việc</a>
+                    <a class="nav-link" href="<c:url value='/2018'/>">Năm 2018</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<c:url value='/TatCa'/>" style="border-bottom: 4px solid #6495ED;color:#6495ED">Tất cả</a>
+                    <a class="nav-link" href="<c:url value='/2017'/>">Năm 2017</a>
                 </li>
-                
+                <li class="nav-item active">
+                    <a class="nav-link" href="<c:url value='/2016'/>">Năm 2016</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<c:url value='/2015'/>">Năm 2015</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<c:url value='/2014'/>">Năm 2014</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="<c:url value='/2013'/>">Năm 2013</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<c:url value='/2012'/>">Năm 2012</a>
+                </li>
+          
             </ul>
         </div>
         
         <div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: right">
             <ul class="nav navbar-nav mr-auto" style="text-align: center;">
-                <li class="nav-item active" >
-                    <i class="mdi mdi-tag-outline"></i>
-                    <p style="font-size: 12px;margin-bottom: 0px">Nhãn</p>
-                </li>
+                
                 <li class="nav-item" style="margin-left: 10px">
-                	<i class="mdi mdi-lan"></i>
-                    <p style="font-size: 12px;margin-bottom: 0px">Phòng ban</p>
+                	<div data-toggle="dropdown">
+						<i class="mdi mdi-export"></i>
+						<p style="font-size: 12px; margin-bottom: 0px">Export</p>
+					</div>
+					<div class="dropdown-menu">
+						<button id="hover-email" class="dropdown-item">Xuất tất cả </button> 
+						<button id="hover-email" class="dropdown-item">Tùy chọn cột </button> 
+							
+					</div>
                 </li>
+                
                 <li class="nav-item" style="margin-left: 10px">
-                    <i class="mdi mdi-email"></i>
-                    <p style="font-size: 12px;margin-bottom: 0px">Email/Sms+</p>
+                    <div data-toggle="dropdown">
+						<i class="mdi mdi-exit-to-app"></i>
+						<p style="font-size: 12px; margin-bottom: 0px">Import</p>
+					</div>
+					<div class="dropdown-menu">
+						<button id="hover-email" class="dropdown-item">Import hồ sơ nhân sự </button> 
+						<button id="hover-email" class="dropdown-item">Xem lịch sử import hồ sơ nhân sự </button> 
+							
+					</div>
                 </li>
-                <li class="nav-item" style="margin-left: 10px">
-                	<i class="mdi mdi-export"></i>                
-                    <p style="font-size: 12px;margin-bottom: 0px">Export</p>
-                </li>
-                <li class="nav-item" style="margin-left: 10px">
-                    <i class="mdi mdi-exit-to-app"></i>
-                    <p style="font-size: 12px;margin-bottom: 0px">Import</p>
-                </li>
+                
                 <li class="nav-item" style="margin-left: 10px">
                     <i class="mdi mdi-settings"></i>
                     <p style="font-size: 12px;margin-bottom: 0px">Cài đặt</p>
@@ -81,111 +103,16 @@
                 
             </ul>
         </div>
+
         
     </div>
 </nav>
 
-<div class="scrollDiv">
-    <table class="table table-hover table-striped ">
-        <thead style="text-align: center;">
-            <tr>
-                <th class="active">
-                    <input type="checkbox" class="select-all checkbox" name="select-all" />
-                </th>
-                <th class="manv">Mã NV</th>
-                <th class="machamcong">Mã chấm công</th>
-                <th class="hoten">Họ và tên</th>
-                <th class="phongban">Phòng ban</th>
-                <th class="vitri">Vị trí</th>
-                <th class="chucvu">Chức vụ</th>
-                <th class="ngayvao">Ngày vào</th>
-                <th class="ngaysinh">Ngày sinh</th>
-                <th class="gioitinh">Giới tính</th>
-                <th class="ngaytaotaikhoan1office">Ngày tạo tài khoản 1 OFFICE</th>
-               
-            </tr>
-        </thead>
-        <tbody style="text-align: center;">
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-                    <td class="manv">1</td>
-	                <td class="machamcong">1</td>
-	                <td class="hoten">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="vitri">linh tinh</td>
-	                <td class="chucvu">còm</td>
-	                <td class="ngayvao">1999</td>
-	                <td class="ngaysinh">1999</td>
-	                <td class="gioitinh">nam</td>
-	                <td class="ngaytaotaikhoan1office">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-                <td class="manv">2</td>
-	                <td class="machamcong">2</td>
-	                <td class="hoten">nguyễn  phương</td>
-	                <td class="phongban">sinh học</td>
-	                <td class="vitri">ổn áp</td>
-	                <td class="chucvu">khá</td>
-	                <td class="ngayvao">1999</td>
-	                <td class="ngaysinh">1999</td>
-	                <td class="gioitinh">nam</td>
-	                <td class="ngaytaotaikhoan1office">3 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-                <td class="manv">3</td>
-	                <td class="machamcong">3</td>
-	                <td class="hoten">nguyễn  hiếu</td>
-	                <td class="phongban">sinh học</td>
-	                <td class="vitri">ổn áp</td>
-	                <td class="chucvu">khá</td>
-	                <td class="ngayvao">1999</td>
-	                <td class="ngaysinh">1999</td>
-	                <td class="gioitinh">nam</td>
-	                <td class="ngaytaotaikhoan1office">3 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-                <td class="manv">4</td>
-	                <td class="machamcong">4</td>
-	                <td class="hoten">nguyễn  nam</td>
-	                <td class="phongban">sinh học</td>
-	                <td class="vitri">ổn áp</td>
-	                <td class="chucvu">khá</td>
-	                <td class="ngayvao">1999</td>
-	                <td class="ngaysinh">1999</td>
-	                <td class="gioitinh">nam</td>
-	                <td class="ngaytaotaikhoan1office">3 năm trước</td>
-            </tr>
-            
-            <tr>
-            <td class="active" >
-                     <p style="text-align: right;margin-bottom: 0px;margin-right: 100px" >1 - 1 trong số 1<h9 style="margin-left:20px"><</h9><h9 style="margin-left:20px">></h9></p>
-                     
-                     
-                </td>
-               
-            </tr>
-            
-            
-        </tbody>
-    </table>
-    <!--<button id="select-all" class="btn button-default">SelectAll/Cancel</button>-->
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="menu">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <a class="dropdown-item" href="#">Something else here</a>
-    </div>
-</div>
+
+<hr style="margin-top: 45px">             
+<p style="clear: left;"> Không tìm thấy kết quả nào</p>
+
+
 <div class="container-fluid bd-content">
     <div class="bd-example" data-example-id="">
         <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" role="dialog" tabindex="-1">
@@ -268,30 +195,33 @@
             if (i === 1) {
                 values = values + 'manhanvien=';
             } else if (i === 2) {
-                values = values + 'machamcong=';
-            } else if (i === 3) {
                 values = values + 'hoten=';
-            }
-            else if (i === 4) {
+            } else if (i === 3) {
                 values = values + 'phongban=';
             }
-            else if (i === 5) {
-                values = values + 'vitri=';
+            else if (i === 4) {
+                values = values + 'vitricongviec=';
             }
-            else if (i === 6) {
+            else if (i === 5) {
                 values = values + 'chucvu=';
             }
+            else if (i === 6) {
+                values = values + 'soso=';
+            }
             else if (i === 7) {
-                values = values + 'ngayvao=';
+                values = values + 'sothe=';
             }
             else if (i === 8) {
-                values = values + 'ngaysinh=';
+                values = values + 'batdaudong=';
             }
             else if (i === 9) {
-                values = values + 'gioitinh=';
+                values = values + 'mucdongbaohiem=';
             }
             else if (i === 10) {
-                values = values + 'ngaytaotaikhoan1office=';
+                values = values + 'ctdong=';
+            }
+            else if (i === 11) {
+                values = values + 'nldnop=';
             }
            
             values = values + str;
