@@ -299,14 +299,14 @@
                 <div class="modal-body">
                 
                     <div style="text-align: center;">
-                   		 <a href="<c:url value='/congviec/bc_excel/new'/>">
+                   		 <a href="<c:url value='/congviec/bc_pivottable/new'/>">
 		                    <div class="form-group"  style="width: 50%;float: left;border: double;">
 		                     <b>Thống kê pivottable</b>
 		                     <i>tạo báo cáo dưới dạng pivottable, thống kê số liệu theo hàng và cột trường dữ liệu</i>
 		                    </div>
 		                 </a>
 	                    
-	                    <a href="<c:url value='/congviec/bc_pivottable/new'/>">
+	                    <a href="<c:url value='/congviec/bc_excel/new'/>">
 		                    <div class="form-group"  style="width: 50%;float: left;border: double;">
 		                     <b>Bảng tính excel</b>
 		                     <i>tạo báo cáo dưới dạng bảng tính excel, có thể lập các công thức tính toán tùy ý</i>

@@ -171,30 +171,85 @@
 	<div class="col-sm-4 stretch-card grid-margin">
 		<div class="card">
 			<div class="card-body">
-				<h3>Mới nhất</h3>
+				<p class="text-muted font-13 mt-2 mt-sm-0">MỚI NHẤT</p>
 
 				<div class="work-ds-dashboard-task-teaser-head">
 					<div class="work-ds-dashboard-task-description">
 						<div class="work-ds-dashboard-task-name">
 							<a href="/work-task-task/view?ID=2080">Dashboard(Công việc)</a>
 						</div>
-						<div class="work-ds-dashboard-task-assign">
-							<img class="avatar lazy-photo online" uid="32"
-								style="z-index: 3; background: rgb(230, 230, 230); overflow: hidden; text-indent: -10000px;"
-								src="/pfiles/htcgroup/social/walls/U32/avatar/166582085660348685a7e8a.23.02.2021.small.png"
-								title="Online lúc 09:01:25">
+					</div>
+					<div class="work-ds-dashboard-task-properties">
+						<label class="badge badge-success">Đang thực hiện</label> 29/02/2021
+					</div>
+				</div>
+				
+				
+				<div class="work-ds-dashboard-task-teaser-head">
+					<div class="work-ds-dashboard-task-description">
+						<div class="work-ds-dashboard-task-name">
+							<a href="/work-task-task/view?ID=2080">Dashboard(Công việc)</a>
 						</div>
 					</div>
 					<div class="work-ds-dashboard-task-properties">
-						<div class="work-ds-dashboard-task-status"
-							style="background-color: #039BE5">Đang thực hiện</div>
-						<div class="work-ds-dashboard-task-date">26/02/2021</div>
+						<label class="badge badge-danger">Đang chờ</label> 29/02/2021
 					</div>
 				</div>
-
+				
+				<div class="work-ds-dashboard-task-teaser-head">
+					<div class="work-ds-dashboard-task-description">
+						<div class="work-ds-dashboard-task-name">
+							<a href="/work-task-task/view?ID=2080">Dashboard(Công việc)</a>
+						</div>
+					</div>
+					<div class="work-ds-dashboard-task-properties">
+						<label class="badge badge-warning">Đang thực hiện</label> 29/02/2021
+					</div>
+				</div>
+				
+				<div class="work-ds-dashboard-task-teaser-head">
+					<div class="work-ds-dashboard-task-description">
+						<div class="work-ds-dashboard-task-name">
+							<a href="/work-task-task/view?ID=2080">Dashboard(Công việc)</a>
+						</div>
+					</div>
+					<div class="work-ds-dashboard-task-properties">
+						<label class="badge badge-success">Đang thực hiện</label> 29/02/2021
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-4 stretch-card grid-margin">
+		<div class="card">
+			<div class="card-body">
+				<p class="text-muted font-13 mt-2 mt-sm-0">TỔNG SỐ LƯỢNG CÔNG VIỆC</p>
+				
+					<div class="d-flex border-bottom mb-4 pb-2">
+	                    <div class="pl-4">
+	                        <h4 class="font-weight-bold text-danger mb-0"> 0 </h4>
+	                        <h6 class="text-muted">HÔM NAY</h6>
+	                    </div>
+	                </div>
+	                
+	                <div class="d-flex border-bottom mb-4 pb-2">
+	                    <div class="pl-4">
+	                        <h4 class="font-weight-bold text-info mb-0"> 0 </h4>
+	                        <h6 class="text-muted">TUẦN NÀY</h6>
+	                    </div>
+	                </div>
+	                
+	                <div class="d-flex border-bottom mb-4 pb-2">
+	                    <div class="pl-4">
+	                        <h4 class="font-weight-bold text-warning mb-0"> 0 </h4>
+	                        <h6 class="text-muted">THÁNG NÀY</h6>
+	                    </div>
+	                </div>
+					
 				<div class="flot-chart-wrapper">
 					<div id="flotChart" class="flot-chart">
-						<canvas class="flot-base"></canvas>
+						
 					</div>
 				</div>
 			</div>
@@ -203,32 +258,72 @@
 	<div class="col-sm-4 stretch-card grid-margin">
 		<div class="card">
 			<div class="card-body">
-				<p class="text-muted font-13 mt-2 mt-sm-0">Tổng số lượng công
-					việc</p>
-				<div class="d-flex justify-content-between flex-wrap">
-					<div>
-						<div class="card-title mb-0">Đánh giá: Chưa đạt</div>
-					</div>
+				<div>
+					<p class="text-muted font-13 mt-2 mt-sm-0">HẠN CUỐI SẮP TỚI</p>
+					<button type="button" class="btn btn-outline-secondary btn-lg btn-block">
+						<p class="m-0 text-black"> Không có hạn cuối nào </p>
+					</button>
 				</div>
-
-				<div class="flot-chart-wrapper">
-					<div id="flotChart" class="flot-chart">
-						<canvas class="flot-base"></canvas>
-					</div>
+				<div class="d-flex justify-content-between flex-wrap" style="margin-top: 10px">
+					<h5>Hoạt động gần đây</h5>
 				</div>
-			</div>
-		</div>
-	</div>
-	<div class="col-sm-4 stretch-card grid-margin">
-		<div class="card">
-			<div class="card-body">
-				<p class="text-muted font-13 mt-2 mt-sm-0">Hạn cuối sắp tới</p>
-				<div class="d-flex justify-content-between flex-wrap">
-					<div>
-						<div class="card-title mb-0">Đánh giá: Chưa đạt</div>
-					</div>
-				</div>
-
+				<!-- update work -->
+				<div class="d-flex border-bottom border-top py-3">
+                     <div class="form-check">
+                         <label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
+                     </div>
+                     <div class="pl-2">
+                         <span class="font-12 text-muted">Nguyễn Văn Phương đã cập nhật kết quả đầu việc</span>
+                         <p class="m-0 text-black"> 10 phút trước </p>
+                     </div>
+                 </div>
+                 
+                 <div class="d-flex border-bottom border-top py-3">
+                     <div class="form-check">
+                         <label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
+                     </div>
+                     <div class="pl-2">
+                         <span class="font-12 text-muted">Nguyễn Văn Phương đã cập nhật kết quả đầu việc</span>
+                         <p class="m-0 text-black"> 10 phút trước </p>
+                     </div>
+                 </div>
+                 <div class="d-flex border-bottom border-top py-3">
+                     <div class="form-check">
+                         <label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
+                     </div>
+                     <div class="pl-2">
+                         <span class="font-12 text-muted">Nguyễn Văn Phương đã cập nhật kết quả đầu việc</span>
+                         <p class="m-0 text-black"> 10 phút trước </p>
+                     </div>
+                 </div>
+                 <div class="d-flex border-bottom border-top py-3">
+                     <div class="form-check">
+                         <label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
+                     </div>
+                     <div class="pl-2">
+                         <span class="font-12 text-muted">Nguyễn Văn Phương đã cập nhật kết quả đầu việc</span>
+                         <p class="m-0 text-black"> 10 phút trước </p>
+                     </div>
+                 </div>
+                 <div class="d-flex border-bottom border-top py-3">
+                     <div class="form-check">
+                         <label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
+                     </div>
+                     <div class="pl-2">
+                         <span class="font-12 text-muted">Nguyễn Văn Phương đã cập nhật kết quả đầu việc</span>
+                         <p class="m-0 text-black"> 10 phút trước </p>
+                     </div>
+                 </div>
+                 <div class="d-flex border-bottom border-top py-3">
+                     <div class="form-check">
+                         <label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
+                     </div>
+                     <div class="pl-2">
+                         <span class="font-12 text-muted">Nguyễn Văn Phương đã cập nhật kết quả đầu việc</span>
+                         <p class="m-0 text-black"> 10 phút trước </p>
+                     </div>
+                 </div>
+                 
 				<div class="flot-chart-wrapper">
 					<div id="flotChart" class="flot-chart">
 						<canvas class="flot-base"></canvas>
