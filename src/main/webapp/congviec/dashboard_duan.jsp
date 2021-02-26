@@ -99,7 +99,7 @@ tr .active {
 					<div class="d-flex justify-content-between">
 						<div class="text-white">
 							<div class="doughnut-wrapper w-70">
-								<canvas id="doughnutChart2"></canvas>
+								<canvas id="doughnutChart4"></canvas>
 							</div>
 						</div>
 					</div>

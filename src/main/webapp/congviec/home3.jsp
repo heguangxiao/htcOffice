@@ -307,21 +307,28 @@
         jQuery.each($columns, function (i, item) {
             var str = item.innerHTML.trim().indexOf('<input type="checkbox" class="select-item checkbox"') === -1 ? item.innerHTML.trim() + '&' : '';
             if (i === 1) {
-                values = values + 'name=';
+                values = values + 'Tên công việc=';
             } else if (i === 2) {
-                values = values + 'gender=';
+                values = values + 'Thực hiện=';
             } else if (i === 3) {
-                values = values + 'age=';
+                values = values + 'Trạng thái=';
+            }else if (i === 4) {
+                values = values + 'Tiến độ=';
+            }else if (i === 5) {
+                values = values + 'Bắt đầu dự kiến=';
+            }else if (i === 6) {
+                values = values + 'Kết thúc dự kiến=';
             }
+            
             values = values + str;
         });
         values = values.slice(0, values.length - 1);
         createPopup(values.slice(1, values.length));
         $("#menu").empty();
         var showMenu = '';
-        showMenu = showMenu + '<a class="dropdown-item" data-target="#exampleModal" data-toggle="modal" data-whatever="@getbootstrap">Open modal for @getbootstrap</a>';
+        showMenu = showMenu + '<a class="dropdown-item" data-target="#exampleModal" data-toggle="modal" data-whatever="@getbootstrap">Tùy chọn</a>';
         showMenu = showMenu + '<a class="dropdown-item" data-target="#exampleXem" data-toggle="modal" data-whatever="">Xem nhanh</a>';
-        showMenu = showMenu + '<a class="dropdown-item" href="http://localhost:8084/home3' + values + '">Nhân bản công việc</a>';
+        showMenu = showMenu + '<a class="dropdown-item" href="#' + values + '">Nhân bản công việc</a>';
         document.getElementById('menu').innerHTML = showMenu;
 
         return false; //blocks default Webbrowser right click menu
