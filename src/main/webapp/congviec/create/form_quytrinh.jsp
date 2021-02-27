@@ -54,6 +54,29 @@
 						<hr>
 						<i>chưa có quy trình</i>
 
+						<p style="color: red;">Đối tượng liên quan</p>
+						<hr>
+
+						<div>
+							<div class="form-group" style="width: 50%; float: left;">
+								<label>Đối tượng liên quan</label> <select class="form-control"
+									style="overflow-y: scroll;">
+									<option value="">Cơ hội</option>
+									<option value="">Khách hàng</option>
+									<option value="">Báo giá</option>
+									<option value="">Đơn bán hàng</option>
+									<option value="">Đơn hàng bán</option>
+									<option value="">Hợp đồng bán</option>
+									<option value="">Đơn hàng mua</option>
+									<option value="">Phiếu chi</option>
+									<option value="">Phiếu thu</option>
+								</select>
+							</div>
+							<div class="form-group" style="width: 50%; float: left;">
+								<label>Bản ghi</label> <input type="text" class="form-control"
+									id="exampleInputName1" placeholder="Chọn bản ghi" />
+							</div>
+						</div>
 
 						<p style="color: red;">Cài đặt nâng cao</p>
 						<hr>
@@ -91,7 +114,7 @@
 		<div
 			style="padding-top: 200px; width: 100%; display: block; bottom: 0px; position: fixed; margin-left: 0px; background: #F5F5F5; color: white; border: none; padding: 15px 32px; text-decoration: none; display: inline-block; font-size: 16px;">
 			<button type="submit" class="btn btn-primary">Cập nhật</button>
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+			<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
 		</div>
 
 	</form>
