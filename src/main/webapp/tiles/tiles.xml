@@ -577,5 +577,11 @@
 	    <definition name="createDinhKem" extends="nhansu">
 	        <put-attribute name="body" value="/nhansu/create/createDinhKem.jsp" />
 	    </definition>
+	    
+	    <!-- Create mẫu đánh giá năng lực -->
+	    
+	    <definition name="createMauDanhGiaNangLuc" extends="nhansu">
+	        <put-attribute name="body" value="/nhansu/create/createMauDanhGiaNangLuc.jsp" />
+	    </definition>
     
 </tiles-definitions>

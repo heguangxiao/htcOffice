@@ -130,7 +130,7 @@
 				
 					<div  >
 						<i class="mdi mdi-chevron-down" style="display: inline;border:none;" ></i>
-						<p style="display: inline;color:#6495ED;" >Thông tin chung</p>
+						<p style="display: inline;color:#6495ED;font-weight: bold;font-size: 20px" >Thông tin chung</p>
 						<hr style="width: 610px">
 					</div>
 				
@@ -240,7 +240,7 @@
 	<div  class="collapse navbar-collapse" id="navbarSupportedContent">
 		<div>
 			<i class="mdi mdi-chevron-down" style="display: inline; border: none;"></i>
-			<h5 style="display: inline;color:#6495ED">Thông tin lương và phụ cấp</h5>
+			<h5 style="display: inline;color:#6495ED;font-weight: bold;font-size: 20px">Thông tin lương và phụ cấp</h5>
 			<hr style="width: 610px">
 		</div>
 	</div>

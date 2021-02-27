@@ -478,4 +478,13 @@ public class NhanSuController {
         return "createDinhKem";
     }
     
+    // Tạo mới mẫu đánh giá năng lực
+    
+    @GetMapping({"/createMauDanhGiaNangLuc"})
+    public String createMaudanhgianangluc(ModelMap modelMap) {
+        modelMap.put("title", "HTC OFFICE 3");
+        modelMap.put("titleTable", "Tạo mới mẫu đánh giá năng lực");
+        return "createMauDanhGiaNangLuc";
+    }
+    
 }

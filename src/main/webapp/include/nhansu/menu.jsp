@@ -10,7 +10,7 @@
             <div class="dropdown-menu dropdown-menu-right dropdown-content">
                 <a class="dropdown-item" href="<c:url value='/createHoSoNhanSu'/>">Hồ sơ nhân sự</a>
                 <a class="dropdown-item" href="<c:url value='/createHopDong'/>">Hợp đồng</a>
-                <a class="dropdown-item" href="#">Mẫu đánh giá năng lực</a>
+                <a class="dropdown-item" href="<c:url value='/createMauDanhGiaNangLuc'/>">Mẫu đánh giá năng lực</a>
                 <a class="dropdown-item" href="#">Thư viện năng lực</a>
                 <a class="dropdown-item" href="#">Khen thưởng</a>
                 <a class="dropdown-item" href="#">Kỷ luật lao động</a>

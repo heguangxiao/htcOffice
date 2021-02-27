@@ -130,7 +130,7 @@
 				
 					<div  >
 						<i class="mdi mdi-chevron-down" style="display: inline;border:none;" ></i>
-						<p style="display: inline;color:#6495ED;" >Thông tin bảo hiểm</p>
+						<p style="display: inline;color:#6495ED;font-weight: bold;font-size: 20px" >Thông tin bảo hiểm</p>
 						<hr style="width: 610px">
 					</div>
 				
@@ -197,7 +197,7 @@
 			<div  class="collapse navbar-collapse" id="navbarSupportedContent">				
 					<div  >
 						<i class="mdi mdi-chevron-down" style="display: inline;border:none;" ></i>
-						<p style="display: inline;color:#6495ED;" >Nghiệp vụ báo tăng</p>
+						<p style="display: inline;color:#6495ED;font-weight: bold;font-size: 20px" >Nghiệp vụ báo tăng</p>
 						<hr style="width: 610px">
 					</div>
 			</div>
@@ -237,12 +237,13 @@
 	</div>
 	
 	<!-- Nghiệp vụ báo giảm -->
+	
 	<nav class=" navbar-expand-lg navbar-light bg-light" style=" padding-top:30px;padding-bottom: 0px;margin-top: 0px;clear: both;">
 	 	<div class="container-fluid" >   
 			<div  class="collapse navbar-collapse" id="navbarSupportedContent">				
 					<div  >
 						<i class="mdi mdi-chevron-down" style="display: inline;border:none;" ></i>
-						<p style="display: inline;color:#6495ED;" >Nghiệp vụ báo giảm</p>
+						<p style="display: inline;color:#6495ED;font-weight: bold;font-size: 20px" >Nghiệp vụ báo giảm</p>
 						<hr style="width: 610px">
 					</div>
 			</div>
@@ -277,12 +278,13 @@
 	</form>
 	
 	<!-- Lịch sử đóng bảo hiểm -->
+	
 	<nav class=" navbar-expand-lg navbar-light bg-light" style=" padding-top:30px;padding-bottom: 0px;margin-top: 0px;clear: both;">
 	 	<div class="container-fluid" >   
 			<div  class="collapse navbar-collapse" id="navbarSupportedContent">				
 					<div  >
 						<i class="mdi mdi-chevron-down" style="display: inline;border:none;" ></i>
-						<p style="display: inline;color:#6495ED;" >Lịch sử đóng bảo hiểm</p>
+						<p style="display: inline;color:#6495ED;font-weight: bold;font-size: 20px" >Lịch sử đóng bảo hiểm</p>
 						<hr style="width: 610px">
 					</div>
 			</div>
@@ -338,12 +340,13 @@
 	  <i class="mdi mdi-plus-circle-outline"  style="margin-left: 10px;font-size :40px;color:#6495ED"></i>
 
 	<!-- Lịch sử giải quyết chế độ -->
+	
 	<nav class=" navbar-expand-lg navbar-light bg-light" style=" padding-top:30px;padding-bottom: 0px;margin-top: 0px;clear: both;">
 	 	<div class="container-fluid" >   
 			<div  class="collapse navbar-collapse" id="navbarSupportedContent">				
 					<div  >
 						<i class="mdi mdi-chevron-down" style="display: inline;border:none;" ></i>
-						<p style="display: inline;color:#6495ED;" >Lịch sử giải quyết chế độ</p>
+						<p style="display: inline;color:#6495ED;font-weight: bold;font-size: 20px" >Lịch sử giải quyết chế độ</p>
 						<hr style="width: 610px">
 					</div>
 			</div>

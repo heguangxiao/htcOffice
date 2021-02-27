@@ -130,7 +130,7 @@
 			<div  class="collapse navbar-collapse" id="navbarSupportedContent">		
 					<div>
 						<i class="mdi mdi-chevron-down" style="display: inline;border:none;" ></i>
-						<p style="display: inline;color:#6495ED" >Thông tin cá nhân</p>
+						<p style="display: inline;color:#6495ED;font-weight: bold;font-size: 20px" >Thông tin cá nhân</p>
 						<hr style="width: 610px">
 					</div>
 			</div>
@@ -144,12 +144,12 @@
 	  </div>
 	  
 	  <div id="row1">
-	  	  <label for="validationServer013">Mã chấm công</label>
+	  	  <label for="validationServer013">Mã chấm công<i class="mdi mdi-help-circle-outline"></i></label>
 	      <input type="text" class="form-control is-valid" id="input1" placeholder="mã chấm công">
 	  </div>
 	  
 	  <div id="row1">
-	  	  <label for="validationServer013">Mã hồ sơ</label>
+	  	  <label for="validationServer013">Mã hồ sơ<i class="mdi mdi-help-circle-outline"></i></label>
 	      <input type="text" class="form-control is-valid" id="input1" placeholder="mã hồ sơ">
 	  </div >
 	  
@@ -253,7 +253,7 @@
 	<div  class="collapse navbar-collapse" id="navbarSupportedContent">
 		<div>
 			<i class="mdi mdi-chevron-down" style="display: inline; border: none;"></i>
-			<h5 style="display: inline;color:#6495ED">Thông tin gia đình</h5>
+			<h5 style="display: inline;color:#6495ED;font-weight: bold;font-size: 20px">Thông tin gia đình</h5>
 			<hr style="width: 610px">
 		</div>
 	</div>
@@ -318,7 +318,7 @@
 	<div  class="collapse navbar-collapse" id="navbarSupportedContent">
 		<div>
 			<i class="mdi mdi-chevron-down" style="display: inline; border: none;"></i>
-			<h5 style="display: inline;color:#6495ED">Trình độ học vấn</h5>
+			<h5 style="display: inline;color:#6495ED;font-weight: bold;font-size: 20px">Trình độ học vấn</h5>
 			<hr style="width: 610px">
 		</div>
 	</div>
@@ -381,7 +381,7 @@
 	<div  class="collapse navbar-collapse" id="navbarSupportedContent">
 		<div>
 			<i class="mdi mdi-chevron-down" style="display: inline; border: none;"></i>
-			<h5 style="display: inline;color:#6495ED">Kinh nghiệm làm việc</h5>
+			<h5 style="display: inline;color:#6495ED;font-weight: bold;font-size: 20px">Kinh nghiệm làm việc</h5>
 			<hr style="width: 610px">
 		</div>
 	</div>
