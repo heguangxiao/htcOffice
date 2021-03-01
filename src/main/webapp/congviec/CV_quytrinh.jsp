@@ -73,16 +73,16 @@
 					</div>
                 </li>
                 
-                <li class="nav-item" style="margin-left: 10px">
-                	<div data-toggle="dropdown">
+                <li class="nav-item dropdown" style="margin-left: 10px;">
+		            <div data-toggle="dropdown">
 						<i class="mdi mdi-export"></i>
 						<p style="font-size: 12px; margin-bottom: 0px">Export</p>
 					</div>
-					<div class="dropdown-menu">
-						<button id="hover-email" class="dropdown-item">Xuất tất cả </button> 
-						<button id="hover-email" class="dropdown-item">Tùy chọn cột </button>
-					</div>
-                </li>
+		            <div class="dropdown-menu-right dropdown-content" style="text-align: left;">
+		                <a class="dropdown-item" href="#">Xuất tất cả</a>
+		                <a class="dropdown-item" href="#">Tùy chọn cột</a>
+		            </div>
+		        </li>
                 
             </ul>
         </div>

@@ -65,14 +65,14 @@
         
         <div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: right">
             <ul class="nav navbar-nav mr-auto" style="text-align: center;">
-            	
-                <li class="nav-item active" >	               	     
-                	<div data-toggle="dropdown">
+
+                <li class="nav-item dropdown" style="margin-left: 10px;">
+		            <div data-toggle="dropdown">
 						<i class="mdi mdi-tag"></i>
 						<p style="font-size: 12px; margin-bottom: 0px">Nhãn</p>
 					</div>
-					<div class="dropdown-menu">
-						<div class="form-check">
+		            <div class="dropdown-menu-right dropdown-content" style="text-align: left;">
+		                <div class="form-check">
                             <label class="form-check-label">
                             <input type="checkbox" class="form-check-input"/> Công việc định kì ngày </label>
                         </div>	
@@ -92,42 +92,40 @@
                             <label class="form-check-label">
                             <input type="checkbox" class="form-check-input"/> Công việc định kì tuần </label>
                         </div>
-							<button id="hover-email" class="dropdown-item">Lọc theo nhãn đã chọn</button>
-					</div>
-                </li>
+							<a class="dropdown-item" href="#">Lọc theo nhãn đã chọn</a>
+		            </div>
+		        </li>
                 
-                <li class="nav-item" style="margin-left: 10px">
+               <li class="nav-item dropdown" style="margin-left: 10px;">
                 	<div data-toggle="dropdown">
 						<i class="mdi mdi-calendar-text"></i>
 						<p style="font-size: 12px; margin-bottom: 0px">Lịch biểu</p>
 					</div>
-                </li>
+               </li>
                 
-                
-                <li class="nav-item" style="margin-left: 10px">
-                	<div data-toggle="dropdown">
+	            <li class="nav-item dropdown" style="margin-left: 10px;">
+		            <div data-toggle="dropdown">
 						<i class="mdi mdi-export"></i>
 						<p style="font-size: 12px; margin-bottom: 0px">Export</p>
 					</div>
-					<div class="dropdown-menu">
-						<button id="hover-email" class="dropdown-item">Xuất tất cả </button> 
-						<button id="hover-email" class="dropdown-item">Tùy chọn cột </button>
-					</div>
-                </li>
-                
-                <li class="nav-item" style="margin-left: 10px">
-                	<div data-toggle="dropdown">
+		            <div class="dropdown-menu-right dropdown-content" style="text-align: left;">
+		                <a class="dropdown-item" href="#">Xuất tất cả</a>
+		                <a class="dropdown-item" href="#">Tùy chọn cột</a>
+		            </div>
+		        </li>
+            
+		        <li class="nav-item dropdown" style="margin-left: 10px;">
+		            <div data-toggle="dropdown">
 						<i class="mdi mdi-import"></i>
 						<p style="font-size: 12px; margin-bottom: 0px">Import</p>
 					</div>
-					<div class="dropdown-menu">
-						<button id="hover-email" class="dropdown-item">Import công việc</button> 
-						<button id="hover-email" class="dropdown-item">Xem lịch sử import công việc</button>
-					</div>
-                </li>
-                
-                
+		            <div class="dropdown-menu-right dropdown-content" style="text-align: left;">
+		                <a class="dropdown-item" href="#">Import công việc</a>
+		                <a class="dropdown-item" href="#">Xem lịch sử import công việc</a>
+		            </div>
+		        </li>
             </ul>
+            
         </div>
         
     </div>
@@ -219,6 +217,7 @@
             </tr>
         </tbody>
     </table>
+    
     <!--<button id="select-all" class="btn button-default">SelectAll/Cancel</button>-->
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="menu">
         <a class="dropdown-item" href="#">Action</a>
