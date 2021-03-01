@@ -227,23 +227,23 @@
 				<p class="text-muted font-13 mt-2 mt-sm-0">TỔNG SỐ LƯỢNG CÔNG VIỆC</p>
 				
 					<div class="d-flex border-bottom mb-4 pb-2">
-	                    <div class="pl-4">
-	                        <h4 class="font-weight-bold text-danger mb-0"> 0 </h4>
-	                        <h6 class="text-muted">HÔM NAY</h6>
+	                    <div class="pl-4" style="text-align: center;">
+	                        <h4 class="font-weight-bold text-danger mb-0" style="float: left;"> 2 </h4>
+	                        <h4 class="text-muted" style="float: left;margin-left: 10px">HÔM NAY</h4>
 	                    </div>
 	                </div>
 	                
 	                <div class="d-flex border-bottom mb-4 pb-2">
-	                    <div class="pl-4">
-	                        <h4 class="font-weight-bold text-info mb-0"> 0 </h4>
-	                        <h6 class="text-muted">TUẦN NÀY</h6>
+	                    <div class="pl-4" style="text-align: center;">
+	                        <h4 class="font-weight-bold text-info mb-0" style="float: left;"> 15</h4>
+	                        <h4 class="text-muted" style="float: left;margin-left: 10px">TUẦN NÀY</h4>
 	                    </div>
 	                </div>
 	                
 	                <div class="d-flex border-bottom mb-4 pb-2">
-	                    <div class="pl-4">
-	                        <h4 class="font-weight-bold text-warning mb-0"> 0 </h4>
-	                        <h6 class="text-muted">THÁNG NÀY</h6>
+	                    <div class="pl-4" style="text-align: center;">
+	                        <h4 class="font-weight-bold text-warning mb-0" style="float: left;"> 0 </h4>
+	                        <h4 class="text-muted" style="float: left;margin-left: 10px">THÁNG NÀY</h4>
 	                    </div>
 	                </div>
 					
