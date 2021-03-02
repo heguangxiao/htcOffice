@@ -86,7 +86,7 @@
         </div>
 	</div>
 </nav>
-<hr style="width: 1180px;margin-top: 45px">	
+<hr style="width: 1180px;margin-top: 45px;margin-left: 22px">	
 
 	<!-- Cột 1 -->
 	

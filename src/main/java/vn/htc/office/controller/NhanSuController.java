@@ -487,4 +487,22 @@ public class NhanSuController {
         return "createMauDanhGiaNangLuc";
     }
     
+    // Tạo mới khen thưởng
+    
+    @GetMapping({"/createKhenThuong"})
+    public String createkhenthuong(ModelMap modelMap) {
+        modelMap.put("title", "HTC OFFICE 3");
+        modelMap.put("titleTable", "Tạo mới quyết định khen thưởng");
+        return "createKhenThuong";
+    }
+    
+    // Tạo mới khen thưởng
+    
+    @GetMapping({"/createKyLuatLaoDong"})
+    public String createkyluatlaodong(ModelMap modelMap) {
+        modelMap.put("title", "HTC OFFICE 3");
+        modelMap.put("titleTable", "Tạo mới quyết định kỷ luật");
+        return "createKyLuatLaoDong";
+    }
+    
 }

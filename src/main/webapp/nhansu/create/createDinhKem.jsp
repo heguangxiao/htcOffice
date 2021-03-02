@@ -77,8 +77,8 @@
         </div>
 	</div>
 </nav>
-<hr style="width: 1180px;margin-top: 45px">	
-<div style="width:600px;background:#DCDCDC;margin-left:10px;height: 50px">
+<hr style="width: 1180px;margin-left:22px;margin-top: 45px">	
+<div style="width:600px;background:#DCDCDC;margin-left:22px;height: 50px">
 	<div style="float: left;margin-top: 13px">
 		<h7 style="margin-left:10px">Đính kèm</h7>
 	</div>

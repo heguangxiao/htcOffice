@@ -67,36 +67,25 @@
     tr .active {
         width: 5%;
     }
-    #search{
-    	position: absolute;
-    	z-index: 1;
-    	 top: 59.5%;
-    	 margin-left: 590px
-    }
-    #search1{
-    	position: absolute;
-    	z-index: 1;
-    	 top: 70%;
-    	 margin-left: 590px
-    }
-    #search2{
-    	position: absolute;
-    	z-index: 1;
-    	 top: 90%;
-    	 margin-left: 590px
-    }
-     #search3{
-    	position: absolute;
-    	z-index: 1;
-    	 top: 100%;
-    	 margin-left: 276px
-    }
+   .accordion {
+	cursor: pointer;
+	width: 100%;
+	transition: 0.4s;
+}
+
+.panel {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
 
 <div id="tong">
 	<nav class=" navbar-expand-lg navbar-light bg-light"
 		style="padding-top: 0px; padding-bottom: 0px; margin-top: 0px;">
-		<div class="container-fluid">
+		<div class="container-fluid ">
 			<div class="collapse navbar-collapse" id="navbarSupportedContent"
 				style="float: left">
 				<ul class="nav navbar-nav mr-auto">
@@ -122,7 +111,7 @@
 	</nav>
 
 	<!-- Thông tin cá nhân -->
-	<nav class=" navbar-expand-lg navbar-light bg-light" style=" padding-top: 0px;padding-bottom: 0px;margin-top: 0px;clear: both;">
+	<nav class=" navbar-expand-lg navbar-light bg-light accordion" style=" padding-top: 0px;padding-bottom: 0px;margin-top: 0px;clear: both;">
 	 	<div class="container-fluid" >   
 	 	<hr style="width: 1180px;">
 			<div  class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -139,7 +128,22 @@
 		</div>
 	</nav>
 	
-	<form>
+	<form class="panel">
+	
+	  <div id="row3">
+	  	  <label for="validationServer013">Nhân sự *</label>
+	  	  <div style="width: 100%; margin-bottom: 10px;margin-left: 0px">
+			  	  <div class="input-group" style="margin-left: 0px">
+					<input type="text" class="form-control"  placeholder="Tìm với mã, họ tên..." style="width: 580px" >
+					<div class="input-group-append">
+						<button class="btn btn-secondary" type="button" style="background: white;color: black;">
+							<i class="fa fa-search" ></i>
+						</button>
+					</div>
+				  </div>
+	      </div>
+	  </div>
+	  
 	  <div id="row2">
 	  	  <label for="validationServer013">Mã HĐ *</label>
 	      <input type="text" class="form-control is-valid" style="width: 200px" placeholder="Nguyễn Văn A"
@@ -147,7 +151,7 @@
 	  </div>
 	  
 	  <div id="row2">
-	  	  <label for="validationServer013">Hợp đồng</label>
+	  	  <label for="validationServer013">Hợp đồng *</label>
 	      <input type="text" class="form-control is-valid" style="width: 408px" placeholder="dd/mm/yyyy"
 	        >
 	  </div>
@@ -222,7 +226,16 @@
 	  
 	  <div id="row3">
 	  	  <label for="validationServer013">Người ký</label>
-	      <input type="text" class="form-control is-valid" id="input4" placeholder="Chọn người ký"> <i id="search3" class="mdi mdi-magnify"></i> </input> 
+	  	  <div style="width: 100%; margin-bottom: 10px;margin-left: 0px">
+			  	 <div class="input-group" style="margin-left: 0px">
+					<input type="text" class="form-control"  placeholder="Chọn người ký	" style="width: 262px">
+					<div class="input-group-append">
+						<button class="btn btn-secondary" type="button" style="background: white;color: black;">
+							<i class="fa fa-search" ></i>
+						</button>
+					</div>
+				</div> 
+	      </div>
 	  </div>
 	  
 	</form>
@@ -236,68 +249,145 @@
 	<!-- Thông tin lương và phụ cấp  -->
 	
 	<nav class=" navbar-expand-lg navbar-light bg-light" style=" margin-bottom:100px;padding-top: 30px;padding-bottom: 0px;margin-top: 0px;margin-left: 8px;width: 1190px">
-	<div class="container-fluid" >   
-	<div  class="collapse navbar-collapse" id="navbarSupportedContent">
-		<div>
-			<i class="mdi mdi-chevron-down" style="display: inline; border: none;"></i>
-			<h5 style="display: inline;color:#6495ED;font-weight: bold;font-size: 20px">Thông tin lương và phụ cấp</h5>
-			<hr style="width: 610px">
+		<div class="container-fluid accordion" >   
+			<div  class="collapse navbar-collapse" id="navbarSupportedContent">
+				<div>
+					<i class="mdi mdi-chevron-down" style="display: inline; border: none;"></i>
+					<h5 style="display: inline;color:#6495ED;font-weight: bold;font-size: 20px">Thông tin lương và phụ cấp</h5>
+					<hr style="width: 610px">
+				</div>
+			</div>
 		</div>
-	</div>
-	</div>
-
-	  <div id="row2">
-	  	  <label for="validationServer013">Từ ngày</label>
-	      <input type="date" class="form-control is-valid" style="width: 200px" placeholder="dd/mm/yyyy"
-	        >
-	  </div>
-	  
-	  <div id="row2">
-	  	  <label for="validationServer013">Ghi chú</label>
-	      <input type="text" class="form-control is-valid" style="width: 415px" placeholder="Viết ghi chú">
-	  </div>
-	  
-	  <div style="clear: both;margin-left: 50px;">
+		
+      <div class="panel">
 		  <div id="row2">
-		  		<label for="validationServer013">Hình thức lương</label>
-				<select class="form-control" style="width: 365px">
-					<option selected="">Chọn hình thức </option>
-					<option>chuyển khoản</option>
-					<option>tiền mặt</option>
-				</select>
+		  	  <label for="validationServer013">Từ ngày</label>
+		      <input type="date" class="form-control is-valid" style="width: 200px" placeholder="dd/mm/yyyy"
+		        >
 		  </div>
 		  
 		  <div id="row2">
-		  	  <label for="validationServer013">Số tiền</label>
-		      <input type="number" class="form-control is-valid" style="width: 200px" placeholder="Nhập lương">
-		  </div>
-		  <div id="row2">
-	 	 <i class="mdi mdi-close"></i>
-	  </div>
-	  </div>
-	  
-	  <i class="mdi mdi-plus-circle-outline"  style="margin-left: 50px;font-size :40px;color:#6495ED"></i>
-	  
-	  <div style="clear: both;margin-left: 50px;">
-		  <div id="row2">
-		  		<label for="validationServer013">Phụ cấp</label>
-				<select class="form-control" style="width: 365px">
-					<option selected="">Phụ cấp </option>
-					<option>1 triệu</option>
-					<option>2 triệu</option>
-				</select>
+		  	  <label for="validationServer013">Ghi chú</label>
+		      <input type="text" class="form-control is-valid" style="width: 415px" placeholder="Viết ghi chú">
 		  </div>
 		  
-		  <div id="row2">
-		  	  <label for="validationServer013">Số tiền</label>
-		      <input type="number" class="form-control is-valid" style="width: 200px" placeholder="Số tiền">
+		  <div style="clear: both;margin-left: 0px;margin-top: 10px;"  >
+			 <form>
+				  <table   style="width: 610px;">
+						<tr >
+							<th  style="font-weight: normal;" >Hình thức lương</th>
+							<th  style="font-weight: normal;" >Số tiền</th>
+							
+						</tr>
+						<tbody id="tbl_posts_body">
+         
+        				</tbody>
+				</table>
+				</form>
+				<table>
+						
+							<tr>
+								<td>
+									<select class="form-control" style="width: 300px">
+											<option selected="">Chọn hình thức</option>
+											<option>chuyển khoản</option>
+											<option>tiền mặt</option>
+									</select>
+								</td>
+								
+								<td style="margin-left: 20px">
+									<input type=number class="form-control is-valid" style="width: 200px;margin-left: 105px" placeholder="Nhập lương">
+								</td>
+								
+								<td><i class="mdi mdi-close"></i></td>
+								
+									
+								
+							</tr>
+							
+							
+						
+					</table>
+				
+				<i class="mdi mdi-plus-circle-outline add-record"  style="margin-left: 100px;font-size :40px;color:#6495ED" ></i>
+		 
 		  </div>
-		  <div id="row2">
-	 	 <i class="mdi mdi-close"></i>
+		  
+		  
+		  
+		  <div style="clear: both;margin-left: 50px;">
+			  <div id="row2">
+			  		<label for="validationServer013">Phụ cấp</label>
+					<select class="form-control" style="width: 365px">
+						<option selected="">Phụ cấp </option>
+						<option>1 triệu</option>
+						<option>2 triệu</option>
+					</select>
+			  </div>
+			  
+			  <div id="row2">
+			  	  <label for="validationServer013">Số tiền</label>
+			      <input type="number" class="form-control is-valid" style="width: 200px" placeholder="Số tiền">
+			  </div>
+			  <div id="row2">
+		 	 <i class="mdi mdi-close"></i>
+		  </div>
+		  </div>
+		  <i class="mdi mdi-plus-circle-outline"  style="margin-left: 50px;font-size :40px;color:#6495ED"></i>
 	  </div>
-	  </div>
-	  <i class="mdi mdi-plus-circle-outline"  style="margin-left: 50px;font-size :40px;color:#6495ED"></i>
-	  
 	</nav>
 	
+<script>
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+	for (i = 0; i < acc.length; i++) {
+		acc[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			if (panel.style.maxHeight) {
+				panel.style.maxHeight = null;
+			} else {
+				panel.style.maxHeight = panel.scrollHeight + "px";
+			}
+		});
+	}
+	
+	
+	jQuery(document).delegate('a.add-record', 'click', function(e) {
+	     e.preventDefault();    
+	     var content = jQuery('#sample_table tr'),
+	     size = jQuery('#tbl_posts >tbody >tr').length + 1,
+	     element = null,    
+	     element = content.clone();
+	     element.attr('id', 'rec-'+size);
+	     element.find('.delete-record').attr('data-id', size);
+	     element.appendTo('#tbl_posts_body');
+	     element.find('.sn').html(size);
+	   });
+
+
+
+
+	jQuery(document).delegate('a.delete-record', 'click', function(e) {
+	     e.preventDefault();    
+	     var didConfirm = confirm("Are you sure You want to delete");
+	     if (didConfirm == true) {
+	      var id = jQuery(this).attr('data-id');
+	      var targetDiv = jQuery(this).attr('targetDiv');
+	      jQuery('#rec-' + id).remove();
+	      
+	    //regnerate index number on table
+	    $('#tbl_posts_body tr').each(function(index) {
+	      //alert(index);
+	      $(this).find('span.sn').html(index+1);
+	    });
+	    return true;
+	  } else {
+	    return false;
+	  }
+	});
+	
+</script>
+
+
 

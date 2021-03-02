@@ -583,5 +583,17 @@
 	    <definition name="createMauDanhGiaNangLuc" extends="nhansu">
 	        <put-attribute name="body" value="/nhansu/create/createMauDanhGiaNangLuc.jsp" />
 	    </definition>
+	    
+	    <!-- Create khen thưởng -->
+	    
+	    <definition name="createKhenThuong" extends="nhansu">
+	        <put-attribute name="body" value="/nhansu/create/createKhenThuong.jsp" />
+	    </definition>
+	    
+	    <!-- Create kỷ luật lao động -->
+	    
+	    <definition name="createKyLuatLaoDong" extends="nhansu">
+	        <put-attribute name="body" value="/nhansu/create/createKyLuatLaoDong.jsp" />
+	    </definition>
     
 </tiles-definitions>

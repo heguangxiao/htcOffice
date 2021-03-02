@@ -217,70 +217,200 @@
 <!-- PopUp hiển thị email -->
 
 
-<div class="modal fade" id="email">
+<div class="modal fade" id="email" >
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <form action="<c:url value='/'/>">
                 <!-- Modal Header -->
-                <div class="modal-header">
-                    <h3 class="modal-title">Gửi EMAIL</h4>
+                <div class="modal-header" style="background: #6495ED">
+                    <label class="modal-title" style="color:white">GỬI EMAIL</label>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
                 <!-- Modal body -->
-                <div class="modal-body">
-                    <div class="form-group">
-                        <label for="name">Tên bộ lọc*</label>
-                        <input type="text" class="form-control" id="name">
-                    </div>
-                    <div class="form-group">
-                        <span style="color: red;">Hoặc thêm trường</span>
-                    </div>
-                    <div class="form-group">
-                        <label>Trường hiển thị</label>
-                    </div>
-                    <div class="form-group">
-                        <select class="form-control">
-                            <option value="">1</option>
-                            <option value="">2</option>
-                            <option value="">3</option>
-                            <option value="">4</option>
-                            <option value="">5</option>
-                            <option value="">6</option>
-                            <option value="">7</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Sắp xếp theo</label>
-                    </div>
-                    <div class="form-group">
-                        <select class="form-control" style="width: 60%;float: left;">
-                            <option value="">1</option>
-                            <option value="">2</option>
-                            <option value="">3</option>
-                            <option value="">4</option>
-                            <option value="">5</option>
-                            <option value="">6</option>
-                            <option value="">7</option>
-                        </select>
-                        <select class="form-control" style="width: 40%;float: left;">
-                            <option value="">Tăng dần</option>
-                            <option value="">Giảm dần</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Gộp nhóm theo</label>
-                    </div>
-                    <div class="form-group">
-                        <select class="form-control">
-                        </select>
-                    </div>
+                <div style="margin-top: 14px">
+	                <p style="margin-left: 22px;float: left">Từ : </p>
+	                <i class="mdi mdi-account-circle" style="float: right;margin-right: 25px"></i>
                 </div>
+                
+                <hr width="750px;" style="clear:both;">
+                
+                <div>
+	                <p style="margin-left: 22px;float: left">Tới : </p>
+	                <label style="float: right;margin-right: 25px">bcc</label>
+	                <label style="float: right;margin-right: 10px">cc</label>
+	                
+                </div>
+                
+                <hr width="750px;" style="clear:both">
+                
+				<div>
+					<p style="margin-left: 22px">Chủ đề</p>
+				</div>
+				
+				<div style="width: 755px;height:400px;border: 1px solid black;margin-left: 20px">
+						<nav class=" navbar-expand-lg navbar-light bg-light"
+							style="padding-top: 0px; padding-bottom: 0px; margin-top: 0px;">
+							
+								<div class="collapse navbar-collapse" id="navbarSupportedContent">
+									<ul class=" navbar-nav mr-auto" style="text-align: center;margin-left: 0px;background: #F5F5F5;height: 50px	;width: 755px">
+	
+										<li class="nav-item active" style="margin-left: 5px">
+											<div style="text-align: center;">
+											<div class="mdi mdi-folder-outline" style="border: 1px solid black; width: 25px; display: inline-block;margin-top: 10px"></div>
+										</div>
+										</li>
+										
+										<li class="nav-item active" style="margin-left: 5px">
+											<div style="text-align: center;">
+											<div class="mdi mdi-apps" style="border: 1px solid black; width: 25px; display: inline-block;margin-top: 10px"></div>
+										</div>
+										</li>
+										
+										<li class="nav-item active" style="margin-left: 5px">
+											<div style="text-align: center;">
+											<div class="mdi mdi-lastfm" style="border: 1px solid black; width: 25px; display: inline-block;margin-top: 10px"></div>
+										</div>
+										</li>
+										
+										<li class="nav-item active" style="margin-left: 5px">
+											<div style="text-align: center;">
+											<div class="mdi mdi-image" style="border: 1px solid black; width: 25px; display: inline-block;margin-top: 10px"></div>
+										</div>
+										</li>
+										
+										<li class="nav-item active" style="margin-left: 5px">
+											<div style="text-align: center;">
+											<div class="mdi mdi-format-text" style="border: 1px solid black; width: 25px; display: inline-block;margin-top: 10px"></div>
+										</div>
+										</li>
+										
+										<li class="nav-item active" style="margin-left: 5px">
+											<div style="text-align: center;">
+											<div class="mdi mdi-format-bold" style="border: 1px solid black; width: 25px; display: inline-block;margin-top: 10px"></div>
+										</div>
+										</li>
+										
+										<li class="nav-item active" style="margin-left: 5px">
+											<div style="text-align: center;">
+											<div class="mdi mdi-format-italic" style="border: 1px solid black; width: 25px; display: inline-block;margin-top: 10px"></div>
+										</div>
+										</li>
+										
+										<li class="nav-item active" style="margin-left: 5px">
+											<div style="text-align: center;">
+											<div class="mdi mdi-format-strikethrough-variant" style="border: 1px solid black; width: 25px; display: inline-block;margin-top: 10px"></div>
+										</div>
+										</li>
+										
+										<li class="nav-item active" style="margin-left: 5px">
+											<div style="text-align: center;">
+											<div class="mdi mdi-format-underline" style="border: 1px solid black; width: 25px; display: inline-block;margin-top: 10px"></div>
+										</div>
+										</li>
+										
+										<li class="nav-item active" style="margin-left: 5px">
+											<div style="text-align: center;">
+											<div class="mdi mdi-water" style="border: 1px solid black; width: 25px; display: inline-block;margin-top: 10px"></div>
+										</div>
+										</li>
+										
+										<li class="nav-item active" style="margin-left: 5px">
+											<div style="text-align: center;">
+											<div class="mdi mdi-format-color-fill" style="border: 1px solid black; width: 25px; display: inline-block;margin-top: 10px"></div>
+										</div>
+										</li>
+										
+										<li class="nav-item active" style="margin-left: 5px">
+											<div style="text-align: center;">
+											<div class="mdi mdi-link-variant-off" style="border: 1px solid black; width: 25px; display: inline-block;margin-top: 10px"></div>
+										</div>
+										</li>
+										
+										<li class="nav-item active" style="margin-left: 5px">
+											<div style="text-align: center;">
+											<div class="mdi mdi-format-list-numbered" style="border: 1px solid black; width: 25px; display: inline-block;margin-top: 10px"></div>
+										</div>
+										</li>
+										
+										<li class="nav-item active" style="margin-left: 5px">
+											<div style="text-align: center;">
+											<div class="mdi mdi-format-list-bulleted" style="border: 1px solid black; width: 25px; display: inline-block;margin-top: 10px"></div>
+										</div>
+										</li>
+										
+										<li class="nav-item active" style="margin-left: 5px">
+											<div style="text-align: center;">
+											<div class="mdi mdi-format-align-left" style="border: 1px solid black; width: 25px; display: inline-block;margin-top: 10px"></div>
+										</div>
+										</li>
+										
+										<li class="nav-item active" style="margin-left: 5px">
+											<div style="text-align: center;">
+											<div class="mdi mdi-format-indent-increase" style="border: 1px solid black; width: 25px; display: inline-block;margin-top: 10px"></div>
+										</div>
+										</li>
+										
+										<li class="nav-item active" style="margin-left: 5px">
+											<div style="text-align: center;">
+											<div class="mdi mdi-format-indent-decrease" style="border: 1px solid black; width: 25px; display: inline-block;margin-top: 10px"></div>
+										</div>
+										</li>
+										
+										<li class="nav-item active" style="margin-left: 5px">
+											<div style="text-align: center;">
+											<div class="mdi mdi-eraser" style="border: 1px solid black; width: 25px; display: inline-block;margin-top: 10px"></div>
+										</div>
+										</li>
+										
+										<li class="nav-item active" style="margin-left: 5px">
+											<div style="text-align: center;">
+											<div class="mdi mdi-replay" style="border: 1px solid black; width: 25px; display: inline-block;margin-top: 10px"></div>
+										</div>
+										</li>
+										
+										<li class="nav-item active" style="margin-left: 5px">
+											<div style="text-align: center;">
+											<div class="mdi mdi-redo-variant" style="border: 1px solid black; width: 25px; display: inline-block;margin-top: 10px"></div>
+										</div>
+										</li>
+										
+										<li class="nav-item active" style="margin-left: 5px">
+											<div style="text-align: center;">
+											<div class="mdi mdi-xml" style="border: 1px solid black; width: 25px; display: inline-block;margin-top: 10px"></div>
+										</div>
+										</li>
+										
+										<li class="nav-item active" style="margin-left: 5px">
+											<div style="text-align: center;">
+											<div class="mdi mdi-arrow-expand-all" style="border: 1px solid black; width: 25px; display: inline-block;margin-top: 10px"></div>
+										</div>
+										</li>
+	
+									</ul>
+								</div>
+	
+							
+						</nav>
+				</div>
 
-                <!-- Modal footer -->
-                <div class="modal-footer">
+				<div style="width: 400px; height: 50px; border: 1px solid black; margin-left: 20px; margin-top: 10px; background: #DCDCDC;margin-bottom: 100px">
+
+					<div style="float: left; margin-top: 13px">
+						<h7 style="margin-left:10px">Đính kèm</h7>
+					</div>
+					<div style="float: left">
+						<i style="margin-left: 270px; font-size: 32px;" class="mdi mdi-attachment"></i>
+					</div>
+					
+				</div>
+
+
+
+				<!-- Modal footer -->
+                <div class="modal-footer" style="margin-top: 10px">
                     <button type="submit" class="btn btn-primary">Cập nhật</button>
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" style="color:#6495ED	;background: white" data-dismiss="modal">Hủy bỏ</button>
                 </div>
             </form>
         </div>

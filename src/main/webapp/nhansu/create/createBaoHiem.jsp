@@ -91,6 +91,17 @@
     	 top: 100%;
     	 margin-left: 276px
     }
+    .accordion {
+	cursor: pointer;
+	width: 100%;
+	transition: 0.4s;
+}
+
+.panel {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
 </style>
 
 <div id="tong">
@@ -122,9 +133,9 @@
 	</nav>
 
 	<!-- Thông tin bảo hiểm -->
-	<nav class=" navbar-expand-lg navbar-light bg-light" style=" padding-top: 0px;padding-bottom: 0px;margin-top: 0px;clear: both;">
+	<nav class=" navbar-expand-lg navbar-light bg-light accordion" style=" padding-top: 0px;padding-bottom: 0px;margin-top: 0px;clear: both;">
 	 	<div class="container-fluid" >   
-	 	<hr style="width: 1180px;">
+	 		<hr style="width: 1180px;">
 			<div  class="collapse navbar-collapse" id="navbarSupportedContent">
 
 				
@@ -139,7 +150,7 @@
 		</div>
 	</nav>
 	
-	<form>
+	<form class="panel">
 	  <div id="row2">
 	  	  <label for="validationServer013">Số sổ BH</label>
 	      <input type="text" class="form-control is-valid" style="width: 304px" placeholder="01221"
@@ -192,7 +203,7 @@
 
 
 	<!-- Nghiệp vụ báo tăng -->
-	<nav class=" navbar-expand-lg navbar-light bg-light" style=" padding-top:30px;padding-bottom: 0px;margin-top: 0px;clear: both;">
+	<nav class=" navbar-expand-lg navbar-light bg-light accordion" style=" padding-top:30px;padding-bottom: 0px;margin-top: 0px;clear: both;">
 	 	<div class="container-fluid" >   
 			<div  class="collapse navbar-collapse" id="navbarSupportedContent">				
 					<div  >
@@ -204,7 +215,7 @@
 		</div>
 	</nav>
 	
-	<form>
+	<form class="panel">
 	  <div id="row2">
 	  	  <label for="validationServer013">NV hoàn thiện HS<i class="mdi mdi-help-circle-outline"></i> </label>
 	      <input type="date" class="form-control is-valid" style="width: 304px" placeholder="dd/mm/yyyy"
@@ -238,7 +249,7 @@
 	
 	<!-- Nghiệp vụ báo giảm -->
 	
-	<nav class=" navbar-expand-lg navbar-light bg-light" style=" padding-top:30px;padding-bottom: 0px;margin-top: 0px;clear: both;">
+	<nav class=" navbar-expand-lg navbar-light bg-light accordion" style=" padding-top:30px;padding-bottom: 0px;margin-top: 0px;clear: both;">
 	 	<div class="container-fluid" >   
 			<div  class="collapse navbar-collapse" id="navbarSupportedContent">				
 					<div  >
@@ -250,7 +261,7 @@
 		</div>
 	</nav>
 	
-	<form>
+	<form class="panel">
 	  <div id="row2">
 	  	  <label for="validationServer013">Ngày nhận sổ BH từ NL	Đ<i class="mdi mdi-help-circle-outline"></i> </label>
 	      <input type="date" class="form-control is-valid" style="width: 304px" placeholder="dd/mm/yyyy"
@@ -279,7 +290,7 @@
 	
 	<!-- Lịch sử đóng bảo hiểm -->
 	
-	<nav class=" navbar-expand-lg navbar-light bg-light" style=" padding-top:30px;padding-bottom: 0px;margin-top: 0px;clear: both;">
+	<nav class=" navbar-expand-lg navbar-light bg-light accordion" style=" padding-top:30px;padding-bottom: 0px;margin-top: 0px;clear: both;">
 	 	<div class="container-fluid" >   
 			<div  class="collapse navbar-collapse" id="navbarSupportedContent">				
 					<div  >
@@ -291,7 +302,7 @@
 		</div>
 	</nav>
 	
-	<form style="width: 1190px">
+	<form style="width: 1190px" class="panel">
 	  <div id="row5">
 	  	  <label for="validationServer013">Từ tháng<i class="mdi mdi-help-circle-outline"></i> </label>
 	      <input type="date" class="form-control is-valid" style="width: 200px" placeholder="Chọn"
@@ -336,12 +347,14 @@
 	  <div id="row5">
 	 	 <i class="mdi mdi-close"></i>
 	  </div>
-	</form>
+	  
 	  <i class="mdi mdi-plus-circle-outline"  style="margin-left: 10px;font-size :40px;color:#6495ED"></i>
+	</form>
+	  
 
 	<!-- Lịch sử giải quyết chế độ -->
 	
-	<nav class=" navbar-expand-lg navbar-light bg-light" style=" padding-top:30px;padding-bottom: 0px;margin-top: 0px;clear: both;">
+	<nav class=" navbar-expand-lg navbar-light bg-light accordion" style=" padding-top:30px;padding-bottom: 0px;margin-top: 0px;clear: both;">
 	 	<div class="container-fluid" >   
 			<div  class="collapse navbar-collapse" id="navbarSupportedContent">				
 					<div  >
@@ -353,7 +366,7 @@
 		</div>
 	</nav>
 	
-	<form style="width: 1190px;">
+	<form style="width: 1190px;" class="panel">
   
 	  <div id="row5">
 	  		<label for="validationServer013">Loại chế độ</label>
@@ -398,8 +411,24 @@
 	  <div id="row5">
 	 	 <i class="mdi mdi-close"></i>
 	  </div>
-	</form>
+	  
 	  <i class="mdi mdi-plus-circle-outline"  style="margin-left: 10px;font-size :40px;color:#6495ED;margin-bottom:100px"></i>
+	</form>
+	  
 	
 </div>
-
+<script>
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+	for (i = 0; i < acc.length; i++) {
+		acc[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			if (panel.style.maxHeight) {
+				panel.style.maxHeight = null;
+			} else {
+				panel.style.maxHeight = panel.scrollHeight + "px";
+			}
+		});
+	}
+</script>

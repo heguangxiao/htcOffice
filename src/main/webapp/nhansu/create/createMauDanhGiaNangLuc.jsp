@@ -92,11 +92,22 @@
     	 top: 100%;
     	 margin-left: 276px
     }
+    .accordion {
+	cursor: pointer;
+	width: 100%;
+	transition: 0.4s;
+}
+
+.panel {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
 </style>
 
 <div id="tong">
 		
-	<div  style="margin-top: 20px;margin-left: 20px;">
+	<div  style="margin-top: 20px;margin-left: 20px;" class="accordion">
 		<i class="mdi mdi-chevron-down" style="display: inline;border:none;" ></i>
 		<p style="display: inline;color:#6495ED;font-weight: bold;font-size: 20px" >Thông tin chung</p>
 		<hr style="width: 610px">
@@ -105,8 +116,17 @@
 
 		
 	
-	<form>
-	
+	<form class="panel">
+			<div
+				style="padding-top: 200px; width: 1190px; display: block; bottom: 0px; position: fixed; margin-left: 0px; background: #F5F5F5; color: white; border: none; padding: 15px 32px; text-decoration: none; display: inline-block; font-size: 16px;">
+				<button
+					style="background: #4169E1; color: white; border-radius: 3px">Cập
+					nhật</button>
+				<button
+					style="background: white; color: black; border-radius: 3px; margin-left: 10px; border: 1px solid #4169E1; width: 87.55px">Hủy
+					bỏ</button>
+			</div>
+			
 		  <div id="row2">
 		  	  <label for="validationServer013">Tên mẫu đánh giá *</label>
 		      <input type="text" class="form-control is-valid" style="width: 612px" placeholder="Đánh giá năng lực vị trí quản lý"
@@ -118,6 +138,8 @@
 		      <input type="text" class="form-control is-valid" style="width: 612px" placeholder="Đánh giá vị trí"
 		        >
 		  </div>
+		  
+		  
 	  
 	</form>
 
@@ -125,8 +147,8 @@
 
 	<!-- Năng lực đánh giá -->
 	<nav class=" navbar-expand-lg navbar-light bg-light" style=" padding-top:30px;padding-bottom: 0px;margin-top: 0px;width: 1190px">
-	 	<div class="container-fluid" >   
-			<div  class="collapse navbar-collapse" id="navbarSupportedContent">
+	 	<div class="container-fluid " >   
+			<div  class="collapse navbar-collapse accordion" id="navbarSupportedContent">
 				<div>
 					<i class="mdi mdi-chevron-down"
 						style="display: inline; border: none;"></i>
@@ -134,6 +156,8 @@
 					<hr style="width: 610px">
 				</div>
 			</div>
+			
+			<div class="panel">
 				<div id="row5">
 					<label for="validationServer013">Tiêu chí năng lực </label> <select
 						class="form-control" style="width: 250px">
@@ -144,31 +168,54 @@
 					</select>
 				</div>
 
-				<div id="row5">
+			
+
+			<div id="row5">
 					<label for="validationServer013">Mức độ thành thạo yêu cầu<i class="mdi mdi-help-circle-outline"></i> </label> <select
 						class="form-control" style="width: 250px">
-						<option selected="">Chọn tiêu chí</option>
-						<option>tốt</option>
-						<option>ổn</option>
+						<option selected="">Từ 1 đến 5</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						
 
 					</select>
 				</div>
 
 				<div id="row5">
 					<label for="validationServer013">Mức độ quang trọng *</label> <input
-						type="text" class="form-control is-valid" style="width: 200px"
-						placeholder="">
+						type="text" class="form-control is-valid" style="width: 200px">
 				</div>
 
 				<div id="row5">
 					<i class="mdi mdi-close"></i>
 				</div>
-			
+				<br>
+				<i class="mdi mdi-plus-circle-outline"  style="margin-left: 10px;font-size :40px;color:#6495ED"></i>
+			</div>
 		</div>
 	</nav>
 	
 	
-	  <i class="mdi mdi-plus-circle-outline"  style="margin-left: 10px;font-size :40px;color:#6495ED;margin-bottom:100px"></i>
+	  
 	
 </div>
+
+<script>
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+	for (i = 0; i < acc.length; i++) {
+		acc[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			if (panel.style.maxHeight) {
+				panel.style.maxHeight = null;
+			} else {
+				panel.style.maxHeight = panel.scrollHeight + "px";
+			}
+		});
+	}
+</script>
 
