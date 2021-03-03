@@ -59,7 +59,7 @@
 
 
 
-
+						
 						<div>
 							<table class="form-group" style="width: 100%; float: left;">
 								<tbody id="tbl_posts_body">
@@ -84,10 +84,10 @@
 										</select>
 									</td>
 									<td><label>Bản ghi</label> <input type="text" class="form-control" id="exampleInputName1" placeholder="Chọn bản ghi" /></td>
-									<td><a class="delete-record">X</a></td>
+									<td style="margin-top: 5px"><a class="delete-record mdi mdi-close-circle" ></a></td>
 								</tr>
 							</table>
-							<i class="mdi mdi-plus-circle-outline add-record">Thêm</i>
+							<a class="mdi mdi-plus-circle-outline add-record">Thêm</a>
 						</div>
 
 
@@ -136,3 +136,34 @@
 
 	</form>
 </div>
+
+
+
+ <script>
+jQuery(document).delegate('a.add-record', 'click', function(e) {
+     e.preventDefault();    
+     var content = jQuery('#sample_table tr'),
+     size = jQuery('#tbl_posts >tbody >tr').length + 1,
+     element = null,    
+     element = content.clone();
+     element.attr('id', 'rec-'+size);
+     element.find('.delete-record').attr('data-id', size);
+     element.appendTo('#tbl_posts_body');
+     element.find('.sn').html(size);
+   });
+   
+jQuery(document).delegate('a.delete-record', 'click', function(e) {
+     e.preventDefault();    
+      var id = jQuery(this).attr('data-id');
+      var targetDiv = jQuery(this).attr('targetDiv');
+      jQuery('#rec-' + id).remove();
+      
+    //regnerate index number on table
+    $('#tbl_posts_body tr').each(function(index) {
+      //alert(index);
+      $(this).find('span.sn').html(index+1);
+    });
+    return true;
+  
+});
+     </script>
