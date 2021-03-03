@@ -24,6 +24,13 @@
     tr .active {
         width: 5%;
     }
+    .tbl {
+        min-height: 85.5vh;
+        width: 100%;
+    }
+    .fontSize {
+        font-size: 11px;
+    }
 </style>
 
 <nav class=" navbar-expand-lg navbar-light bg-light" style="padding-top: 0px;padding-bottom: 0px;margin-top: 0px;">
@@ -55,7 +62,7 @@
 </nav>
 
 
-<div class="scrollDiv">
+<div class="scrollDiv tbl">
     <table class="table table-hover table-striped " style="text-align: center;">
         <thead>
             <tr>
@@ -87,89 +94,90 @@
         </thead>
         <tbody>
             <tr>
-                <td class="active">
+                <td class="active fontSize">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="success">1</td>
-                <td class="warning">nv01</td>
-                <td class="danger">phuongnv</td>
-                <td class="danger">kĩ thuật</td>
-                <td class="danger">nv</td>
-                <td class="danger"></td>
-                <td class="danger"></td>
-                <td class="danger"></td>
-                <td class="danger"></td>
-                <td class="danger"></td>
-                <td class="danger"></td>
-                <td class="danger"></td>
+                <td class="success fontSize">1</td>
+                <td class="warning fontSize">nv01</td>
+                <td class="danger fontSize">phuongnv</td>
+                <td class="danger fontSize">kĩ thuật</td>
+                <td class="danger fontSize">nv</td>
+                <td class="danger fontSize"></td>
+                <td class="danger fontSize"></td>
+                <td class="danger fontSize"></td>
+                <td class="danger fontSize"></td>
+                <td class="danger fontSize"></td>
+                <td class="danger fontSize"></td>
+                <td class="danger fontSize"></td>
             </tr>
-           <tr>
-                <td class="active">
+         
+            <tr>
+                <td class="active fontSize">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="success">1</td>
-                <td class="warning">nv01</td>
-                <td class="danger">phuongnv</td>
-                <td class="danger">kĩ thuật</td>
-                <td class="danger">nv</td>
-                <td class="danger"></td>
-                <td class="danger"></td>
-                <td class="danger"></td>
-                <td class="danger"></td>
-                <td class="danger"></td>
-                <td class="danger"></td>
-                <td class="danger"></td>
+                <td class="success fontSize">1</td>
+                <td class="warning fontSize">nv01</td>
+                <td class="danger fontSize">phuongnv</td>
+                <td class="danger fontSize">kĩ thuật</td>
+                <td class="danger fontSize">nv</td>
+                <td class="danger fontSize"></td>
+                <td class="danger fontSize"></td>
+                <td class="danger fontSize"></td>
+                <td class="danger fontSize"></td>
+                <td class="danger fontSize"></td>
+                <td class="danger fontSize"></td>
+                <td class="danger fontSize"></td>
             </tr>
             <tr>
-                <td class="active">
+                <td class="active fontSize">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="success">1</td>
-                <td class="warning">nv01</td>
-                <td class="danger">phuongnv</td>
-                <td class="danger">kĩ thuật</td>
-                <td class="danger">nv</td>
-                <td class="danger"></td>
-                <td class="danger"></td>
-                <td class="danger"></td>
-                <td class="danger"></td>
-                <td class="danger"></td>
-                <td class="danger"></td>
-                <td class="danger"></td>
+                <td class="success fontSize">1</td>
+                <td class="warning fontSize">nv01</td>
+                <td class="danger fontSize">phuongnv</td>
+                <td class="danger fontSize">kĩ thuật</td>
+                <td class="danger fontSize">nv</td>
+                <td class="danger fontSize"></td>
+                <td class="danger fontSize"></td>
+                <td class="danger fontSize"></td>
+                <td class="danger fontSize"></td>
+                <td class="danger fontSize"></td>
+                <td class="danger fontSize"></td>
+                <td class="danger fontSize"></td>
             </tr>
             <tr>
-                <td class="active">
+                <td class="active fontSize">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="success">1</td>
-                <td class="warning">nv01</td>
-                <td class="danger">phuongnv</td>
-                <td class="danger">kĩ thuật</td>
-                <td class="danger">nv</td>
-                <td class="danger"></td>
-                <td class="danger"></td>
-                <td class="danger"></td>
-                <td class="danger"></td>
-                <td class="danger"></td>
-                <td class="danger"></td>
-                <td class="danger"></td>
+                <td class="success fontSize">1</td>
+                <td class="warning fontSize">nv01</td>
+                <td class="danger fontSize">phuongnv</td>
+                <td class="danger fontSize">kĩ thuật</td>
+                <td class="danger fontSize">nv</td>
+                <td class="danger fontSize"></td>
+                <td class="danger fontSize"></td>
+                <td class="danger fontSize"></td>
+                <td class="danger fontSize"></td>
+                <td class="danger fontSize"></td>
+                <td class="danger fontSize"></td>
+                <td class="danger fontSize"></td>
             </tr>
             <tr>
-                <td class="active">
+                <td class="active fontSize">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="success">1</td>
-                <td class="warning">nv01</td>
-                <td class="danger">phuongnv</td>
-                <td class="danger">kĩ thuật</td>
-                <td class="danger">nv</td>
-                <td class="danger"></td>
-                <td class="danger"></td>
-                <td class="danger"></td>
-                <td class="danger"></td>
-                <td class="danger"></td>
-                <td class="danger"></td>
-                <td class="danger"></td>
+                <td class="success fontSize">1</td>
+                <td class="warning fontSize">nv01</td>
+                <td class="danger fontSize">phuongnv</td>
+                <td class="danger fontSize">kĩ thuật</td>
+                <td class="danger fontSize">nv</td>
+                <td class="danger fontSize"></td>
+                <td class="danger fontSize"></td>
+                <td class="danger fontSize"></td>
+                <td class="danger fontSize"></td>
+                <td class="danger fontSize"></td>
+                <td class="danger fontSize"></td>
+                <td class="danger fontSize"></td>
             </tr>
         </tbody>
     </table>

@@ -24,6 +24,13 @@
     tr .active {
         width: 5%;
     }
+    .tbl {
+        min-height: 85.5vh;
+        width: 100%;
+    }
+    .fontSize {
+        font-size: 11px;
+    }
 </style>
 
 <nav class=" navbar-expand-lg navbar-light bg-light" style="padding-top: 0px;padding-bottom: 0px;margin-top: 0px;">
@@ -131,8 +138,8 @@
     </div>
 </nav>
 
-<div class="scrollDiv">
-    <table class="table table-hover table-striped " style="text-align: center;">
+<div class="scrollDiv tbl">
+    <table class="table table-hover table-striped " style="margin: auto;text-align: center;" on-right-click="ShowContextMenu()">
         <thead>
             <tr>
                 <th class="active">
@@ -146,126 +153,464 @@
                 <th class="success">Kết thúc dự kiến</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody context="rightClick">
             <tr>
-                <td class="active">
+                <td class="active fontSize">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="success">nguyễn văn phương</td>
-                <td class="py-1">
+                <td class="success fontSize">nguyễn văn phương</td>
+                <td class="py-1 fontSize">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td class="danger">hoàn thành</td>
-                <td>
+                <td class="danger fontSize">hoàn thành</td>
+                <td class="fontSize">
                     <div class="progress">
                         <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </td>
-                <td class="danger">01/01/2021</td>
-                <td class="danger">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
             </tr>
-           <tr>
-                <td class="active">
+           	<tr>
+                <td class="active fontSize">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="success">nguyễn văn phương</td>
-                <td class="py-1">
+                <td class="success fontSize">nguyễn văn phương</td>
+                <td class="py-1 fontSize">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td class="danger">hoàn thành</td>
-                <td>
+                <td class="danger fontSize">hoàn thành</td>
+                <td class="fontSize">
                     <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 15%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </td>
-                <td class="danger">01/01/2021</td>
-                <td class="danger">01/01/2021</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-                <td class="success">nguyễn văn phương</td>
-                <td class="py-1">
-                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
-                </td>
-                <td class="danger">hoàn thành</td>
-                <td>
-                    <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </td>
-                <td class="danger">01/01/2021</td>
-                <td class="danger">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
             </tr>
             <tr>
-                <td class="active">
+                <td class="active fontSize">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="success">nguyễn văn phương</td>
-                <td class="py-1">
+                <td class="success fontSize">nguyễn văn phương</td>
+                <td class="py-1 fontSize">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td class="danger">hoàn thành</td>
-                <td>
+                <td class="danger fontSize">hoàn thành</td>
+                <td class="fontSize">
                     <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </td>
-                <td class="danger">01/01/2021</td>
-                <td class="danger">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
+            </tr>
+            <tr>
+                <td class="active fontSize">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="success fontSize">nguyễn văn phương</td>
+                <td class="py-1 fontSize">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="danger fontSize">hoàn thành</td>
+                <td class="fontSize">
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </td>
+                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
+            </tr>
+            <tr>
+                <td class="active fontSize">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="success fontSize">nguyễn văn phương</td>
+                <td class="py-1 fontSize">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="danger fontSize">hoàn thành</td>
+                <td class="fontSize">
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </td>
+                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
+            </tr>
+            <tr>
+                <td class="active fontSize">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="success fontSize">nguyễn văn phương</td>
+                <td class="py-1 fontSize">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="danger fontSize">hoàn thành</td>
+                <td class="fontSize">
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </td>
+                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
+            </tr>
+            <tr>
+                <td class="active fontSize">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="success fontSize">nguyễn văn phương</td>
+                <td class="py-1 fontSize">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="danger fontSize">hoàn thành</td>
+                <td class="fontSize">
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </td>
+                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
+            </tr>
+            <tr>
+                <td class="active fontSize">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="success fontSize">nguyễn văn phương</td>
+                <td class="py-1 fontSize">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="danger fontSize">hoàn thành</td>
+                <td class="fontSize">
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </td>
+                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
+            </tr>
+            <tr>
+                <td class="active fontSize">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="success fontSize">nguyễn văn phương</td>
+                <td class="py-1 fontSize">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="danger fontSize">hoàn thành</td>
+                <td class="fontSize">
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </td>
+                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
+            </tr>
+            <tr>
+                <td class="active fontSize">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="success fontSize">nguyễn văn phương</td>
+                <td class="py-1 fontSize">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="danger fontSize">hoàn thành</td>
+                <td class="fontSize">
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </td>
+                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
+            </tr>
+            <tr>
+                <td class="active fontSize">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="success fontSize">nguyễn văn phương</td>
+                <td class="py-1 fontSize">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="danger fontSize">hoàn thành</td>
+                <td class="fontSize">
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </td>
+                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
+            </tr>
+            <tr>
+                <td class="active fontSize">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="success fontSize">nguyễn văn phương</td>
+                <td class="py-1 fontSize">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="danger fontSize">hoàn thành</td>
+                <td class="fontSize">
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </td>
+                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
+            </tr>
+            <tr>
+                <td class="active fontSize">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="success fontSize">nguyễn văn phương</td>
+                <td class="py-1 fontSize">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="danger fontSize">hoàn thành</td>
+                <td class="fontSize">
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </td>
+                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
+            </tr>
+            <tr>
+                <td class="active fontSize">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="success fontSize">nguyễn văn phương</td>
+                <td class="py-1 fontSize">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="danger fontSize">hoàn thành</td>
+                <td class="fontSize">
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </td>
+                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
+            </tr>
+            <tr>
+                <td class="active fontSize">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="success fontSize">nguyễn văn phương</td>
+                <td class="py-1 fontSize">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="danger fontSize">hoàn thành</td>
+                <td class="fontSize">
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </td>
+                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
+            </tr>
+            <tr>
+                <td class="active fontSize">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="success fontSize">nguyễn văn phương</td>
+                <td class="py-1 fontSize">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="danger fontSize">hoàn thành</td>
+                <td class="fontSize">
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </td>
+                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
+            </tr>
+            <tr>
+                <td class="active fontSize">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="success fontSize">nguyễn văn phương</td>
+                <td class="py-1 fontSize">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="danger fontSize">hoàn thành</td>
+                <td class="fontSize">
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </td>
+                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
+            </tr>
+            <tr>
+                <td class="active fontSize">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="success fontSize">nguyễn văn phương</td>
+                <td class="py-1 fontSize">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="danger fontSize">hoàn thành</td>
+                <td class="fontSize">
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </td>
+                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
+            </tr>
+            <tr>
+                <td class="active fontSize">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="success fontSize">nguyễn văn phương</td>
+                <td class="py-1 fontSize">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="danger fontSize">hoàn thành</td>
+                <td class="fontSize">
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </td>
+                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
+            </tr>
+            <tr>
+                <td class="active fontSize">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="success fontSize">nguyễn văn phương</td>
+                <td class="py-1 fontSize">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="danger fontSize">hoàn thành</td>
+                <td class="fontSize">
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </td>
+                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
+            </tr>
+            <tr>
+                <td class="active fontSize">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="success fontSize">nguyễn văn phương</td>
+                <td class="py-1 fontSize">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="danger fontSize">hoàn thành</td>
+                <td class="fontSize">
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </td>
+                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
+            </tr>
+            <tr>
+                <td class="active fontSize">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="success fontSize">nguyễn văn phương</td>
+                <td class="py-1 fontSize">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="danger fontSize">hoàn thành</td>
+                <td class="fontSize">
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </td>
+                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
+            </tr>
+            <tr>
+                <td class="active fontSize">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="success fontSize">nguyễn văn phương</td>
+                <td class="py-1 fontSize">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="danger fontSize">hoàn thành</td>
+                <td class="fontSize">
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </td>
+                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
+            </tr>
+            <tr>
+                <td class="active fontSize">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="success fontSize">nguyễn văn phương</td>
+                <td class="py-1 fontSize">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="danger fontSize">hoàn thành</td>
+                <td class="fontSize">
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </td>
+                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
             </tr>
         </tbody>
     </table>
     
-    <!--<button id="select-all" class="btn button-default">SelectAll/Cancel</button>-->
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="menu">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <a class="dropdown-item" href="#">Something else here</a>
-    </div>
-</div>
-<div class="container-fluid bd-content">
-    <div class="bd-example" data-example-id="">
-        <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" role="dialog" tabindex="-1">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">New message</h5><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label class="form-control-label" for="recipient-name">Recipient:</label> <input class="form-control" id="recipient-name" type="text">
-                            </div>
-                            <div class="form-group">
-                                <label class="form-control-label" for="message-text">Message:</label> 
-                                <textarea class="form-control" id="message-text"></textarea>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button> <button class="btn btn-primary" type="button">Send message</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <ul id="rightClick" class="dropdown-menu">
+        <li><a class="dropdown-item" ng-click=""><i class="fas fa-eye" style="width: 40px;"></i> Xem nhanh</a></li>
+        <li><a class="dropdown-item" ng-click=""><i class="fas fa-file" style="width: 40px;"></i> Biểu mẫu</a></li>
+        <li><a class="dropdown-item" ng-click=""><i class="fas fa-copy" style="width: 40px;"></i> Nhân bản</a></li>
+    </ul>
 </div>
 <div class="bd-example" data-example-id="" style="display: ;" id="createPopup">
 </div>
                             
                             
 <script>
+//        $(document).ready(function () {
+//            $('#example').DataTable();
+//        });
     $(function () {
         //button select all or cancel
         $("#select-all").click(function () {
             var all = $("input.select-all")[0];
-            all.checked = !all.checked;
+            all.checked = !all.checked
             var checked = all.checked;
             $("input.select-item").each(function (index, item) {
                 item.checked = checked;
             });
+        });
+        //button select invert
+        $("#select-invert").click(function () {
+            $("input.select-item").each(function (index, item) {
+                item.checked = !item.checked;
+            });
+            checkSelected();
+        });
+        //button get selected info
+        $("#selected").click(function () {
+            var items = [];
+            $("input.select-item:checked:checked").each(function (index, item) {
+                items[index] = item.value;
+            });
+            if (items.length < 1) {
+                alert("no selected items!!!");
+            } else {
+                var values = items.join(',');
+                console.log(values);
+                var html = $("<div></div>");
+                html.html("selected:" + values);
+                html.appendTo("body");
+            }
         });
         //column checkbox select all or cancel
         $("input.select-all").click(function () {
@@ -277,100 +622,17 @@
         //check selected items
         $("input.select-item").click(function () {
             var checked = this.checked;
+            console.log(checked);
+            checkSelected();
+        });
+        //check is all selected
+        function checkSelected() {
             var all = $("input.select-all")[0];
             var total = $("input.select-item").length;
             var len = $("input.select-item:checked:checked").length;
+            console.log("total:" + total);
+            console.log("len:" + len);
             all.checked = len === total;
-        });
-
-    });
-
-    $("td").on('contextmenu', function (e) {
-        $('td').css('box-shadow', 'none');
-        var top = e.pageY - 10;
-        var left = e.pageX - 120;
-        $(this).css('box-shadow', 'inset 1px 1px 0px 0px red, inset -1px -1px 0px 0px red');
-//        console.log($(this).text());
-        $("#menu").css({
-            display: "block",
-            top: top,
-            left: left
-        });
-
-        var $row = jQuery(this).closest('tr');
-        var $columns = $row.find('td');
-
-        $columns.addClass('row-highlight');
-        var values = "?";
-
-        jQuery.each($columns, function (i, item) {
-            var str = item.innerHTML.trim().indexOf('<input type="checkbox" class="select-item checkbox"') === -1 ? item.innerHTML.trim() + '&' : '';
-            if (i === 1) {
-                values = values + 'Tên công việc=';
-            } else if (i === 2) {
-                values = values + 'Thực hiện=';
-            } else if (i === 3) {
-                values = values + 'Trạng thái=';
-            }else if (i === 4) {
-                values = values + 'Tiến độ=';
-            }else if (i === 5) {
-                values = values + 'Bắt đầu dự kiến=';
-            }else if (i === 6) {
-                values = values + 'Kết thúc dự kiến=';
-            }
-            
-            values = values + str;
-        });
-        values = values.slice(0, values.length - 1);
-        createPopup(values.slice(1, values.length));
-        $("#menu").empty();
-        var showMenu = '';
-        showMenu = showMenu + '<a class="dropdown-item" data-target="#exampleModal" data-toggle="modal" data-whatever="@getbootstrap">Tùy chọn</a>';
-        showMenu = showMenu + '<a class="dropdown-item" data-target="#exampleXem" data-toggle="modal" data-whatever="">Xem nhanh</a>';
-        showMenu = showMenu + '<a class="dropdown-item" href="#' + values + '">Nhân bản công việc</a>';
-        document.getElementById('menu').innerHTML = showMenu;
-
-        return false; //blocks default Webbrowser right click menu
-
-    });
-
-    function createPopup(e) {
-        var createPopup = '';
-        var key = e.split('&');
-        createPopup = createPopup + '<div aria-hidden="true" aria-labelledby="exampleXemnhanh" class="modal fade" id="exampleXem" role="dialog" tabindex="-1">';
-        createPopup = createPopup + '<div class="modal-dialog" role="document">';
-        createPopup = createPopup + '<div class="modal-content">';
-        createPopup = createPopup + '<div class="modal-header">';
-        createPopup = createPopup + '<h5 class="modal-title" id="exampleXemnhanh">Xem nhanh</h5><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>';
-        createPopup = createPopup + '</div>';
-        createPopup = createPopup + '<div class="modal-body">';
-        createPopup = createPopup + '<form>';
-        for (var i = 0; i < key.length; i++) {
-            var k = key[i].split('=');
-            createPopup = createPopup + '<div class="form-group">';
-            createPopup = createPopup + '<label class="form-control-label" for="recipient-name">' + k[0] + ':</label> <input class="form-control" value="' + k[1] + '" type="text">';
-            createPopup = createPopup + '</div>';
         }
-        createPopup = createPopup + '<div class="modal-footer">';
-        createPopup = createPopup + '<button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button> <button class="btn btn-primary" type="button">Send</button>';
-        createPopup = createPopup + '</div>';
-        createPopup = createPopup + '</form>';
-        createPopup = createPopup + '</div>';
-        createPopup = createPopup + '</div>';
-        createPopup = createPopup + '</div>';
-        createPopup = createPopup + '</div>';
-        document.getElementById('createPopup').innerHTML = createPopup;
-    }
-
-    $("body").on("click", function () {
-        if ($("#menu").css('display') === 'block') {
-            $("#menu").hide();
-        }
-        $('td').css('box-shadow', 'none');
     });
-
-    $("#menu a").on("click", function () {
-        $(this).parent().hide();
-    });
-
-</script>
+    </script>

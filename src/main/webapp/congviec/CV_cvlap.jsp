@@ -24,6 +24,13 @@
     tr .active {
         width: 5%;
     }
+    .tbl {
+        min-height: 85.5vh;
+        width: 100%;
+    }
+    .fontSize {
+        font-size: 11px;
+    }
 </style>
 
 <nav class=" navbar-expand-lg navbar-light bg-light" style="padding-top: 0px;padding-bottom: 0px;margin-top: 0px;">
@@ -68,7 +75,7 @@
 </nav>
 
 
-<div class="scrollDiv">
+<div class="scrollDiv tbl">
     <table class="table table-hover table-striped " style="text-align: center;">
         <thead>
             <tr>
@@ -88,124 +95,104 @@
         </thead>
         <tbody>
             <tr>
-                <td class="active">
+                <td class="active fontSize">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="py-1">
+                <td class="py-1 fontSize">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td class="warning">cong viec 1</td>
-                <td class="danger">đang chạy</td>
-                <td class="danger">01/01/2021</td>
-                <td class="danger">01/01/2021</td>
-                <td class="py-1">
+                <td class="warning fontSize">cong viec 1</td>
+                <td class="danger fontSize">đang chạy</td>
+                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger fontSize" fontSize>01/01/2021</td>
+                <td class="py-1 fontSize">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td class="py-1">
+                <td class="py-1 fontSize">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td class="danger">0</td>
-                <td class="danger">lặp hàng tuần vào thứ 2,3,4,5,6,7.lặp không kết thúc</td>
+                <td class="danger fontSize">0</td>
+                <td class="danger fontSize">lặp hàng tuần vào thứ 2,3,4,5,6,7.lặp không kết thúc</td>
             </tr>
-           <tr>
-                <td class="active">
+             <tr>
+                <td class="active fontSize">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="py-1">
+                <td class="py-1 fontSize">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td class="warning">cong viec 1</td>
-                <td class="danger">đang chạy</td>
-                <td class="danger">01/01/2021</td>
-                <td class="danger">01/01/2021</td>
-                <td class="py-1">
+                <td class="warning fontSize">cong viec 1</td>
+                <td class="danger fontSize">đang chạy</td>
+                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger fontSize" fontSize>01/01/2021</td>
+                <td class="py-1 fontSize">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td class="py-1">
+                <td class="py-1 fontSize">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td class="danger">0</td>
-                <td class="danger">lặp hàng tuần vào thứ 2,3,4,5,6,7.lặp không kết thúc</td>
+                <td class="danger fontSize">0</td>
+                <td class="danger fontSize">lặp hàng tuần vào thứ 2,3,4,5,6,7.lặp không kết thúc</td>
             </tr>
-            <tr>
-                <td class="active">
+             <tr>
+                <td class="active fontSize">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="py-1">
+                <td class="py-1 fontSize">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td class="warning">cong viec 1</td>
-                <td class="danger">đang chạy</td>
-                <td class="danger">01/01/2021</td>
-                <td class="danger">01/01/2021</td>
-                <td class="py-1">
+                <td class="warning fontSize">cong viec 1</td>
+                <td class="danger fontSize">đang chạy</td>
+                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger fontSize" fontSize>01/01/2021</td>
+                <td class="py-1 fontSize">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td class="py-1">
+                <td class="py-1 fontSize">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td class="danger">0</td>
-                <td class="danger">lặp hàng tuần vào thứ 2,3,4,5,6,7.lặp không kết thúc</td>
+                <td class="danger fontSize">0</td>
+                <td class="danger fontSize">lặp hàng tuần vào thứ 2,3,4,5,6,7.lặp không kết thúc</td>
             </tr>
-            <tr>
-                <td class="active">
+             <tr>
+                <td class="active fontSize">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="py-1">
+                <td class="py-1 fontSize">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td class="warning">cong viec 1</td>
-                <td class="danger">đang chạy</td>
-                <td class="danger">01/01/2021</td>
-                <td class="danger">01/01/2021</td>
-                <td class="py-1">
+                <td class="warning fontSize">cong viec 1</td>
+                <td class="danger fontSize">đang chạy</td>
+                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger fontSize" fontSize>01/01/2021</td>
+                <td class="py-1 fontSize">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td class="py-1">
+                <td class="py-1 fontSize">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td class="danger">0</td>
-                <td class="danger">lặp hàng tuần vào thứ 2,3,4,5,6,7.lặp không kết thúc</td>
+                <td class="danger fontSize">0</td>
+                <td class="danger fontSize">lặp hàng tuần vào thứ 2,3,4,5,6,7.lặp không kết thúc</td>
             </tr>
-            <tr>
-                <td class="active">
+             <tr>
+                <td class="active fontSize">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="py-1">
+                <td class="py-1 fontSize">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td class="warning">cong viec 1</td>
-                <td class="danger">đang chạy</td>
-                <td class="danger">01/01/2021</td>
-                <td class="danger">01/01/2021</td>
-                <td class="py-1">
+                <td class="warning fontSize">cong viec 1</td>
+                <td class="danger fontSize">đang chạy</td>
+                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger fontSize" fontSize>01/01/2021</td>
+                <td class="py-1 fontSize">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td class="py-1">
+                <td class="py-1 fontSize">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td class="danger">0</td>
-                <td class="danger">lặp hàng tuần vào thứ 2,3,4,5,6,7.lặp không kết thúc</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-                <td class="py-1">
-                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
-                </td>
-                <td class="warning">cong viec 1</td>
-                <td class="danger">đang chạy</td>
-                <td class="danger">01/01/2021</td>
-                <td class="danger">01/01/2021</td>
-                <td class="py-1">
-                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
-                </td>
-                <td class="py-1">
-                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
-                </td>
-                <td class="danger">0</td>
-                <td class="danger">lặp hàng tuần vào thứ 2,3,4,5,6,7.lặp không kết thúc</td>
+                <td class="danger fontSize">0</td>
+                <td class="danger fontSize">lặp hàng tuần vào thứ 2,3,4,5,6,7.lặp không kết thúc</td>
             </tr>
         </tbody>
     </table>

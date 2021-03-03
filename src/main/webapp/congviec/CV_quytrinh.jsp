@@ -24,6 +24,13 @@
     tr .active {
         width: 5%;
     }
+    .tbl {
+        min-height: 85.5vh;
+        width: 100%;
+    }
+    .fontSize {
+        font-size: 11px;
+    }
 </style>
 
 <nav class=" navbar-expand-lg navbar-light bg-light" style="padding-top: 0px;padding-bottom: 0px;margin-top: 0px;">
@@ -93,7 +100,7 @@
 
 
 
-<div class="scrollDiv">
+<div class="scrollDiv tbl">
     <table class="table table-hover table-striped " style="text-align: center;">
         <thead>
             <tr>
@@ -109,87 +116,84 @@
         </thead>
         <tbody>
             <tr>
-                <td class="active">
+                <td class="active fontSize">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="success">công việc 1</td>
-                <td class="py-1">
+                <td class="success fontSize">công việc 1</td>
+                <td class="py-1 fontSize">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td>
-                    <div class="progress">
+                <td class="fontSize">
+                    <div class="progress ">
                         <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </td>
-                <td class="danger">01/01/2021</td>
-                <td class="danger">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
             </tr>
-           <tr>
-                <td class="active">
+           	<tr>
+                <td class="active fontSize">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="success">công việc 1</td>
-                <td class="py-1">
+                <td class="success fontSize">công việc 1</td>
+                <td class="py-1 fontSize">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td>
-                    <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                <td class="fontSize">
+                    <div class="progress ">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </td>
-                <td class="danger">01/01/2021</td>
-                <td class="danger">01/01/2021</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-                <td class="success">công việc 1</td>
-                <td class="py-1">
-                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
-                </td>
-               <td>
-                    <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </td>
-                <td class="danger">01/01/2021</td>
-                <td class="danger">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
             </tr>
             <tr>
-                <td class="active">
+                <td class="active fontSize">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="success">công việc 1</td>
-                <td class="py-1">
-                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
-                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                <td class="success fontSize">công việc 1</td>
+                <td class="py-1 fontSize">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td>
-                    <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                <td class="fontSize">
+                    <div class="progress ">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </td>
-                <td class="danger">01/01/2021</td>
-                <td class="danger">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
             </tr>
             <tr>
-                <td class="active">
+                <td class="active fontSize">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="success">công việc 1</td>
-                <td class="py-1">
-                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                <td class="success fontSize">công việc 1</td>
+                <td class="py-1 fontSize">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td>
-                    <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                <td class="fontSize">
+                    <div class="progress ">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </td>
-                <td class="danger">01/01/2021</td>
-                <td class="danger">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
+            </tr>
+            <tr>
+                <td class="active fontSize">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="success fontSize">công việc 1</td>
+                <td class="py-1 fontSize">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="fontSize">
+                    <div class="progress ">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </td>
+                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger fontSize">01/01/2021</td>
             </tr>
         </tbody>
     </table>

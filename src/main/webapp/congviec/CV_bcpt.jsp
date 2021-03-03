@@ -24,6 +24,13 @@
     tr .active {
         width: 5%;
     }
+    .tbl {
+        min-height: 85.5vh;
+        width: 100%;
+    }
+    .fontSize {
+        font-size: 11px;
+    }
 </style>
 
 
@@ -52,7 +59,7 @@
 </nav>
 
 
-<div class="scrollDiv">
+<div class="scrollDiv tbl">
     <table class="table table-hover table-striped " style="text-align: center;">
         <thead>
             <tr>
@@ -68,88 +75,208 @@
         </thead>
         <tbody>
             <tr>
-                <td class="active">
+                <td class="active fontSize">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="py-1">
+                <td class="py-1 fontSize">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td class="warning">báo cáo 1</td>
-                <td class="danger">công việc</td>
-                <td class="danger">không lưu</td>
-                <td class="danger">hàng tuần</td>
+                <td class="warning fontSize">báo cáo 1</td>
+                <td class="danger fontSize">công việc</td>
+                <td class="danger fontSize">không lưu</td>
+                <td class="danger fontSize">hàng tuần</td>
             </tr>
-           <tr>
-                <td class="active">
+           	<tr>
+                <td class="active fontSize">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="py-1">
+                <td class="py-1 fontSize">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td class="warning">báo cáo 1</td>
-                <td class="danger">công việc</td>
-                <td class="danger">không lưu</td>
-                <td class="danger">hàng tuần</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-                <td class="py-1">
-                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
-                </td>
-                <td class="warning">báo cáo 1</td>
-                <td class="danger">công việc</td>
-                <td class="danger">không lưu</td>
-                <td class="danger">hàng tuần</td>
+                <td class="warning fontSize">báo cáo 1</td>
+                <td class="danger fontSize">công việc</td>
+                <td class="danger fontSize">không lưu</td>
+                <td class="danger fontSize">hàng tuần</td>
             </tr>
             <tr>
-                <td class="active">
+                <td class="active fontSize">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="py-1">
+                <td class="py-1 fontSize">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td class="warning">báo cáo 1</td>
-                <td class="danger">công việc</td>
-                <td class="danger">không lưu</td>
-                <td class="danger">hàng tuần</td>
+                <td class="warning fontSize">báo cáo 1</td>
+                <td class="danger fontSize">công việc</td>
+                <td class="danger fontSize">không lưu</td>
+                <td class="danger fontSize">hàng tuần</td>
             </tr>
             <tr>
-                <td class="active">
+                <td class="active fontSize">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="py-1">
+                <td class="py-1 fontSize">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td class="warning">báo cáo 1</td>
-                <td class="danger">công việc</td>
-                <td class="danger">không lưu</td>
-                <td class="danger">hàng tuần</td>
+                <td class="warning fontSize">báo cáo 1</td>
+                <td class="danger fontSize">công việc</td>
+                <td class="danger fontSize">không lưu</td>
+                <td class="danger fontSize">hàng tuần</td>
             </tr>
             <tr>
-                <td class="active">
+                <td class="active fontSize">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="py-1">
+                <td class="py-1 fontSize">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td class="warning">báo cáo 1</td>
-                <td class="danger">công việc</td>
-                <td class="danger">không lưu</td>
-                <td class="danger">hàng tuần</td>
+                <td class="warning fontSize">báo cáo 1</td>
+                <td class="danger fontSize">công việc</td>
+                <td class="danger fontSize">không lưu</td>
+                <td class="danger fontSize">hàng tuần</td>
             </tr>
             <tr>
-                <td class="active">
+                <td class="active fontSize">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="py-1">
+                <td class="py-1 fontSize">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td class="warning">báo cáo 1</td>
-                <td class="danger">công việc</td>
-                <td class="danger">không lưu</td>
-                <td class="danger">hàng tuần</td>
+                <td class="warning fontSize">báo cáo 1</td>
+                <td class="danger fontSize">công việc</td>
+                <td class="danger fontSize">không lưu</td>
+                <td class="danger fontSize">hàng tuần</td>
+            </tr>
+            <tr>
+                <td class="active fontSize">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="py-1 fontSize">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="warning fontSize">báo cáo 1</td>
+                <td class="danger fontSize">công việc</td>
+                <td class="danger fontSize">không lưu</td>
+                <td class="danger fontSize">hàng tuần</td>
+            </tr>
+            <tr>
+                <td class="active fontSize">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="py-1 fontSize">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="warning fontSize">báo cáo 1</td>
+                <td class="danger fontSize">công việc</td>
+                <td class="danger fontSize">không lưu</td>
+                <td class="danger fontSize">hàng tuần</td>
+            </tr>
+            <tr>
+                <td class="active fontSize">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="py-1 fontSize">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="warning fontSize">báo cáo 1</td>
+                <td class="danger fontSize">công việc</td>
+                <td class="danger fontSize">không lưu</td>
+                <td class="danger fontSize">hàng tuần</td>
+            </tr>
+            <tr>
+                <td class="active fontSize">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="py-1 fontSize">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="warning fontSize">báo cáo 1</td>
+                <td class="danger fontSize">công việc</td>
+                <td class="danger fontSize">không lưu</td>
+                <td class="danger fontSize">hàng tuần</td>
+            </tr>
+            <tr>
+                <td class="active fontSize">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="py-1 fontSize">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="warning fontSize">báo cáo 1</td>
+                <td class="danger fontSize">công việc</td>
+                <td class="danger fontSize">không lưu</td>
+                <td class="danger fontSize">hàng tuần</td>
+            </tr>
+            <tr>
+                <td class="active fontSize">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="py-1 fontSize">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="warning fontSize">báo cáo 1</td>
+                <td class="danger fontSize">công việc</td>
+                <td class="danger fontSize">không lưu</td>
+                <td class="danger fontSize">hàng tuần</td>
+            </tr>
+            <tr>
+                <td class="active fontSize">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="py-1 fontSize">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="warning fontSize">báo cáo 1</td>
+                <td class="danger fontSize">công việc</td>
+                <td class="danger fontSize">không lưu</td>
+                <td class="danger fontSize">hàng tuần</td>
+            </tr>
+            <tr>
+                <td class="active fontSize">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="py-1 fontSize">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="warning fontSize">báo cáo 1</td>
+                <td class="danger fontSize">công việc</td>
+                <td class="danger fontSize">không lưu</td>
+                <td class="danger fontSize">hàng tuần</td>
+            </tr>
+            <tr>
+                <td class="active fontSize">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="py-1 fontSize">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="warning fontSize">báo cáo 1</td>
+                <td class="danger fontSize">công việc</td>
+                <td class="danger fontSize">không lưu</td>
+                <td class="danger fontSize">hàng tuần</td>
+            </tr>
+            <tr>
+                <td class="active fontSize">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="py-1 fontSize">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="warning fontSize">báo cáo 1</td>
+                <td class="danger fontSize">công việc</td>
+                <td class="danger fontSize">không lưu</td>
+                <td class="danger fontSize">hàng tuần</td>
+            </tr>
+            <tr>
+                <td class="active fontSize">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="py-1 fontSize">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="warning fontSize">báo cáo 1</td>
+                <td class="danger fontSize">công việc</td>
+                <td class="danger fontSize">không lưu</td>
+                <td class="danger fontSize">hàng tuần</td>
             </tr>
         </tbody>
     </table>
