@@ -57,28 +57,45 @@
 						<p style="color: red;">Đối tượng liên quan</p>
 						<hr>
 
+
+
+
 						<div>
-							<div class="form-group" style="width: 50%; float: left;">
-								<label>Đối tượng liên quan</label> <select class="form-control"
-									style="overflow-y: scroll;">
-									<option value="">Cơ hội</option>
-									<option value="">Khách hàng</option>
-									<option value="">Báo giá</option>
-									<option value="">Đơn bán hàng</option>
-									<option value="">Đơn hàng bán</option>
-									<option value="">Hợp đồng bán</option>
-									<option value="">Đơn hàng mua</option>
-									<option value="">Phiếu chi</option>
-									<option value="">Phiếu thu</option>
-								</select>
-							</div>
-							<div class="form-group" style="width: 50%; float: left;">
-								<label>Bản ghi</label> <input type="text" class="form-control"
-									id="exampleInputName1" placeholder="Chọn bản ghi" />
-							</div>
+							<table class="form-group" style="width: 100%; float: left;">
+								<tbody id="tbl_posts_body">
+								</tbody>
+							</table>
+
+							<table id="sample_table" class="form-group" style="width: 100%; float: left;">
+								<tr>
+									<td>
+										<label>Đối tượng liên quan</label>
+										<select class="form-control"
+											style="overflow-y: scroll;">
+											<option value="">Cơ hội</option>
+											<option value="">Khách hàng</option>
+											<option value="">Báo giá</option>
+											<option value="">Đơn bán hàng</option>
+											<option value="">Đơn hàng bán</option>
+											<option value="">Hợp đồng bán</option>
+											<option value="">Đơn hàng mua</option>
+											<option value="">Phiếu chi</option>
+											<option value="">Phiếu thu</option>
+										</select>
+									</td>
+									<td><label>Bản ghi</label> <input type="text" class="form-control" id="exampleInputName1" placeholder="Chọn bản ghi" /></td>
+									<td><a class="delete-record">X</a></td>
+								</tr>
+							</table>
+							<i class="mdi mdi-plus-circle-outline add-record">Thêm</i>
 						</div>
 
-						<p style="color: red;">Cài đặt nâng cao</p>
+
+
+
+
+
+						<p style="color: red; margin-top: 20px">Cài đặt nâng cao</p>
 						<hr>
 
 
