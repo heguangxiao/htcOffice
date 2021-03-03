@@ -100,25 +100,36 @@
 						<hr>
 						
 						<div>
-	                    <div class="form-group" style="width: 50%;float: left;">
-	                     <label>Đối tượng liên quan</label>
-	                        <select class="form-control" style="overflow-y: scroll;">
-	                            <option value="">Cơ hội</option>
-	                            <option value="">Khách hàng</option>
-	                            <option value="">Báo giá</option>
-	                            <option value="">Đơn bán hàng</option>
-	                            <option value="">Đơn hàng bán</option>
-	                            <option value="">Hợp đồng bán</option>
-	                            <option value="">Đơn hàng mua</option>
-	                            <option value="">Phiếu chi</option>
-	                            <option value="">Phiếu thu</option>
-	                        </select>
-	                    </div>
-	                    <div class="form-group"  style="width: 50%;float: left;">
-	                      <label>Bản ghi</label>
-	                      	<input type="text" class="form-control" id="exampleInputName1" placeholder="Chọn bản ghi" />
-	                    </div>
-                    </div>
+							<table class="form-group" style="width: 100%; float: left;">
+								<tbody id="tbl_posts_body">
+								</tbody>
+							</table>
+
+							<table id="sample_table" class="form-group" style="width: 100%; float: left;">
+								<tr>
+									<td>
+										<label>Đối tượng liên quan</label>
+										<select class="form-control"
+											style="overflow-y: scroll;">
+											<option value="">Cơ hội</option>
+											<option value="">Khách hàng</option>
+											<option value="">Báo giá</option>
+											<option value="">Đơn bán hàng</option>
+											<option value="">Đơn hàng bán</option>
+											<option value="">Hợp đồng bán</option>
+											<option value="">Đơn hàng mua</option>
+											<option value="">Phiếu chi</option>
+											<option value="">Phiếu thu</option>
+										</select>
+									</td>
+									<td><label>Bản ghi</label> <input type="text" class="form-control" id="exampleInputName1" placeholder="Chọn bản ghi" /></td>
+									<td style="margin-top: 5px"><a class="delete-record mdi mdi-close-circle" ></a></td>
+								</tr>
+							</table>
+							<a class="mdi mdi-plus-circle-outline add-record">Thêm</a>
+						</div>
+                    
+                    
 						<p style="color: red;">Cài đặt quyền</p>
 						<hr>
 
@@ -148,13 +159,6 @@
 							</label>
 						</div>
 
-
-
-
-
-
-
-
 					</div>
 				</div>
 			</div>
@@ -166,3 +170,32 @@
 		</div>
 	</form>
 </div>
+
+<script>
+	jQuery(document).delegate('a.add-record', 'click', function(e) {
+	     e.preventDefault();    
+	     var content = jQuery('#sample_table tr'),
+	     size = jQuery('#tbl_posts >tbody >tr').length + 1,
+	     element = null,    
+	     element = content.clone();
+	     element.attr('id', 'rec-'+size);
+	     element.find('.delete-record').attr('data-id', size);
+	     element.appendTo('#tbl_posts_body');
+	     element.find('.sn').html(size);
+	   });
+	   
+	jQuery(document).delegate('a.delete-record', 'click', function(e) {
+	     e.preventDefault();    
+	      var id = jQuery(this).attr('data-id');
+	      var targetDiv = jQuery(this).attr('targetDiv');
+	      jQuery('#rec-' + id).remove();
+	      
+	    //regnerate index number on table
+	    $('#tbl_posts_body tr').each(function(index) {
+	      //alert(index);
+	      $(this).find('span.sn').html(index+1);
+	    });
+	    return true;
+	  
+	});
+</script>
