@@ -83,12 +83,12 @@
                     <input type="checkbox" class="select-all checkbox" name="select-all" />
                 </th>
                 <th class="success">Người tạo</th>
-                <th class="success">Tên công việc</th>
+                <th class="success">Công việc</th>
                 <th class="warning">Trạng thái</th>
                 <th class="success">Bắt đầu</th>
                 <th class="success">Kết thúc</th>
-                <th class="success">Người giao việc</th>
-                <th class="success">Người thực hiện</th>
+                <th class="success">Người giao</th>
+                <th class="success">Thực hiện</th>
                 <th class="success">Công việc</th>
                 <th class="success">Lịch lặp</th>
             </tr>

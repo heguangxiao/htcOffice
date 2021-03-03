@@ -56,24 +56,23 @@
 	
         <div class="col-xl-9 stretch-card grid-margin" >
             <div class="card">
-            	<img src="<c:url value='/resources/images/bg_card.jpg'/>" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <div class="d-flex justify-content-between flex-wrap">
-                        <div>
-                            <div class="card-title mb-0">Hôm nay là thứ 2 ngày 21/2/2021</div>
-                        </div>
-                    </div>
-                    <p class="text-muted font-13 mt-2 mt-sm-0"> Bạn đã hoàn thành 39% công việc. đánh giá tốt <a class="text-muted font-13" href="#"><u>Learn more</u></a>
-                    </p>
+                	<img src="<c:url value='/images/office.jpg'/>" class="card-img-top" style="width: 100%;height: 100%">
+                    <div class="card-img-overlay">
+					    <h5 class="card-title">NGUYỄN VĂN PHƯƠNG</h5>
+					    <p class="card-text">HÔM NAY LÀ THỨ 4 NGÀY 3/3/2021, BẠN ĐÃ HOÀN THÀNH 30% CÔNG VIỆC</p>
+					    <p class="card-text">ĐÁNH GIÁ: TỐT</p>
+				  	</div>
                 </div>
             </div>
         </div>
         
         
         <div class="col-xl-3 stretch-card grid-margin">
-            <div class="card card-img">
-                <div class="card-body d-flex align-items-center">
-                    <div class="text-white">
+            
+            <div class="card">
+                <div class="card-body">
+                	<div class="text-black">
                         <h1 class="font-20 font-weight-semibold mb-0"> Get premium </h1>
                         <h1 class="font-20 font-weight-semibold">account!</h1>
                         <p>to optimize your selling prodcut</p>
