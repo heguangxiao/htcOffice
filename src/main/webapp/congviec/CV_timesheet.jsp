@@ -65,22 +65,22 @@
 <div class="scrollDiv tbl">
     <table class="table table-hover table-striped " style="text-align: center;">
         <thead>
-            <tr>
+            <tr style="border: 1px">
                 <th class="active" rowspan="2">
                     <input type="checkbox" class="select-all checkbox" name="select-all" />
                 </th>
                 <th class="success" rowspan="2">TT</th>
                 <th class="success" rowspan="2">Mã NV</th>
-                <th class="warning" rowspan="2">Họ và tên</th>
-                <th class="success" rowspan="2">Phòng ban</th>
-                <th class="success" rowspan="2">vị trí</th>
-                <th class="success" >t2</th>
-                <th class="success" >t3</th>
-                <th class="success" >t4</th>
-                <th class="success" >t5</th>
-                <th class="success" >t6</th>
-                <th class="success" >t7</th>
-                <th class="success" >cn</th>
+                <th class="warning" rowspan="2">Họ tên</th>
+                <th class="success" rowspan="2">Phòng</th>
+                <th class="success" rowspan="2">Vị trí</th>
+                <th class="success" >T2</th>
+                <th class="success" >T3</th>
+                <th class="success" >T4</th>
+                <th class="success" >T5</th>
+                <th class="success" >T6</th>
+                <th class="success" >T7</th>
+                <th class="success" >CN</th>
             </tr>
             <tr>
                 <th class="success">01</th>
