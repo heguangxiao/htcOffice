@@ -27,63 +27,70 @@ public class CongviecController {
 
 	@GetMapping({ "/duan" })
 	public String home_duan(ModelMap modelMap) {
-		modelMap.put("title", "Công việc");
+		modelMap.put("title", "Dự án");
 		modelMap.put("titleTable", "Danh sách dự án");
 		return "congviec_duan";
+	}
+	
+	@GetMapping({ "/lichbieu" })
+	public String home_lichbieu(ModelMap modelMap) {
+		modelMap.put("title", "Lịch biểu");
+		modelMap.put("titleTable", "Công việc");
+		return "congviec_lichbieu";
 	}
 
 	@GetMapping({ "/bcpt" })
 	public String home_bcpt(ModelMap modelMap) {
-		modelMap.put("title", "Công việc");
+		modelMap.put("title", "Báo cáo phân tích");
 		modelMap.put("titleTable", "Báo cáo công việc");
 		return "congviec_bcpt";
 	}
 
 	@GetMapping({ "/bc_daluu" })
 	public String home_bc(ModelMap modelMap) {
-		modelMap.put("title", "Công việc");
+		modelMap.put("title", "Báo cáo đã lưu");
 		modelMap.put("titleTable", "Báo cáo đã lưu");
 		return "congviec_bc_daluu";
 	}
 
 	@GetMapping({ "/congvieclap" })
 	public String home_congvieclap(ModelMap modelMap) {
-		modelMap.put("title", "Công việc");
+		modelMap.put("title", "Công việc lặp");
 		modelMap.put("titleTable", "Danh sách công việc lặp");
 		return "congviec_congvieclap";
 	}
 
 	@GetMapping({ "/quytrinh" })
 	public String home_quytrinh(ModelMap modelMap) {
-		modelMap.put("title", "Công việc");
+		modelMap.put("title", "Công việc quy trình");
 		modelMap.put("titleTable", "Dan sách công việc quy trình");
 		return "congviec_quytrinh";
 	}
 
 	@GetMapping({ "/timesheet" })
 	public String home_timesheet(ModelMap modelMap) {
-		modelMap.put("title", "Công việc");
+		modelMap.put("title", "Timesheet");
 		modelMap.put("titleTable", "Timesheet");
 		return "congviec_timesheet";
 	}
 
 	@GetMapping({ "/dashboard_congviec" })
 	public String home_dashboard(ModelMap modelMap) {
-		modelMap.put("title", "Công việc");
+		modelMap.put("title", "Dashboard-Công việc");
 		modelMap.put("titleTable", "Dashboard");
 		return "dashboard_congviec";
 	}
 
 	@GetMapping({ "/dashboard_quytrinh" })
 	public String home_dashboard_qtrinh(ModelMap modelMap) {
-		modelMap.put("title", "Công việc");
+		modelMap.put("title", "Dashboard-Quy trình");
 		modelMap.put("titleTable", "Dashboard");
 		return "dashboard_quytrinh";
 	}
 
 	@GetMapping({ "/dashboard_duan" })
 	public String home_dashboard_duan(ModelMap modelMap) {
-		modelMap.put("title", "Công việc");
+		modelMap.put("title", "Dashboard-Dự án");
 		modelMap.put("titleTable", "Dashboard");
 		return "dashboard_duan";
 	}

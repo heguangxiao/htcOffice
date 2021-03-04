@@ -161,6 +161,11 @@
 	        <put-attribute name="body" value="/congviec/dashboard/DB_duan.jsp" />
 	    </definition>
 	    
+	    <!-- lichbieu -->
+	    <definition name="congviec_lichbieu" extends="work">
+	        <put-attribute name="body" value="/congviec/CV_lichbieu.jsp" />
+	    </definition>
+	    
 	    <!-- FORM TẠO MỚI -->
 	    
 	    <!-- duan_create -->

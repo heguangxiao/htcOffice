@@ -2,8 +2,6 @@
 <link href="<c:url value='/resources/css/common.css'/>" rel="stylesheet"/>
 <link href="<c:url value='/resources/bootstrap/css/bootstrap.min.css'/>" rel="stylesheet"/>
 <link href="<c:url value='/resources/css/style.css'/>" rel="stylesheet"/>
-<link rel="stylesheet" type="text/css" href="vendors/mdi/css/materialdesignicons.min.css">
-<link rel="stylesheet" type="text/css" href="../../vendors/mdi/css/materialdesignicons.min.css">
 <style>
     .navbar-default:hover .navbar-nav>.active:not(:hover) > a {
         border-top-color: transparent;

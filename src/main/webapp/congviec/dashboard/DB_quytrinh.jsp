@@ -1,5 +1,6 @@
 <%@page contentType="text/html; charset=utf-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<link rel="stylesheet" type="text/css" href="../vendors/mdi/css/materialdesignicons.min.css">
 <div style="width: 100%;height: 50px">
 	<nav class=" navbar-expand-lg navbar-light bg-light" style="padding-top: 0px;padding-bottom: 0px;margin-top: 0px;">
 	    <div class="container-fluid" >     

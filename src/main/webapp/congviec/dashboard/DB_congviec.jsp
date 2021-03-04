@@ -1,6 +1,6 @@
 <%@page contentType="text/html; charset=utf-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-
+<link rel="stylesheet" type="text/css" href="../vendors/mdi/css/materialdesignicons.min.css">
 <style>
     tbody {
         display:block;
@@ -57,7 +57,7 @@
         <div class="col-xl-9 stretch-card grid-margin" >
             <div class="card">
                 <div class="card-body">
-                	<img src="<c:url value='/images/office.jpg'/>" class="card-img-top" style="width: 100%;height: 100%">
+                	<img src="<c:url value='/images/back.jpg'/>" class="card-img-top" style="width: 100%;height: 400px;">
                     <div class="card-img-overlay">
 					    <h5 class="card-title">NGUYỄN VĂN PHƯƠNG</h5>
 					    <p class="card-text">HÔM NAY LÀ THỨ 4 NGÀY 3/3/2021, BẠN ĐÃ HOÀN THÀNH 30% CÔNG VIỆC</p>

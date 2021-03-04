@@ -1,6 +1,5 @@
 <%@page contentType="text/html; charset=utf-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<link rel="stylesheet" type="text/css" href="../vendors/mdi/css/materialdesignicons.min.css">
 <nav class="navbar navbar-expand-sm bg-danger navbar-dark sticky-top" style="padding-bottom: 0px;padding-top: 0px;margin-bottom: 0px;">
     <a class="navbar-brand" href="#"></a>
     <ul class="navbar-nav mr-auto">

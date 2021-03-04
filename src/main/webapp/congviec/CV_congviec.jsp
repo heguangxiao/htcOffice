@@ -1,5 +1,6 @@
 <%@page contentType="text/html; charset=utf-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<link rel="stylesheet" type="text/css" href="/office/vendors/mdi/css/materialdesignicons.min.css">
 <style>
     tbody {
         display:block;
@@ -105,8 +106,10 @@
                 
                <li class="nav-item dropdown" style="margin-left: 10px;">
                 	<div data-toggle="dropdown">
-						<i class="mdi mdi-calendar-text"></i>
-						<p style="font-size: 12px; margin-bottom: 0px">Lịch biểu</p>
+                		<a href="<c:url value='/congviec/lichbieu'/>">
+							<i class="mdi mdi-calendar-text"></i>
+							<p style="font-size: 12px; margin-bottom: 0px">Lịch biểu</p>
+						</a>
 					</div>
                </li>
                 
