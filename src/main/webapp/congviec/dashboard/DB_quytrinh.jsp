@@ -39,33 +39,50 @@
                     <div class="d-flex border-bottom border-top py-3">
                         <div class="pl-4">
                             <span class="font-12 text-muted">Tình trạng xử lý</span><br>
-                            <label class="badge badge-success">Đang thực hiện </label> :4<br>
-                            <label class="badge badge-warning">Đã hoàn thành </label> :3<br>
-                            <label class="badge badge-danger">Đã quá hạn </label>: 4
+                            4: <label class="badge badge-success">Đang thực hiện </label><br>
+                            3: <label class="badge badge-warning">Đã hoàn thành </label><br>
+                            8: <label class="badge badge-danger">Đã quá hạn </label>
                         </div>
                     </div>
                     
-                    
-                    <div class="d-flex border-bottom py-3">
-                        <button type="button" class="btn btn-outline-secondary btn-lg btn-block"> 
-							<span class="font-20">Update code</span>
-							<p class="m-0 text-black"> Chưa có công việc nào </p>
-						</button>
-                    </div>
-                    
-                    <div class="d-flex border-bottom py-3">
-                        <button type="button" class="btn btn-outline-secondary btn-lg btn-block"> 
-							<span class="font-20">Update code</span>
-							<p class="m-0 text-black"> Chưa có công việc nào </p>
-						</button>
-                    </div>
-                    <div class="d-flex border-bottom py-3">
-                        <button type="button" class="btn btn-outline-secondary btn-lg btn-block"> 
-							<span class="font-20">Update code</span>
-							<p class="m-0 text-black"> Chưa có công việc nào </p>
-						</button>
-                    </div>
-                    
+                    <a style="cursor: pointer;">
+	                    <div class="d-flex border-bottom border-top py-3">
+	                     <div class="form-check">
+	                         <h4 class="font-weight-bold text-info mb-0" style="float: left;"> 1</h4>
+	                     </div>
+	                     <div class="pl-2" style="font-size: 10px">
+	                         <span class="font-12 text-muted">Update code</span>
+	                         <p> Chưa có công việc nào </p>
+	                     </div>
+	                 	</div>
+                 	</a>
+                    <a style="cursor: pointer;">
+	                    <div class="d-flex border-bottom border-top py-3">
+	                     <div class="form-check">
+	                         <h4 class="font-weight-bold text-info mb-0" style="float: left;"> 0</h4>
+	                     </div>
+	                     <div class="pl-2" style="font-size: 10px">
+	                         <span class="font-12 text-muted">Update code</span>
+	                         <p> Chưa có công việc nào </p>
+	                     </div>
+	                 	</div>
+                 	</a>
+                 	<a style="cursor: pointer;">
+	                    <div class="d-flex border-bottom border-top py-3">
+	                     <div class="form-check">
+	                         <h4 class="font-weight-bold text-info mb-0" style="float: left;"> 3</h4>
+	                     </div>
+	                     <div class="pl-2" style="font-size: 10px">
+	                         <span class="font-12 text-muted">Update code</span>
+	                         <p> Chưa có công việc nào </p>
+	                     </div>
+	                 	</div>
+                 	</a>
+                 	<a style="cursor: pointer;" href="<c:url value='/congviec/quytrinh'/>">
+	                     <div class="form-check">
+	                         <h4 class="font-weight-bold text-info mb-0 mdi mdi-subdirectory-arrow-right" style="float: right;font-size: 15px">Xem tất cả</h4>
+	                     </div>
+                 	</a>
                 </div>
             </div>
         </div>
@@ -84,37 +101,53 @@
                     <div class="d-flex border-bottom border-top py-3">
                         <div class="pl-4">
                             <span class="font-12 text-muted">Tình trạng xử lý</span><br>
-                            <label class="badge badge-success">Đang thực hiện </label> :4<br>
-                            <label class="badge badge-warning">Đã hoàn thành </label> :3<br>
-                            <label class="badge badge-danger">Đã quá hạn </label>: 4
+                            4: <label class="badge badge-success">Đang thực hiện </label><br>
+                            3: <label class="badge badge-warning">Đã hoàn thành </label><br>
+                            8: <label class="badge badge-danger">Đã quá hạn </label>
                         </div>
                     </div>
                     
-                    
-                    <div class="d-flex border-bottom py-3">
-                        <button type="button" class="btn btn-outline-secondary btn-lg btn-block"> 
-							<span class="font-20">Update code</span>
-							<p class="m-0 text-black"> Chưa có công việc nào </p>
-						</button>
-                    </div>
-                    
-                    <div class="d-flex border-bottom py-3">
-                        <button type="button" class="btn btn-outline-secondary btn-lg btn-block"> 
-							<span class="font-20">Update code</span>
-							<p class="m-0 text-black"> Chưa có công việc nào </p>
-						</button>
-                    </div>
-                    <div class="d-flex border-bottom py-3">
-                        <button type="button" class="btn btn-outline-secondary btn-lg btn-block"> 
-							<span class="font-20">Update code</span>
-							<p class="m-0 text-black"> Chưa có công việc nào </p>
-						</button>
-                    </div>
-                    
+                    <a style="cursor: pointer;">
+	                    <div class="d-flex border-bottom border-top py-3">
+	                     <div class="form-check">
+	                         <h4 class="font-weight-bold text-info mb-0" style="float: left;"> 1</h4>
+	                     </div>
+	                     <div class="pl-2" style="font-size: 10px">
+	                         <span class="font-12 text-muted">Update code</span>
+	                         <p> Chưa có công việc nào </p>
+	                     </div>
+	                 	</div>
+                 	</a>
+                    <a style="cursor: pointer;">
+	                    <div class="d-flex border-bottom border-top py-3">
+	                     <div class="form-check">
+	                         <h4 class="font-weight-bold text-info mb-0" style="float: left;"> 0</h4>
+	                     </div>
+	                     <div class="pl-2" style="font-size: 10px">
+	                         <span class="font-12 text-muted">Update code</span>
+	                         <p> Chưa có công việc nào </p>
+	                     </div>
+	                 	</div>
+                 	</a>
+                 	<a style="cursor: pointer;">
+	                    <div class="d-flex border-bottom border-top py-3">
+	                     <div class="form-check">
+	                         <h4 class="font-weight-bold text-info mb-0" style="float: left;"> 3</h4>
+	                     </div>
+	                     <div class="pl-2" style="font-size: 10px">
+	                         <span class="font-12 text-muted">Update code</span>
+	                         <p> Chưa có công việc nào </p>
+	                     </div>
+	                 	</div>
+                 	</a>
+                 	<a style="cursor: pointer;" href="<c:url value='/congviec/quytrinh'/>">
+	                     <div class="form-check">
+	                         <h4 class="font-weight-bold text-info mb-0 mdi mdi-subdirectory-arrow-right" style="float: right;font-size: 15px">Xem tất cả</h4>
+	                     </div>
+                 	</a>
                 </div>
             </div>
         </div>
-        
         <div class="col-sm-6 col-xl-4 stretch-card grid-margin" style="margin-top: 5px">
             <div class="card">
                 <div class="card-body">
@@ -129,37 +162,53 @@
                     <div class="d-flex border-bottom border-top py-3">
                         <div class="pl-4">
                             <span class="font-12 text-muted">Tình trạng xử lý</span><br>
-                            <label class="badge badge-success">Đang thực hiện </label> :4<br>
-                            <label class="badge badge-warning">Đã hoàn thành </label> :3<br>
-                            <label class="badge badge-danger">Đã quá hạn </label>: 4
+                            4: <label class="badge badge-success">Đang thực hiện </label><br>
+                            3: <label class="badge badge-warning">Đã hoàn thành </label><br>
+                            8: <label class="badge badge-danger">Đã quá hạn </label>
                         </div>
                     </div>
                     
-                    
-                    <div class="d-flex border-bottom py-3">
-                        <button type="button" class="btn btn-outline-secondary btn-lg btn-block"> 
-							<span class="font-20">Update code</span>
-							<p class="m-0 text-black"> Chưa có công việc nào </p>
-						</button>
-                    </div>
-                    
-                    <div class="d-flex border-bottom py-3">
-                        <button type="button" class="btn btn-outline-secondary btn-lg btn-block"> 
-							<span class="font-20">Update code</span>
-							<p class="m-0 text-black"> Chưa có công việc nào </p>
-						</button>
-                    </div>
-                    <div class="d-flex border-bottom py-3">
-                        <button type="button" class="btn btn-outline-secondary btn-lg btn-block"> 
-							<span class="font-20">Update code</span>
-							<p class="m-0 text-black"> Chưa có công việc nào </p>
-						</button>
-                    </div>
-                    
+                    <a style="cursor: pointer;">
+	                    <div class="d-flex border-bottom border-top py-3">
+	                     <div class="form-check">
+	                         <h4 class="font-weight-bold text-info mb-0" style="float: left;"> 1</h4>
+	                     </div>
+	                     <div class="pl-2" style="font-size: 10px">
+	                         <span class="font-12 text-muted">Update code</span>
+	                         <p> Chưa có công việc nào </p>
+	                     </div>
+	                 	</div>
+                 	</a>
+                    <a style="cursor: pointer;">
+	                    <div class="d-flex border-bottom border-top py-3">
+	                     <div class="form-check">
+	                         <h4 class="font-weight-bold text-info mb-0" style="float: left;"> 0</h4>
+	                     </div>
+	                     <div class="pl-2" style="font-size: 10px">
+	                         <span class="font-12 text-muted">Update code</span>
+	                         <p> Chưa có công việc nào </p>
+	                     </div>
+	                 	</div>
+                 	</a>
+                 	<a style="cursor: pointer;">
+	                    <div class="d-flex border-bottom border-top py-3">
+	                     <div class="form-check">
+	                         <h4 class="font-weight-bold text-info mb-0" style="float: left;"> 3</h4>
+	                     </div>
+	                     <div class="pl-2" style="font-size: 10px">
+	                         <span class="font-12 text-muted">Update code</span>
+	                         <p> Chưa có công việc nào </p>
+	                     </div>
+	                 	</div>
+                 	</a>
+                 	<a style="cursor: pointer;" href="<c:url value='/congviec/quytrinh'/>">
+	                     <div class="form-check">
+	                         <h4 class="font-weight-bold text-info mb-0 mdi mdi-subdirectory-arrow-right" style="float: right;font-size: 15px">Xem tất cả</h4>
+	                     </div>
+                 	</a>
                 </div>
             </div>
         </div>
-        
         <div class="col-sm-6 col-xl-4 stretch-card grid-margin" style="margin-top: 5px">
             <div class="card">
                 <div class="card-body">
@@ -174,37 +223,53 @@
                     <div class="d-flex border-bottom border-top py-3">
                         <div class="pl-4">
                             <span class="font-12 text-muted">Tình trạng xử lý</span><br>
-                            <label class="badge badge-success">Đang thực hiện </label> :4<br>
-                            <label class="badge badge-warning">Đã hoàn thành </label> :3<br>
-                            <label class="badge badge-danger">Đã quá hạn </label>: 4
+                            4: <label class="badge badge-success">Đang thực hiện </label><br>
+                            3: <label class="badge badge-warning">Đã hoàn thành </label><br>
+                            8: <label class="badge badge-danger">Đã quá hạn </label>
                         </div>
                     </div>
                     
-                    
-                    <div class="d-flex border-bottom py-3">
-                        <button type="button" class="btn btn-outline-secondary btn-lg btn-block"> 
-							<span class="font-20">Update code</span>
-							<p class="m-0 text-black"> Chưa có công việc nào </p>
-						</button>
-                    </div>
-                    
-                    <div class="d-flex border-bottom py-3">
-                        <button type="button" class="btn btn-outline-secondary btn-lg btn-block"> 
-							<span class="font-20">Update code</span>
-							<p class="m-0 text-black"> Chưa có công việc nào </p>
-						</button>
-                    </div>
-                    <div class="d-flex border-bottom py-3">
-                        <button type="button" class="btn btn-outline-secondary btn-lg btn-block"> 
-							<span class="font-20">Update code</span>
-							<p class="m-0 text-black"> Chưa có công việc nào </p>
-						</button>
-                    </div>
-                    
+                    <a style="cursor: pointer;">
+	                    <div class="d-flex border-bottom border-top py-3">
+	                     <div class="form-check">
+	                         <h4 class="font-weight-bold text-info mb-0" style="float: left;"> 1</h4>
+	                     </div>
+	                     <div class="pl-2" style="font-size: 10px">
+	                         <span class="font-12 text-muted">Update code</span>
+	                         <p> Chưa có công việc nào </p>
+	                     </div>
+	                 	</div>
+                 	</a>
+                    <a style="cursor: pointer;">
+	                    <div class="d-flex border-bottom border-top py-3">
+	                     <div class="form-check">
+	                         <h4 class="font-weight-bold text-info mb-0" style="float: left;"> 0</h4>
+	                     </div>
+	                     <div class="pl-2" style="font-size: 10px">
+	                         <span class="font-12 text-muted">Update code</span>
+	                         <p> Chưa có công việc nào </p>
+	                     </div>
+	                 	</div>
+                 	</a>
+                 	<a style="cursor: pointer;">
+	                    <div class="d-flex border-bottom border-top py-3">
+	                     <div class="form-check">
+	                         <h4 class="font-weight-bold text-info mb-0" style="float: left;"> 3</h4>
+	                     </div>
+	                     <div class="pl-2" style="font-size: 10px">
+	                         <span class="font-12 text-muted">Update code</span>
+	                         <p> Chưa có công việc nào </p>
+	                     </div>
+	                 	</div>
+                 	</a>
+                 	<a style="cursor: pointer;" href="<c:url value='/congviec/quytrinh'/>">
+	                     <div class="form-check">
+	                         <h4 class="font-weight-bold text-info mb-0 mdi mdi-subdirectory-arrow-right" style="float: right;font-size: 15px">Xem tất cả</h4>
+	                     </div>
+                 	</a>
                 </div>
             </div>
         </div>
-        
         <div class="col-sm-6 col-xl-4 stretch-card grid-margin" style="margin-top: 5px">
             <div class="card">
                 <div class="card-body">
@@ -219,33 +284,50 @@
                     <div class="d-flex border-bottom border-top py-3">
                         <div class="pl-4">
                             <span class="font-12 text-muted">Tình trạng xử lý</span><br>
-                            <label class="badge badge-success">Đang thực hiện </label> :4<br>
-                            <label class="badge badge-warning">Đã hoàn thành </label> :3<br>
-                            <label class="badge badge-danger">Đã quá hạn </label>: 4
+                            4: <label class="badge badge-success">Đang thực hiện </label><br>
+                            3: <label class="badge badge-warning">Đã hoàn thành </label><br>
+                            8: <label class="badge badge-danger">Đã quá hạn </label>
                         </div>
                     </div>
                     
-                    
-                    <div class="d-flex border-bottom py-3">
-                        <button type="button" class="btn btn-outline-secondary btn-lg btn-block"> 
-							<span class="font-20">Update code</span>
-							<p class="m-0 text-black"> Chưa có công việc nào </p>
-						</button>
-                    </div>
-                    
-                    <div class="d-flex border-bottom py-3">
-                        <button type="button" class="btn btn-outline-secondary btn-lg btn-block"> 
-							<span class="font-20">Update code</span>
-							<p class="m-0 text-black"> Chưa có công việc nào </p>
-						</button>
-                    </div>
-                    <div class="d-flex border-bottom py-3">
-                        <button type="button" class="btn btn-outline-secondary btn-lg btn-block"> 
-							<span class="font-20">Update code</span>
-							<p class="m-0 text-black"> Chưa có công việc nào </p>
-						</button>
-                    </div>
-                    
+                    <a style="cursor: pointer;">
+	                    <div class="d-flex border-bottom border-top py-3">
+	                     <div class="form-check">
+	                         <h4 class="font-weight-bold text-info mb-0" style="float: left;"> 1</h4>
+	                     </div>
+	                     <div class="pl-2" style="font-size: 10px">
+	                         <span class="font-12 text-muted">Update code</span>
+	                         <p> Chưa có công việc nào </p>
+	                     </div>
+	                 	</div>
+                 	</a>
+                    <a style="cursor: pointer;">
+	                    <div class="d-flex border-bottom border-top py-3">
+	                     <div class="form-check">
+	                         <h4 class="font-weight-bold text-info mb-0" style="float: left;"> 0</h4>
+	                     </div>
+	                     <div class="pl-2" style="font-size: 10px">
+	                         <span class="font-12 text-muted">Update code</span>
+	                         <p> Chưa có công việc nào </p>
+	                     </div>
+	                 	</div>
+                 	</a>
+                 	<a style="cursor: pointer;">
+	                    <div class="d-flex border-bottom border-top py-3">
+	                     <div class="form-check">
+	                         <h4 class="font-weight-bold text-info mb-0" style="float: left;"> 3</h4>
+	                     </div>
+	                     <div class="pl-2" style="font-size: 10px">
+	                         <span class="font-12 text-muted">Update code</span>
+	                         <p> Chưa có công việc nào </p>
+	                     </div>
+	                 	</div>
+                 	</a>
+                 	<a style="cursor: pointer;" href="<c:url value='/congviec/quytrinh'/>">
+	                     <div class="form-check">
+	                         <h4 class="font-weight-bold text-info mb-0 mdi mdi-subdirectory-arrow-right" style="float: right;font-size: 15px">Xem tất cả</h4>
+	                     </div>
+                 	</a>
                 </div>
             </div>
         </div>
