@@ -56,12 +56,10 @@
             <ul class="nav navbar-nav mr-auto" style="text-align: center;">
             
              	<li class="nav-item" style="margin-left: 10px">
-                	<div data-toggle="dropdown">
-                		<a href="<c:url value='/congviec'/>">
-							<i class="mdi mdi-format-list-bulleted"></i>
-							<p style="font-size: 12px; margin-bottom: 0px">Dánh sách</p>
-						</a>
-					</div>
+               		<a href="<c:url value='/congviec'/>">
+						<i class="mdi mdi-format-list-bulleted"></i>
+						<p style="font-size: 12px; margin-bottom: 0px">Danh sách</p>
+					</a>
                 </li>
                 
             </ul>

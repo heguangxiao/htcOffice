@@ -42,7 +42,7 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: left">
 			<ul class="nav navbar-nav mr-auto">
 				<li>
-					<p>Danh sách timesheet tháng 2/2021</p>
+					<p>Timesheet tháng 2/2021</p>
                 </li>
             </ul>
             
@@ -52,8 +52,7 @@
             <ul class="nav navbar-nav mr-auto" style="text-align: center;">
                 <li class="nav-item" style="margin-left: 10px">
                 	<div data-toggle="dropdown">
-						<i class="mdi mdi-calendar-text"></i>
-						<p style="font-size: 12px; margin-bottom: 0px">Lịch</p>
+						<i style="font-size: 20px;" class="mdi mdi-calendar-text"></i>
 					</div>
                 </li>
             </ul>
