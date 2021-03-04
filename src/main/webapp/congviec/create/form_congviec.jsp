@@ -1,4 +1,18 @@
 <%@page contentType="text/html; charset=utf-8"%>
+<link rel="stylesheet" type="text/css" href="../../vendors/mdi/css/materialdesignicons.min.css">
+<style>
+     .accordion {
+	cursor: pointer;
+	width: 100%;
+	transition: 0.4s;
+}
+
+.panel {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+</style>
 <div class="content-wrapper">
 	<form class="forms-sample">
 		<div class="row">
@@ -46,58 +60,70 @@
 								id="exampleInputUsername1" placeholder="Xem và nhận thông báo" />
 						</div>
 
-						<p style="color: red;">Cài đặt nâng cao</p>
-						<hr>
 
-						<div class="form-group">
-							<label for="exampleInputName1">Loại công việc</label> <input
-								type="text" class="form-control" id="exampleInputName1"
-								placeholder="Chọn loại công việc" />
-						</div>
-
-						<div class="form-group">
-							<label for="exampleInputEmail3">Ưu tiên</label> <select
-								class="form-control" id="exampleSelectGender">
-								<option>Cao</option>
-								<option>Trung bình</option>
-								<option>Bình thường</option>
-								<option>Thấp</option>
-							</select>
-						</div>
-
-						<div class="form-group">
-							<label for="exampleInputEmail3">Cách tính kết quả công
-								việc</label> <select class="form-control" id="exampleSelectGender">
-								<option>Theo phần trăm</option>
-								<option>Theo tỉ lệ hoàn thành khối lượng công việc</option>
-								<option>Theo tỉ lệ hoàn thành đầu việc</option>
-							</select>
-						</div>
-
-						<div class="form-group">
-							<label for="exampleInputName1">Dự án</label> <input type="text"
-								class="form-control" id="exampleInputName1"
-								placeholder="Chọn loại công việc" />
-						</div>
-
-						<div class="form-group">
-							<label for="exampleInputName1">Công việc cha</label> <input
-								type="text" class="form-control" id="exampleInputName1"
-								placeholder="Chọn loại công việc" />
-						</div>
-
-						<div class="form-group">
-							<label for="exampleTextarea1">Mô tả</label>
-							<textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
-						</div>
-
-						<div class="form-group">
-							<label>Đính kèm</label> <input type="file" name="img[]"
-								class="file-upload-default" />
-						</div>
+						<!-- cài đăt nâng cao -->
+						<nav class="accordion" >		
+					        <p style="color: red;" id="more" class="mdi mdi-arrow-right-bold-circle">Cài đặt nâng cao</p>
+							<hr>
+					   	</nav>
 						
-						<p style="color: red;">Đối tượng liên quan</p>
-						<hr>
+						
+						<div class="panel">
+							<div class="form-group">
+								<label for="exampleInputName1">Loại công việc</label> <input
+									type="text" class="form-control" id="exampleInputName1"
+									placeholder="Chọn loại công việc" />
+							</div>
+	
+							<div class="form-group">
+								<label for="exampleInputEmail3">Ưu tiên</label> <select
+									class="form-control" id="exampleSelectGender">
+									<option>Cao</option>
+									<option>Trung bình</option>
+									<option>Bình thường</option>
+									<option>Thấp</option>
+								</select>
+							</div>
+	
+							<div class="form-group">
+								<label for="exampleInputEmail3">Cách tính kết quả công
+									việc</label> <select class="form-control" id="exampleSelectGender">
+									<option>Theo phần trăm</option>
+									<option>Theo tỉ lệ hoàn thành khối lượng công việc</option>
+									<option>Theo tỉ lệ hoàn thành đầu việc</option>
+								</select>
+							</div>
+	
+							<div class="form-group">
+								<label for="exampleInputName1">Dự án</label> <input type="text"
+									class="form-control" id="exampleInputName1"
+									placeholder="Chọn loại công việc" />
+							</div>
+	
+							<div class="form-group">
+								<label for="exampleInputName1">Công việc cha</label> <input
+									type="text" class="form-control" id="exampleInputName1"
+									placeholder="Chọn loại công việc" />
+							</div>
+	
+							<div class="form-group">
+								<label for="exampleTextarea1">Mô tả</label>
+								<textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
+							</div>
+	
+							<div class="form-group">
+								<label>Đính kèm</label> <input type="file" name="img[]"
+									class="file-upload-default" />
+							</div>
+						</div>
+						<!-- end -->
+						
+						
+			
+						<nav class="" >		
+					        <p style="color: red;">Đối tượng liên quan</p>
+							<hr>
+					   	</nav>
 						
 						<div>
 							<table class="form-group" style="width: 100%; float: left;">
@@ -199,3 +225,22 @@
 	  
 	});
 </script>
+
+<!-- cài đặt nâng cao -->
+<script>
+    var acc = document.getElementsByClassName("accordion");
+	var i;
+	for (i = 0; i < acc.length; i++) {
+		acc[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			if (panel.style.maxHeight) {
+				panel.style.maxHeight = null;
+				document.getElementById("more").className = "mdi mdi-arrow-right-bold-circle"; 
+			} else {
+				panel.style.maxHeight = panel.scrollHeight + "px";
+				document.getElementById("more").className = "mdi mdi-arrow-down-bold-circle"; 
+			}
+		});
+	}
+   </script>

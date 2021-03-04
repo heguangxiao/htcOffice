@@ -1,4 +1,18 @@
 <%@page contentType="text/html; charset=utf-8"%>
+<link rel="stylesheet" type="text/css" href="../../vendors/mdi/css/materialdesignicons.min.css">
+<style>
+     .accordion {
+	cursor: pointer;
+	width: 100%;
+	transition: 0.4s;
+}
+
+.panel {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+</style>
 <div class="content-wrapper">
 	<form class="forms-sample">
 		<div class="row">
@@ -50,17 +64,48 @@
 								id="exampleInputUsername1" placeholder="Xem và nhận thông báo" />
 						</div>
 
-						<p style="color: red;">Quy trình</p>
-						<hr>
-						<i>chưa có quy trình</i>
-
-						<p style="color: red;">Đối tượng liên quan</p>
-						<hr>
-
-
-
+						<div class="form-group">
+							<label for="exampleInputPassword1">Quy trình</label>
+							<p>Chưa có quy trình</p>
+						</div>
 						
-						<div>
+						
+						<!-- cài đăt nâng cao -->
+						<nav class="accordion">	
+							<p style="color: red;" id="more" class="mdi mdi-arrow-right-bold-circle">Cài đặt nâng cao</p><hr>
+					   	</nav>
+
+						<div class="panel">
+							<div class="form-group">
+								<label for="exampleInputName1">Dự án</label> <input type="text"
+									class="form-control" id="exampleInputName1"
+									placeholder="Chọn loại công việc" />
+							</div>
+	
+							<div class="form-group">
+								<label for="exampleInputName1">Công việc cha</label> <input
+									type="text" class="form-control" id="exampleInputName1"
+									placeholder="Chọn loại công việc" />
+							</div>
+	
+							<div class="form-group">
+								<label for="exampleTextarea1">Mô tả</label>
+								<textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
+							</div>
+	
+							<div class="form-group">
+								<label>Đính kèm</label> <input type="file" name="img[]"
+									class="file-upload-default" />
+							</div>
+						</div>
+						
+						
+						
+						<nav class="">
+							<p style="color: red;">Đối tượng liên quan</p><hr>
+					   	</nav>
+
+						<div style="margin-bottom: 150px">
 							<table class="form-group" style="width: 100%; float: left;">
 								<tbody id="tbl_posts_body">
 								</tbody>
@@ -89,40 +134,6 @@
 							</table>
 							<a class="mdi mdi-plus-circle-outline add-record">Thêm</a>
 						</div>
-
-
-
-
-
-
-						<p style="color: red; margin-top: 20px">Cài đặt nâng cao</p>
-						<hr>
-
-
-						<div class="form-group">
-							<label for="exampleInputName1">Dự án</label> <input type="text"
-								class="form-control" id="exampleInputName1"
-								placeholder="Chọn loại công việc" />
-						</div>
-
-						<div class="form-group">
-							<label for="exampleInputName1">Công việc cha</label> <input
-								type="text" class="form-control" id="exampleInputName1"
-								placeholder="Chọn loại công việc" />
-						</div>
-
-						<div class="form-group">
-							<label for="exampleTextarea1">Mô tả</label>
-							<textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
-						</div>
-
-						<div class="form-group" style="margin-bottom: 150px">
-							<label>Đính kèm</label> <input type="file" name="img[]"
-								class="file-upload-default" />
-						</div>
-
-
-
 					</div>
 				</div>
 			</div>
@@ -167,3 +178,22 @@ jQuery(document).delegate('a.delete-record', 'click', function(e) {
   
 });
      </script>
+     
+     <!-- cài đặt nâng cao -->
+<script>
+    var acc = document.getElementsByClassName("accordion");
+	var i;
+	for (i = 0; i < acc.length; i++) {
+		acc[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			if (panel.style.maxHeight) {
+				panel.style.maxHeight = null;
+				document.getElementById("more").className = "mdi mdi-arrow-right-bold-circle"; 
+			} else {
+				panel.style.maxHeight = panel.scrollHeight + "px";
+				document.getElementById("more").className = "mdi mdi-arrow-down-bold-circle"; 
+			}
+		});
+	}
+   </script>

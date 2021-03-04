@@ -1,5 +1,19 @@
 <%@page contentType="text/html; charset=utf-8"%>
-<div class="content-wrapper">
+<link rel="stylesheet" type="text/css" href="../../vendors/mdi/css/materialdesignicons.min.css">
+<style>
+     .accordion {
+	cursor: pointer;
+	width: 100%;
+	transition: 0.4s;
+}
+
+.panel {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+</style>
+<div class="content-wrapper" style="min-height: 700px">
 	<form class="forms-sample">
 		<div class="row">
 			<div class="col-md-6 grid-margin stretch-card">
@@ -106,8 +120,9 @@
 								<tr>
 									<td>
 										<div class="form-check mx-sm-2">
-											<label class="form-check-label"><input
-												type="checkbox" class="form-check-input" checked /></label>
+											<label class="form-check-label">
+												<input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios1" value="" checked />
+											</label>
 										</div>
 									</td>
 									<td>Không bao giờ</td>
@@ -115,8 +130,9 @@
 								<tr>
 									<td>
 										<div class="form-check mx-sm-2">
-											<label class="form-check-label"><input
-												type="checkbox" class="form-check-input" checked /></label>
+											<label class="form-check-label">
+												<input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios1" value="" checked />
+											</label>
 										</div>
 									</td>
 									<td>Vào ngày</td>
@@ -130,8 +146,9 @@
 								<tr>
 									<td>
 										<div class="form-check mx-sm-2">
-											<label class="form-check-label"><input
-												type="checkbox" class="form-check-input" checked /></label>
+											<label class="form-check-label">
+												<input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios1" value="" checked />
+											</label>
 										</div>
 									</td>
 									<td>Sau</td>
@@ -171,125 +188,129 @@
 								</div>
 							</div>
 						</div>
-						<p style="color: red;">Cài đặt công việc lặp</p>
-						<hr>
+						
+						
+						<!-- cài đăt nâng cao -->
+						<nav class="accordion">	
+							<p style="color: red;" id="more" class="mdi mdi-arrow-right-bold-circle">Cài đặt công việc lặp</p><hr>
+					   	</nav>
 
-
-						<div class="form-group">
-							<label for="exampleInputEmail1">Loại công việc</label> <select
-								class="form-control" id="exampleFormControlSelect2">
-								<option>Công việc quy trình</option>
-								<option>Công việc thường</option>
-							</select>
-						</div>
-
-						<div class="form-group">
-							<label for="exampleInputPassword1">Tên công việc</label> <input
-								type="text" class="form-control" id="exampleInputUsername1"
-								placeholder="Nhập tên công việc" />
-						</div>
-
-
-						<div class="form-group">
-							<label for="exampleInputEmail1">Trạng thái</label> <select
-								class="form-control" id="exampleFormControlSelect2">
-								<option>Đang chạy</option>
-								<option>Dừng lặp</option>
-							</select>
-						</div>
-
-
-						<div class="form-group">
-							<label for="exampleInputEmail1">Bắt đầu</label> <input
-								type="date" class="form-control" id="exampleInputUsername1" />
-						</div>
-
-						<div class="form-group">
-							<label for="exampleInputPassword1">Kết thúc</label> <input
-								type="date" class="form-control" id="exampleInputUsername1" />
-						</div>
-
-						<div class="form-check">
-							<label class="form-check-label"> <input type="checkbox"
-								class="form-check-input" /> Giao việc theo giờ
-							</label>
-						</div>
-						<br>
-
-
-						<div class="form-group">
-							<label for="exampleInputPassword1">Người thực hiện</label> <input
-								type="text" class="form-control" id="exampleInputUsername1"
-								placeholder="Danh sách người thực hiện" />
-						</div>
-
-						<div class="form-group">
-							<label for="exampleInputPassword1">Người giao việc</label> <input
-								type="text" class="form-control" id="exampleInputUsername1"
-								placeholder="Chọn người giao việc" />
-						</div>
-
-						<div class="form-group">
-							<label for="exampleInputPassword1">Người theo dõi</label> <input
-								type="text" class="form-control" id="exampleInputUsername1"
-								placeholder="Xem và nhận thông báo" />
-						</div>
-
-
-						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group row">
-									<div class="col-sm-9">
-										<label for="exampleInputUsername1">Loại công việc</label> <select
-											class="form-control" id="exampleFormControlSelect2">
-											<option>Khẩn cấp nhưng không quan trọng</option>
-											<option>Không khẩn cấp và không quan trọng</option>
-											<option>Quan trọng nhưng không khẩn cấp</option>
-											<option>Quan trọng và khẩn cấp</option>
-										</select>
+						<div class="panel">
+							<div class="form-group">
+								<label for="exampleInputEmail1">Loại công việc</label> <select
+									class="form-control" id="exampleFormControlSelect2">
+									<option>Công việc quy trình</option>
+									<option>Công việc thường</option>
+								</select>
+							</div>
+	
+							<div class="form-group">
+								<label for="exampleInputPassword1">Tên công việc</label> <input
+									type="text" class="form-control" id="exampleInputUsername1"
+									placeholder="Nhập tên công việc" />
+							</div>
+	
+	
+							<div class="form-group">
+								<label for="exampleInputEmail1">Trạng thái</label> <select
+									class="form-control" id="exampleFormControlSelect2">
+									<option>Đang chạy</option>
+									<option>Dừng lặp</option>
+								</select>
+							</div>
+	
+	
+							<div class="form-group">
+								<label for="exampleInputEmail1">Bắt đầu</label> <input
+									type="date" class="form-control" id="exampleInputUsername1" />
+							</div>
+	
+							<div class="form-group">
+								<label for="exampleInputPassword1">Kết thúc</label> <input
+									type="date" class="form-control" id="exampleInputUsername1" />
+							</div>
+	
+							<div class="form-check">
+								<label class="form-check-label"> <input type="checkbox"
+									class="form-check-input" /> Giao việc theo giờ
+								</label>
+							</div>
+							<br>
+	
+	
+							<div class="form-group">
+								<label for="exampleInputPassword1">Người thực hiện</label> <input
+									type="text" class="form-control" id="exampleInputUsername1"
+									placeholder="Danh sách người thực hiện" />
+							</div>
+	
+							<div class="form-group">
+								<label for="exampleInputPassword1">Người giao việc</label> <input
+									type="text" class="form-control" id="exampleInputUsername1"
+									placeholder="Chọn người giao việc" />
+							</div>
+	
+							<div class="form-group">
+								<label for="exampleInputPassword1">Người theo dõi</label> <input
+									type="text" class="form-control" id="exampleInputUsername1"
+									placeholder="Xem và nhận thông báo" />
+							</div>
+	
+	
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group row">
+										<div class="col-sm-9">
+											<label for="exampleInputUsername1">Loại công việc</label> <select
+												class="form-control" id="exampleFormControlSelect2">
+												<option>Khẩn cấp nhưng không quan trọng</option>
+												<option>Không khẩn cấp và không quan trọng</option>
+												<option>Quan trọng nhưng không khẩn cấp</option>
+												<option>Quan trọng và khẩn cấp</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group row">
+										<div class="col-sm-9">
+											<label for="exampleInputUsername1">Ưu tiên</label> <select
+												class="form-control" id="exampleFormControlSelect2">
+												<option>Cao</option>
+												<option>Trung bình</option>
+												<option>Bình thường</option>
+												<option>Thấp</option>
+											</select>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-6">
-								<div class="form-group row">
-									<div class="col-sm-9">
-										<label for="exampleInputUsername1">Ưu tiên</label> <select
-											class="form-control" id="exampleFormControlSelect2">
-											<option>Cao</option>
-											<option>Trung bình</option>
-											<option>Bình thường</option>
-											<option>Thấp</option>
-										</select>
-									</div>
-								</div>
+	
+							<div class="form-group">
+								<label for="exampleInputPassword1">Cách tính kết quả công
+									việc</label> <select class="form-control" id="exampleFormControlSelect2">
+									<option>Theo % người dùng tự cập nhật</option>
+									<option>Theo tỉ lệ hoàn thành khối lượng công việc</option>
+									<option>Theo tỉ lệ hoàn thành đầu việc</option>
+								</select>
+							</div>
+	
+							<div class="form-group">
+								<label for="exampleInputPassword1">Dự án</label> <input
+									type="text" class="form-control" id="exampleInputUsername1"
+									placeholder="Chọn hoặc để trống" />
+							</div>
+	
+							<div class="form-group">
+								<label for="exampleTextarea1">Mô tả</label>
+								<textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
+							</div>
+	
+							<div class="form-group" style="margin-bottom: 150px">
+								<label>Đính kèm</label> <input type="file" name="img[]"
+									class="file-upload-default" />
 							</div>
 						</div>
-
-						<div class="form-group">
-							<label for="exampleInputPassword1">Cách tính kết quả công
-								việc</label> <select class="form-control" id="exampleFormControlSelect2">
-								<option>Theo % người dùng tự cập nhật</option>
-								<option>Theo tỉ lệ hoàn thành khối lượng công việc</option>
-								<option>Theo tỉ lệ hoàn thành đầu việc</option>
-							</select>
-						</div>
-
-						<div class="form-group">
-							<label for="exampleInputPassword1">Dự án</label> <input
-								type="text" class="form-control" id="exampleInputUsername1"
-								placeholder="Chọn hoặc để trống" />
-						</div>
-
-						<div class="form-group">
-							<label for="exampleTextarea1">Mô tả</label>
-							<textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
-						</div>
-
-						<div class="form-group" style="margin-bottom: 150px">
-							<label>Đính kèm</label> <input type="file" name="img[]"
-								class="file-upload-default" />
-						</div>
-
 
 
 					</div>
@@ -305,3 +326,23 @@
 
 	</form>
 </div>
+
+
+     <!-- cài đặt nâng cao -->
+<script>
+    var acc = document.getElementsByClassName("accordion");
+	var i;
+	for (i = 0; i < acc.length; i++) {
+		acc[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			if (panel.style.maxHeight) {
+				panel.style.maxHeight = null;
+				document.getElementById("more").className = "mdi mdi-arrow-right-bold-circle"; 
+			} else {
+				panel.style.maxHeight = panel.scrollHeight + "px";
+				document.getElementById("more").className = "mdi mdi-arrow-down-bold-circle"; 
+			}
+		});
+	}
+   </script>

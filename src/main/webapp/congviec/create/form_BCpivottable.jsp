@@ -1,5 +1,5 @@
 <%@page contentType="text/html; charset=utf-8"%>
-<div class="content-wrapper">
+<div class="content-wrapper"  style="min-height: 700px">
 	<form class="forms-sample">
 		<div class="row">
 			<div class="col-md-6 grid-margin stretch-card">
