@@ -50,11 +50,33 @@
         
         <div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: right">
             <ul class="nav navbar-nav mr-auto" style="text-align: center;">
-                <li class="nav-item" style="margin-left: 10px">
-                	<div data-toggle="dropdown">
+            	<li class="nav-item dropdown" style="margin-left: 10px;">
+		            <div data-toggle="dropdown">
 						<i style="font-size: 20px;" class="mdi mdi-calendar-text"></i>
 					</div>
-                </li>
+					
+		            <div class="dropdown-menu-right dropdown-content">
+		                <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios1" value="" checked /> THÁNG 1 </label>
+                        </div>	
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios1" value="" checked /> THÁNG 1 </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios1" value="" checked /> THÁNG 1 </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios1" value="" checked /> THÁNG 1 </label>
+                        </div>
+							<a class="dropdown-item" href="#">Lọc theo nhãn đã chọn</a>
+		            </div>
+		            
+		            
+		        </li>
             </ul>
         </div>
         
