@@ -31,12 +31,7 @@ public class CongviecController {
 		modelMap.put("titleTable", "Danh sách dự án");
 		return "congviec_duan";
 	}
-	@GetMapping({ "/grid" })
-	public String home_grid(ModelMap modelMap) {
-		modelMap.put("title", "Grid");
-		modelMap.put("titleTable", "Xem grid");
-		return "congviec_grid";
-	}
+	
 	
 	@GetMapping({ "/lichbieu" })
 	public String home_lichbieu(ModelMap modelMap) {
@@ -99,6 +94,21 @@ public class CongviecController {
 		modelMap.put("title", "Dashboard-Dự án");
 		modelMap.put("titleTable", "Dashboard");
 		return "dashboard_duan";
+	}
+	
+	//
+	@GetMapping({ "/grid" })
+	public String home_grid(ModelMap modelMap) {
+		modelMap.put("title", "Grid");
+		modelMap.put("titleTable", "Xem grid");
+		return "congviec_grid";
+	}
+	
+	@GetMapping({ "/kanban" })
+	public String home_kanban(ModelMap modelMap) {
+		modelMap.put("title", "Kanban");
+		modelMap.put("titleTable", "Kanban");
+		return "congviec_kanban";
 	}
 	// craete new form
 

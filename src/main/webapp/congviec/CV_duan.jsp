@@ -96,10 +96,10 @@
 		        </li>
                 
                 <li class="nav-item" style="margin-left: 10px">
-                	<div data-toggle="dropdown">
+                	<a href="<c:url value='/congviec/kanban'/>">
 						<i class="mdi mdi-poll"></i>
 						<p style="font-size: 12px; margin-bottom: 0px">KANBAN</p>
-					</div>
+					</a>
                 </li>
                 
                 <li class="nav-item" style="margin-left: 10px">

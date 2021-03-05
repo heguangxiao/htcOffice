@@ -116,11 +116,6 @@
 	        <put-attribute name="body" value="/congviec/CV_congviec.jsp" />
 	    </definition>
 	    
-	    <!-- grid -->
-	    <definition name="congviec_grid" extends="work">
-	        <put-attribute name="body" value="/congviec/CV_grid.jsp" />
-	    </definition>
-	    
 	    <!-- duan -->
 	    <definition name="congviec_duan" extends="work">
 	        <put-attribute name="body" value="/congviec/CV_duan.jsp" />
@@ -170,6 +165,18 @@
 	    <definition name="congviec_lichbieu" extends="work">
 	        <put-attribute name="body" value="/congviec/CV_lichbieu.jsp" />
 	    </definition>
+	    
+	    <!-- drid kanban abc -->
+	    <!-- grid -->
+	    <definition name="congviec_grid" extends="work">
+	        <put-attribute name="body" value="/congviec/CV_grid.jsp" />
+	    </definition>
+	    
+	    <!-- kanban -->
+	    <definition name="congviec_kanban" extends="work">
+	        <put-attribute name="body" value="/congviec/CV_kanban.jsp" />
+	    </definition>
+	    
 	    
 	    <!-- FORM TẠO MỚI -->
 	    
