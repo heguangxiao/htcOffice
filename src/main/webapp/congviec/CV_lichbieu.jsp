@@ -43,9 +43,9 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: left">
 			<ul class="nav navbar-nav mr-auto">
 				<li>
-					<a style="float: left;" ><i class="mdi mdi-skip-previous"></i></a>
-					<p style="float: left;">Tuần 1-7, 3/2021</p>
-					<a style="float: left;" ><i class="mdi mdi-skip-back"></i></a>
+					<a href="#"><p style="float: left;margin-right: 15px" class="mdi mdi-arrow-left-bold-circle-outline"></p></a>
+						<p style="float: left;">Tuần 1-7, 3/2021</p>
+					<a href="#"><p style="float: left;margin-left: 15px" class="mdi mdi-arrow-right-bold-circle-outline"></p></a>
                 </li>
             </ul>
             
