@@ -520,22 +520,36 @@
 
     <!-- báo cáo đã tạo -->
     
-    	<!-- tất cả -->
-    	
-	    <definition name="tatCaBaoCao" extends="nhansu">
-	        <put-attribute name="body" value="/nhansu/baoCaoPhanTich/baoCaoDaTao/tatCaBaoCao.jsp" />
-	    </definition>
-	    
-	    <!-- báo cáo đề xuất -->
-    	
-	    <definition name="baoCaoDeXuat" extends="nhansu">
-	        <put-attribute name="body" value="/nhansu/baoCaoPhanTich/baoCaoDaTao/baoCaoDeXuat.jsp" />
-	    </definition>
+	    	<!-- tất cả -->
+	    	
+		    <definition name="tatCaBaoCao" extends="nhansu">
+		        <put-attribute name="body" value="/nhansu/baoCaoPhanTich/baoCaoDaTao/tatCaBaoCao.jsp" />
+		    </definition>
+		    
+		    <!-- báo cáo đề xuất -->
+	    	
+		    <definition name="baoCaoDeXuat" extends="nhansu">
+		        <put-attribute name="body" value="/nhansu/baoCaoPhanTich/baoCaoDaTao/baoCaoDeXuat.jsp" />
+		    </definition>
 	    
 	<!-- báo cáo đã lưu -->
 	
 	<definition name="baoCaoDaLuu" extends="nhansu">
 	        <put-attribute name="body" value="/nhansu/baoCaoPhanTich/baoCaoDaLuu.jsp" />
+   	</definition>
+   	
+   	
+   	
+   	<!-- Phòng ban -->
+	
+	<definition name="phongBan" extends="nhansu">
+	        <put-attribute name="body" value="/nhansu/hosonhansu/phongBan.jsp" />
+   	</definition>
+   	
+   	<!-- Import -->
+	
+	<definition name="import" extends="nhansu">
+	        <put-attribute name="body" value="/nhansu/hosonhansu/import.jsp" />
    	</definition>
 	    
 	    

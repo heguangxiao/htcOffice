@@ -1,30 +1,6 @@
 <%@page contentType="text/html; charset=utf-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<style>
-    tbody {
-        display:block;
-        height:78vh;
-        overflow:auto;
-    }
-    /* Hide scrollbar for Chrome, Safari and Opera */
-    tbody::-webkit-scrollbar {
-        display: none;
-    }
 
-    /* Hide scrollbar for IE, Edge and Firefox */
-    tbody {
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
-    }
-    thead, tbody tr {
-        display:table;
-        width:100%;
-        table-layout:fixed;
-    }
-    tr .active {
-        width: 5%;
-    }
-</style>
 <nav class=" navbar-expand-lg navbar-light bg-light" style="padding-top: 0px;padding-bottom: 0px;margin-top: 0px;">
     <div class="container-fluid" >     
         <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

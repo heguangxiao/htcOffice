@@ -46,7 +46,7 @@
 	}
     tbody {
         display:block;
-        height:78vh;
+       
         overflow:auto;
     }
     /* Hide scrollbar for Chrome, Safari and Opera */
@@ -61,7 +61,7 @@
     }
     thead, tbody tr {
         display:table;
-        width:100%;
+        
         table-layout:fixed;
     }
     tr .active {
@@ -109,8 +109,8 @@
 	 	<div class="container-fluid" >   
 			<div  class="collapse navbar-collapse" id="navbarSupportedContent">
 					<div  >
-						<i class="mdi mdi-chevron-down" style="display: inline;border:none;" ></i>
-						<p style="display: inline;color:#6495ED;font-weight: bold;font-size: 20px" >Thông tin chung</p>
+						<!-- <i class="mdi mdi-chevron-down" style="display: inline;border:none;" ></i> -->
+						<p class="mdi mdi-arrow-right-bold-circle" id="more" style="display: inline;color:#6495ED;font-weight: bold;font-size: 20px" >Thông tin chung</p>
 						<hr style="width: 610px">
 					</div>
 			</div>
@@ -190,18 +190,22 @@
 </form>
 	
 <script>
-	var acc = document.getElementsByClassName("accordion");
-	var i;
-	for (i = 0; i < acc.length; i++) {
-		acc[i].addEventListener("click", function() {
-			this.classList.toggle("active");
-			var panel = this.nextElementSibling;
-			if (panel.style.maxHeight) {
-				panel.style.maxHeight = null;
-			} else {
-				panel.style.maxHeight = panel.scrollHeight + "px";
-			}
-		});
-	}
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+	acc[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var panel = this.nextElementSibling;
+		if (panel.style.maxHeight) {
+			panel.style.maxHeight = null;
+			document.getElementById("more").className = "mdi mdi-arrow-right-bold-circle"; 
+			
+		} else {
+			panel.style.maxHeight = panel.scrollHeight + "px";
+			document.getElementById("more").className = "mdi mdi-arrow-down-bold-circle"; 
+			
+		}
+	});
+}
 </script>	
 

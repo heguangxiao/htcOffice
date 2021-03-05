@@ -505,4 +505,20 @@ public class NhanSuController {
         return "createKyLuatLaoDong";
     }
     
+    // Phòng ban
+    @GetMapping({"/phongBan"})
+    public String phongBan(ModelMap modelMap) {
+        modelMap.put("title", "HTC OFFICE 3");
+        modelMap.put("titleTable", "Hồ sơ nhân sự");
+        return "phongBan";
+    }
+    
+ // Import
+    @GetMapping({"/import"})
+    public String importhosonhansu(ModelMap modelMap) {
+        modelMap.put("title", "HTC OFFICE 3");
+        modelMap.put("titleTable", "Import hồ sơ nhân sự");
+        return "import";
+    }
+    
 }

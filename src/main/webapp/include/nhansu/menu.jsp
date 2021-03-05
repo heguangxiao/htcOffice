@@ -1,5 +1,6 @@
 <%@page contentType="text/html; charset=utf-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <nav class="navbar navbar-expand-sm bg-danger navbar-dark sticky-top" style="padding-bottom: 0px;padding-top: 0px;margin-bottom: 0px;">
     <a class="navbar-brand" href="#"></a>
     <ul class="navbar-nav mr-auto">
@@ -259,70 +260,80 @@
 
 
 <div class="modal fade" id="kyLuatNoiBo"  >
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <form action="<c:url value='/'/>">
+    <div class="modal-dialog modal-lg" style="width: 1002px">
+        <div class="modal-content" style="width: 1002px">
+            <form action="<c:url value='#'/>" style="width: 1000px">
                 <!-- Modal Header -->
-                <div class="modal-header" style="background: #6495ED;margin:0px">
+                <div class="modal-header" style="background: #6495ED;margin:0px;">
                     <label class="modal-title" style="color:white">TẠO MỚI QUYẾT ĐỊNH KỶ LUẬT NỘI BỘ</label>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
                 <!-- Modal body -->
 
+
+				<div style="margin-left: 0px;margin-top: 10px; "  >
+					 	
+							<table >
+									<tr >
+										<th  style="font-weight: normal;width:190px" >Ngày hiệu lực *</th>
+										<th  style="font-weight: normal;width: 160px" >Người vi phạm</th>
+										<th  style="font-weight: normal;width: 180px" >Lỗi vi phạm *</th>
+										<th  style="font-weight: normal;width: 100px" >Số tiền</th>
+										<th  style="font-weight: normal;width:180px" >Người liên đới</th>
+										<th  style="font-weight: normal;width:100px" >Tiền vi phạm</th>
+										
+										
+										
+									</tr>
+									<tbody id="tbl_posts_body8" style="margin-left: 0px;padding: 0px;">
+			         
+			        				</tbody>
+							</table>
+						
+		
+						<table id="sample_table8"  >
+									<tr>
+										<td>
+											<input type="date" class="form-control is-valid" style="width: 190px" placeholder="dd/mm/yyyy">
+										</td>
+										
+										<td style="margin-left: 10px">
+										    <input type="text" class="form-control is-valid" style="width: 160px" placeholder="Nguyễn Văn A">
+										</td>
+										
+										<td style="margin-left: 10px">
+											<select
+												class="form-control" style="width: 180px">
+												<option selected="">Chọn lỗi vi phạm</option>
+												<option>nguy hiểm</option>
+												<option>an toàn</option>
+											</select>
+										</td>
+										
+										<td style="margin-left: 10px">
+											 <input type="text" class="form-control is-valid" style="width: 100px" value="1,000,000" readonly ="readonly">
+										</td>
+										
+										<td style="margin-left: 10px">
+											 <input type="text" class="form-control is-valid" style="width: 180px" value="Nguyễn Văn A" readonly ="readonly">
+										</td>
+										
+										<td style="margin-left: 10px">
+											 <input type="text" class="form-control is-valid" style="width: 100px" value="1,000,000" readonly ="readonly">
+										</td>
+										
+										<td><a class="delete-record8 mdi mdi-close-circle" style="font-size :40px"></td>
+									</tr>
+							</table>				
+						<a class="mdi mdi-plus-circle-outline add-record8"  style="margin-left: 100px;font-size :40px;color:#6495ED;" ></a>	 
+				  </div>
 				
 
-				<div id="row5">
-					<label for="validationServer013">Ngày hiệu lực *</label> <input
-						type="date" class="form-control is-valid" style="width: 200px"
-						placeholder="dd/mm/yyyy">
-				</div>
-
-				<div id="row5">
-					<label for="validationServer013">Người vi phạm</label>
-					<div style="width: 100%; margin-bottom: 10px;margin-left: 0px">
-			  	  	    	<i  class="mdi mdi-magnify" style="position: absolute;margin-top:7px;margin-left: 180px"></i>
-							<input type="text" class="form-control is-valid" style="width: 200px" placeholder="Nguyễn Văn A">
-					</div>
-				</div>
 				
-				<div id="row5">
-					<label for="validationServer013">Lỗi vi phạm *</label> <select
-						class="form-control" style="width: 200px">
-						<option selected="">Chọn lỗi vi phạm</option>
-						<option>nguy hiểm</option>
-						<option>an toàn</option>
-					</select>
-				</div>
-
-				<div id="row5">
-					<label for="validationServer013">Số tiền</label> <input
-						type="text" class="form-control is-valid" style="width: 100px"
-						value="1,000,000" readonly ="readonly">
-				</div>
-
-				<div id="row5">
-					<label for="validationServer013">Người liên đới</label> <input
-						type="text" class="form-control is-valid" style="width: 200px"
-						value="Nguyễn Văn A" readonly ="readonly">
-				</div>
-
-				<div id="row5">
-					<label for="validationServer013">Tiền vi phạm</label> <input
-						type="text" class="form-control is-valid" style="width: 100px"
-						value="1,000,000" readonly ="readonly">
-				</div>
-
-				<div id="row5">
-					<i class="mdi mdi-close"></i>
-				</div>
-
-				<br>
-				
-				<i class="mdi mdi-plus-circle-outline"  style="margin-left: 10px;font-size :40px;color:#6495ED"></i>
 				
 				<!-- Modal footer -->
-                <div class="modal-footer" style="margin-top: 10px">
+                <div class="modal-footer" style="margin-top: 10px;">
                     <button type="submit" class="btn btn-primary">Cập nhật</button>
                     <button type="button" class="btn btn-primary" style="color:#6495ED	;background: white" data-dismiss="modal">Hủy bỏ</button>
                 </div>
@@ -339,7 +350,7 @@
 <div class="modal fade" id="thuVienLoiKyLuat"  >
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <form action="<c:url value='/'/>">
+            <form action="<c:url value='#'/>">
                 <!-- Modal Header -->
                 <div class="modal-header" style="background: #6495ED;margin:0px">
                     <label class="modal-title" style="color:white">TẠO MỚI QUYẾT ĐỊNH LỖI, KỶ LUẬT</label>
@@ -349,40 +360,46 @@
                 <!-- Modal body -->
 
 				
-
-				<div id="row5">
-					<label for="validationServer013">Lỗi vi phạm *</label> <input
-						type="text" class="form-control is-valid" style="width: 200px"
-						placeholder="Nhập lỗi vi phạm">
-				</div>
-
-				<div id="row5">
-					<label for="validationServer013">Số tiền</label> <input
-						type="number" class="form-control is-valid" style="width: 120px"
-						placeholder="500,000">
-				</div>
+				<div style="margin-left: 0px;margin-top: 10px; "  >
+					 	
+							<table>
+									<tr >
+										<th  style="font-weight: normal;width:150px" >Lỗi vi phạm *</th>
+										<th  style="font-weight: normal;width: 120px" >Số tiền</th>
+										<th  style="font-weight: normal;width: 150px" >Người liên đới</th>
+										<th  style="font-weight: normal;width: 120px" >Tiền liên đới</th>
+										
+									</tr>
+									<tbody id="tbl_posts_body9" style="margin-left: 0px;padding: 0px;">
+			         
+			        				</tbody>
+							</table>
+						
+		
+						<table id="sample_table9" >
+									<tr>
+										<td>
+											<input type="text" class="form-control is-valid" style="width: 150px" placeholder="Nhập lỗi vi phạm">
+										</td>
+										
+										<td style="margin-left: 10px">
+											  <input type="number" class="form-control is-valid" style="width: 120px" placeholder="500,000">
+										</td>
+										
+										<td style="margin-left: 10px">
+											<input type="text" class="form-control is-valid" style="width: 150px" placeholder="Nhập người liên đới">
+										</td>
+										
+										<td style="margin-left: 10px">
+											 <input type="number" class="form-control is-valid" style="width: 120px" placeholder="1,000,000">
+										</td>
+										
+										<td><a class="delete-record9 mdi mdi-close-circle" style="font-size :40px"></td>
+									</tr>
+							</table>				
+						<a class="mdi mdi-plus-circle-outline add-record9"  style="margin-left: 100px;font-size :40px;color:#6495ED;" ></a>	 
+				  </div>
 				
-				<div id="row5">
-					<label for="validationServer013">Người liên đới</label> 
-					<div style="width: 100%; margin-bottom: 10px;margin-left: 0px">
-							<i  class="mdi mdi-magnify" style="position: absolute;margin-top:7px;margin-left: 180px"></i>
-							<input type="text" class="form-control is-valid" style="width: 200px" placeholder="Nhập người liên đới">
-					</div>
-				</div>
-
-				<div id="row5">
-					<label for="validationServer013">Tiền liên đới</label> <input
-						type="number" class="form-control is-valid" style="width: 120px"
-						placeholder="1,000,000">
-				</div>
-
-				<div id="row5">
-					<i class="mdi mdi-close"></i>
-				</div>
-
-				<br>
-				
-				<i class="mdi mdi-plus-circle-outline"  style="margin-left: 10px;font-size :40px;color:#6495ED"></i>
 				
 				<!-- Modal footer -->
                 <div class="modal-footer" style="margin-top: 10px">
@@ -394,4 +411,66 @@
     </div>
 </div>
 
+<script>
+jQuery(document).delegate('a.add-record8', 'click', function(e) {
+    e.preventDefault();    
+    var content = jQuery('#sample_table8 tr'),
+    size = jQuery('#tbl_posts8 >tbody >tr').length + 1,
+    element = null,    
+    element = content.clone();
+    element.attr('id', 'rec8-'+size);
+    element.find('.delete-record8').attr('data-id', size);
+    element.appendTo('#tbl_posts_body8');
+    element.find('.sn').html(size);
+  });
+
+
+jQuery(document).delegate('a.delete-record8', 'click', function(e) {
+    e.preventDefault();    
+   
+     var id = jQuery(this).attr('data-id');
+     var targetDiv = jQuery(this).attr('targetDiv');
+     jQuery('#rec8-' + id).remove();
+     
+   //regnerate index number on table
+   $('#tbl_posts_body8 tr').each(function(index) {
+     //alert(index);
+     $(this).find('span.sn').html(index+1);
+   });
+   return true;
+ 
+ 
+});
+
+jQuery(document).delegate('a.add-record9', 'click', function(e) {
+    e.preventDefault();    
+    var content = jQuery('#sample_table9 tr'),
+    size = jQuery('#tbl_posts9 >tbody >tr').length + 1,
+    element = null,    
+    element = content.clone();
+    element.attr('id', 'rec9-'+size);
+    element.find('.delete-record9').attr('data-id', size);
+    element.appendTo('#tbl_posts_body9');
+    element.find('.sn').html(size);
+  });
+
+
+
+
+jQuery(document).delegate('a.delete-record9', 'click', function(e) {
+    e.preventDefault();    
+   
+     var id = jQuery(this).attr('data-id');
+     var targetDiv = jQuery(this).attr('targetDiv');
+     jQuery('#rec9-' + id).remove();
+     
+   //regnerate index number on table
+   $('#tbl_posts_body9 tr').each(function(index) {
+     //alert(index);
+     $(this).find('span.sn').html(index+1);
+   });
+   return true;
+ 
+});
+</script>
 

@@ -67,23 +67,33 @@
     tr .active {
         width: 5%;
     }
-   
+    .accordion {
+	cursor: pointer;
+	width: 100%;
+	transition: 0.4s;
+}
+
+.panel {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
 </style>
 
 	<!-- Thông tin chung -->
-	<nav class=" navbar-expand-lg navbar-light bg-light" style=" padding-top: 0px;padding-bottom: 0px;margin-top: 15px;clear: both;">
+	<nav class=" navbar-expand-lg navbar-light bg-light accordion" style=" padding-top: 0px;padding-bottom: 0px;margin-top: 15px;clear: both;">
 	 	<div class="container-fluid" >   
 			<div  class="collapse navbar-collapse" id="navbarSupportedContent">
 					<div  >
-						<i class="mdi mdi-chevron-down" style="display: inline;border:none;" ></i>
-						<p style="display: inline;color:#6495ED;font-weight: bold;font-size: 20px" >Thông tin chung</p>
+						<!-- <i class="mdi mdi-chevron-down" style="display: inline;border:none;" ></i> -->
+						<p class="mdi mdi-arrow-right-bold-circle" id="more" style="display: inline;color:#6495ED;font-weight: bold;font-size: 20px" >Thông tin chung</p>
 						<hr style="width: 610px">
 					</div>
 			</div>
 		</div>
 	</nav>
 		
-	<form>
+	<form class="panel">
 	
 	  <div style="margin-left: 10px;margin-top: 10px">
 	  	  <label for="validationServer013">Tên quyết định *</label>
@@ -112,16 +122,25 @@
 	  </div>
 
 	<div style="margin-left: 30px;margin-top: 15px">
-		<label class="form-check-label"> <input type="checkbox" class="form-check-input" />Khen thưởng ngoài công ty</label>
+		<label  class="form-check-label"> <input type="checkbox" class="form-check-input" />Khen thưởng ngoài công ty</label>
 	</div>
 
-	<div style="margin-left: 10px;margin-top: 10px">
-	  	  <label for="validationServer013">Nhân viên *</label>
-	  	  <div style="width: 100%; margin-bottom: 10px;margin-left: 0px">
-		  	  <i class="mdi mdi-magnify" style="position: absolute;margin-top:7px;margin-left: 585px"></i>
-		      <input type="text" class="form-control is-valid" id="input2" placeholder="Phòng ban, vị trí, chức vụ ...">
-	      </div>
-	  </div>
+	 <div style="margin-top: 10px">
+	 <label for="validationServer013" style="margin-left: 10px">Nhân viên *</label>
+	  	  <div style=" margin-bottom: 10px;">
+			  	  <div class="input-group" style="margin-left: 0px;width: 613px;" >
+					<input type="text" class="form-control"  placeholder="Phòng ban, vị trí, chức vụ ..." >
+					<div class="input-group-append">
+						<button class="btn btn-secondary" type="button" style="background: white;color: black;">
+							<i class="fa fa-search" ></i>
+						</button>
+					</div>
+				</div>
+     	  </div>
+	  	  
+	  </div> 
+	  
+	 
 	  
 	  <div style="margin-left: 10px;margin-top: 10px">
 	  		<label for="validationServer013">Hình thức khen thưởng *</label>
@@ -159,5 +178,23 @@
 
 </form>
 	
-	
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+	acc[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var panel = this.nextElementSibling;
+		if (panel.style.maxHeight) {
+			panel.style.maxHeight = null;
+			document.getElementById("more").className = "mdi mdi-arrow-right-bold-circle"; 
+			
+		} else {
+			panel.style.maxHeight = panel.scrollHeight + "px";
+			document.getElementById("more").className = "mdi mdi-arrow-down-bold-circle"; 
+			
+		}
+	});
+}
+</script>	
 

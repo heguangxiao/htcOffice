@@ -3,7 +3,7 @@
 <style>
     tbody {
         display:block;
-        height:78vh;
+       
         overflow:auto;
     }
     /* Hide scrollbar for Chrome, Safari and Opera */
@@ -16,7 +16,7 @@
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
     }
-    thead, tbody tr {
+    thead,#tbody tr {
         display:table;
         width:100%;
         table-layout:fixed;
@@ -27,6 +27,17 @@
     #hover-email:hover{
     background: #DCDCDC	
     }
+     .accordion {
+	cursor: pointer;
+	width: 100%;
+	transition: 0.4s;
+}
+
+.panel {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
 </style>
 <nav class=" navbar-expand-lg navbar-light bg-light" style="padding-top: 0px;padding-bottom: 0px;margin-top: 0px;">
     <div class="container-fluid" >     
@@ -68,9 +79,9 @@
 							
 					</div>
                 </li>
-                <li class="nav-item" style="margin-left: 10px">
-                	<i class="mdi mdi-lan"></i>
-                    <p style="font-size: 12px;margin-bottom: 0px">Phòng ban</p>
+                <li class="nav-item" style="margin-left: 10px;height: 45px;">
+                	
+                    <a href="<c:url value='/phongBan'/>" style="font-size: 12.4px;margin-bottom: 0px;display: block;margin-top: 1px;color: #999"><i class="mdi mdi-lan" style="display: block;font-size:16px;color: black "></i>Phòng ban</a>
                 </li>
                 <li class="nav-item" style="margin-left: 10px">
                     <div data-toggle="dropdown">
@@ -99,8 +110,8 @@
 						<p style="font-size: 12px; margin-bottom: 0px">Import</p>
 					</div>
 					<div class="dropdown-menu">
-						<button id="hover-email" class="dropdown-item">Import hồ sơ nhân sự </button> 
-						<button id="hover-email" class="dropdown-item">Xem lịch sử import hồ sơ nhân sự </button> 
+						<a id="hover-email" class="dropdown-item" href="<c:url value='/import'/>">Import hồ sơ nhân sự </a> 
+						<a id="hover-email" class="dropdown-item">Xem lịch sử import hồ sơ nhân sự </a>
 							
 					</div>
                 </li>
@@ -135,7 +146,7 @@
                
             </tr>
         </thead>
-        <tbody style="text-align: center;">
+        <tbody id="tbody" style="text-align: center;">
             <tr>
                 <td class="active">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
@@ -185,6 +196,9 @@
         <a class="dropdown-item" href="#">Something else here</a>
     </div>
 </div>
+<div class="bd-example" data-example-id="" style="display: ;" id="createPopup">
+
+</div>
 <div class="container-fluid bd-content">
     <div class="bd-example" data-example-id="">
         <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" role="dialog" tabindex="-1">
@@ -229,26 +243,40 @@
 
                 <!-- Modal body -->
                 <div style="margin-top: 14px">
-	                <p style="margin-left: 22px;float: left">Từ : </p>
-	                <i class="mdi mdi-account-circle" style="float: right;margin-right: 25px"></i>
+	                <p style="float: left">Từ :</p><input style="margin-left: 5px;float: left;width: 650px;border: none" type="text"  > 
+	                <i class="mdi mdi-account-circle" style="float: right;margin-right: 25px;"></i>
                 </div>
                 
                 <hr width="750px;" style="clear:both;">
                 
-                <div>
-	                <p style="margin-left: 22px;float: left">Tới : </p>
-	                <label style="float: right;margin-right: 25px">bcc</label>
-	                <label style="float: right;margin-right: 10px">cc</label>
-	                
+                <div style="float: left;">
+	                <p style="float: left">Tới :</p><input type="text"  style="margin-left: 5px;float: left;width: 650px;border: none">
+	            </div>
+	            
+	            <hr width="750px;" style="clear:both">
+	            
+	            <div class="accordion" >
+	                <label style="margin-right: 25px;width:20px" >Bcc</label>
+	            </div>  
+	            <div class="panel">
+	                	<p style="float: left;">Bcc</p><input type="text"  style="margin-left: 5px;width: 650px;border: none;float: left;" >
+	                	<hr width="750px;" style="clear:both">
                 </div>
-                
-                <hr width="750px;" style="clear:both">
+	            
+	            <div class="accordion"> 
+	                <label style="margin-right: 10px;width:20px" >Cc</label>
+	            </div>   
+               
+                <div class="panel">
+	                	<p style="float: left;">Cc</p><input type="text"  style="margin-left: 5px;width: 650px;border: none;float: left;" >
+	                	<hr width="750px;" style="clear:both">
+                </div>   
                 
 				<div>
-					<p style="margin-left: 22px">Chủ đề</p>
+					<p style="float: left;">Chủ đề</p><input type="text"  style="margin-left: 5px;float: left;width: 650px;border: none">
 				</div>
-				
-				<div style="width: 755px;height:400px;border: 1px solid black;margin-left: 20px">
+				<br>
+				<div style="width: 755px;height:400px;border: 1px solid black;margin-left: 20px;clear: both">
 						<nav class=" navbar-expand-lg navbar-light bg-light"
 							style="padding-top: 0px; padding-bottom: 0px; margin-top: 0px;">
 							
@@ -419,6 +447,22 @@
 
 
 <script>
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+	acc[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var panel = this.nextElementSibling;
+		if (panel.style.maxHeight) {
+			panel.style.maxHeight = null;
+		} else {
+			panel.style.maxHeight = panel.scrollHeight + "px";
+		}
+	});
+}
+
+
     $(function () {
         //button select all or cancel
         $("#select-all").click(function () {

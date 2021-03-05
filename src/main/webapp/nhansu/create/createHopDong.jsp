@@ -1,73 +1,56 @@
 <%@page contentType="text/html; charset=utf-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <style>
-	#tong{
-		width: 630px;
-	}
-	
-	#row1{
-		display: inline-block;
-	}
-	#row2{
-		display: inline-block;
-		margin-top: 10px;
-	}
-	#row3{
-		display: inline-block;
-		margin-top: 10px;
-	}
-	#row4{
-		display: inline-block;
-		margin-top: 10px;
-	}
-	#row5{
-		display: inline-block;
-		margin-top: 20px;
-	}
-	#input1{
-		width: 197px;
-		
-	}
-	#input2{
-		width: 620px;
-		
-	}
-	#input3{
-		width: 302px;
-		
-	}
-	
-	#input4{
-		width: 304px;
-		
-	}
-	form div{
-		margin-left: 8px;
-	}
-    tbody {
-        display:block;
-        height:78vh;
-        overflow:auto;
-    }
-    /* Hide scrollbar for Chrome, Safari and Opera */
-    tbody::-webkit-scrollbar {
-        display: none;
-    }
 
-    /* Hide scrollbar for IE, Edge and Firefox */
-    tbody {
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
-    }
-    thead, tbody tr {
-        display:table;
-        width:100%;
-        table-layout:fixed;
-    }
-    tr .active {
-        width: 5%;
-    }
-   .accordion {
+#tong {
+	width: 630px;
+}
+
+#row1 {
+	display: inline-block;
+}
+
+#row2 {
+	display: inline-block;
+	margin-top: 10px;
+}
+
+#row3 {
+	display: inline-block;
+	margin-top: 10px;
+}
+
+#row4 {
+	display: inline-block;
+	margin-top: 10px;
+}
+
+#row5 {
+	display: inline-block;
+	margin-top: 20px;
+}
+
+#input1 {
+	width: 197px;
+}
+
+#input2 {
+	width: 620px;
+}
+
+#input3 {
+	width: 302px;
+}
+
+#input4 {
+	width: 304px;
+}
+
+form div {
+	margin-left: 8px;
+}
+
+.accordion {
 	cursor: pointer;
 	width: 100%;
 	transition: 0.4s;
@@ -78,6 +61,18 @@
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
 }
+.accordion1{
+	cursor: pointer;
+	width: 100%;
+	transition: 0.4s;
+}
+
+.panel1 {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
@@ -112,14 +107,14 @@
 
 	<!-- Thông tin cá nhân -->
 	<nav class=" navbar-expand-lg navbar-light bg-light accordion" style=" padding-top: 0px;padding-bottom: 0px;margin-top: 0px;clear: both;">
-	 	<div class="container-fluid" >   
+	 	<div class="container-fluid " >   
 	 	<hr style="width: 1180px;">
 			<div  class="collapse navbar-collapse" id="navbarSupportedContent">
 
 				
 					<div  >
-						<i class="mdi mdi-chevron-down" style="display: inline;border:none;" ></i>
-						<p style="display: inline;color:#6495ED;font-weight: bold;font-size: 20px" >Thông tin chung</p>
+						<!-- <i class="mdi mdi-chevron-down" style="display: inline;border:none;" ></i> -->
+						<p id="more" class="mdi mdi-arrow-right-bold-circle" style="display: inline;color:#6495ED;font-weight: bold;font-size: 20px" >Thông tin chung</p>
 						<hr style="width: 610px">
 					</div>
 				
@@ -248,18 +243,18 @@
 
 	<!-- Thông tin lương và phụ cấp  -->
 	
-	<nav class=" navbar-expand-lg navbar-light bg-light" style=" margin-bottom:100px;padding-top: 30px;padding-bottom: 0px;margin-top: 0px;margin-left: 8px;width: 1190px">
-		<div class="container-fluid accordion" >   
+	<nav class=" navbar-expand-lg navbar-light bg-light" style=" margin-bottom:100px;padding-top: 30px;padding-bottom: 0px;margin-top: 0px;width: 1190px">
+		<div class="container-fluid accordion1" >   
 			<div  class="collapse navbar-collapse" id="navbarSupportedContent">
 				<div>
-					<i class="mdi mdi-chevron-down" style="display: inline; border: none;"></i>
-					<h5 style="display: inline;color:#6495ED;font-weight: bold;font-size: 20px">Thông tin lương và phụ cấp</h5>
+					<!-- <i class="mdi mdi-chevron-down " style="display: inline; border: none;"></i> -->
+					<h5 id="more1" style="display: inline;color:#6495ED;font-weight: bold;font-size: 20px" class="mdi mdi-arrow-right-bold-circle">Thông tin lương và phụ cấp</h5>
 					<hr style="width: 610px">
 				</div>
 			</div>
 		</div>
 		
-      <div class="panel">
+      <div class="panel1">
 		  <div id="row2">
 		  	  <label for="validationServer013">Từ ngày</label>
 		      <input type="date" class="form-control is-valid" style="width: 200px" placeholder="dd/mm/yyyy"
@@ -271,24 +266,23 @@
 		      <input type="text" class="form-control is-valid" style="width: 415px" placeholder="Viết ghi chú">
 		  </div>
 		  
-		  <div style="clear: both;margin-left: 0px;margin-top: 10px;"  >
-			 <form>
-				  <table   style="width: 610px;">
-						<tr >
-							<th  style="font-weight: normal;" >Hình thức lương</th>
-							<th  style="font-weight: normal;" >Số tiền</th>
-							
-						</tr>
-						<tbody id="tbl_posts_body">
-         
-        				</tbody>
-				</table>
+		  <div style="clear: both;margin-left: 0px;margin-top: 10px;position: relative"  >
+			 	<form>
+					<table   style="width: 610px;">
+							<tr >
+								<th  style="font-weight: normal;width:330px" >Hình thức lương</th>
+								<th  style="font-weight: normal;" >Số tiền</th>
+							</tr>
+							<tbody id="tbl_posts_body2" style="margin-left: 0px;padding: 0px">
+	         
+	        				</tbody>
+					</table>
 				</form>
-				<table>
-						
+
+				<table id="sample_table2"  >
 							<tr>
 								<td>
-									<select class="form-control" style="width: 300px">
+									<select class="form-control" style="width: 330px">
 											<option selected="">Chọn hình thức</option>
 											<option>chuyển khoản</option>
 											<option>tiền mặt</option>
@@ -296,44 +290,53 @@
 								</td>
 								
 								<td style="margin-left: 20px">
-									<input type=number class="form-control is-valid" style="width: 200px;margin-left: 105px" placeholder="Nhập lương">
+									<input type=number class="form-control is-valid" style="width:265px;margin-left: 5px" placeholder="Nhập lương">
 								</td>
 								
-								<td><i class="mdi mdi-close"></i></td>
-								
-									
-								
+								<td><a class="delete-record2 mdi mdi-close-circle" style="font-size: 40px"></a></td>
 							</tr>
-							
-							
-						
+					</table>				
+				<a class="mdi mdi-plus-circle-outline add-record2"  style="margin-left: 100px;font-size :40px;color:#6495ED" ></a>	 
+		  </div>
+		  
+		  
+		  <div style="clear: both;margin-left: 0px;margin-top: 10px;margin-bottom:400px "  >
+			 	<form>
+					<table   style="width: 610px;">
+							<tr >
+								<th  style="font-weight: normal;width:330px" >Phụ cấp</th>
+								<th  style="font-weight: normal;" >Số tiền</th>
+							</tr>
+							<tbody id="tbl_posts_body3" style="margin-left: 0px;padding: 0px;">
+	         
+	        				</tbody>
 					</table>
-				
-				<i class="mdi mdi-plus-circle-outline add-record"  style="margin-left: 100px;font-size :40px;color:#6495ED" ></i>
+				</form>
+
+				<table id="sample_table3" >
+							<tr>
+								<td>
+									<select class="form-control" style="width: 330px">
+											<option selected="">Chọn phụ cấp</option>
+											<option>chuyển khoản</option>
+											<option>tiền mặt</option>
+									</select>
+								</td>
+								
+								<td style="margin-left: 20px">
+									<input type=number class="form-control is-valid" style="width:265px;margin-left: 5px" placeholder="Số tiền">
+								</td>
+								
+								<td><a class="delete-record3 mdi mdi-close-circle" style="font-size: 40px"></a></td>
+							</tr>
+					</table>				
+				<a class="mdi mdi-plus-circle-outline add-record3"  style="margin-left: 100px;font-size :40px;color:#6495ED;" ></a>	 
+		  </div>
+		  
+		  
+		  
+		  
 		 
-		  </div>
-		  
-		  
-		  
-		  <div style="clear: both;margin-left: 50px;">
-			  <div id="row2">
-			  		<label for="validationServer013">Phụ cấp</label>
-					<select class="form-control" style="width: 365px">
-						<option selected="">Phụ cấp </option>
-						<option>1 triệu</option>
-						<option>2 triệu</option>
-					</select>
-			  </div>
-			  
-			  <div id="row2">
-			  	  <label for="validationServer013">Số tiền</label>
-			      <input type="number" class="form-control is-valid" style="width: 200px" placeholder="Số tiền">
-			  </div>
-			  <div id="row2">
-		 	 <i class="mdi mdi-close"></i>
-		  </div>
-		  </div>
-		  <i class="mdi mdi-plus-circle-outline"  style="margin-left: 50px;font-size :40px;color:#6495ED"></i>
 	  </div>
 	</nav>
 	
@@ -346,48 +349,97 @@
 			var panel = this.nextElementSibling;
 			if (panel.style.maxHeight) {
 				panel.style.maxHeight = null;
+				document.getElementById("more").className = "mdi mdi-arrow-right-bold-circle"; 
+				
 			} else {
 				panel.style.maxHeight = panel.scrollHeight + "px";
+				document.getElementById("more").className = "mdi mdi-arrow-down-bold-circle"; 
+				
+			}
+			
+		});
+	}
+	
+	var acc = document.getElementsByClassName("accordion1");
+	var i;
+	for (i = 0; i < acc.length; i++) {
+		acc[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			
+			if (panel.style.maxHeight) {
+				panel.style.maxHeight = null;
+				document.getElementById("more1").className = "mdi mdi-arrow-right-bold-circle"; 
+				
+			} else {
+				panel.style.maxHeight = panel.scrollHeight + "px";
+				document.getElementById("more1").className = "mdi mdi-arrow-down-bold-circle"; 
+				
 			}
 		});
 	}
 	
 	
-	jQuery(document).delegate('a.add-record', 'click', function(e) {
+	jQuery(document).delegate('a.add-record2', 'click', function(e) {
 	     e.preventDefault();    
-	     var content = jQuery('#sample_table tr'),
-	     size = jQuery('#tbl_posts >tbody >tr').length + 1,
+	     var content = jQuery('#sample_table2 tr'),
+	     size = jQuery('#tbl_posts2 >tbody >tr').length + 1,
 	     element = null,    
 	     element = content.clone();
-	     element.attr('id', 'rec-'+size);
-	     element.find('.delete-record').attr('data-id', size);
-	     element.appendTo('#tbl_posts_body');
+	     element.attr('id', 'rec2-'+size);
+	     element.find('.delete-record2').attr('data-id', size);
+	     element.appendTo('#tbl_posts_body2');
 	     element.find('.sn').html(size);
 	   });
 
 
 
 
-	jQuery(document).delegate('a.delete-record', 'click', function(e) {
+	jQuery(document).delegate('a.delete-record2', 'click', function(e) {
 	     e.preventDefault();    
-	     var didConfirm = confirm("Are you sure You want to delete");
-	     if (didConfirm == true) {
+	    
 	      var id = jQuery(this).attr('data-id');
 	      var targetDiv = jQuery(this).attr('targetDiv');
-	      jQuery('#rec-' + id).remove();
+	      jQuery('#rec2-' + id).remove();
 	      
 	    //regnerate index number on table
-	    $('#tbl_posts_body tr').each(function(index) {
+	    $('#tbl_posts_body2 tr').each(function(index) {
 	      //alert(index);
 	      $(this).find('span.sn').html(index+1);
 	    });
 	    return true;
-	  } else {
-	    return false;
-	  }
+	  
+	});
+	
+	jQuery(document).delegate('a.add-record3', 'click', function(e) {
+	     e.preventDefault();    
+	     var content = jQuery('#sample_table3 tr'),
+	     size = jQuery('#tbl_posts3 >tbody >tr').length + 1,
+	     element = null,    
+	     element = content.clone();
+	     element.attr('id', 'rec3-'+size);
+	     element.find('.delete-record3').attr('data-id', size);
+	     element.appendTo('#tbl_posts_body3');
+	     element.find('.sn').html(size);
+	   });
+
+
+
+
+	jQuery(document).delegate('a.delete-record3', 'click', function(e) {
+	     e.preventDefault();    
+	    
+	      var id = jQuery(this).attr('data-id');
+	      var targetDiv = jQuery(this).attr('targetDiv');
+	      jQuery('#rec3-' + id).remove();
+	      
+	    //regnerate index number on table
+	    $('#tbl_posts_body3 tr').each(function(index) {
+	      //alert(index);
+	      $(this).find('span.sn').html(index+1);
+	    });
+	    return true;
+	 
 	});
 	
 </script>
-
-
-

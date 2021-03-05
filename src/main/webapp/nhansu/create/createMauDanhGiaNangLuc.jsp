@@ -47,7 +47,7 @@
 	}
     tbody {
         display:block;
-        height:78vh;
+       
         overflow:auto;
     }
     /* Hide scrollbar for Chrome, Safari and Opera */
@@ -62,7 +62,7 @@
     }
     thead, tbody tr {
         display:table;
-        width:100%;
+       
         table-layout:fixed;
     }
     tr .active {
@@ -103,13 +103,24 @@
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
 }
+.accordion1{
+	cursor: pointer;
+	width: 100%;
+	transition: 0.4s;
+}
+
+.panel1 {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
 </style>
 
 <div id="tong">
 		
-	<div  style="margin-top: 20px;margin-left: 20px;" class="accordion">
-		<i class="mdi mdi-chevron-down" style="display: inline;border:none;" ></i>
-		<p style="display: inline;color:#6495ED;font-weight: bold;font-size: 20px" >Thông tin chung</p>
+	<div  style="margin-top: 20px;margin-left: 15px;" class="accordion">
+		<!-- <i class="mdi mdi-chevron-down" style="display: inline;border:none;" ></i> -->
+		<p class="mdi mdi-arrow-right-bold-circle" id="more" style="display: inline;color:#6495ED;font-weight: bold;font-size: 20px" >Thông tin chung</p>
 		<hr style="width: 610px">
 	</div>
 				
@@ -148,52 +159,66 @@
 	<!-- Năng lực đánh giá -->
 	<nav class=" navbar-expand-lg navbar-light bg-light" style=" padding-top:30px;padding-bottom: 0px;margin-top: 0px;width: 1190px">
 	 	<div class="container-fluid " >   
-			<div  class="collapse navbar-collapse accordion" id="navbarSupportedContent">
+			<div  class="collapse navbar-collapse accordion1" id="navbarSupportedContent">
 				<div>
-					<i class="mdi mdi-chevron-down"
-						style="display: inline; border: none;"></i>
-					<h5 style="display: inline; color: #6495ED;font-weight: bold;font-size: 20px">Năng lực đánh giá</h5>
+					<!-- <i class="mdi mdi-chevron-down"
+						style="display: inline; border: none;"></i> -->
+					<h5 class="mdi mdi-arrow-right-bold-circle" id="more1" style="display: inline; color: #6495ED;font-weight: bold;font-size: 20px">Năng lực đánh giá</h5>
 					<hr style="width: 610px">
 				</div>
 			</div>
 			
-			<div class="panel">
-				<div id="row5">
-					<label for="validationServer013">Tiêu chí năng lực </label> <select
-						class="form-control" style="width: 250px">
-						<option selected="">Chọn tiêu chí</option>
-						<option>tốt</option>
-						<option>ổn</option>
-
-					</select>
-				</div>
-
+			<div class="panel1">
+				<div style="clear: both;margin-left: 0px;margin-top: 10px;margin-bottom:400px "  >
+				 	<form>
+						<table   style="width: 1190px;">
+								<tr >
+									<th  style="font-weight: normal;width:240px" >Tiêu chí năng lực</th>
+									<th  style="font-weight: normal;width: 240px" >Mức độ thành thạo yêu cầu<i class="mdi mdi-help-circle-outline"></i></th>
+									<th  style="font-weight: normal;width:190px" >Mức độ quang trọng *</th>
+									</tr>
+								<tbody id="tbl_posts_body7" style="margin-left: 0px;padding: 0px;">
+		         
+		        				</tbody>
+						</table>
+					</form>
+	
+					<table id="sample_table7" >
+								<tr>
+									<td>
+										<select class="form-control" style="width: 240px">
+											<option selected="">Chọn tiêu chí</option>
+											<option>tốt</option>
+											<option>ổn</option>
+					
+										</select>
+									</td>
+									
+									<td style="margin-left: 10px">
+										<select
+											class="form-control" style="width: 240px">
+											<option selected="">Từ 1 đến 5</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+											
+					
+										</select>
+									</td>
+									
+									<td style="margin-left: 10px">
+										 <input type="text" class="form-control is-valid" style="width: 190px">
+									</td>
+									
+									<td><a class="delete-record7 mdi mdi-close-circle" style="font-size: 30px"></a></td>
+								</tr>
+						</table>				
+					<a class="mdi mdi-plus-circle-outline add-record7"  style="margin-left: 100px;font-size :40px;color:#6495ED;" ></a>	 
+			  </div>
 			
-
-			<div id="row5">
-					<label for="validationServer013">Mức độ thành thạo yêu cầu<i class="mdi mdi-help-circle-outline"></i> </label> <select
-						class="form-control" style="width: 250px">
-						<option selected="">Từ 1 đến 5</option>
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5</option>
-						
-
-					</select>
-				</div>
-
-				<div id="row5">
-					<label for="validationServer013">Mức độ quang trọng *</label> <input
-						type="text" class="form-control is-valid" style="width: 200px">
-				</div>
-
-				<div id="row5">
-					<i class="mdi mdi-close"></i>
-				</div>
-				<br>
-				<i class="mdi mdi-plus-circle-outline"  style="margin-left: 10px;font-size :40px;color:#6495ED"></i>
+			
 			</div>
 		</div>
 	</nav>
@@ -204,18 +229,71 @@
 </div>
 
 <script>
-	var acc = document.getElementsByClassName("accordion");
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+	acc[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var panel = this.nextElementSibling;
+		if (panel.style.maxHeight) {
+			panel.style.maxHeight = null;
+			document.getElementById("more").className = "mdi mdi-arrow-right-bold-circle"; 
+			
+		} else {
+			panel.style.maxHeight = panel.scrollHeight + "px";
+			document.getElementById("more").className = "mdi mdi-arrow-down-bold-circle"; 
+			
+		}
+	});
+}
+	
+	var acc = document.getElementsByClassName("accordion1");
 	var i;
 	for (i = 0; i < acc.length; i++) {
 		acc[i].addEventListener("click", function() {
 			this.classList.toggle("active");
 			var panel = this.nextElementSibling;
+			
 			if (panel.style.maxHeight) {
 				panel.style.maxHeight = null;
+				document.getElementById("more1").className = "mdi mdi-arrow-right-bold-circle"; 
+				
 			} else {
 				panel.style.maxHeight = panel.scrollHeight + "px";
+				document.getElementById("more1").className = "mdi mdi-arrow-down-bold-circle"; 
+				
 			}
 		});
 	}
+	
+	jQuery(document).delegate('a.add-record7', 'click', function(e) {
+	    e.preventDefault();    
+	    var content = jQuery('#sample_table7 tr'),
+	    size = jQuery('#tbl_posts7 >tbody >tr').length + 1,
+	    element = null,    
+	    element = content.clone();
+	    element.attr('id', 'rec7-'+size);
+	    element.find('.delete-record7').attr('data-id', size);
+	    element.appendTo('#tbl_posts_body7');
+	    element.find('.sn').html(size);
+	  });
+
+
+	jQuery(document).delegate('a.delete-record7', 'click', function(e) {
+	    e.preventDefault();    
+	   
+	     var id = jQuery(this).attr('data-id');
+	     var targetDiv = jQuery(this).attr('targetDiv');
+	     jQuery('#rec7-' + id).remove();
+	     
+	   //regnerate index number on table
+	   $('#tbl_posts_body7 tr').each(function(index) {
+	     //alert(index);
+	     $(this).find('span.sn').html(index+1);
+	   });
+	   return true;
+	 
+	 
+	});
 </script>
 
