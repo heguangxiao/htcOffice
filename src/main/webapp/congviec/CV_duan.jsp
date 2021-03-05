@@ -103,10 +103,10 @@
                 </li>
                 
                 <li class="nav-item" style="margin-left: 10px">
-                	<div data-toggle="dropdown">
+                	<a href="<c:url value='/congviec/grid'/>">
 						<i class="mdi mdi-apps-box"></i>
 						<p style="font-size: 12px; margin-bottom: 0px">Xem gird</p>
-					</div>
+					</a>
                 </li>
                 
                 <li class="nav-item" style="margin-left: 10px">
