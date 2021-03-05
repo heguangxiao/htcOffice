@@ -103,7 +103,81 @@
                      	<i class="mdi mdi-comment-multiple-outline"></i>0
                      	<i class="mdi mdi-pin"></i>0
                      </p>
-                     <p class="mb-0">22/02/2021</p>
+                     <p class="mb-0">22-02-2021</p>
+                 </div>
+                    
+				<div class="d-flex pt-3" style="text-align: center;">
+					<label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
+					<label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
+					<label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
+					<label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="col-sm-6 col-xl-4 stretch-card grid-margin" style="margin-top: 5px">
+		<div class="card">
+			<div class="card-body">
+				<h5 class="mb-3">Omis</h5>
+				<div class="card-title mb-2">
+					<div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+				</div>
+				<div class="card card-stat stretch-card mb-3">
+					<div class="d-flex justify-content-between">
+						<div class="text-white">
+							<div class="doughnut-wrapper w-70">
+								<canvas id="doughnutChart1"></canvas>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="d-flex justify-content-between font-weight-semibold">
+                     <p class="mb-0">
+                     	<i class="mdi mdi-comment-multiple-outline"></i>0
+                     	<i class="mdi mdi-pin"></i>0
+                     </p>
+                     <p class="mb-0">22-02-2021</p>
+                 </div>
+                    
+				<div class="d-flex pt-3" style="text-align: center;">
+					<label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
+					<label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
+					<label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
+					<label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="col-sm-6 col-xl-4 stretch-card grid-margin" style="margin-top: 5px">
+		<div class="card">
+			<div class="card-body">
+				<h5 class="mb-3">Omis</h5>
+				<div class="card-title mb-2">
+					<div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+				</div>
+				<div class="card card-stat stretch-card mb-3">
+					<div class="d-flex justify-content-between">
+						<div class="text-white">
+							<div class="doughnut-wrapper w-70">
+								<canvas id="doughnutChart3"></canvas>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="d-flex justify-content-between font-weight-semibold">
+                     <p class="mb-0">
+                     	<i class="mdi mdi-comment-multiple-outline"></i>0
+                     	<i class="mdi mdi-pin"></i>0
+                     </p>
+                     <p class="mb-0">22-02-2021</p>
                  </div>
                     
 				<div class="d-flex pt-3" style="text-align: center;">
@@ -140,81 +214,7 @@
                      	<i class="mdi mdi-comment-multiple-outline"></i>0
                      	<i class="mdi mdi-pin"></i>0
                      </p>
-                     <p class="mb-0">22/02/2021</p>
-                 </div>
-                    
-				<div class="d-flex pt-3" style="text-align: center;">
-					<label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
-					<label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
-					<label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
-					<label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="col-sm-6 col-xl-4 stretch-card grid-margin" style="margin-top: 5px">
-		<div class="card">
-			<div class="card-body">
-				<h5 class="mb-3">Omis</h5>
-				<div class="card-title mb-2">
-					<div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-				</div>
-				<div class="card card-stat stretch-card mb-3">
-					<div class="d-flex justify-content-between">
-						<div class="text-white">
-							<div class="doughnut-wrapper w-70">
-								<canvas id="doughnutChart2"></canvas>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<div class="d-flex justify-content-between font-weight-semibold">
-                     <p class="mb-0">
-                     	<i class="mdi mdi-comment-multiple-outline"></i>0
-                     	<i class="mdi mdi-pin"></i>0
-                     </p>
-                     <p class="mb-0">22/02/2021</p>
-                 </div>
-                    
-				<div class="d-flex pt-3" style="text-align: center;">
-					<label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
-					<label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
-					<label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
-					<label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="col-sm-6 col-xl-4 stretch-card grid-margin" style="margin-top: 5px">
-		<div class="card">
-			<div class="card-body">
-				<h5 class="mb-3">Omis</h5>
-				<div class="card-title mb-2">
-					<div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-				</div>
-				<div class="card card-stat stretch-card mb-3">
-					<div class="d-flex justify-content-between">
-						<div class="text-white">
-							<div class="doughnut-wrapper w-70">
-								<canvas id="doughnutChart2"></canvas>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<div class="d-flex justify-content-between font-weight-semibold">
-                     <p class="mb-0">
-                     	<i class="mdi mdi-comment-multiple-outline"></i>0
-                     	<i class="mdi mdi-pin"></i>0
-                     </p>
-                     <p class="mb-0">22/02/2021</p>
+                     <p class="mb-0">22-02-2021</p>
                  </div>
                     
 				<div class="d-flex pt-3" style="text-align: center;">
