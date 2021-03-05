@@ -124,7 +124,7 @@
             <tr>
             
                 <td>
-                	<div class="d-flex border-bottom border-top py-3">
+                	<div class="d-flex  py-3" style="border: thick double #32a1ce;;margin-top: 5px;cursor: pointer;">
                      <div class="form-check">
                          <label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
                      </div>
@@ -134,7 +134,7 @@
                      </div>
                  	</div>
                  	
-                 	<div class="d-flex border-bottom border-top py-3">
+                 	<div class="d-flex  py-3" style="border: thick double #32a1ce;;margin-top: 5px;cursor: pointer;">
                      <div class="form-check">
                          <label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
                      </div>
@@ -144,7 +144,7 @@
                      </div>
                  	</div>
                  	
-                 	<div class="d-flex border-bottom border-top py-3">
+                 	<div class="d-flex  py-3" style="border: thick double #32a1ce;;margin-top: 5px;cursor: pointer;">
                      <div class="form-check">
                          <label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
                      </div>
@@ -154,7 +154,7 @@
                      </div>
                  	</div>
                  	
-                 	<div class="d-flex border-bottom border-top py-3">
+                 	<div class="d-flex  py-3" style="border: thick double #32a1ce;;margin-top: 5px;cursor: pointer;">
                      <div class="form-check">
                          <label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
                      </div>
@@ -166,7 +166,7 @@
                 </td>
                 
                 <td>
-                	<div class="d-flex border-bottom border-top py-3">
+                	<div class="d-flex  py-3" style="border: thick double #32a1ce;;margin-top: 5px;cursor: pointer;">
                      <div class="form-check">
                          <label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
                      </div>
@@ -176,7 +176,7 @@
                      </div>
                  	</div>
                  	
-                 	<div class="d-flex border-bottom border-top py-3">
+                 	<div class="d-flex  py-3" style="border: thick double #32a1ce;;margin-top: 5px;cursor: pointer;">
                      <div class="form-check">
                          <label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
                      </div>
@@ -188,19 +188,7 @@
                 </td>
                 
                 <td>
-                	<div class="d-flex border-bottom border-top py-3">
-                     <div class="form-check">
-                         <label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
-                     </div>
-                     <div class="pl-2" style="font-size: 10px">
-                         <span class="font-12 text-muted">thiết kế giao diện</span>
-                         <p> 08:30-17:30 </p>
-                     </div>
-                 	</div>
-                </td>
-                
-                <td>
-                	<div class="d-flex border-bottom border-top py-3">
+                	<div class="d-flex  py-3" style="border: thick double #32a1ce;;margin-top: 5px;cursor: pointer;">
                      <div class="form-check">
                          <label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
                      </div>
@@ -210,7 +198,10 @@
                      </div>
                  	</div>
                  	
-                 	<div class="d-flex border-bottom border-top py-3">
+                </td>
+                
+                <td>
+                	<div class="d-flex  py-3" style="border: thick double #32a1ce;;margin-top: 5px;cursor: pointer;">
                      <div class="form-check">
                          <label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
                      </div>
@@ -220,7 +211,29 @@
                      </div>
                  	</div>
                  	
-                 	<div class="d-flex border-bottom border-top py-3">
+                 	<div class="d-flex  py-3" style="border: thick double #32a1ce;;margin-top: 5px;cursor: pointer;">
+                     <div class="form-check">
+                         <label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
+                     </div>
+                     <div class="pl-2" style="font-size: 10px">
+                         <span class="font-12 text-muted">thiết kế giao diện</span>
+                         <p> 08:30-17:30 </p>
+                     </div>
+                 	</div>
+                 	<div class="d-flex  py-3" style="border: thick double #32a1ce;;margin-top: 5px;cursor: pointer;">
+                     <div class="form-check">
+                         <label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
+                     </div>
+                     <div class="pl-2" style="font-size: 10px">
+                         <span class="font-12 text-muted">thiết kế giao diện</span>
+                         <p> 08:30-17:30 </p>
+                     </div>
+                 	</div>
+                 	
+                </td>
+                
+                <td>
+                	<div class="d-flex  py-3" style="border: thick double #32a1ce;;margin-top: 5px;cursor: pointer;">
                      <div class="form-check">
                          <label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
                      </div>
@@ -232,31 +245,11 @@
                 </td>
                 
                 <td>
-                	<div class="d-flex border-bottom border-top py-3">
-                     <div class="form-check">
-                         <label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
-                     </div>
-                     <div class="pl-2" style="font-size: 10px">
-                         <span class="font-12 text-muted">thiết kế giao diện</span>
-                         <p> 08:30-17:30 </p>
-                     </div>
-                 	</div>
+                	
                 </td>
                 
                 <td>
-                	<div class="d-flex border-bottom border-top py-3">
-                     <div class="form-check">
-                         <label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
-                     </div>
-                     <div class="pl-2" style="font-size: 10px">
-                         <span class="font-12 text-muted">thiết kế giao diện</span>
-                         <p> 08:30-17:30 </p>
-                     </div>
-                 	</div>
-                </td>
-                
-                <td>
-                	<div class="d-flex border-bottom border-top py-3">
+                	<div class="d-flex  py-3" style="border: thick double #32a1ce;;margin-top: 5px;cursor: pointer;">
                      <div class="form-check">
                          <label class="form-check-label"><img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" /></label>
                      </div>
