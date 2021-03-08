@@ -32,7 +32,7 @@
             </div>
         </li>
     </ul>
-    <form class="form-inline mr-4" action="#">
+    <form class="form-inline mr-4" action="#" id="fsearch">
         <div class="input-group right">
             <div class="input-group-prepend">
                 <span class="input-group-text">
