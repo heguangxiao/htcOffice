@@ -34,8 +34,9 @@ public class DonTuController extends AbstractBackEnConst {
     DonTuService donTuService;
 
     @GetMapping({"/", ""})
-    public String home(ModelMap modelMap) {
+    public String home(ModelMap modelMap, HttpServletRequest request) {
         modelMap.put("title", "Đơn từ");
+        modelMap.put("fullname", accountService.getAccountLogin(request).getFullname());
         return "donTu";
     }
 
@@ -47,12 +48,22 @@ public class DonTuController extends AbstractBackEnConst {
     @RequestMapping("/rest/data")
     @Override
     public ResponseEntity getData(HttpServletRequest request) {
+        int accIdLogin = accountService.getAccountLogin(request).getId();
         int maxRow = HttpUtil.getInt(request, "maxRow", 20);
         int crPage = HttpUtil.getInt(request, "crPage", 1);
-        int status = HttpUtil.getInt(request, "status");
-
-        List<DonTu> listData = donTuService.view(crPage, maxRow, status);
-        int totalRow = donTuService.count(status);
+        int status = HttpUtil.getInt(request, "status", -1);
+        int createdBy = HttpUtil.getInt(request, "createdBy", -1);
+        if (createdBy == 1) {
+            createdBy = accIdLogin;
+        }
+        int browsedBy = HttpUtil.getInt(request, "browsedBy", -1);
+        if (browsedBy == 1) {
+            browsedBy = accIdLogin;
+        }
+        String search = HttpUtil.getString(request, "search", "");
+        int donTuType = HttpUtil.getInt(request, "donTuType", -1);
+        List<DonTu> listData = donTuService.view(crPage, maxRow, status, createdBy, browsedBy, search, accIdLogin, donTuType);
+        int totalRow = donTuService.count(status, createdBy, browsedBy, search, accIdLogin, donTuType);
 
         AngularModel<DonTu> ngModel = new AngularModel<>();
         ngModel.setDatas((ArrayList<DonTu>) listData);
@@ -77,11 +88,6 @@ public class DonTuController extends AbstractBackEnConst {
     }
 
     @Override
-    public String editView(ModelMap model, HttpServletRequest request, RedirectAttributes redrAtt) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
     public String editProcess(ModelMap model, HttpServletRequest request, RedirectAttributes redrAtt) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
@@ -90,4 +96,25 @@ public class DonTuController extends AbstractBackEnConst {
     public ResponseEntity delete(HttpServletRequest request) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+    @Override
+    public String editView(ModelMap model, HttpServletRequest request, RedirectAttributes redrAtt) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    @RequestMapping("/detail")
+    public ResponseEntity detail(HttpServletRequest request) {
+        int id = HttpUtil.getInt(request, "donTuId", -1);
+        DonTu donTu = donTuService.findById(id);
+        AngularModel<DonTu> ngModel = new AngularModel<>();
+        ngModel.setData(donTu);
+
+        if (donTu == null) {
+            ngModel.setResult(new ResponResult(RESULT.FAIL, "Đơn từ detail trống"));
+        } else {
+            ngModel.setResult(new ResponResult(RESULT.SUCCESS, ""));
+        }
+        return new ResponseEntity<>(ngModel, HttpStatus.OK);
+    }
+
 }

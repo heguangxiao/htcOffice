@@ -26,7 +26,7 @@ public class AccountRepositoryImpl implements AccountRepository {
     @PostConstruct
     public void init() {
         for (int i = 0; i < 10; i++) {
-            Account acc = new Account(++i, "username" + i, Md5.encryptMD5("password" + i), "email" + i, 1);
+            Account acc = new Account(i + 1, "username" + i, Md5.encryptMD5("password" + i), "email" + i, 1, i + 1 + "", "full name " + (i + 1));
             listGia.add(acc);
         }
     }

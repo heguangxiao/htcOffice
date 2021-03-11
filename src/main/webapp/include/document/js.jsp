@@ -12,4 +12,10 @@
             $(this).addClass('active');
         });
     });
+    $("div.spin").mouseenter(function () {
+        $(this).addClass("change").delay(1600).queue(function () {
+            $(this).removeClass("change").dequeue();
+        });
+
+    });
 </script>

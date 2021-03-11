@@ -33,7 +33,10 @@ public class AuthenticationFillter implements Filter {
     String GUI_SessionExpire_URI = "/sessionExpire";
     String[] SPECIAL_PATH = {GUILoginURI, GUI_SessionExpire_URI,
         "/css", "/fonts", "/images", "/js", "/scss", "/vendors",
-        "/resources/bootstrap", "/resources/jquery", "/resources/popper", "/resources/css", "/resources/js", "/resources/angularjs", "/resources/controller"};
+        "/resources/bootstrap", "/resources/jquery", "/resources/popper",
+        "/resources/css", "/resources/js", "/resources/angularjs", "/resources/controller",
+        "/resources/angular-ui-bootstrap", "/resources/jquery-ui", "/resources/ckeditor",
+        "/resources/ckeditor/lang"};
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
@@ -54,6 +57,18 @@ public class AuthenticationFillter implements Filter {
             boolean loggedIn = session != null && session.getAttribute(MyConfig.USER_SESSION_NAME) != null;
             if (loggedIn || isSpecialPath(req)) {
                 chain.doFilter(req, resp);
+            } else {
+                String path = req.getRequestURI();
+                if (path.endsWith("jsp")) {
+                    resp.sendRedirect(GUILoginURI);
+                    return;
+                }
+                if (path.contains("/rest/")) {
+                    resp.sendRedirect(GUI_SessionExpire_URI);
+                    Tool.out("--> Session Exprie...");
+                } else {
+                    resp.sendRedirect(GUILoginURI);
+                }
             }
         } catch (IOException | ServletException ex) {
             chain.doFilter(req, resp);

@@ -13,7 +13,8 @@ import vn.htc.office.model.DonTu;
  * @author HTC-PC
  */
 public interface DonTuService extends BaseService<DonTu> {
-    List<DonTu> view(int crPage, int maxRow, int status);
-    List<DonTu> view(int status);
-    int count(int status);
+    List<DonTu> findAll(int accIdLogin);
+    List<DonTu> view(int crPage, int maxRow, int status, int createdBy, int browsedBy, String search, int accIdLogin, int donTuType);
+    List<DonTu> view(int status, int createdBy, int browsedBy, String search, int accIdLogin, int donTuType);
+    int count(int status, int createdBy, int browsedBy, String search, int accIdLogin, int donTuType);
 }

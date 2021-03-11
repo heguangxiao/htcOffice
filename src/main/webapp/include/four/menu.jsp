@@ -77,6 +77,7 @@
                             <span><b>HRM</b></span>
                             <a href="<c:url value='/DangLamViec'/>">Nhân sự</a>
                             <a href="<c:url value='/evaluation-kpi-kpi'/>">KPI</a>
+                            <a href="<c:url value='/timekeep'/>">Chấm công</a>
                         </div>
                     </div>
                 </div>

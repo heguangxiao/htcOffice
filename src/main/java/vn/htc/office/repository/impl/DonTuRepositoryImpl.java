@@ -5,6 +5,7 @@
  */
 package vn.htc.office.repository.impl;
 
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
@@ -27,9 +28,29 @@ public class DonTuRepositoryImpl implements DonTuRepository {
 
     @PostConstruct
     public void init() {
-        for (int i = 1; i < 10; i++) {
-            DonTu donTu = new DonTu(i, i, 1, i, DateProc.createTimestamp(), DateProc.createTimestamp(), 1, 1, DateProc.createTimestamp());
-            CACHE.put(i, donTu);
+        for (int i = 1; i <= 10; i++) {
+            List<Integer> browsedBy = new ArrayList<>();
+            browsedBy.add(i);
+            List<Timestamp> browsedAt = new ArrayList<>();
+            browsedAt.add(DateProc.createTimestamp());
+            DonTu donTu = new DonTu(i, i, 1, 1, DateProc.createTimestamp(), DateProc.createTimestamp(), 1, 1, DateProc.createTimestamp(), browsedBy, browsedAt);
+            CACHE.put(donTu.getId(), donTu);
+        }
+        for (int i = 11; i <= 20; i++) {
+            List<Integer> browsedBy = new ArrayList<>();
+            browsedBy.add(i);
+            List<Timestamp> browsedAt = new ArrayList<>();
+            browsedAt.add(DateProc.createTimestamp());
+            DonTu donTu = new DonTu(i, 1, 1, 2, DateProc.createTimestamp(), DateProc.createTimestamp(), 1, 1, DateProc.createTimestamp(), browsedBy, browsedAt);
+            CACHE.put(donTu.getId(), donTu);
+        }
+        for (int i = 21; i <= 40; i++) {
+            List<Integer> browsedBy = new ArrayList<>();
+            browsedBy.add(i);
+            List<Timestamp> browsedAt = new ArrayList<>();
+            browsedAt.add(DateProc.createTimestamp());
+            DonTu donTu = new DonTu(i, 1, 1, 3, DateProc.createTimestamp(), DateProc.createTimestamp(), 1, 1, DateProc.createTimestamp(), browsedBy, browsedAt);
+            CACHE.put(donTu.getId(), donTu);
         }
     }
 

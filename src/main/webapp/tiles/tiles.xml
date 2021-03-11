@@ -213,6 +213,7 @@
     
     
     
+    <!--<Phần cấu hình của document>-->
     <definition name="document-theme-user" template="/layout/document-layout.jsp">
         <put-attribute name="head" value="/include/document/head.jsp" />
         <put-attribute name="left" value="/include/document/left.jsp" />
@@ -249,6 +250,10 @@
     <definition name="document_share" extends="document-theme-share">
         <put-attribute name="body" value="/document/document_share.jsp" />
     </definition>
+    <!--<Phần cấu hình của document>-->
+     
+    <!--<Menu kpi do tùng làm>-->
+
     <definition name="evaluation-theme" template="/layout/evaluation-layout.jsp">
         <put-attribute name="head" value="/include/evaluation/head.jsp" />
         <put-attribute name="left" value="/include/evaluation/left.jsp" />
@@ -257,19 +262,125 @@
         <put-attribute name="footer" value="" />
         <put-attribute name="js" value="/include/evaluation/js.jsp" />
     </definition>
-    <definition name="evaluation-kpi-kpi" extends="evaluation-theme">
+    <definition name="evaluation-theme-evaluation-kpi-kpi" template="/layout/evaluation-layout.jsp">
+        <put-attribute name="head" value="/include/evaluation/head.jsp" />
+        <put-attribute name="left" value="/include/evaluation/left.jsp" />
+        <put-attribute name="menu" value="/include/evaluation/menu_evaluation_kpi_kpi.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="" />
+        <put-attribute name="js" value="/include/evaluation/js.jsp" />
+    </definition>
+    <definition name="evaluation-theme-evaluation-kpi-template" template="/layout/evaluation-layout.jsp">
+        <put-attribute name="head" value="/include/evaluation/head.jsp" />
+        <put-attribute name="left" value="/include/evaluation/left.jsp" />
+        <put-attribute name="menu" value="/include/evaluation/menu_evaluation_kpi_template.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="" />
+        <put-attribute name="js" value="/include/evaluation/js.jsp" />
+    </definition>
+    <definition name="evaluation-theme-menu-report-evaluation" template="/layout/evaluation-layout.jsp">
+        <put-attribute name="head" value="/include/evaluation/head.jsp" />
+        <put-attribute name="left" value="/include/evaluation/left.jsp" />
+        <put-attribute name="menu" value="/include/evaluation/menu_report_evaluation.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="" />
+        <put-attribute name="js" value="/include/evaluation/js.jsp" />
+    </definition>
+    <definition name="evaluation-theme-report-evaluation-history" template="/layout/evaluation-layout.jsp">
+        <put-attribute name="head" value="/include/evaluation/head.jsp" />
+        <put-attribute name="left" value="/include/evaluation/left.jsp" />
+        <put-attribute name="menu" value="/include/evaluation/menu_report_evaluation_history.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="" />
+        <put-attribute name="js" value="/include/evaluation/js.jsp" />
+    </definition>
+    <definition name="evaluation-kpi-kpi" extends="evaluation-theme-evaluation-kpi-kpi">
         <put-attribute name="body" value="/evaluation/evaluation_kpi_kpi.jsp" />
     </definition>
-    <definition name="evaluation-kpi-template" extends="evaluation-theme">
+    <definition name="evaluation-kpi-template" extends="evaluation-theme-evaluation-kpi-template">
         <put-attribute name="body" value="/evaluation/evaluation_kpi_template.jsp" />
     </definition>
-    <definition name="report_evaluation" extends="evaluation-theme">
+    <definition name="report_evaluation" extends="evaluation-theme-menu-report-evaluation">
         <put-attribute name="body" value="/evaluation/report_evaluation.jsp" />
     </definition>
-    <definition name="evaluation_share" extends="evaluation-theme">
-        <put-attribute name="body" value="/evaluation/evaluation_share.jsp" />
+    <definition name="report_evaluation_history" extends="evaluation-theme-report-evaluation-history">
+        <put-attribute name="body" value="/evaluation/report_evaluation_history.jsp" />
     </definition>
+    <!--<End Menu kpi do tùng làm>-->
     
+    
+    <!--    <Phần cấu hình của timekeep>-->    
+    <definition name="timekeep-theme" template="/layout/timekeep-layout.jsp">
+        <put-attribute name="head" value="/include/timekeep/head.jsp" />
+        <put-attribute name="left" value="/include/timekeep/left.jsp" />
+        <put-attribute name="menu" value="/include/timekeep/menu_timekeep.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="" />
+        <put-attribute name="js" value="/include/timekeep/js.jsp" />
+    </definition>
+    <definition name="timekeep-attendance-shiftregister-theme" template="/layout/timekeep-layout.jsp">
+        <put-attribute name="head" value="/include/timekeep/head.jsp" />
+        <put-attribute name="left" value="/include/timekeep/left.jsp" />
+        <put-attribute name="menu" value="/include/timekeep/menu_timekeep_attendance_shiftregister.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="" />
+        <put-attribute name="js" value="/include/timekeep/js.jsp" />
+    </definition>
+    <definition name="timekeep-attendance-month-theme" template="/layout/timekeep-layout.jsp">
+        <put-attribute name="head" value="/include/timekeep/head.jsp" />
+        <put-attribute name="left" value="/include/timekeep/left.jsp" />
+        <put-attribute name="menu" value="/include/timekeep/menu_timekeep_attendance_month.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="" />
+        <put-attribute name="js" value="/include/timekeep/js.jsp" />
+    </definition>
+    <definition name="timekeep-attendance-assign-theme" template="/layout/timekeep-layout.jsp">
+        <put-attribute name="head" value="/include/timekeep/head.jsp" />
+        <put-attribute name="left" value="/include/timekeep/left.jsp" />
+        <put-attribute name="menu" value="/include/timekeep/menu_timekeep_attendance_assign.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="" />
+        <put-attribute name="js" value="/include/timekeep/js.jsp" />
+    </definition>
+    <definition name="timekeep-attendance-meal-theme" template="/layout/timekeep-layout.jsp">
+        <put-attribute name="head" value="/include/timekeep/head.jsp" />
+        <put-attribute name="left" value="/include/timekeep/left.jsp" />
+        <put-attribute name="menu" value="/include/timekeep/menu_timekeep_attendance_meal.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="" />
+        <put-attribute name="js" value="/include/timekeep/js.jsp" />
+    </definition>
+    <definition name="timekeep-attendance-dayoff-theme" template="/layout/timekeep-layout.jsp">
+        <put-attribute name="head" value="/include/timekeep/head.jsp" />
+        <put-attribute name="left" value="/include/timekeep/left.jsp" />
+        <put-attribute name="menu" value="/include/timekeep/menu_createdayoff.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="" />
+        <put-attribute name="js" value="/include/timekeep/js.jsp" />
+    </definition>
+    <definition name="timekeep" extends="timekeep-theme">
+        <put-attribute name="body" value="/timekeep/timekeep.jsp" />
+    </definition>
+    <definition name="timekeep-attendance-shiftregister" extends="timekeep-attendance-shiftregister-theme">
+        <put-attribute name="body" value="/timekeep/timekeep_attendance_shiftregister.jsp" />
+    </definition>
+    <definition name="timekeep-attendance-month" extends="timekeep-attendance-month-theme">
+        <put-attribute name="body" value="/timekeep/timekeep_attendance_month.jsp" />
+    </definition>
+    <definition name="timekeep-attendance-assign" extends="timekeep-attendance-assign-theme">
+        <put-attribute name="body" value="/timekeep/timekeep_attendance_assign.jsp" />
+    </definition>
+    <definition name="timekeep-attendance-assign-add" extends="timekeep-attendance-assign-theme">
+        <put-attribute name="menu" value="/include/timekeep/menu_timekeep_attendance_assign_add.jsp" />
+        <put-attribute name="body" value="/timekeep/timekeep_attendance_assign_add.jsp" />
+    </definition>
+    <definition name="timekeep-attendance-meal" extends="timekeep-attendance-meal-theme">
+        <put-attribute name="body" value="/timekeep/timekeep_attendance_meal.jsp" />
+    </definition>
+    <definition name="timekeep-attendance-dayoff" extends="timekeep-attendance-dayoff-theme">
+        <put-attribute name="body" value="/timekeep/createDayoff.jsp" />
+    </definition>
+    <!--    <Phần cấu hình của timekeep>-->
     <!-- Four -->
     <definition name="four" template="/layout/four-layout.jsp">
         <put-attribute name="head" value="/include/four/head.jsp" />

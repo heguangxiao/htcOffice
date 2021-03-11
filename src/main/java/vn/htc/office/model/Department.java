@@ -15,11 +15,12 @@ import java.sql.Timestamp;
 public class Department implements Serializable {
 
     private static final long serialVersionUID = 1L;
-    
+
     private int id;
     private String department;
     private int createdBy;
     private Timestamp createdAt;
+    private String description;
 
     public Department() {
     }
@@ -62,5 +63,22 @@ public class Department implements Serializable {
     public void setCreatedAt(Timestamp createdAt) {
         this.createdAt = createdAt;
     }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
     
+    public static void formatStringNull(Department department) {
+        if (department.getDepartment() == null) {
+            department.setDepartment("");
+        }
+        if (department.getDescription() == null) {
+            department.setDescription("");
+        }
+    }
+
 }

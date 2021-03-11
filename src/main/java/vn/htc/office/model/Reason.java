@@ -13,18 +13,19 @@ import java.sql.Timestamp;
  * @author HTC-PC
  */
 public class Reason implements Serializable {
-
+    
     private static final long serialVersionUID = 1L;
-
+    
     private int id;
     private String reason;
     private int status;
     private int createdBy;
     private Timestamp createdAt;
-
+    private String description;
+    
     public Reason() {
     }
-
+    
     public Reason(int id, String reason, int status, int createdBy, Timestamp createdAt) {
         this.id = id;
         this.reason = reason;
@@ -32,45 +33,61 @@ public class Reason implements Serializable {
         this.createdBy = createdBy;
         this.createdAt = createdAt;
     }
-
+    
     public int getId() {
         return id;
     }
-
+    
     public void setId(int id) {
         this.id = id;
     }
-
+    
     public String getReason() {
         return reason;
     }
-
+    
     public void setReason(String reason) {
         this.reason = reason;
     }
-
+    
     public int getStatus() {
         return status;
     }
-
+    
     public void setStatus(int status) {
         this.status = status;
     }
-
+    
     public int getCreatedBy() {
         return createdBy;
     }
-
+    
     public void setCreatedBy(int createdBy) {
         this.createdBy = createdBy;
     }
-
+    
     public Timestamp getCreatedAt() {
         return createdAt;
     }
-
+    
     public void setCreatedAt(Timestamp createdAt) {
         this.createdAt = createdAt;
     }
     
+    public String getDescription() {
+        return description;
+    }
+    
+    public void setDescription(String description) {
+        this.description = description;
+    }
+    
+    public static void formatStringNull(Reason reason) {
+        if (reason.getDescription() == null) {
+            reason.setDescription("");
+        }
+        if (reason.getReason() == null) {
+            reason.setReason("");
+        }
+    }
 }
