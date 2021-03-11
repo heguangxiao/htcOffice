@@ -400,6 +400,9 @@
 		  to { opacity: 0; padding: 0px; height: 0px; }
 		}
     </style>
+    
+    	
+    
 <nav class=" navbar-expand-lg navbar-light bg-light" style="padding-top: 0px;padding-bottom: 0px;margin-top: 0px;width: 100%;height: 50px">
     <div class="container-fluid" >     
         <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -432,12 +435,13 @@
                 	<img src="<c:url value='/images/back.jpg'/>" class="card-img-top" style="width: 100%;height: 400px;">
                     <div class="card-img-overlay">
 					    <h5 class="card-title">NGUYỄN VĂN PHƯƠNG</h5>
-					    <p class="card-text">HÔM NAY LÀ THỨ 4 NGÀY 3-3-2021, BẠN ĐÃ HOÀN THÀNH 30% CÔNG VIỆC</p>
+					    <p class="card-text" id="nowdatetime"></p>
 					    <p class="card-text">ĐÁNH GIÁ: TỐT</p>
 				  	</div>
                 </div>
             </div>
         </div>
+        
         
         
         <div class="col-xl-3 stretch-card grid-margin">
@@ -1037,3 +1041,11 @@
 	<script>
     	document.getElementById("fsearch").hidden = true;
 	</script>
+
+	
+		<script>
+			var d = new Date();
+			var month = d.getMonth()+1;
+			var phantram= 12;
+			document.getElementById("nowdatetime").innerHTML = 'HÔM NAY LÀ ' + d.getDate() + '-' + month + '-' +d.getFullYear()+' BẠN ĐÃ HOÀN THÀNH '+ phantram +' CÔNG VIỆC';
+		</script>
