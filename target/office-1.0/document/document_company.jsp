@@ -31,7 +31,7 @@
                 <th class="active">
                     <input type="checkbox" class="select-all checkbox" name="select-all" />
                 </th>
-                <th class="success">Loại(của công ty)</th>
+                <th class="success">Loại </th>
                 <th class="warning">Người tạo</th>
                 <th class="danger">Tên thư mục</th>
                 <th class="danger">Kích thước </th>
@@ -43,8 +43,58 @@
                 <td class="active">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="success">sudhi</td>
-                <td class="warning">boy</td>
+                <td class="success"><img class="dz-image" src="/images/document/excel.png"/></td>
+                <td class="warning"><img class="img_style" src="/images/faces/face1.jpg"/></td>
+                <td class="danger">20.doc</td>
+                <td class="danger">awsome</td>
+                <td class="danger">cool</td>
+            </tr>
+            <tr>
+                <td class="active">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="success"><img class="dz-image" src="/images/document/folder.png"/></td>
+                <td class="warning"><img class="img_style" src="/images/faces/face10.jpg"  /></td>
+                <td class="danger">20.txt</td>
+                <td class="danger">awsome</td>
+                <td class="danger">cool</td>
+            </tr>
+            <tr>
+                <td class="active">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="success"><img class="dz-image" src="/images/document/pdf.png"/></td>
+                <td class="warning"><img class="img_style" src="/images/faces/face11.jpg"  /></td>
+                <td class="danger">20.exel</td>
+                <td class="danger">awsome</td>
+                <td class="danger">cool</td>
+            </tr>
+            <tr>
+                <td class="active">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="success"><img class="dz-image" src="/images/document/rar.png"/></td>
+                <td class="warning"><img class="img_style" src="/images/faces/face12.jpg"/></td>
+                <td class="danger">20.rar</td>
+                <td class="danger">awsome</td>
+                <td class="danger">cool</td>
+            </tr>
+            <tr>
+                <td class="active">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="success"><img class="dz-image" src="/images/document/text.png"/></td>
+                <td class="warning"><img class="img_style" src="/images/faces/face13.jpg"  /></td>
+                <td class="danger">20</td>
+                <td class="danger">awsome</td>
+                <td class="danger">cool</td>
+            </tr>
+            <tr>
+                <td class="active">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="success"><img class="dz-image" src="/images/document/word.png"/></td>
+                <td class="warning"><img class="img_style" src="/images/faces/face14.jpg"/></td>
                 <td class="danger">20</td>
                 <td class="danger">awsome</td>
                 <td class="danger">cool</td>
@@ -54,7 +104,7 @@
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
                 <td class="success">sudhi</td>
-                <td class="warning">boy</td>
+                <td class="warning"><img class="img_style" src="/images/faces/face15.jpg" /></td>
                 <td class="danger">20</td>
                 <td class="danger">awsome</td>
                 <td class="danger">cool</td>
@@ -64,64 +114,14 @@
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
                 <td class="success">sudhi</td>
-                <td class="warning">boy</td>
-                <td class="danger">20</td>
-                <td class="danger">awsome</td>
-                <td class="danger">cool</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-                <td class="success">sudhi</td>
-                <td class="warning">boy</td>
-                <td class="danger">20</td>
-                <td class="danger">awsome</td>
-                <td class="danger">cool</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-                <td class="success">sudhi</td>
-                <td class="warning">boy</td>
-                <td class="danger">20</td>
-                <td class="danger">awsome</td>
-                <td class="danger">cool</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-                <td class="success">sudhi</td>
-                <td class="warning">boy</td>
-                <td class="danger">20</td>
-                <td class="danger">awsome</td>
-                <td class="danger">cool</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-                <td class="success">sudhi</td>
-                <td class="warning">boy</td>
-                <td class="danger">20</td>
-                <td class="danger">awsome</td>
-                <td class="danger">cool</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-                <td class="success">sudhi</td>
-                <td class="warning">boy</td>
+                <td class="warning"><img class="img_style" src="/images/faces/face16.jpg" /></td>
                 <td class="danger">20</td>
                 <td class="danger">awsome</td>
                 <td class="danger">cool</td>
             </tr>
 
-   
-            
+
+
         </tbody>
     </table>
     <!--<button id="select-all" class="btn button-default">SelectAll/Cancel</button>-->

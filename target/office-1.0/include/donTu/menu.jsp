@@ -1,6 +1,6 @@
 <%@page contentType="text/html; charset=utf-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<nav class="navbar navbar-expand-sm bg-danger navbar-dark sticky-top" style="padding-bottom: 0px;padding-top: 0px;margin-bottom: 0px;">
+<nav class="navbar navbar-expand-sm bg-danger navbar-dark sticky-top" style="padding-bottom: 0px;padding-top: 0px;margin-bottom: 0px;padding-left: 0;">
     <a class="navbar-brand" href="#"></a>
     <ul class="navbar-nav mr-auto">
         <li class="nav-item dropdown">
@@ -10,46 +10,41 @@
                 </a>
             </span>
             <div class="dropdown-menu dropdown-content">
-                <a class="dropdown-item" href="#">Đơn xin nghỉ</a>
-                <a class="dropdown-item" href="#">Đơn vắng mặt</a>
-                <a class="dropdown-item" href="#">Đơn làm thêm</a>
-                <a class="dropdown-item" href="#">Đơn checkin/out</a>
-                <a class="dropdown-item" href="#">Đơn đổi ca</a>
-                <a class="dropdown-item" href="#">Đơn tăng ca</a>
-                <a class="dropdown-item" href="#">Đơn đăng ký ca</a>
-                <a class="dropdown-item" href="#">Đơn công tác</a>
-                <a class="dropdown-item" href="#">Đơn làm theo chế độ</a>
-                <a class="dropdown-item" href="#">Đơn thôi việc</a>
+                <a ng-repeat="one in donTuTypes" class="dropdown-item" href="" ng-click="changeFormShow(one.id)">{{one.donTuType}}</a>
             </div>
         </li>
         <li class="nav-item">
-            <a class="nav-link nav-profile-text">
-                Danh sách đơn từ
+            <a class="nav-link nav-profile-text" style="float: left;">
+                <span ng-if="form0">
+                    Danh sách đơn từ
+                    <span ng-if="donTuType !== '-1' && form0">/ {{donTuTypeShow}} </span>
+                </span>
+                <span ng-if="form1">Tạo mới đơn xin nghỉ</span>
+                <span ng-if="form2">Tạo mới đơn vắng mặt</span>
+                <span ng-if="form3">Tạo mới đơn làm thêm</span>
+                <span ng-if="form4">Tạo mới đơn checkin/out</span>
+                <span ng-if="form5">Tạo mới đơn đổi ca</span>
+                <span ng-if="form6">Tạo mới đơn tăng ca</span>
+                <span ng-if="form7">Tạo mới đơn đăng ký ca</span>
+                <span ng-if="form8">Tạo mới đơn công tác</span>
+                <span ng-if="form9">Tạo mới đơn làm theo chế độ</span>
+                <span ng-if="form10">Tạo mới đơn xin thôi việc</span>
             </a>
         </li>
-        <li class="nav-item dropdown">
+        <li ng-if="form0" class="nav-item dropdown">
             <a class="nav-link dropbtn" href="#" id="filterNavbardrop" data-toggle="dropdown">
                 <i class="fas fa-caret-down"></i>
             </a>
             <div class="dropdown-menu dropdown-content">
-                <a class="dropdown-item" href="#">Tất cả</a>
-                <a class="dropdown-item" href="#">Đơn xin nghỉ</a>
-                <a class="dropdown-item" href="#">Đơn vắng mặt</a>
-                <a class="dropdown-item" href="#">Đơn làm thêm</a>
-                <a class="dropdown-item" href="#">Đơn checkin/out</a>
-                <a class="dropdown-item" href="#">Đơn đổi ca</a>
-                <a class="dropdown-item" href="#">Đơn tăng ca</a>
-                <a class="dropdown-item" href="#">Đơn đăng ký ca</a>
-                <a class="dropdown-item" href="#">Đơn công tác</a>
-                <a class="dropdown-item" href="#">Đơn làm theo chế độ</a>
-                <a class="dropdown-item" href="#">Đơn thôi việc</a>
+                <a class="dropdown-item" href="" ng-click="findByDonTuType('-1', '')">Tất cả</a>
+                <a ng-repeat="one in donTuTypes" class="dropdown-item" href="" ng-click="findByDonTuType(one.id, one.donTuType)">{{one.donTuType}}</a>
             </div>
         </li>
     </ul>
-    <form class="form-inline mr-4" action="<c:url value='/'/>">
+    <form class="form-inline mr-4" ng-submit="submit()">
         <div class="row no-gutters" >
             <div class="col">
-                <input class="form-control border-secondary border-right-0 rounded-0 " type="text" name="search" value="" placeholder="search" id="example-search-input4">
+                <input class="form-control border-secondary border-right-0 rounded-0 " type="text" name="search" ng-model="search" value="" placeholder="search" id="search">
             </div>
             <div class="col-auto" style="background-color: white">
                 <button class="btn btn-outline-secondary border-left-0 rounded-0" type="submit">
@@ -119,7 +114,7 @@
     </div>
 </nav>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-top: 0px;padding-bottom: 0px;margin-top: 0px;">
+<nav ng-show="form0" class="navbar navbar-expand-lg navbar-light bg-light" style="padding-top: 0px;padding-bottom: 0px;margin-top: 0px;">
     <div class="container-fluid" >  
 
         <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -128,17 +123,17 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="nav navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Page</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="" ng-click="findByStatus('-1')">Tất cả</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Page</a>
+                    <a class="nav-link" href="" ng-click="findByStatus('2')">Chờ duyệt</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Page</a>
+                    <a class="nav-link" href="" ng-click="findByStatus('1')">Đã duyệt</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Page</a>
+                    <a class="nav-link" href="" ng-click="findByStatus('0')">Không duyệt</a>
                 </li>
             </ul>
         </div>
@@ -158,120 +153,16 @@
 
             <!-- Modal body -->
             <div class="modal-body">
-                <div style="width: 50%;float: left;">
-                    <div class="modal-content-sm">
-                        <a href="<c:url value='/'/>">
-                            <div style="width: 25%;height: 100%; float: left;display: flex;align-items: center;justify-content: center;">
-                                <i class="fas fa-paper-plane" ></i>
-                            </div>
-                            <div style="width: 75%;height: 100%;float: left;padding-left: 10px;">
-                                <h6><b>Đơn xin nghỉ</b></h6>
-                                Đơn xin nghỉ phát sinh khi bạn muốn nghỉ nhiều ngày làm việc.
-                            </div>
-                        </a>
-                    </div>
-                    <div class="modal-content-sm">
-                        <a href="<c:url value='/'/>">
-                            <div style="width: 25%;height: 100%; float: left;display: flex;align-items: center;justify-content: center;">
-                                <i class="fas fa-star" ></i>
-                            </div>
-                            <div style="width: 75%;height: 100%;float: left;padding-left: 10px;">
-                                <h6><b>Đơn làm thêm</b></h6>
-                                Đơn làm thêm  phát sinh khi bạn có khoảng thời gian làm thêm không nằm trong ca làm việc.
-                            </div>
-                        </a>
-                    </div>
-                    <div class="modal-content-sm">
-                        <a href="<c:url value='/'/>">
-                            <div style="width: 25%;height: 100%; float: left;display: flex;align-items: center;justify-content: center;">
-                                <i class="fas fa-clone" ></i>
-                            </div>
-                            <div style="width: 75%;height: 100%;float: left;padding-left: 10px;">
-                                <h6><b>Đơn đổi ca</b></h6>
-                                Đơn đổi ca phát sinh khi bạn muốn đổi sang một ca làm việc khác với ca đã được phân.
-                            </div>
-                        </a>
-                    </div>
-                    <div class="modal-content-sm">
-                        <a href="<c:url value='/'/>">
-                            <div style="width: 25%;height: 100%; float: left;display: flex;align-items: center;justify-content: center;">
-                                <i class="fas fa-battery-empty" ></i>
-                            </div>
-                            <div style="width: 75%;height: 100%;float: left;padding-left: 10px;">
-                                <h6><b>Đơn đăng ký ca</b></h6>
-                                Đơn đăng ký ca phát sinh khi bạn cần đăng ký thêm ca làm việc.
-                            </div>
-                        </a>
-                    </div>
-                    <div class="modal-content-sm">
-                        <a href="<c:url value='/'/>">
-                            <div style="width: 25%;height: 100%; float: left;display: flex;align-items: center;justify-content: center;">
-                                <i class="fas fa-clock" ></i>
-                            </div>
-                            <div style="width: 75%;height: 100%;float: left;padding-left: 10px;">
-                                <h6><b>Đơn làm theo chế độ</b></h6>
-                                Đơn làm theo chế độ phát sinh khi bạn được hưởng chế độ đi muộn - về sớm.
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div style="width: 50%;float: left;">
-                    <div class="modal-content-sm">
-                        <a href="<c:url value='/'/>">
-                            <div style="width: 25%;height: 100%; float: left;display: flex;align-items: center;justify-content: center;">
-                                <i class="fas fa-user" ></i>
-                            </div>
-                            <div style="width: 75%;height: 100%;float: left;padding-left: 10px;">
-                                <h6><b>Đơn vắng mặt</b></h6>
-                                Đơn vắng mặt phát sinh khi bạn có nhu cầu vắng mặt 1 khoảng thời gian trong ca làm việc.
-                            </div>
-                        </a>
-                    </div>
-                    <div class="modal-content-sm">
-                        <a href="<c:url value='/'/>">
-                            <div style="width: 25%;height: 100%; float: left;display: flex;align-items: center;justify-content: center;">
-                                <i class="fas fa-check-circle" ></i>
-                            </div>
-                            <div style="width: 75%;height: 100%;float: left;padding-left: 10px;">
-                                <h6><b>Đơn checkin/out</b></h6>
-                                Đơn checkin/out phát sinh khi bạn quên chấm công lúc đến hoặc lúc về.
-                            </div>
-                        </a>
-                    </div>
-                    <div class="modal-content-sm">
-                        <a href="<c:url value='/'/>">
-                            <div style="width: 25%;height: 100%; float: left;display: flex;align-items: center;justify-content: center;">
-                                <i class="fas fa-battery-full" ></i>
-                            </div>
-                            <div style="width: 75%;height: 100%;float: left;padding-left: 10px;">
-                                <h6><b>Đơn tăng ca</b></h6>
-                                Đơn tăng ca  phát sinh khi bạn có nhu cầu làm thêm một ca nào đó ngoài ca làm việc đã được phân.
-                            </div>
-                        </a>
-                    </div>
-                    <div class="modal-content-sm">
-                        <a href="<c:url value='/'/>">
-                            <div style="width: 25%;height: 100%; float: left;display: flex;align-items: center;justify-content: center;">
-                                <i class="fas fa-car" ></i>
-                            </div>
-                            <div style="width: 75%;height: 100%;float: left;padding-left: 10px;">
-                                <h6><b>Đơn công tác</b></h6>
-                                Đơn công tác phát sinh khi bạn được yêu cầu đi công tác và không thể chấm công trên công ty.
-                            </div>
-                        </a>
-                    </div>
-                    <div class="modal-content-sm">
-                        <a href="<c:url value='/'/>">
-                            <div style="width: 25%;height: 100%; float: left;display: flex;align-items: center;justify-content: center;">
-                                <i class="fas fa-user-minus" ></i>
-                            </div>
-                            <div style="width: 75%;height: 100%;float: left;padding-left: 10px;">
-                                <h6><b>Đơn thôi việc</b></h6>
-                                Đơn thôi việc phát sinh khi bạn nghỉ việc.
-                            </div>
-                        </a>
-                    </div>
+                <div ng-repeat="one in donTuTypes" class="modal-content-sm" style="width: 47%;float: left;">
+                    <a href="" ng-click="changeFormShow(one.id)">
+                        <div style="width: 25%;height: 100%; float: left;display: flex;align-items: center;justify-content: center;">
+                            <i class="fas fa-{{one.icon}}" ></i>
+                        </div>
+                        <div style="width: 75%;height: 100%;float: left;padding-left: 10px;">
+                            <h6><b>{{one.donTuType}}</b></h6>
+                            {{one.content}}
+                        </div>
+                    </a>
                 </div>
             </div>
 

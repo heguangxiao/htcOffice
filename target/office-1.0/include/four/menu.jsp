@@ -70,13 +70,14 @@
                             <span><b>WORKPLACE</b></span>
                             <a href="<c:url value='/'/>">Social</a>
                             <a href="<c:url value='/donTu'/>">Đơn từ</a>
-                            <a href="#">Công việc</a>
+                            <a href="<c:url value='/congviec'/>">Công việc</a>
                             <a href="<c:url value='/document'/>">Tài liệu</a>
                         </div>
                         <div style="width: 50%;float: left">
                             <span><b>HRM</b></span>
                             <a href="<c:url value='/DangLamViec'/>">Nhân sự</a>
                             <a href="<c:url value='/evaluation-kpi-kpi'/>">KPI</a>
+                            <a href="<c:url value='/timekeep'/>">Chấm công</a>
                         </div>
                     </div>
                 </div>

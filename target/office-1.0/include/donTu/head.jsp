@@ -3,7 +3,18 @@
 <link href="<c:url value='/resources/bootstrap/css/bootstrap.min.css'/>" rel="stylesheet"/>
 <link href="<c:url value='/resources/css/common.css'/>" rel="stylesheet"/>
 <link href="<c:url value='/resources/css/style.css'/>" rel="stylesheet"/>
+<link href="<c:url value='/resources/css/dataTables.bootstrap4.min.css'/>" rel="stylesheet"/>
+<link href="<c:url value='/resources/css/dontu.css'/>" rel="stylesheet"/>
+<link href="<c:url value='/resources/jquery-ui/jquery-ui.css'/>" rel="stylesheet"/>
+<link href="<c:url value='/resources/jquery-ui/jquery-ui.min.css'/>" rel="stylesheet"/>
+<link href="<c:url value='/resources/jquery-ui/jquery-ui.structure.css'/>" rel="stylesheet"/>
+<link href="<c:url value='/resources/jquery-ui/jquery-ui.structure.min.css'/>" rel="stylesheet"/>
+<link href="<c:url value='/resources/jquery-ui/jquery-ui.theme.css'/>" rel="stylesheet"/>
+<link href="<c:url value='/resources/jquery-ui/jquery-ui.theme.min.css'/>" rel="stylesheet"/>
 <style>
+    #sidebar {
+        height: 100vh;
+    }
     .navbar-default:hover .navbar-nav>.active:not(:hover) > a {
         border-top-color: transparent;
     }
@@ -53,13 +64,25 @@
         border-radius: 15px;
         height: 140px;
     }
+    
 </style>
 
 <script src="<c:url value='/resources/js/jquery-3.3.1.slim.min.js'/>"></script>
 <script src="<c:url value='/resources/js/solid.js'/>"></script>
 <script src="<c:url value='/resources/js/fontawesome.js'/>"></script>
 <script src="<c:url value='/resources/jquery/jquery.min.js'/>"></script>
+<script src="<c:url value='/resources/jquery-ui/jquery-ui.min.js'/>"></script>
 <script src="<c:url value='/resources/bootstrap/js/bootstrap.js'/>"></script>
 <script src="<c:url value='/resources/popper/dist/umd/popper.min.js'/>"></script>
 <script src="<c:url value='/resources/bootstrap/js/bootstrap.min.js'/>"></script>
 <script src="<c:url value='/resources/js/select2.min.js'/>"></script>
+<script src="<c:url value='/resources/js/jquery.dataTables.min.js'/>"></script>
+<script src="<c:url value='/resources/js/dataTables.bootstrap4.min.js'/>"></script>
+<script src="<c:url value='/resources/angularjs/angular.min.js'/>"></script>
+<script src="<c:url value='/resources/angularjs/angular-animate.min.js'/>"></script>
+<script src="<c:url value='/resources/angularjs/angular-touch.min.js'/>"></script>
+<script src="<c:url value='/resources/angular-ui-bootstrap/ui-bootstrap-tpls.min.js'/>"></script>
+<!--<script src="<c:url value='/resources/angular-ui-bootstrap/ui-bootstrap.min.js'/>"></script>-->
+<script>
+    var urlBase = window.location.protocol + "//" + window.location.host + "${pageContext.request.contextPath}";
+</script>

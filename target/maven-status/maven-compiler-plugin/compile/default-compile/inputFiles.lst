@@ -1,31 +1,62 @@
-C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\controller\AuthenticationFillter.java
-C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\service\AccountService.java
-C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\common\AbstractConst.java
-C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\common\Tool.java
-C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\controller\Home3Controller.java
-C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\config\MyConfig.java
-C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\controller\DocumentController.java
-C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\ext\ModelEnum.java
-C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\common\Md5.java
-C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\service\impl\AccountServiceImpl.java
-C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\controller\AbstractBackEnConst.java
-C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\controller\Home4Controller.java
-C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\repository\BaseRepository.java
-C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\cache\SelfExpiringMap.java
-C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\config\WebInitializer.java
-C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\repository\impl\AccountRepositoryImpl.java
-C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\cache\SelfExpiringHashMap.java
-C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\controller\HomeController.java
-C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\common\HttpUtil.java
-C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\service\BaseService.java
-C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\controller\SessionController.java
-C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\ext\ResponResult.java
-C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\controller\TempControllerIF.java
-C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\controller\EvaluationController.java
-C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\config\WebConfig.java
-C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\ext\AngularModel.java
-C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\controller\Home2Controller.java
-C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\repository\AccountRepository.java
-C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\config\MyContext.java
-C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\controller\DonTuController.java
-C:\Users\HTC-PC\Documents\NetBeansProjects\TEST\2020_MonitorCenter\office\src\main\java\vn\htc\office\model\Account.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\controller\DonTuController.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\repository\impl\LocationRepositoryImpl.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\ext\ResponResult.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\service\DepartmentService.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\service\impl\ReasonServiceImpl.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\repository\DonTuTypeRepository.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\model\Location.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\service\LocationService.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\repository\impl\AccountRepositoryImpl.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\model\DonTu.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\config\WebConfig.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\controller\CongviecController.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\repository\impl\ReasonRepositoryImpl.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\service\AccountService.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\repository\impl\DonTuRepositoryImpl.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\repository\impl\DonTuTypeRepositoryImpl.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\service\ReasonService.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\repository\DepartmentRepository.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\service\DonTuTypeService.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\service\impl\LocationServiceImpl.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\cache\SelfExpiringHashMap.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\model\DonTuType.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\config\MyConfig.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\config\MyContext.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\controller\SessionController.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\common\HttpUtil.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\controller\AuthenticationFillter.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\repository\ReasonRepository.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\model\Reason.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\common\Today.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\common\Tool.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\controller\DonTuTypeController.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\ext\AngularModel.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\model\Department.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\repository\LocationRepository.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\repository\AccountRepository.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\controller\HomeController.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\model\Account.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\common\DateProc.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\controller\TimekeepController.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\ext\ModelEnum.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\controller\TempControllerIF.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\controller\Home4Controller.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\service\BaseService.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\service\impl\AccountServiceImpl.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\service\impl\DonTuTypeServiceImpl.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\service\DonTuService.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\repository\BaseRepository.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\common\Md5.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\controller\NhanSuController.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\controller\Home2Controller.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\controller\DocumentController.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\common\AbstractConst.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\controller\ReasonController.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\service\impl\DepartmentServiceImpl.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\cache\SelfExpiringMap.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\config\WebInitializer.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\repository\DonTuRepository.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\controller\EvaluationController.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\service\impl\DonTuServiceImpl.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\controller\AbstractBackEnConst.java
+C:\Users\HTC-PC\Documents\NetBeansProjects\New folder\office\src\main\java\vn\htc\office\repository\impl\DepartmentRepositoryImpl.java

@@ -1,5 +1,6 @@
 <%@page contentType="text/html; charset=utf-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<script src="<c:url value='/resources/ckeditor/ckeditor.js'/>"></script>
 <style>
     #main {
         display:block;
@@ -34,8 +35,9 @@
                 <form action="<c:url value='/'/>" method="GET">
                     Bài viết mới
                     <hr/>
-                    <textarea class="form-control mb-3" rows="3" placeholder="Nội dung bài viết"></textarea>
+                    <textarea class="form-control mb-3" id="editor" rows="3" placeholder="Nội dung bài viết"></textarea>
                     <div id="newSubmitContent" style="display: none;">
+                        <textarea name="editor1" id="editor1" rows="10" cols="80"></textarea>
                         <hr/>
                         <button type="submit" class="btn btn-primary btn-lg btn-block">Đăng bài</button>
                         <br/>
@@ -46,12 +48,18 @@
     </div>
 
     <script>
+        CKEDITOR.replace('editor1');
+        CKEDITOR.editorConfig = function (config) {
+            config.removePlugins = 'easyimage, cloudservices';
+        };
         function showSubmitContent() {
             document.getElementById('newSubmitContent').style.display = '';
+            document.getElementById('editor').style.display = 'none';
         }
 
         function hideSubmitContent() {
             document.getElementById('newSubmitContent').style.display = 'none';
+            document.getElementById('editor').style.display = '';
         }
     </script>
 

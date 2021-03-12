@@ -7,7 +7,7 @@
         border-top-color: transparent;
     }
     .dropbtn {
-        background-color: #DC3545;
+        background-color: white;
         color: white;
         /*padding: 16px;*/
         font-size: 16px;
@@ -39,7 +39,40 @@
 
     .dropdown:hover .dropdown-content {display: block;}
 
-    .dropdown:hover .dropbtn {background-color: #DC3545;}
+    .dropdown:hover .dropbtn {background-color: #f7cbc0 !important;}
+
+    .nav-item:hover .dropbtn {background-color: #f7cbc0 !important;}
+
+    .nav-link:hover .dropbtn {background-color: #f7cbc0 !important;}
+
+    .modal-dialog {
+        position: relative;
+        margin: 0 auto;
+        top: 25%;
+    }
+    .img_style {
+        border: 1px #d4d4d4 solid;
+        padding: 2px ;
+        background-color: #f7cbc0;
+        border-radius:50%;
+        -moz-border-radius:50%;
+        -webkit-border-radius:50%;
+        height: 35px;
+        width: 35px;
+    }
+    .dz-image {
+        height: 35px;
+        width: 35px;
+    }
+    .change{
+        -ms-transform: rotate(360deg); /* IE 9 */
+        -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+        transform: rotate(360deg);
+        transition-duration: 1s;
+    }
+    .navbar-nav:hover i.fas {
+        background-color: #f7cbc0;
+    }
 </style>
 
 <script src="<c:url value='/resources/js/solid.js'/>"></script>
