@@ -11,17 +11,17 @@
 
     <ul class="list-unstyled components">
         <li>            
-            <a href="<c:url value='/donTu'/>">
+            <a href="" ng-click="findAll()">
                 <i class="fas fa-file-alt" style="margin: 0 15px 0 15px; width: 20px;"></i>Tất cả đơn từ
             </a>
         </li>
         <li>            
-            <a href="#">
+            <a href="" ng-click="findByCreatedId('1')">
                 <i class="fas fa-file-code" style="margin: 0 15px 0 15px; width: 20px;"></i>Đơn từ của bạn
             </a>
         </li>
         <li>            
-            <a href="#">
+            <a href="" ng-click="findByBrowseId('1')">
                 <i class="fas fa-check-circle" style="margin: 0 15px 0 15px; width: 20px;"></i>Đơn từ bạn duyệt
             </a>
         </li>

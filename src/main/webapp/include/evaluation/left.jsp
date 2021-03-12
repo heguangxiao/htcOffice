@@ -21,11 +21,20 @@
                 Mẫu đánh giá
             </a>
         </li>
-        <li>    
-            <a href="http://localhost:8084/report/evaluation">
+        <li>            
+            <a href="#duanSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                 <i class="fas fa-anchor"></i>
-                Báo cáo phân tích
+                Báo cáo, phân tích
             </a>
+            <ul class="collapse list-unstyled" id="duanSubmenu">
+
+                <li>
+                    <a href="http://localhost:8084/report/evaluation">Báo cáo đã tạo</a>
+                </li>
+                <li>
+                    <a href="http://localhost:8084/report/evaluation/history">Báo cáo đã lưu</a>
+                </li>
+            </ul>
         </li>
 
 

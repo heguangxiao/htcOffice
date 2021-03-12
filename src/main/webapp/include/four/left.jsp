@@ -12,9 +12,9 @@
     </div>
     <br/>
     <nav class="navbar navbar-light navbar-expand-sm px-0 flex-row flex-nowrap">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarWEX" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<!--        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarWEX" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
+        </button>-->
         <div class="navbar-collapse collapse" id="navbarWEX" style="margin-left: 15px;">
             <ul class="navbar-nav mr-auto flex-sm-column flex-row">
                 <li class="nav-item" style="margin: 5px 0 5px 0;">

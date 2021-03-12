@@ -11,7 +11,7 @@
         <tiles:insertAttribute name="head" />
     </head>
     <body>
-        <div class="container-fluid" style="padding: 0 0 0 0; width: 100%">
+        <div class="container-fluid" style="padding: 0 0 0 0; width: 100%" ng-app="listDontuApp" ng-controller="dontuCtrl" ng-init="init();">
             <div class="wrapper">
                 <tiles:insertAttribute name="left" />
 
@@ -28,5 +28,7 @@
 
         <tiles:insertAttribute name="js" />
 
+        <script src="<c:url value='/resources/controller/dontu.js'/>"></script>
+        <script src="<c:url value='/resources/controller/rightClick.js'/>"></script>
     </body>
 </html>

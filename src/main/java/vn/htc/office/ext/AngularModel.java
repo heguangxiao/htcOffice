@@ -17,6 +17,7 @@ import java.util.HashMap;
  */
 public final class AngularModel<T> {
 
+    private T data;
     private ArrayList<T> datas;
     private ArrayList<HashMap> remap;
     private Integer totalRow;
@@ -24,6 +25,14 @@ public final class AngularModel<T> {
     private ArrayList<ModelEnum> myEnum;
     HashMap<String, Boolean> roles;
     private String userlog;
+
+    public T getData() {
+        return data;
+    }
+
+    public void setData(T data) {
+        this.data = data;
+    }
 
     public String getUserlog() {
         return userlog;

@@ -20,6 +20,7 @@ public class Location  implements Serializable {
     private String location;
     private int createdBy;
     private Timestamp createdAt;
+    private String description;
 
     public Location() {
     }
@@ -62,5 +63,22 @@ public class Location  implements Serializable {
     public void setCreatedAt(Timestamp createdAt) {
         this.createdAt = createdAt;
     }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+    
+    public static void formatStringNull(Location location) {
+        if (location.getDescription() == null) {
+            location.setDescription("");
+        }
+        if (location.getLocation() == null) {
+            location.setLocation("");
+        }
+    } 
     
 }

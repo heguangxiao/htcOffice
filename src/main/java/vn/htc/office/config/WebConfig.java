@@ -49,7 +49,10 @@ public class WebConfig extends WebMvcConfigurerAdapter {
                 .addResourceLocations("classpath:/META-INF/resources/webjars/bootstrap/4.0.0/")
                 .setCacheControl(CacheControl.maxAge(1, TimeUnit.SECONDS).cachePublic());
         registry.addResourceHandler("/resources/jquery/**")
-                .addResourceLocations("classpath:/META-INF/resources/webjars/jquery/3.0.0/")
+                .addResourceLocations("classpath:/META-INF/resources/webjars/jquery/3.5.1/")
+                .setCacheControl(CacheControl.maxAge(1, TimeUnit.SECONDS).cachePublic());
+        registry.addResourceHandler("/resources/jquery-ui/**")
+                .addResourceLocations("classpath:/META-INF/resources/webjars/jquery-ui/1.12.0/")
                 .setCacheControl(CacheControl.maxAge(1, TimeUnit.SECONDS).cachePublic());
         registry.addResourceHandler("/resources/popper/**")
                 .addResourceLocations("classpath:/META-INF/resources/webjars/popper.js/1.11.1/")
@@ -57,10 +60,14 @@ public class WebConfig extends WebMvcConfigurerAdapter {
         registry.addResourceHandler("/resources/angularjs/**")
                 .addResourceLocations("classpath:/META-INF/resources/webjars/angularjs/1.8.0/")
                 .setCacheControl(CacheControl.maxAge(1, TimeUnit.SECONDS).cachePublic());
+        registry.addResourceHandler("/resources/angular-ui-bootstrap/**")
+                .addResourceLocations("classpath:/META-INF/resources/webjars/angular-ui-bootstrap/2.5.0/")
+                .setCacheControl(CacheControl.maxAge(1, TimeUnit.SECONDS).cachePublic());
         registry.addResourceHandler("/resources/css/**").addResourceLocations("classpath:/static/css/").setCacheControl(CacheControl.maxAge(1, TimeUnit.SECONDS).cachePublic());
         registry.addResourceHandler("/resources/js/**").addResourceLocations("classpath:/static/js/").setCacheControl(CacheControl.maxAge(1, TimeUnit.SECONDS).cachePublic());
         registry.addResourceHandler("/resources/img/**").addResourceLocations("classpath:/static/img/").setCacheControl(CacheControl.maxAge(1, TimeUnit.SECONDS).cachePublic());
         registry.addResourceHandler("/resources/controller/**").addResourceLocations("classpath:/static/controller/").setCacheControl(CacheControl.maxAge(1, TimeUnit.SECONDS).cachePublic());
+        registry.addResourceHandler("/resources/ckeditor/**").addResourceLocations("/resources/ckeditor/").setCacheControl(CacheControl.maxAge(1, TimeUnit.SECONDS).cachePublic());
     }
 
 }

@@ -11,6 +11,6 @@ import vn.htc.office.model.DonTu;
  *
  * @author HTC-PC
  */
-public interface DonTuRepository extends BaseRepository<DonTu>{
-    
+public interface DonTuRepository extends BaseRepository<DonTu> {
+
 }

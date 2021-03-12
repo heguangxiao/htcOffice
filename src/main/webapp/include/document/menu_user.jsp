@@ -5,7 +5,9 @@
     <ul class="navbar-nav mr-auto">
         <li class="nav-item dropdown">
             <!--            <a class="nav-link" href="#" id="addNavbardrop" data-toggle="dropdown">-->
-            <i class="fas fa-plus-circle" style="width: 35px ; height: 35px ;color: red;margin-top: 5px;margin-bottom: 5px "></i>
+            <div class = "spin">
+                <i class="fas fa-plus-circle" style="width: 35px ; height: 35px ;color: red;margin-top: 5px;margin-bottom: 5px ;rotation: "></i>
+            </div>
             <!--            </a>-->
             <div class="dropdown-menu dropdown-content">
                 <a class="dropdown-item" href="#">
@@ -72,12 +74,12 @@
             </div>
         </li>        
         <li class="nav-item">
-            <a class="nav-link nav-profile-text">
+            <a class="nav-link nav-profile-text dropbtn">
                 <i class="fas fa-folder" style="color: red;margin-left: 20px;height: 20px; width: 20px "> </i>
             </a>
         </li>      
         <li class="nav-item">
-            <a class="nav-link nav-profile-text">
+            <a class="nav-link nav-profile-text dropbtn">
                 <i class="fas fa-certificate" style="color: red;margin-left: 20px;height: 20px; width: 20px"></i>
             </a>
         </li>
@@ -100,7 +102,7 @@
     </ul>
 </nav>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-top: 0px;padding-bottom: 0px;margin-top: 0px;">
+<nav class="navbar navbar-expand-lg navbar-light" style="padding-top: 0px;padding-bottom: 0px;margin-top: 0px; background-color: #f8f9fb">
     <div class="container-fluid" >     
         <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-align-justify"></i>
@@ -108,13 +110,13 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="nav navbar-nav mr-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="#" id="addNav" data-toggle="dropdown">
-                        <i class="fas fa-filter"></i>
+                <li class="nav-item dropdown bg-light ">
+                    <a class="nav-link dropbtn bg-light" href="#" id="addNav" data-toggle="dropdown">
+                        <i class="mdi mdi-settings"></i>
                     </a>
                     <div class="dropdown-menu dropdown-content">
-                        <a class="dropdown-item" href="#1">Sắp xếp danh sách</a>
-                        <a class="dropdown-item" href="#2">Chọn cột hiển thị</a>
+                        <a class="dropdown-item" href="#1">Sắp xếp danh sách <i class="fas fa-filter" style="margin-left: 10px"></i></a>
+                        <a class="dropdown-item" href="#2">Chọn cột hiển thị<i class="fas fa-list" style="margin-left: 32px"></i></a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -127,11 +129,11 @@
         </div>
         <ul class="navbar-nav" style="float: right">         
             <li class="nav-item">
-                <a class="nav-link nav-profile-text">
-                    <div>
-                        <i class="fas fa-folder" data-toggle="modal" data-target="#exampleModal" title="Tạo thư mục">
+                <a class="nav-link nav-profile-text bg-light dropbtn">
+                    <div> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-folder" style="margin-bottom: 10px" data-toggle="modal" data-target="#exampleModal" >
                         </i>
-                        <div>Tạo thư mục</div>
+                        <div style="font-size: 12px  " data-toggle="modal" data-target="#exampleModal">Tạo thư mục</div>
                     </div>
                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
                         <div class="modal-dialog" role="document">
@@ -156,12 +158,13 @@
                 </a>
 
             </li>
-            <li class="nav-item dropdown" >
-                <a class="nav-link nav-profile-text" href="#">
-                    <i class="fas fa-download"></i>
+            <li class="nav-item dropdown bg-light" style="margin-left: 10px">
+                <a class="nav-link nav-profile-text  bg-light dropbtn" href="#">
+                    &nbsp;&nbsp;<i class="fas fa-download" style=" margin-bottom: 10px">
+                    </i>
+                    <div style="font-size: 12px">Export</div>
                 </a>
-                <div>Export</div>
-                <div class="dropdown-menu-right dropdown-content "  >
+                <div class="dropdown-menu-right dropdown-content"  >
                     <a class="dropdown-item" href="#3" style="float: right">Xuất tất cả</a>
                     <a class="dropdown-item" href="#4" style="float: right">Tùy chọn cột</a>
                 </div>
