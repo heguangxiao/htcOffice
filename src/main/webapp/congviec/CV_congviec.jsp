@@ -566,11 +566,14 @@
         </tbody>
     </table>
     
-  <!--<button id="select-all" class="btn button-default">SelectAll/Cancel</button>-->
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="menu">
-        <a class="dropdown-item" href="#">Xem nhanh</a>
-        <a class="dropdown-item" href="#">Nhân bản công việc</a>
-    </div>
+    <ul id="rightClick" class="dropdown-menu">
+        <li><a class="dropdown-item" ng-click=""><i class="fas fa-eye" style="width: 40px;"></i> Xem nhanh</a></li>
+        <li><a class="dropdown-item" ng-click=""><i class="fas fa-file" style="width: 40px;"></i> Biểu mẫu</a></li>
+        <li><a class="dropdown-item" ng-click=""><i class="fas fa-copy" style="width: 40px;"></i> Nhân bản</a></li>
+    </ul>
+</div>
+<div class="bd-example" data-example-id="" style="display: ;" id="createPopup">
+</div>
                             
                             
 <script>
@@ -632,33 +635,5 @@
             console.log("len:" + len);
             all.checked = len === total;
         }
-    });
-    
-    
-    $("td").on('contextmenu', function (e) {
-    	e.preventDefault();
-        $('td').css('box-shadow', 'none');
-        var top = e.pageY;
-        var left = e.pageX;
-        
-        $(this).css('box-shadow', 'inset 1px 1px 0px 0px red, inset -1px -1px 0px 0px red');
-        $("#menu").css({
-            display: "block",
-            top: top,
-            left: left
-        });
-        return false; //blocks default Webbrowser right click menu
-
-    });
-    
-    $("body").on("click", function () {
-        if ($("#menu").css('display') === 'block') {
-            $("#menu").hide();
-        }
-        $('td').css('box-shadow', 'none');
-    });
-
-    $("#menu a").on("click", function () {
-        $(this).parent().hide();
     });
     </script>

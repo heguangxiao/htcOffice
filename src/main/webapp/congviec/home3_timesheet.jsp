@@ -1,6 +1,5 @@
 <%@page contentType="text/html; charset=utf-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<link rel="stylesheet" type="text/css" href="../vendors/mdi/css/materialdesignicons.min.css">
 <style>
     tbody {
         display:block;
@@ -25,13 +24,6 @@
     tr .active {
         width: 5%;
     }
-    .tbl {
-        min-height: 85.5vh;
-        width: 100%;
-    }
-    .fontSize {
-        font-size: 11px;
-    }
 </style>
 
 <nav class=" navbar-expand-lg navbar-light bg-light" style="padding-top: 0px;padding-bottom: 0px;margin-top: 0px;">
@@ -40,106 +32,22 @@
             <i class="fas fa-align-justify"></i>
         </button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: left">
-           <ul class="nav navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="<c:url value='/congviec/duan'/>">Tất cả</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Đang thực hiện</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Chờ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Hoàn thành</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Đã hủy</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Tạm dừng</a>
+			<ul class="nav navbar-nav mr-auto">
+				<li>
+					<p>Danh sách timesheet tháng 2/2021</p>
                 </li>
             </ul>
+            
         </div>
         
         <div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: right">
             <ul class="nav navbar-nav mr-auto" style="text-align: center;">
-            	
-                <li class="nav-item dropdown" style="margin-left: 10px;">
-		            <div data-toggle="dropdown">
-						<i class="mdi mdi-tag"></i>
-						<p style="font-size: 12px; margin-bottom: 0px">Nhãn</p>
-					</div>
-		            <div class="dropdown-menu-right dropdown-content" style="text-align: left;">
-		                <div class="form-check">
-                            <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input"/> Công việc định kì ngày </label>
-                        </div>	
-                        <div class="form-check">
-                            <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input"/> Công việc dự án </label>
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input"/> Công việc quy trình </label>
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input"/> Công việc tiến độ </label>
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input"/> Công việc định kì tuần </label>
-                        </div>
-							<a class="dropdown-item" href="#">Lọc theo nhãn đã chọn</a>
-		            </div>
-		        </li>
-                
-                <li class="nav-item" style="margin-left: 10px">
-                	<a href="<c:url value='/congviec/kanban'/>">
-						<i class="mdi mdi-poll"></i>
-						<p style="font-size: 12px; margin-bottom: 0px">KANBAN</p>
-					</a>
-                </li>
-                
-                <li class="nav-item" style="margin-left: 10px">
-                	<a href="<c:url value='/congviec/grid'/>">
-						<i class="mdi mdi-apps-box"></i>
-						<p style="font-size: 12px; margin-bottom: 0px">Xem gird</p>
-					</a>
-                </li>
-                
                 <li class="nav-item" style="margin-left: 10px">
                 	<div data-toggle="dropdown">
-						<i class="mdi mdi-chart-gantt"></i>
-						<p style="font-size: 12px; margin-bottom: 0px">Grantt chart</p>
+						<i class="mdi mdi-calendar-text"></i>
+						<p style="font-size: 12px; margin-bottom: 0px">Lịch</p>
 					</div>
                 </li>
-                
-                
-                <li class="nav-item dropdown" style="margin-left: 10px;">
-		            <div data-toggle="dropdown">
-						<i class="mdi mdi-export"></i>
-						<p style="font-size: 12px; margin-bottom: 0px">Export</p>
-					</div>
-		            <div class="dropdown-menu-right dropdown-content" style="text-align: left;">
-		                <a class="dropdown-item" href="#">Xuất tất cả</a>
-		                <a class="dropdown-item" href="#">Tùy chọn cột</a>
-		            </div>
-		        </li>
-                
-                <li class="nav-item dropdown" style="margin-left: 10px;">
-		            <div data-toggle="dropdown">
-						<i class="mdi mdi-import"></i>
-						<p style="font-size: 12px; margin-bottom: 0px">Import</p>
-					</div>
-		            <div class="dropdown-menu-right dropdown-content" style="text-align: left;">
-		                <a class="dropdown-item" href="#">Import công việc</a>
-		                <a class="dropdown-item" href="#">Xem lịch sử import công việc</a>
-		            </div>
-		        </li>
-                
-                
             </ul>
         </div>
         
@@ -147,124 +55,121 @@
 </nav>
 
 
-
-
-<div class="scrollDiv tbl">
+<div class="scrollDiv">
     <table class="table table-hover table-striped " style="text-align: center;">
         <thead>
             <tr>
-                <th class="active">
+                <th class="active" rowspan="2">
                     <input type="checkbox" class="select-all checkbox" name="select-all" />
                 </th>
-                <th class="success">Người quản trị</th>
-                <th class="warning">Tên dự án</th>
-                <th class="success">Người tham gia</th>
-                <th class="success">Tiến độ</th>
-                <th class="success">Công việc</th>
-                <th class="success">Bắt đầu</th>
-                <th class="success">Kết thúc</th>
+                <th class="success" rowspan="2">TT</th>
+                <th class="success" rowspan="2">Mã NV</th>
+                <th class="warning" rowspan="2">Họ và tên</th>
+                <th class="success" rowspan="2">Phòng ban</th>
+                <th class="success" rowspan="2">vị trí</th>
+                <th class="success" >t2</th>
+                <th class="success" >t3</th>
+                <th class="success" >t4</th>
+                <th class="success" >t5</th>
+                <th class="success" >t6</th>
+                <th class="success" >t7</th>
+                <th class="success" >cn</th>
+            </tr>
+            <tr>
+                <th class="success">01</th>
+                <th class="success">02</th>
+                <th class="success">03</th>
+                <th class="success">04</th>
+                <th class="success">05</th>
+                <th class="success">06</th>
+                <th class="success">07</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td class="active fontSize">
+                <td class="active">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="py-1 fontSize">
-                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                <td class="success">1</td>
+                <td class="warning">nv01</td>
+                <td class="danger">phuongnv</td>
+                <td class="danger">kĩ thuật</td>
+                <td class="danger">nv</td>
+                <td class="danger"></td>
+                <td class="danger"></td>
+                <td class="danger"></td>
+                <td class="danger"></td>
+                <td class="danger"></td>
+                <td class="danger"></td>
+                <td class="danger"></td>
+            </tr>
+           <tr>
+                <td class="active">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="warning fontSize">dự án 1</td>
-                <td class="py-1">
-                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
-                </td>
-                <td>
-                    <div class="progress fontSize">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </td>
-                <td class="danger fontSize">0</td>
-                <td class="danger fontSize">01/01/2021</td>
-                <td class="danger fontSize">01/01/2021</td>
+                <td class="success">1</td>
+                <td class="warning">nv01</td>
+                <td class="danger">phuongnv</td>
+                <td class="danger">kĩ thuật</td>
+                <td class="danger">nv</td>
+                <td class="danger"></td>
+                <td class="danger"></td>
+                <td class="danger"></td>
+                <td class="danger"></td>
+                <td class="danger"></td>
+                <td class="danger"></td>
+                <td class="danger"></td>
             </tr>
             <tr>
-                <td class="active fontSize">
+                <td class="active">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="py-1 fontSize">
-                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
-                </td>
-                <td class="warning fontSize">dự án 1</td>
-                <td class="py-1">
-                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
-                </td>
-                <td>
-                    <div class="progress fontSize">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </td>
-                <td class="danger fontSize">0</td>
-                <td class="danger fontSize">01/01/2021</td>
-                <td class="danger fontSize">01/01/2021</td>
+                <td class="success">1</td>
+                <td class="warning">nv01</td>
+                <td class="danger">phuongnv</td>
+                <td class="danger">kĩ thuật</td>
+                <td class="danger">nv</td>
+                <td class="danger"></td>
+                <td class="danger"></td>
+                <td class="danger"></td>
+                <td class="danger"></td>
+                <td class="danger"></td>
+                <td class="danger"></td>
+                <td class="danger"></td>
             </tr>
             <tr>
-                <td class="active fontSize">
+                <td class="active">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="py-1 fontSize">
-                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
-                </td>
-                <td class="warning fontSize">dự án 1</td>
-                <td class="py-1">
-                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
-                </td>
-                <td>
-                    <div class="progress fontSize">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </td>
-                <td class="danger fontSize">0</td>
-                <td class="danger fontSize">01/01/2021</td>
-                <td class="danger fontSize">01/01/2021</td>
+                <td class="success">1</td>
+                <td class="warning">nv01</td>
+                <td class="danger">phuongnv</td>
+                <td class="danger">kĩ thuật</td>
+                <td class="danger">nv</td>
+                <td class="danger"></td>
+                <td class="danger"></td>
+                <td class="danger"></td>
+                <td class="danger"></td>
+                <td class="danger"></td>
+                <td class="danger"></td>
+                <td class="danger"></td>
             </tr>
             <tr>
-                <td class="active fontSize">
+                <td class="active">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="py-1 fontSize">
-                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
-                </td>
-                <td class="warning fontSize">dự án 1</td>
-                <td class="py-1">
-                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
-                </td>
-                <td>
-                    <div class="progress fontSize">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </td>
-                <td class="danger fontSize">0</td>
-                <td class="danger fontSize">01/01/2021</td>
-                <td class="danger fontSize">01/01/2021</td>
-            </tr>
-            <tr>
-                <td class="active fontSize">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-                <td class="py-1 fontSize">
-                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
-                </td>
-                <td class="warning fontSize">dự án 1</td>
-                <td class="py-1">
-                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
-                </td>
-                <td>
-                    <div class="progress fontSize">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </td>
-                <td class="danger fontSize">0</td>
-                <td class="danger fontSize">01/01/2021</td>
-                <td class="danger fontSize">01/01/2021</td>
+                <td class="success">1</td>
+                <td class="warning">nv01</td>
+                <td class="danger">phuongnv</td>
+                <td class="danger">kĩ thuật</td>
+                <td class="danger">nv</td>
+                <td class="danger"></td>
+                <td class="danger"></td>
+                <td class="danger"></td>
+                <td class="danger"></td>
+                <td class="danger"></td>
+                <td class="danger"></td>
+                <td class="danger"></td>
             </tr>
         </tbody>
     </table>
@@ -275,6 +180,8 @@
         <a class="dropdown-item" href="#">Something else here</a>
     </div>
 </div>
+
+
 <div class="container-fluid bd-content">
     <div class="bd-example" data-example-id="">
         <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" role="dialog" tabindex="-1">
@@ -369,7 +276,7 @@
         var showMenu = '';
         showMenu = showMenu + '<a class="dropdown-item" data-target="#exampleModal" data-toggle="modal" data-whatever="@getbootstrap">Open modal for @getbootstrap</a>';
         showMenu = showMenu + '<a class="dropdown-item" data-target="#exampleXem" data-toggle="modal" data-whatever="">Xem nhanh</a>';
-        showMenu = showMenu + '<a class="dropdown-item" href="http://localhost:8084/congviec' + values + '">Nhân bản công việc</a>';
+        showMenu = showMenu + '<a class="dropdown-item" href="http://localhost:8084/home3' + values + '">Nhân bản công việc</a>';
         document.getElementById('menu').innerHTML = showMenu;
 
         return false; //blocks default Webbrowser right click menu

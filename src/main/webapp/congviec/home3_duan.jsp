@@ -1,6 +1,5 @@
 <%@page contentType="text/html; charset=utf-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<link rel="stylesheet" type="text/css" href="../vendors/mdi/css/materialdesignicons.min.css">
 <style>
     tbody {
         display:block;
@@ -25,13 +24,6 @@
     tr .active {
         width: 5%;
     }
-    .tbl {
-        min-height: 85.5vh;
-        width: 100%;
-    }
-    .fontSize {
-        font-size: 11px;
-    }
 </style>
 
 <nav class=" navbar-expand-lg navbar-light bg-light" style="padding-top: 0px;padding-bottom: 0px;margin-top: 0px;">
@@ -42,7 +34,7 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: left">
            <ul class="nav navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="<c:url value='/congviec/duan'/>">Tất cả</a>
+                    <a class="nav-link" href="<c:url value='/home3'/>">Tất cả</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Đang thực hiện</a>
@@ -65,48 +57,44 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: right">
             <ul class="nav navbar-nav mr-auto" style="text-align: center;">
             	
-                <li class="nav-item dropdown" style="margin-left: 10px;">
-		            <div data-toggle="dropdown">
+                <li class="nav-item active" >	               	     
+                	<div data-toggle="dropdown">
 						<i class="mdi mdi-tag"></i>
 						<p style="font-size: 12px; margin-bottom: 0px">Nhãn</p>
 					</div>
-		            <div class="dropdown-menu-right dropdown-content" style="text-align: left;">
-		                <div class="form-check">
+					<div class="dropdown-menu">
+						<div class="form-check">
                             <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input"/> Công việc định kì ngày </label>
+                            <input type="checkbox" class="form-check-input"/> Dự án cấp công ty </label>
                         </div>	
                         <div class="form-check">
                             <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input"/> Công việc dự án </label>
+                            <input type="checkbox" class="form-check-input"/> Dự án cấp phòng </label>
                         </div>
                         <div class="form-check">
                             <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input"/> Công việc quy trình </label>
+                            <input type="checkbox" class="form-check-input"/> Dự án cá nhân </label>
                         </div>
                         <div class="form-check">
                             <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input"/> Công việc tiến độ </label>
+                            <input type="checkbox" class="form-check-input"/> Dự án outsource </label>
                         </div>
-                        <div class="form-check">
-                            <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input"/> Công việc định kì tuần </label>
-                        </div>
-							<a class="dropdown-item" href="#">Lọc theo nhãn đã chọn</a>
-		            </div>
-		        </li>
-                
-                <li class="nav-item" style="margin-left: 10px">
-                	<a href="<c:url value='/congviec/kanban'/>">
-						<i class="mdi mdi-poll"></i>
-						<p style="font-size: 12px; margin-bottom: 0px">KANBAN</p>
-					</a>
+							<button id="hover-email" class="dropdown-item">Lọc theo nhãn đã chọn</button>
+					</div>
                 </li>
                 
                 <li class="nav-item" style="margin-left: 10px">
-                	<a href="<c:url value='/congviec/grid'/>">
+                	<div data-toggle="dropdown">
+						<i class="mdi mdi-poll"></i>
+						<p style="font-size: 12px; margin-bottom: 0px">KANBAN</p>
+					</div>
+                </li>
+                
+                <li class="nav-item" style="margin-left: 10px">
+                	<div data-toggle="dropdown">
 						<i class="mdi mdi-apps-box"></i>
 						<p style="font-size: 12px; margin-bottom: 0px">Xem gird</p>
-					</a>
+					</div>
                 </li>
                 
                 <li class="nav-item" style="margin-left: 10px">
@@ -117,27 +105,27 @@
                 </li>
                 
                 
-                <li class="nav-item dropdown" style="margin-left: 10px;">
-		            <div data-toggle="dropdown">
+                <li class="nav-item" style="margin-left: 10px">
+                	<div data-toggle="dropdown">
 						<i class="mdi mdi-export"></i>
 						<p style="font-size: 12px; margin-bottom: 0px">Export</p>
 					</div>
-		            <div class="dropdown-menu-right dropdown-content" style="text-align: left;">
-		                <a class="dropdown-item" href="#">Xuất tất cả</a>
-		                <a class="dropdown-item" href="#">Tùy chọn cột</a>
-		            </div>
-		        </li>
+					<div class="dropdown-menu">
+						<button id="hover-email" class="dropdown-item">Xuất tất cả </button> 
+						<button id="hover-email" class="dropdown-item">Tùy chọn cột </button>
+					</div>
+                </li>
                 
-                <li class="nav-item dropdown" style="margin-left: 10px;">
-		            <div data-toggle="dropdown">
+                <li class="nav-item" style="margin-left: 10px">
+                	<div data-toggle="dropdown">
 						<i class="mdi mdi-import"></i>
 						<p style="font-size: 12px; margin-bottom: 0px">Import</p>
 					</div>
-		            <div class="dropdown-menu-right dropdown-content" style="text-align: left;">
-		                <a class="dropdown-item" href="#">Import công việc</a>
-		                <a class="dropdown-item" href="#">Xem lịch sử import công việc</a>
-		            </div>
-		        </li>
+					<div class="dropdown-menu">
+						<button id="hover-email" class="dropdown-item">Import công việc</button> 
+						<button id="hover-email" class="dropdown-item">Xem lịch sử import công việc</button>
+					</div>
+                </li>
                 
                 
             </ul>
@@ -149,7 +137,7 @@
 
 
 
-<div class="scrollDiv tbl">
+<div class="scrollDiv">
     <table class="table table-hover table-striped " style="text-align: center;">
         <thead>
             <tr>
@@ -167,104 +155,87 @@
         </thead>
         <tbody>
             <tr>
-                <td class="active fontSize">
+                <td class="active">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="py-1 fontSize">
+                <td class="py-1">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td class="warning fontSize">dự án 1</td>
+                <td class="warning">dự án 1</td>
                 <td class="py-1">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
                 <td>
-                    <div class="progress fontSize">
+                    <div class="progress">
                         <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </td>
-                <td class="danger fontSize">0</td>
-                <td class="danger fontSize">01/01/2021</td>
-                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger">0</td>
+                <td class="danger">01/01/2021</td>
+                <td class="danger">01/01/2021</td>
+            </tr>
+           <tr>
+                <td class="active">
+                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
+                </td>
+                <td class="py-1">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td class="warning">dự án 1</td>
+                <td class="py-1">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
+                </td>
+                <td>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </td>
+                <td class="danger">0</td>
+                <td class="danger">01/01/2021</td>
+                <td class="danger">01/01/2021</td>
             </tr>
             <tr>
-                <td class="active fontSize">
+                <td class="active">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="py-1 fontSize">
+                <td class="py-1">
+                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td class="warning fontSize">dự án 1</td>
+                <td class="warning">dự án 1</td>
                 <td class="py-1">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
                 <td>
-                    <div class="progress fontSize">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 99%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </td>
-                <td class="danger fontSize">0</td>
-                <td class="danger fontSize">01/01/2021</td>
-                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger">0</td>
+                <td class="danger">01/01/2021</td>
+                <td class="danger">01/01/2021</td>
             </tr>
             <tr>
-                <td class="active fontSize">
+                <td class="active">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
                 </td>
-                <td class="py-1 fontSize">
-                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
-                </td>
-                <td class="warning fontSize">dự án 1</td>
                 <td class="py-1">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
-                <td>
-                    <div class="progress fontSize">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </td>
-                <td class="danger fontSize">0</td>
-                <td class="danger fontSize">01/01/2021</td>
-                <td class="danger fontSize">01/01/2021</td>
-            </tr>
-            <tr>
-                <td class="active fontSize">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-                <td class="py-1 fontSize">
-                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
-                </td>
-                <td class="warning fontSize">dự án 1</td>
+                <td class="warning">dự án 1</td>
                 <td class="py-1">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
-                </td>
-                <td>
-                    <div class="progress fontSize">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </td>
-                <td class="danger fontSize">0</td>
-                <td class="danger fontSize">01/01/2021</td>
-                <td class="danger fontSize">01/01/2021</td>
-            </tr>
-            <tr>
-                <td class="active fontSize">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-                <td class="py-1 fontSize">
-                	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
-                </td>
-                <td class="warning fontSize">dự án 1</td>
-                <td class="py-1">
                 	<img src="<c:url value='/images/faces-clipart/pic-1.png'/>" alt="image" />
                 </td>
                 <td>
-                    <div class="progress fontSize">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </td>
-                <td class="danger fontSize">0</td>
-                <td class="danger fontSize">01/01/2021</td>
-                <td class="danger fontSize">01/01/2021</td>
+                <td class="danger">0</td>
+                <td class="danger">01/01/2021</td>
+                <td class="danger">01/01/2021</td>
             </tr>
         </tbody>
     </table>
@@ -369,7 +340,7 @@
         var showMenu = '';
         showMenu = showMenu + '<a class="dropdown-item" data-target="#exampleModal" data-toggle="modal" data-whatever="@getbootstrap">Open modal for @getbootstrap</a>';
         showMenu = showMenu + '<a class="dropdown-item" data-target="#exampleXem" data-toggle="modal" data-whatever="">Xem nhanh</a>';
-        showMenu = showMenu + '<a class="dropdown-item" href="http://localhost:8084/congviec' + values + '">Nhân bản công việc</a>';
+        showMenu = showMenu + '<a class="dropdown-item" href="http://localhost:8084/home3' + values + '">Nhân bản công việc</a>';
         document.getElementById('menu').innerHTML = showMenu;
 
         return false; //blocks default Webbrowser right click menu

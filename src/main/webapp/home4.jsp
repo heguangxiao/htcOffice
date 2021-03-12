@@ -49,6 +49,9 @@
 
     <script>
         CKEDITOR.replace('editor1');
+        CKEDITOR.editorConfig = function (config) {
+            config.removePlugins = 'easyimage, cloudservices';
+        };
         function showSubmitContent() {
             document.getElementById('newSubmitContent').style.display = '';
             document.getElementById('editor').style.display = 'none';

@@ -203,9 +203,45 @@
             </tr>
         </tbody>
     </table>
+    <!--<button id="select-all" class="btn button-default">SelectAll/Cancel</button>-->
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+    </div>
 </div>
 
 
+<div class="container-fluid bd-content">
+    <div class="bd-example" data-example-id="">
+        <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" role="dialog" tabindex="-1">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">New message</h5><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label class="form-control-label" for="recipient-name">Recipient:</label> <input class="form-control" id="recipient-name" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-control-label" for="message-text">Message:</label> 
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button> <button class="btn btn-primary" type="button">Send message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bd-example" data-example-id="" style="display: ;" id="createPopup">
+
+</div>
 <script>
     $(function () {
         //button select all or cancel
@@ -234,9 +270,4 @@
         });
 
     });
-    
-    $("td").on('contextmenu', function (e) {
-    	e.preventDefault();
-    });
-    
 </script>
