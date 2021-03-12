@@ -254,6 +254,8 @@
         <put-attribute name="js" value="/include/nhansu/js.jsp" />
     </definition>
     
+ 
+    
     <!-- Dashboard -->
     
     <definition name="dashboardAll" extends="nhansu">
@@ -609,5 +611,104 @@
 	    <definition name="createKyLuatLaoDong" extends="nhansu">
 	        <put-attribute name="body" value="/nhansu/create/createKyLuatLaoDong.jsp" />
 	    </definition>
+	    
+<!-- Cài đặt -->
+
+<definition name="caidat" template="/layout/nhansu-layout.jsp">
+    <put-attribute name="head" value="/include/nhansu/head.jsp" />
+    <put-attribute name="left" value="/include/nhansu/left1.jsp" />
+    <put-attribute name="menu" value="/include/nhansu/menu1.jsp" />
+    <put-attribute name="body" value="" />
+    <put-attribute name="footer" value="" />
+    <put-attribute name="js" value="/include/nhansu/js.jsp" />
+</definition>
+
+    <!-- Hồ sơ nhân sự -->
+    <definition name="caiDatHoSoNhanSu" extends="caidat">
+	        <put-attribute name="body" value="/nhansu/caiDat/caiDatHoSoNhanSu.jsp" />
+    </definition>
+    
+    <!-- Cài đặt vị trí công việc -->
+    <definition name="caiDatViTriCongViec" extends="caidat">
+	        <put-attribute name="body" value="/nhansu/caiDat/caiDatViTriCongViec.jsp" />
+    </definition>
+    
+    <!-- Cài đặt chức vụ -->
+    <definition name="caiDatChucVu" extends="caidat">
+	        <put-attribute name="body" value="/nhansu/caiDat/caiDatChucVu.jsp" />
+    </definition>
+    
+    <!-- Nơi làm việc -->
+    <definition name="noiLamViec" extends="caidat">
+	        <put-attribute name="body" value="/nhansu/caiDat/noiLamViec.jsp" />
+    </definition>
+    
+    <!-- Cấp bậc -->
+    <definition name="capBac" extends="caidat">
+	        <put-attribute name="body" value="/nhansu/caiDat/capBac.jsp" />
+    </definition>
+    
+    <!-- Hợp đồng lao động -->
+    <definition name="hopDongLaoDong" extends="caidat">
+	        <put-attribute name="body" value="/nhansu/caiDat/hopDongLaoDong.jsp" />
+    </definition>
+    
+    <!-- Loại hợp đồng lao động -->
+    <definition name="loaiHopDongLaoDong" extends="caidat">
+	        <put-attribute name="body" value="/nhansu/caiDat/loaiHopDongLaoDong.jsp" />
+    </definition>
+    
+    <!-- Các loại phụ cấp -->
+    <definition name="cacLoaiPhuCap" extends="caidat">
+	        <put-attribute name="body" value="/nhansu/caiDat/cacLoaiPhuCap.jsp" />
+    </definition>
+    
+    <!-- Bậc lương -->
+    <definition name="bacLuong" extends="caidat">
+	        <put-attribute name="body" value="/nhansu/caiDat/bacLuong.jsp" />
+    </definition>
+    
+    <!-- Ngạch lương -->
+    <definition name="ngachLuong" extends="caidat">
+	        <put-attribute name="body" value="/nhansu/caiDat/ngachLuong.jsp" />
+    </definition>
+    
+    <!-- Cài đặt bảo hiểm -->
+    <definition name="caiDatBaoHiem" extends="caidat">
+	        <put-attribute name="body" value="/nhansu/caiDat/caiDatBaoHiem.jsp" />
+    </definition>
+    
+    <!-- Cài đặt tỷ lệ bảo hiểm -->
+    <definition name="caiDatTyLeBaoHiem" extends="caidat">
+	        <put-attribute name="body" value="/nhansu/caiDat/caiDatTyLeBaoHiem.jsp" />
+    </definition>
+    
+    <!-- Cài đặt đánh giá năng lực -->
+    <definition name="caiDatDanhGiaNangLuc" extends="caidat">
+	        <put-attribute name="body" value="/nhansu/caiDat/caiDatDanhGiaNangLuc.jsp" />
+    </definition>
+    
+    <!-- Hình thức khen thưởng -->
+    <definition name="hinhThucKhenThuong" extends="caidat">
+	        <put-attribute name="body" value="/nhansu/caiDat/hinhThucKhenThuong.jsp" />
+    </definition>
+    
+    <!-- Quy định phạt 5S -->
+    <definition name="quyDinhPhat5S" extends="caidat">
+	        <put-attribute name="body" value="/nhansu/caiDat/quyDinhPhat5S.jsp" />
+    </definition>
+    
+    <!-- Hình thức kỷ luật -->
+    <definition name="hinhThucKyLuat" extends="caidat">
+	        <put-attribute name="body" value="/nhansu/caiDat/hinhThucKyLuat.jsp" />
+    </definition>
+    
+    <!-- Cài đặt kỷ luật nội bộ -->
+    <definition name="caiDatKyLuatNoiBo" extends="caidat">
+	        <put-attribute name="body" value="/nhansu/caiDat/caiDatKyLuatNoiBo.jsp" />
+    </definition>
     
 </tiles-definitions>
+
+
+

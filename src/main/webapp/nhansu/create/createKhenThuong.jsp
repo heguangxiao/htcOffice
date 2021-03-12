@@ -46,7 +46,7 @@
 	}
     tbody {
         display:block;
-        height:78vh;
+        
         overflow:auto;
     }
     /* Hide scrollbar for Chrome, Safari and Opera */
@@ -59,7 +59,7 @@
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
     }
-    thead, tbody tr {
+    thead, #tbody tr {
         display:table;
         width:100%;
         table-layout:fixed;
@@ -85,7 +85,6 @@
 	 	<div class="container-fluid" >   
 			<div  class="collapse navbar-collapse" id="navbarSupportedContent">
 					<div  >
-						<!-- <i class="mdi mdi-chevron-down" style="display: inline;border:none;" ></i> -->
 						<p class="mdi mdi-arrow-right-bold-circle" id="more" style="display: inline;color:#6495ED;font-weight: bold;font-size: 20px" >Thông tin chung</p>
 						<hr style="width: 610px">
 					</div>

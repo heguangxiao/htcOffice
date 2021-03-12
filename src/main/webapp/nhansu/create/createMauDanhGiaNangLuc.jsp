@@ -157,7 +157,7 @@
 
 
 	<!-- Năng lực đánh giá -->
-	<nav class=" navbar-expand-lg navbar-light bg-light" style=" padding-top:30px;padding-bottom: 0px;margin-top: 0px;width: 1190px">
+	<nav class=" navbar-expand-lg navbar-light bg-light" style=" padding-top:30px;padding-bottom: 0px;margin-top: 0px;width: 1190px;min-height: 700px">
 	 	<div class="container-fluid " >   
 			<div  class="collapse navbar-collapse accordion1" id="navbarSupportedContent">
 				<div>

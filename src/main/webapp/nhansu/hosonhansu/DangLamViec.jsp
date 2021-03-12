@@ -3,7 +3,7 @@
 <style>
     tbody {
         display:block;
-       
+       	
         overflow:auto;
     }
     /* Hide scrollbar for Chrome, Safari and Opera */
@@ -54,7 +54,7 @@
                     <a class="nav-link" href="<c:url value='/DangLamViec'/>" style="border-bottom: 4px solid #6495ED;color:#6495ED">Đang làm việc</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<c:url value='/NghiThaiSan'/>">Nghỉ thai sản</a>	
+                    <a class="nav-link" onclick="myfunc()" href="<c:url value='/NghiThaiSan'/>">Nghỉ thai sản</a>	
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="<c:url value='/NghiViec'/>" >Nghỉ việc</a>
@@ -79,10 +79,12 @@
 							
 					</div>
                 </li>
+                
                 <li class="nav-item" style="margin-left: 10px;height: 45px;">
                 	
                     <a href="<c:url value='/phongBan'/>" style="font-size: 12.4px;margin-bottom: 0px;display: block;margin-top: 1px;color: #999"><i class="mdi mdi-lan" style="display: block;font-size:16px;color: black "></i>Phòng ban</a>
                 </li>
+                
                 <li class="nav-item" style="margin-left: 10px">
                     <div data-toggle="dropdown">
 						<i class="mdi mdi-email"></i>
@@ -115,10 +117,12 @@
 							
 					</div>
                 </li>
-                <li class="nav-item" style="margin-left: 10px">
-                    <i class="mdi mdi-settings"></i>
-                    <p style="font-size: 12px;margin-bottom: 0px">Cài đặt</p>
+                
+                <li class="nav-item" style="margin-left: 10px;height: 45px;">
+                	
+                    <a href="<c:url value='/caiDatHoSoNhanSu'/>" style="font-size: 12.4px;margin-bottom: 0px;display: block;margin-top: 1px;color: #999"><i class="mdi mdi-settings" style="display: block;font-size:16px;color: black "></i>Cài đặt</a>
                 </li>
+                
                 
             </ul>
         </div>
@@ -184,7 +188,7 @@
                      <p style="text-align: right;margin-bottom: 0px;margin-right: 100px" >1 - 1 trong số 1<h9 style="margin-left:20px"><</h9><h9 style="margin-left:20px">></h9></p>
                      
                      
-                </td>
+            </td>
                
             </tr>
         </tbody>
@@ -613,3 +617,8 @@ for (i = 0; i < acc.length; i++) {
     });
 
 </script>
+
+<!-- <script>
+    document.getElementById("set").hidden = true;
+</script> -->
+ 

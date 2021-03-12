@@ -91,7 +91,7 @@
     	 top: 100%;
     	 margin-left: 276px
     }
-    .accordion {
+.accordion {
 	cursor: pointer;
 	width: 100%;
 	transition: 0.4s;

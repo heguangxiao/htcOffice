@@ -207,7 +207,8 @@
         </div>
     </div>
 </div>
-<div class="bd-example" data-example-id="" style="display: ;" id="createPopup">
+
+<div class="bd-example" data-example-id="" id="createPopup">
 
 </div>
 
@@ -495,6 +496,7 @@ for (i = 0; i < acc.length; i++) {
             var str = item.innerHTML.trim().indexOf('<input type="checkbox" class="select-item checkbox"') === -1 ? item.innerHTML.trim() + '&' : '';
             if (i === 1) {
                 values = values + 'manhanvien=';
+                
             } else if (i === 2) {
                 values = values + 'machamcong=';
             } else if (i === 3) {

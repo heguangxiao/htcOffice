@@ -484,7 +484,7 @@ tr .active {
 	
 	<!-- Kinh nghiệm làm việc -->
 	
-	<nav class=" navbar-expand-lg navbar-light bg-light" style=" padding-top: 30px;padding-bottom: 0px;margin-top: 0px;width: 1190px;margin-bottom: 100px">
+	<nav class=" navbar-expand-lg navbar-light bg-light" style=" padding-top: 30px;padding-bottom: 0px;margin-top: 0px;width: 1190px;margin-bottom: 100px;min-height: 500px">
 		<div class="container-fluid accordion3" >   
 			<div  class="collapse navbar-collapse" id="navbarSupportedContent">
 				<div>

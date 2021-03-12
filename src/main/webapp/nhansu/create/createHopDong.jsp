@@ -243,7 +243,7 @@ form div {
 
 	<!-- Thông tin lương và phụ cấp  -->
 	
-	<nav class=" navbar-expand-lg navbar-light bg-light" style=" margin-bottom:100px;padding-top: 30px;padding-bottom: 0px;margin-top: 0px;width: 1190px">
+	<nav class=" navbar-expand-lg navbar-light bg-light" style=" margin-bottom:100px;padding-top: 30px;padding-bottom: 0px;margin-top: 0px;width: 1190px;min-height: 600px">
 		<div class="container-fluid accordion1" >   
 			<div  class="collapse navbar-collapse" id="navbarSupportedContent">
 				<div>

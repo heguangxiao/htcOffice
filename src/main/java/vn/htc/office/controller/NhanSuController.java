@@ -521,4 +521,142 @@ public class NhanSuController {
         return "import";
     }
     
+ // Cài đặt
+    
+    // Hồ sơ nhân sự
+    @GetMapping({"/caiDatHoSoNhanSu"})
+    public String caidathosonhansu(ModelMap modelMap) {
+        modelMap.put("title", "HTC OFFICE 3");
+        modelMap.put("titleTable", "Hồ sơ nhân sự");
+        return "caiDatHoSoNhanSu";
+    }
+    
+    // Cài đặt vị trí công việc
+    @GetMapping({"/caiDatViTriCongViec"})
+    public String caidatvitricongviec(ModelMap modelMap) {
+        modelMap.put("title", "HTC OFFICE 3");
+        modelMap.put("titleTable", "Cài đặt vị trí công việc");
+        return "caiDatViTriCongViec";
+    }
+    
+    // Cài đặt chức vụ
+    @GetMapping({"/caiDatChucVu"})
+    public String caidatchucvu(ModelMap modelMap) {
+        modelMap.put("title", "HTC OFFICE 3");
+        modelMap.put("titleTable", "Cài đặt chức vụ");
+        return "caiDatChucVu";
+    }
+    
+    // Nơi làm việc
+    @GetMapping({"/noiLamViec"})
+    public String caidatnoilamviec(ModelMap modelMap) {
+        modelMap.put("title", "HTC OFFICE 3");
+        modelMap.put("titleTable", "Nơi làm việc");
+        return "noiLamViec";
+    }
+    
+    // Cấp bậc
+    @GetMapping({"/capBac"})
+    public String caidatcapbac(ModelMap modelMap) {
+        modelMap.put("title", "HTC OFFICE 3");
+        modelMap.put("titleTable", "Cấp bậc");
+        return "capBac";
+    }
+    
+    // Hợp đồng lao động
+    @GetMapping({"/hopDongLaoDong"})
+    public String caidathopdonglaodong(ModelMap modelMap) {
+        modelMap.put("title", "HTC OFFICE 3");
+        modelMap.put("titleTable", "Hợp đồng lao động");
+        return "hopDongLaoDong";
+    }
+    
+    // Loại hợp đồng lao động
+    @GetMapping({"/loaiHopDongLaoDong"})
+    public String buttonloaihopdonglaodong(ModelMap modelMap) {
+        modelMap.put("title", "HTC OFFICE 3");
+        modelMap.put("titleTable", "Loại hợp đồng lao động");
+        return "loaiHopDongLaoDong";
+    }
+    
+    // Các loại phụ cấp
+    @GetMapping({"/cacLoaiPhuCap"})
+    public String cacloaiphucap(ModelMap modelMap) {
+        modelMap.put("title", "HTC OFFICE 3");
+        modelMap.put("titleTable", "Các loại phụ cấp");
+        return "cacLoaiPhuCap";
+    }
+    
+    // Bậc lương
+    @GetMapping({"/bacLuong"})
+    public String bacluong(ModelMap modelMap) {
+        modelMap.put("title", "HTC OFFICE 3");
+        modelMap.put("titleTable", "Bậc lương");
+        return "bacLuong";
+    }
+    
+    // Nghạch lương
+    @GetMapping({"/ngachLuong"})
+    public String ngachluong(ModelMap modelMap) {
+        modelMap.put("title", "HTC OFFICE 3");
+        modelMap.put("titleTable", "Ngạch lương");
+        return "ngachLuong";
+    }
+    
+    // Cài đặt bảo hiểm
+    @GetMapping({"/caiDatBaoHiem"})
+    public String caidatbaohiem(ModelMap modelMap) {
+        modelMap.put("title", "HTC OFFICE 3");
+        modelMap.put("titleTable", "Cài đặt bảo hiểm");
+        return "caiDatBaoHiem";
+    }
+    
+    // Cài đặt tỷ lệ bảo hiểm
+    @GetMapping({"/caiDatTyLeBaoHiem"})
+    public String caidattylebaohiem(ModelMap modelMap) {
+        modelMap.put("title", "HTC OFFICE 3");
+        modelMap.put("titleTable", "Cài đặt tỷ lệ bảo hiểm");
+        return "caiDatTyLeBaoHiem";
+    }
+    
+    // Cài đặt đánh giá năng lực
+    @GetMapping({"/caiDatDanhGiaNangLuc"})
+    public String caidatdanhgianangluc(ModelMap modelMap) {
+        modelMap.put("title", "HTC OFFICE 3");
+        modelMap.put("titleTable", "Cài đặt đánh giá năng lực");
+        return "caiDatDanhGiaNangLuc";
+    }
+    
+    // Hình thức khen thưởng
+    @GetMapping({"/hinhThucKhenThuong"})
+    public String hinhthuckhenthuong(ModelMap modelMap) {
+        modelMap.put("title", "HTC OFFICE 3");
+        modelMap.put("titleTable", "Hình thức khen thưởng");
+        return "hinhThucKhenThuong";
+    }
+    
+    // Quy định phạt 5S
+    @GetMapping({"/quyDinhPhat5S"})
+    public String quydinhphat5s(ModelMap modelMap) {
+        modelMap.put("title", "HTC OFFICE 3");
+        modelMap.put("titleTable", "Quy định phạt 5S");
+        return "quyDinhPhat5S";
+    }
+    
+    // Hình thức kỷ luật
+    @GetMapping({"/hinhThucKyLuat"})
+    public String hinhthuckyluat(ModelMap modelMap) {
+        modelMap.put("title", "HTC OFFICE 3");
+        modelMap.put("titleTable", "Hình thức kỷ luật");
+        return "hinhThucKyLuat";
+    }
+    
+    // Cài đặt kỷ luật nội bộ
+    @GetMapping({"/caiDatKyLuatNoiBo"})
+    public String caidatkyluatnoibo(ModelMap modelMap) {
+        modelMap.put("title", "HTC OFFICE 3");
+        modelMap.put("titleTable", "Cài đặt kỷ luật nội bộ");
+        return "caiDatKyLuatNoiBo";
+    }
+    
 }

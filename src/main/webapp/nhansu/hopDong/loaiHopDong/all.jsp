@@ -36,7 +36,7 @@
                     <a class="nav-link" href="<c:url value='/all'/>" style="border-bottom: 4px solid #6495ED;color:#6495ED">Tất cả</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<c:url value='/hopDong1Nam'/>">Hợp đồng 1 năm</a>
+                    <a class="nav-link"  href="<c:url value='/hopDong1Nam'/>">Hợp đồng 1 năm</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="<c:url value='/hopDongHocViec'/>">Hợp đồng học việc</a>
@@ -279,6 +279,11 @@
 	                <td class="trangthai">nam</td>
 	                <td class="ngaytao">2 năm trước</td>
             </tr>
+            <td class="active" >
+                     <p style="text-align: right;margin-bottom: 0px;margin-right: 100px" >1 - 1 trong số 1<h9 style="margin-left:20px"><</h9><h9 style="margin-left:20px">></h9></p>
+                     
+                     
+            </td>
            
         </tbody>
     </table>
@@ -454,4 +459,6 @@
         $(this).parent().hide();
     });
 
+    
 </script>
+

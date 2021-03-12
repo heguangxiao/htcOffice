@@ -79,7 +79,7 @@
 						<p style="font-size: 12px; margin-bottom: 0px">Email/Sms+</p>
 					</div>
 					<div class="dropdown-menu">
-						<button id="hover-email" class="dropdown-item" data-toggle="modal" data-target="#email	">Gửi email</button> 
+						<button id="hover-email" class="dropdown-item" data-toggle="modal" data-target="#email">Gửi email</button> 
 							
 					</div>
                 </li>

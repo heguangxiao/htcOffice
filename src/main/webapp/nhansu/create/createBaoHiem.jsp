@@ -415,7 +415,7 @@
 
 	<!-- Lịch sử giải quyết chế độ -->
 	
-	<nav class=" navbar-expand-lg navbar-light bg-light accordion4" style=" padding-top:30px;padding-bottom: 0px;margin-top: 0px;clear: both;">
+	<nav class=" navbar-expand-lg navbar-light bg-light accordion4" style=" padding-top:30px;padding-bottom: 0px;margin-top: 0px;clear: both;min-height: 220px">
 	 	<div class="container-fluid" >   
 			<div  class="collapse navbar-collapse" id="navbarSupportedContent">				
 					<div  >

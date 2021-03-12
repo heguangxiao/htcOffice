@@ -472,5 +472,5 @@ jQuery(document).delegate('a.delete-record9', 'click', function(e) {
    return true;
  
 });
-</script>
 
+</script>
