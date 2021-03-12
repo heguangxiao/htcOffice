@@ -1042,10 +1042,41 @@
     	document.getElementById("fsearch").hidden = true;
 	</script>
 
-	
+	<!-- hôm nay là... -->
 		<script>
 			var d = new Date();
 			var month = d.getMonth()+1;
 			var phantram= 12;
-			document.getElementById("nowdatetime").innerHTML = 'HÔM NAY LÀ ' + d.getDate() + '-' + month + '-' +d.getFullYear()+' BẠN ĐÃ HOÀN THÀNH '+ phantram +' CÔNG VIỆC';
+			
+			// Lấy số thứ tự của ngày hiện tại
+            var current_day = d.getDay();
+
+            // Biến lưu tên của thứ
+            var day_name = '';
+            
+         	// Lấy tên thứ của ngày hiện tại
+            switch (current_day) {
+            case 0:
+                day_name = "CHỦ NHẬT";
+                break;
+            case 1:
+                day_name = "THỨ HAI";
+                break;
+            case 2:
+                day_name = "THỨ BA";
+                break;
+            case 3:
+                day_name = "THỨ TƯ";
+                break;
+            case 4:
+                day_name = "THỨ NĂM";
+                break;
+            case 5:
+                day_name = "THỨ SÁU";
+                break;
+            case 6:
+                day_name = "THỨ BẢY";
+            }
+         
+			document.getElementById("nowdatetime").innerHTML = 'HÔM NAY LÀ THỨ '+ day_name + ' NGÀY ' + d.getDate() + '-' + month + '-' +d.getFullYear()+' BẠN ĐÃ HOÀN THÀNH '+ phantram +'% CÔNG VIỆC';
 		</script>
