@@ -27,10 +27,10 @@
             </a>
             <ul class="collapse list-unstyled" id="hopdongSubmenu">
                 <li>
-                    <a href="<c:url value='/loaihopdongAll'/>">Loại hợp đồng</a>
+                    <a href="<c:url value='/all'/>">Loại hợp đồng</a>
                 </li>
                 <li>
-                    <a href="#">Theo năm</a>
+                    <a href="<c:url value='/2021'/>">Theo năm</a>
                 </li>
                 
             </ul>
@@ -41,19 +41,19 @@
             </a>
             <ul class="collapse list-unstyled" id="baohiemSubmenu">
                 <li>
-                    <a href="<c:url value='/baohiemAll'/>">Tất cả</a>
+                    <a href="<c:url value='/tatCaBaoHiem'/>">Tất cả</a>
                 </li>
                 <li>
-                    <a href="#">Tăng dự kiến</a>
+                    <a href="<c:url value='/tangDuKien'/>">Tăng dự kiến</a>
                 </li>
                 <li>
-                    <a href="#">Giảm dự kiến</a>
+                    <a href="<c:url value='/giamDuKien'/>">Giảm dự kiến</a>
                 </li>
                 <li>
-                    <a href="#">Lịch sử đóng</a>
+                    <a href="<c:url value='/lichSuDong'/>">Lịch sử đóng</a>
                 </li>
                 <li>
-                    <a href="#">Báo cáo</a>
+                    <a href="<c:url value='/baoCao'/>">Báo cáo</a>
                 </li>
             </ul>
         </li>
@@ -63,13 +63,13 @@
             </a>
            	<ul class="collapse list-unstyled" id="danhgiananglucSubmenu">
                 <li>
-                    <a href="<c:url value='/kydanhgiaAll'/>">Kỳ đánh giá</a>
+                    <a href="<c:url value='/tatCaKyDanhGia'/>">Kỳ đánh giá</a>
+                </li>
+                <li>	
+                    <a href="<c:url value='/mauDanhGiaNangLuc'/>">Mẫu đánh giá năng lực</a>
                 </li>
                 <li>
-                    <a href="#">Mẫu đánh giá năng lực</a>
-                </li>
-                <li>
-                    <a href="#">Thư viện năng lực</a>
+                    <a href="<c:url value='/thuVienNangLuc'/>">Thư viện năng lực</a>
                 </li>
             </ul>
         </li>
@@ -79,19 +79,19 @@
             </a>
             <ul class="collapse list-unstyled" id="khenthuongSubmenu">
                 <li>
-                    <a href="<c:url value='/khenthuongAll'/>">Khen thưởng</a>
+                    <a href="<c:url value='/tatCaKhenThuong'/>">Khen thưởng</a>
                 </li>
                 <li>
-                    <a href="#">Kỷ luật lao động</a>
+                    <a href="<c:url value='/tatCaKLLD'/>">Kỷ luật lao động</a>
                 </li>
                 <li>
-                    <a href="#">Kỉ luật nội bộ</a>
+                    <a href="<c:url value='/kLNoiBo'/>">Kỉ luật nội bộ</a>
                 </li>
                 <li>
-                    <a href="#">Thư viện lỗi, kỷ luật</a>
+                    <a href="<c:url value='/thuVienLoiKyLuat'/>">Thư viện lỗi, kỷ luật</a>
                 </li>
                 <li>
-                    <a href="#">Báo cáo</a>
+                    <a href="<c:url value='/khenThuong'/>">Báo cáo</a>
                 </li>
             </ul>
         </li>
@@ -101,10 +101,10 @@
             </a>
             <ul class="collapse list-unstyled" id="baocaophantichSubmenu">
                 <li>
-                    <a href="<c:url value='/baocaodataoAll'/>">Báo cáo đã tạo</a>
+                    <a href="<c:url value='/tatCaBaoCao'/>">Báo cáo đã tạo</a>
                 </li>
                 <li>
-                    <a href="#">Báo cáo đã lưu</a>
+                    <a href="<c:url value='/baoCaoDaLuu'/>">Báo cáo đã lưu</a>
                 </li>
             </ul>
         </li>

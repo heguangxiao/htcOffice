@@ -1,8 +1,9 @@
 <%@page contentType="text/html; charset=utf-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <style>
-    tbody {
+   tbody {
         display:block;
-        height:78vh;
+       
         overflow:auto;
     }
     /* Hide scrollbar for Chrome, Safari and Opera */
@@ -15,7 +16,7 @@
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
     }
-    thead, tbody tr {
+    thead, #tbody tr {
         display:table;
         width:100%;
         table-layout:fixed;
@@ -29,32 +30,51 @@
         <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-align-justify"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: left">
+            <ul class="nav navbar-nav mr-auto">
+            	<li class="nav-item" style="margin-top: 7.5px">
+                    <i class="mdi mdi-tune-vertical"></i>
+                </li>
+                
+                
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: left">
             <ul class="nav navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Tất cả báo cáo</a>
+                    <a class="nav-link" href="<c:url value='/tatCaBaoCao'/>" style="border-bottom: 4px solid #6495ED;color:#6495ED">Tất cả báo cáo</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Báo cáo đề xuất</a>
+                    <a class="nav-link" href="<c:url value='/baoCaoDeXuat'/>" >Báo cáo đề xuất</a>
                 </li>
                
                 
             </ul>
         </div>
+        
+         <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: right">
+            <ul class="nav navbar-nav mr-auto" style="text-align: center;">
+                
+                <li class="nav-item" style="margin-left: 10px">
+                	<i class="mdi mdi-export"></i>                
+                    <p style="font-size: 12px;margin-bottom: 0px">Export</p>
+                </li>
+                
+                <li class="nav-item" style="margin-left: 10px">
+                    <i class="mdi mdi-settings"></i>
+                    <p style="font-size: 12px;margin-bottom: 0px">Cài đặt</p>
+                </li>
+                
+            </ul>
+        </div> -->
 
         
     </div>
 </nav>
 
-<div class="scrollDiv">
-    Không tìm thấy kết quả nào
-    <!--<button id="select-all" class="btn button-default">SelectAll/Cancel</button>-->
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="menu">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <a class="dropdown-item" href="#">Something else here</a>
-    </div>
-</div>
+<hr style="margin-top: 45px">             
+<p style="clear: left;"> Không tìm thấy kết quả nào</p>
+
 <div class="container-fluid bd-content">
     <div class="bd-example" data-example-id="">
         <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" role="dialog" tabindex="-1">

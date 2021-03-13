@@ -3,7 +3,7 @@
 <style>
     tbody {
         display:block;
-        height:78vh;
+       
         overflow:auto;
     }
     /* Hide scrollbar for Chrome, Safari and Opera */
@@ -16,7 +16,7 @@
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
     }
-    thead, tbody tr {
+    thead, #tbody tr {
         display:table;
         width:100%;
         table-layout:fixed;
@@ -30,22 +30,56 @@
         <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-align-justify"></i>
         </button>
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: left">
             <ul class="nav navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Tất cả</a>
+                    <a class="nav-link" href="<c:url value='/all'/>" >Tất cả</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Hợp đồng 1 năm</a>
+                    <a class="nav-link" href="<c:url value='/hopDong1Nam'/>">Hợp đồng 1 năm</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Hợp đồng học việc</a>
+                    <a class="nav-link" href="<c:url value='/hopDongHocViec'/>" >Hợp đồng học việc</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Hợp đồng thử việc</a>
+                    <a class="nav-link" href="<c:url value='/hopDongThuViec'/>" style="border-bottom: 4px solid #6495ED;color:#6495ED">Hợp đồng thử việc</a>
                 </li>
                  <li class="nav-item">
-                    <a class="nav-link" href="#">Hợp đồng vô thời hạn</a>
+                    <a class="nav-link" href="<c:url value='/hopDongVoThoiHan'/>">Hợp đồng vô thời hạn</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: right">
+            <ul class="nav navbar-nav mr-auto" style="text-align: center;">
+            	
+                
+                <li class="nav-item" style="margin-left: 10px">
+                	<div data-toggle="dropdown">
+						<i class="mdi mdi-export"></i>
+						<p style="font-size: 12px; margin-bottom: 0px">Export</p>
+					</div>
+					<div class="dropdown-menu">
+						<button id="hover-email" class="dropdown-item">Xuất tất cả </button> 
+						<button id="hover-email" class="dropdown-item">Tùy chọn cột </button> 
+							
+					</div>
+                </li>
+                <li class="nav-item" style="margin-left: 10px">
+                    <div data-toggle="dropdown">
+						<i class="mdi mdi-exit-to-app"></i>
+						<p style="font-size: 12px; margin-bottom: 0px">Import</p>
+					</div>
+					<div class="dropdown-menu">
+						<button id="hover-email" class="dropdown-item">Import hồ sơ nhân sự </button> 
+						<button id="hover-email" class="dropdown-item">Xem lịch sử import hồ sơ nhân sự </button> 
+							
+					</div>
+                </li>
+                <li class="nav-item" style="margin-left: 10px">
+                    <i class="mdi mdi-settings"></i>
+                    <p style="font-size: 12px;margin-bottom: 0px">Cài đặt</p>
                 </li>
                 
             </ul>
@@ -74,7 +108,7 @@
                
             </tr>
         </thead>
-        <tbody style="text-align: center;">
+        <tbody id="tbody" style="text-align: center;">
             <tr >
                 <td class="active">
                     <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
@@ -126,125 +160,13 @@
 	                <td class="trangthai">tạm dừng</td>
 	                <td class="ngaytao">2 năm trước</td>
             </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
-                </td>
-               	    <td class="py-1">
-                        <img src="<c:url value='/images/faces-clipart/pic-3.png'/>" alt="image" />
-                    </td>
-	                <td class="mahoatdong">4</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-                	<td class="py-1">
-                        <img src="<c:url value='/images/faces-clipart/pic-3.png'/>" alt="image" />
-                    </td>
-	                <td class="mahoatdong">5</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-					<td class="py-1">
-                        <img src="<c:url value='/images/faces-clipart/pic-3.png'/>" alt="image" />
-                    </td>
-	                <td class="mahoatdong">6</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-			</tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1002" />
-                </td>
-                	<td class="py-1">
-                        <img src="<c:url value='/images/faces-clipart/pic-3.png'/>" alt="image" />
-                    </td>
-	                <td class="mahoatdong">7</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1003" />
-                </td>
-                	<td class="py-1">
-                        <img src="<c:url value='/images/faces-clipart/pic-3.png'/>" alt="image" />
-                    </td>
-	                <td class="mahoatdong">8</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1000" />
-                </td>
-               		<td class="py-1">
-                        <img src="<c:url value='/images/faces-clipart/pic-3.png'/>" alt="image" />
-                    </td>
-	                <td class="mahoatdong">9</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
-            <tr>
-                <td class="active">
-                    <input type="checkbox" class="select-item checkbox" name="select-item" value="1001" />
-                </td>
-               		<td class="py-1">
-                        <img src="<c:url value='/images/faces-clipart/pic-3.png'/>" alt="image" />
-                    </td>
-	                <td class="mahoatdong">10</td>
-	                <td class="tennhansu">lê văn thịnh</td>
-	                <td class="phongban">toán</td>
-	                <td class="tenhopdong">linh tinh</td>
-	                <td class="ngayky">còm</td>
-	                <td class="hieuluctungay">1999</td>
-	                <td class="denngay">1999</td>
-	                <td class="trangthai">nam</td>
-	                <td class="ngaytao">2 năm trước</td>
-            </tr>
+            <td class="active" >
+                     <p style="text-align: right;margin-bottom: 0px;margin-right: 100px" >1 - 1 trong số 1<h9 style="margin-left:20px"><</h9><h9 style="margin-left:20px">></h9></p>
+                     
+                     
+            </td>
+            
+           
            
         </tbody>
     </table>
@@ -371,23 +293,7 @@
         var showMenu = '';
         
         showMenu = showMenu + '<a class="dropdown-item" data-target="#exampleXem" data-toggle="modal" data-whatever="">Xem nhanh</a>';
-        showMenu = showMenu + '<a class="dropdown-item" href="http://localhost:8084/home3' + values + '">Tạo hợp đồng</a>';
-        showMenu = showMenu + '<a class="dropdown-item" href="http://localhost:8084/home3' + values + '">Cập nhật thông tin công việc</a>';
-        showMenu = showMenu + '<a class="dropdown-item" href="http://localhost:8084/home3' + values + '">Cập nhật thông tin lương phụ cấp</a>';
-        showMenu = showMenu + '<a class="dropdown-item" href="http://localhost:8084/home3' + values + '">Cập nhật thông tin bảo hiểm</a>';     
-        showMenu = showMenu + '<a class="dropdown-item" href="http://localhost:8084/home3' + values + '">Kiêm nhiệm</a>';
-        showMenu = showMenu + '<a class="dropdown-item" href="http://localhost:8084/home3' + values + '">Cập nhật thông tin tiếp nhận</a>';
-        showMenu = showMenu + '<a class="dropdown-item" href="http://localhost:8084/home3' + values + '">Cập nhật thông tin học vấn</a>';
-        showMenu = showMenu + '<a class="dropdown-item" href="http://localhost:8084/home3' + values + '">Cập nhật trạng thái hồ sơ</a>';       
-        showMenu = showMenu + '<a class="dropdown-item" href="http://localhost:8084/home3' + values + '">Tỉ lệ bảo hiểm</a>';
-        showMenu = showMenu + '<a class="dropdown-item" href="http://localhost:8084/home3' + values + '">Cập nhật nhãn</a>';
-        showMenu = showMenu + '<a class="dropdown-item" href="http://localhost:8084/home3' + values + '">Thêm tài liệu</a>';      
-        showMenu = showMenu + '<a class="dropdown-item" href="http://localhost:8084/home3' + values + '">Biểu mẫu</a>';
-        showMenu = showMenu + '<a class="dropdown-item" href="http://localhost:8084/home3' + values + '">Gửi email/sms</a>';
-        showMenu = showMenu + '<a class="dropdown-item" href="http://localhost:8084/home3' + values + '">Thêm tài liệu</a>';      
-        showMenu = showMenu + '<a class="dropdown-item" href="http://localhost:8084/home3' + values + '">Sửa</a>';
-        showMenu = showMenu + '<a class="dropdown-item" href="http://localhost:8084/home3' + values + '">Xóa</a>';
-        showMenu = showMenu + '<a class="dropdown-item" href="http://localhost:8084/home3' + values + '">Nhân bản</a>';
+       
         
         
         document.getElementById('menu').innerHTML = showMenu;

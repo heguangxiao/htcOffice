@@ -34,7 +34,7 @@
 	}
     tbody {
         display:block;
-        height:78vh;
+       
         overflow:auto;
     }
     /* Hide scrollbar for Chrome, Safari and Opera */
@@ -49,7 +49,7 @@
     }
     thead, tbody tr {
         display:table;
-        width:100%;
+       
         table-layout:fixed;
     }
     tr .active {
@@ -86,7 +86,7 @@
         </div>
 	</div>
 </nav>
-<hr style="width: 1180px;margin-top: 45px">	
+<hr style="width: 1180px;margin-top: 45px;margin-left: 22px">	
 
 	<!-- Cột 1 -->
 	
@@ -150,35 +150,35 @@
                                     </div>
                                     <div  id="div"> 
                                         <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input"  /> Info </label>
+                                            <input type="checkbox" class="form-check-input"  /> Bản sao sổ hộ khẩu </label>
                                     </div>
                                     <div id="div">
                                         <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input"  /> Danger </label>
+                                            <input type="checkbox" class="form-check-input"  /> Khóa tài khoản 1 Office </label>
                                     </div>
                                     <div id="div">
                                         <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input"  /> Warning </label>
+                                            <input type="checkbox" class="form-check-input"  /> Thanh toán công nợ </label>
                                     </div>
                                     
                                     <div  id="div">
                                         <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input"  /> Primary </label>
+                                            <input type="checkbox" class="form-check-input"  /> Cam kết thai sản </label>
                                     </div>
                                     
                                     <div  id="div">
                                         <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input"  /> Primary </label>
+                                            <input type="checkbox" class="form-check-input"  /> Quyết định bổ nhiệm </label>
                                     </div>
                                     
                                     <div  id="div">
                                         <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input"  /> Primary </label>
+                                            <input type="checkbox" class="form-check-input"  /> Cơ cấu lương </label>
                                     </div>
                                     
                                     <div  id="div">
                                         <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input"  /> Primary </label>
+                                            <input type="checkbox" class="form-check-input"  /> Quyết định chấm dứt HĐLĐ </label>
                                     </div>
                                 </div>
                                 
@@ -189,43 +189,43 @@
                                <div id="cot3" >
                                     <div id="div">
                                         <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input" /> Primary </label>
+                                            <input type="checkbox" class="form-check-input" /> Giấy khám sức khỏe </label>
                                     </div>
                                     <div  id="div">
                                         <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input"  /> Success </label>
+                                            <input type="checkbox" class="form-check-input"  /> Ảnh cá nhân </label>
                                     </div>
                                     <div  id="div"> 
                                         <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input"  /> Info </label>
+                                            <input type="checkbox" class="form-check-input"  /> Bảo hiểm xã hội </label>
                                     </div>
                                     <div id="div">
                                         <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input"  /> Danger </label>
+                                            <input type="checkbox" class="form-check-input"  /> Khóa tài khoản Email </label>
                                     </div>
                                     <div id="div">
                                         <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input"  /> Warning </label>
+                                            <input type="checkbox" class="form-check-input"  /> Bàn giao công việc </label>
                                     </div>
                                     
                                     <div  id="div">
                                         <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input"  /> Primary </label>
+                                            <input type="checkbox" class="form-check-input"  /> Cam kết thử việc </label>
                                     </div>
                                     
                                     <div  id="div">
                                         <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input"  /> Primary </label>
+                                            <input type="checkbox" class="form-check-input"  /> Hợp đồng lao động </label>
                                     </div>
                                     
                                     <div  id="div">
                                         <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input"  /> Primary </label>
+                                            <input type="checkbox" class="form-check-input"  /> Đánh giá thử việc </label>
                                     </div>
                                     
                                     <div  id="div">
                                         <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input"  /> Primary </label>
+                                            <input type="checkbox" class="form-check-input"  /> Cam kết làm việc </label>
                                     </div>
                                 </div>
 </body>

@@ -25,7 +25,7 @@
 	}
     tbody {
         display:block;
-        height:78vh;
+       
         overflow:auto;
     }
     /* Hide scrollbar for Chrome, Safari and Opera */
@@ -40,7 +40,7 @@
     }
     thead, tbody tr {
         display:table;
-        width:100%;
+       
         table-layout:fixed;
     }
     tr .active {
@@ -77,7 +77,7 @@
         </div>
 	</div>
 </nav>
-<hr style="width: 1180px;margin-top: 45px">	
+<hr style="width: 1180px;margin-top: 45px;margin-left:22px">	
 
 	
 	
